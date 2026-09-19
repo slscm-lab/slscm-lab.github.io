@@ -208,7 +208,7 @@ function Hero() {
             COLLEGE OF TECHNOLOGY · NATIONAL ECONOMICS UNIVERSITY
           </div>
           <h1 className="mt-6 max-w-4xl font-editorial text-5xl leading-[1.04] tracking-tight text-slate-950 sm:text-6xl lg:text-7xl">
-            The <em className="bg-gradient-to-r from-sky-900 via-sky-800 to-cyan bg-clip-text text-transparent">Optimizing Frontier</em> for resilient supply chains.
+            The <em className="bg-gradient-to-r from-sky-950 via-sky-800 to-cyan-700 bg-clip-text text-transparent">Optimizing Frontier</em> for resilient supply chains.
           </h1>
           <p className="mt-7 max-w-3xl font-editorial text-xl sm:text-2xl leading-relaxed text-slate-600 font-normal">
             At the intersection of modern Operations Research, Artificial Intelligence, and Next-Generation Transportation — transforming complex mathematical challenges into intelligent, sustainable infrastructure.
