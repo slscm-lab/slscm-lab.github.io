@@ -10,7 +10,8 @@
     ],
     "journal": "International Transactions in Operational Research (ITOR)",
     "link": "https://onlinelibrary.wiley.com/doi/10.1111/itor.70177",
-    "abstract": "Research focuses on scheduling conflicting jobs on identical parallel machines with makespan minimization. Proposes a novel constraint programming (CP) model and two metaheuristics (multineighborhood simulated annealing and CP-based LNS)."
+    "action_label": "Read ITOR Paper",
+    "abstract": "Research focuses on scheduling conflicting jobs on identical parallel machines to minimize makespan. Proposes a novel constraint programming model and multineighborhood simulated annealing metaheuristics with proven computational efficiency."
   },
   {
     "type": "publication_news",
@@ -24,33 +25,41 @@
       "Vu Duc Minh"
     ],
     "journal": "INFORMS Journal on Computing (IJOC)",
-    "significance": "Premier computing journal in Operations Research by the INFORMS Society (USA)."
+    "link": "https://doi.org/10.1287/ijoc.2025.1150",
+    "action_label": "Read IJOC Paper",
+    "abstract": "Investigates competitive facility location under cross-nested logit customer choice models. Establishes NP-hardness and non-concavity, then derives an exact mixed-integer exponential cone formulation solved to optimality via outer approximation."
   },
   {
     "type": "publication_news",
-    "title": "International Publication by Young Scholar Tran Nam Khanh",
+    "title": "Young Scholar Publication in Transportation Research Part C",
     "paper_title": "A Stage-based Formulation and Meta-heuristic Algorithm for the Revisit Flying SideKick Traveling Salesman Problem",
     "authors": [
+      "Le Thi Hong",
+      "Duc Duy Vu",
       "Tran Nam Khanh",
-      "SLSCM Lab Members"
+      "Nguyen Dinh Cong",
+      "Vu Duc Minh"
     ],
-    "venue": "Transportation Research / Drone Routing"
+    "venue": "Transportation Research Part C: Emerging Technologies",
+    "link": "https://doi.org/10.1016/j.trc.2026.105906",
+    "action_label": "Read TRC Paper",
+    "abstract": "Introduces a novel stage-based integer formulation and metaheuristic algorithm for the Revisit Flying Sidekick TSP, enabling delivery trucks to revisit customer nodes and coordinate multi-trip drone sorties for accelerated last-mile logistics."
   },
   {
     "type": "recruitment_project",
-    "title": "Real-World Initiative: AI & OR for Hanoi Urban Drainage & Smart Water Network",
+    "title": "Real-World Initiative: AI & OR for Hanoi Urban Smart Water Network",
     "collaboration": "Joint Lab Initiative: CADA (P1601 A1) & SLSCM (P1613 A1) - FDA College of Technology, NEU",
-    "scope": [
-      "AI Side: Water demand forecasting, leakage detection, and flood risk prediction using Machine Learning",
-      "OR Side: Optimal pump station placement, flow regulation, and network operational cost minimization",
-      "Data Side: IoT sensor data processing and spatial telemetry from Hanoi municipal infrastructure"
-    ],
-    "contact": "Le Duy Khanh (khanhld@neu.edu.vn) & Dr. Vu Duc Minh (minhvd@neu.edu.vn)"
+    "link": "https://fda.neu.edu.vn/slscm/",
+    "action_label": "Explore Project",
+    "abstract": "A collaborative smart city initiative between CADA and SLSCM Labs applying AI and Operations Research to Hanoi's municipal drainage infrastructure, integrating live IoT telemetry with machine learning for real-time flood mitigation."
   },
   {
     "type": "training_education",
-    "title": "Executive Professional Workshop",
+    "title": "Executive Professional Workshop: Decision Intelligence & Analytics",
     "name": "From Data to Decision Intelligence & Prescriptive Analytics",
-    "organizer": "SLSCM Lab & FDA Faculty - National Economics University"
+    "organizer": "SLSCM Lab & FDA Faculty - National Economics University",
+    "link": "https://www.facebook.com/slscm.lab",
+    "action_label": "View Announcement",
+    "abstract": "Advanced executive training hosted by SLSCM Lab and FDA College of Technology, equipping professionals with combinatorial optimization, prescriptive analytics, and AI frameworks to solve large-scale logistical operations."
   }
 ]
