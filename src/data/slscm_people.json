@@ -11,13 +11,14 @@
       "email": "minhvd@neu.edu.vn",
       "office": "P1613, Tòa nhà A1, Đại học Kinh tế Quốc dân – 207 Giải Phóng, Hà Nội",
       "research_interests": [
-        "Tối ưu hóa Vận tải & Logistics (Transportation & Logistics Optimization)",
-        "Định tuyến Drone & Phương tiện Hỗn hợp (FSTSP & Drone Routing)",
-        "Bài toán Vị trí Cơ sở Cạnh tranh (Competitive Facility Location)",
-        "AI & Phân tích Dữ liệu Ra Quyết định Thông minh"
+        "Transportation & Logistics Optimization",
+        "Drone & Hybrid Fleet Routing (FSTSP)",
+        "Competitive Facility Location",
+        "AI-Driven Decision Analytics"
       ],
       "bio_vi": "Tiến sĩ Vũ Đức Minh là Trưởng phòng thí nghiệm SLSCM Lab, giảng viên Trường Công nghệ - NEU. Thầy chủ trì nhiều đề tài nghiên cứu về tối ưu hóa vận tải, định tuyến drone và bài toán vị trí cơ sở, là tác giả của các công trình công bố trên các tạp chí quốc tế hàng đầu như INFORMS Journal on Computing, Transportation Research Part C, Journal of the Operational Research Society.",
-      "avatar": "/assets/images/people/vu_duc_minh.jpg"
+      "avatar": "/assets/images/people/vu_duc_minh.jpg",
+      "bio_en": "Dr. Vu Duc Minh is the Head of SLSCM Lab and Lecturer at the College of Technology, National Economics University (NEU). He leads multiple research projects in transportation optimization, drone routing, and facility location problems, with publications in premier international journals including INFORMS Journal on Computing, Transportation Research Part C, and Journal of the Operational Research Society."
     },
     {
       "id": "ha-minh-hoang",
@@ -29,13 +30,14 @@
       "affiliation_en": "VNU University of Science (VNU-HUS) & SLSCM Lab",
       "email": "minhhoang.ha@vnu.edu.vn",
       "research_interests": [
-        "Vận trù học & Lý thuyết Tối ưu (Operations Research & Optimization)",
-        "Thuật toán Chính xác & Phân nhánh Cắt (Exact Algorithms & Branch-and-Cut)",
-        "Thuật toán Metaheuristics & Matheuristics",
-        "Định tuyến Xe & Lập lịch Sản xuất (VRP, Machine Scheduling)"
+        "Operations Research & Optimization",
+        "Exact Algorithms & Branch-and-Cut",
+        "Metaheuristics & Matheuristics",
+        "Vehicle Routing & Scheduling"
       ],
       "bio_vi": "Phó Giáo sư, Tiến sĩ chuyên ngành Vận trù học và Khoa học Máy tính. Chuyên gia hàng đầu Việt Nam về thiết kế thuật toán tối ưu hóa tổ hợp, tác giả của hàng chục công trình uy tín trên EJOR, Computers & Operations Research, ITOR, IJOC, JORS.",
-      "avatar": "/assets/images/people/ha_minh_hoang.jpg"
+      "avatar": "/assets/images/people/ha_minh_hoang.jpg",
+      "bio_en": "Associate Professor in Operations Research and Computer Science. A leading Vietnamese expert in combinatorial optimization algorithm design, with dozens of authoritative publications in EJOR, Computers & Operations Research, ITOR, IJOC, and JORS."
     },
     {
       "id": "ta-dinh-quy",
@@ -47,13 +49,14 @@
       "affiliation_en": "SLSCM Lab & Institute of Mathematics / HUST",
       "email": "quytd@neu.edu.vn",
       "research_interests": [
-        "Lập lịch Máy Song song & Công việc Xung đột (Conflict Job Scheduling)",
-        "Quy hoạch Ràng buộc (Constraint Programming)",
-        "Định tuyến Xe buýt Trường học & Giảm thiểu Tác động Tiêu cực",
-        "Giải thuật Tìm kiếm Lân cận Lớn (Large Neighborhood Search)"
+        "Parallel Machine Scheduling with Conflicting Jobs",
+        "Constraint Programming",
+        "School Bus Routing & Transit",
+        "Large Neighborhood Search (LNS)"
       ],
       "bio_vi": "Thạc sĩ, nghiên cứu sinh chuyên sâu về tối ưu hóa lập lịch công nghiệp và điều độ máy móc có xung đột, tác giả chính của các công trình công bố trên ITOR, Journal of the Operational Research Society và Handbook of Combinatorial Optimization (Springer Nature).",
-      "avatar": "/assets/images/people/ta_dinh_quy.jpg"
+      "avatar": "/assets/images/people/ta_dinh_quy.jpg",
+      "bio_en": "Master of Science and Ph.D. candidate specializing in industrial scheduling and machine scheduling with conflict jobs. Lead author of publications in ITOR, Journal of the Operational Research Society, and Springer's Handbook of Combinatorial Optimization."
     }
   ],
   "young_researchers_and_authors": [
