@@ -2,16 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-:root { color: #0f172a; background: #f8fafc; font-family: Onest, sans-serif; }
-html { scroll-behavior: smooth; }
-body { margin: 0; min-width: 320px; }
+:root { 
+  color: #0f172a; 
+  background-color: #fafbfd; 
+  font-family: 'Faculty Glyphic', Onest, sans-serif; 
+}
+html { 
+  scroll-behavior: smooth; 
+  background-color: #fafbfd;
+}
+body { 
+  margin: 0; 
+  min-width: 320px; 
+  background-color: #fafbfd;
+  background-image: 
+    radial-gradient(circle at 14% 10%, rgba(6, 182, 212, 0.15), transparent 32rem),
+    radial-gradient(circle at 86% 18%, rgba(16, 185, 129, 0.12), transparent 36rem),
+    radial-gradient(circle at 48% 46%, rgba(245, 158, 11, 0.09), transparent 34rem),
+    radial-gradient(circle at 12% 76%, rgba(14, 165, 233, 0.13), transparent 34rem),
+    radial-gradient(circle at 88% 88%, rgba(6, 182, 212, 0.12), transparent 36rem);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #0f172a;
+}
 button, input, select { font: inherit; }
 ::selection { background: #bae6fd; color: #0f172a; }
-.mesh {
-  background-image: radial-gradient(circle at 14% 9%, rgba(6,182,212,.13), transparent 24rem),
-    radial-gradient(circle at 84% 18%, rgba(16,185,129,.10), transparent 27rem),
-    radial-gradient(circle at 47% 91%, rgba(245,158,11,.09), transparent 25rem);
+
+.soft-card { 
+  @apply rounded-3xl border border-slate-200/80 bg-white/85 backdrop-blur-md shadow-soft transition duration-300 hover:-translate-y-1 hover:shadow-lift; 
 }
-.soft-card { @apply rounded-3xl border border-slate-200/80 bg-white shadow-soft transition duration-300 hover:-translate-y-1 hover:shadow-lift; }
 .section-shell { @apply mx-auto max-w-7xl px-5 sm:px-8; }
 .focus-ring { @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 focus-visible:ring-offset-2; }
