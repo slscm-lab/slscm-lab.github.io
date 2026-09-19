@@ -209,7 +209,7 @@ function Hero() {
             COLLEGE OF TECHNOLOGY · NATIONAL ECONOMICS UNIVERSITY
           </div>
           <h1 className="mt-6 max-w-4xl font-editorial text-5xl leading-[1.04] tracking-tight text-slate-950 sm:text-6xl lg:text-7xl">
-            The <em className="bg-gradient-to-r from-[#0f172a] via-[#0369a1] to-[#0e7490] bg-clip-text text-transparent">Optimizing Frontier</em> for resilient supply chains.
+            The <em className="bg-gradient-to-r from-sky-800 via-sky-700 to-[#0284c7] bg-clip-text text-transparent">Optimizing Frontier</em> for resilient supply chains.
           </h1>
           <p className="mt-7 max-w-3xl font-editorial text-xl sm:text-2xl leading-relaxed text-slate-600 font-normal">
             At the intersection of modern Operations Research, Artificial Intelligence, and Next-Generation Transportation — transforming complex mathematical challenges into intelligent, sustainable infrastructure.
@@ -248,6 +248,11 @@ function ResearchAndProjects() {
     'border-cyan-200/90 bg-cyan-50/70 text-cyan-800 backdrop-blur-sm',
     'border-emerald-200/90 bg-emerald-50/70 text-emerald-800 backdrop-blur-sm',
   ];
+  const tagTreatments = [
+    'border-sky-200/90 bg-white/95 text-sky-950 shadow-xs hover:border-sky-300',
+    'border-cyan-200/90 bg-white/95 text-cyan-950 shadow-xs hover:border-cyan-300',
+    'border-emerald-200/90 bg-white/95 text-emerald-950 shadow-xs hover:border-emerald-300',
+  ];
   return (
     <>
       <section id="research" className="py-20">
@@ -280,7 +285,7 @@ function ResearchAndProjects() {
                   </div>
                   <div className="mt-5 flex flex-wrap gap-1.5">
                     {pillar.topics.slice(0, 3).map((topic) => (
-                      <span key={topic} className="rounded-md bg-white/80 px-2 py-1 font-mono text-[10px] text-slate-600">
+                      <span key={topic} className={`rounded-lg border px-2.5 py-1 font-mono text-[11px] font-medium transition-colors ${tagTreatments[index]}`}>
                         {topic}
                       </span>
                     ))}
@@ -534,52 +539,77 @@ function PeopleAndLife() {
             title="Rigorous in mentorship, borderless in trajectory."
             text="A scholarly community of professors, researchers, and students advancing Vietnamese scientific excellence on global stages."
           />
-          <div className="mt-10 grid gap-5 lg:grid-cols-3">
+          <div className="mt-10 grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             {people.leadership_and_faculty.map((person, index) => {
               const name = person.name_en || person.name;
               const title = person.title_en || person.title_vi;
               const affiliation = person.affiliation_en || person.affiliation_vi;
               const bio = person.bio_en || person.bio_vi;
+              const roleBadge = index === 0
+                ? { label: 'HEAD OF LAB', style: 'border-amber-300/80 bg-amber-50/90 text-amber-900' }
+                : index === 1
+                ? { label: 'SCIENTIFIC ADVISOR', style: 'border-cyan-300/80 bg-cyan-50/90 text-cyan-900' }
+                : { label: 'RESEARCH FELLOW', style: 'border-teal-300/80 bg-teal-50/90 text-teal-900' };
+
               return (
-                <article key={person.id} className={`soft-card flex flex-col justify-between p-6 ${index === 0 ? 'lg:col-span-2' : ''}`}>
+                <article
+                  key={person.id}
+                  className={`relative overflow-hidden soft-card flex flex-col justify-between p-6 transition hover:shadow-lg ${
+                    index === 0
+                      ? 'ring-1 ring-sky-300/70 shadow-md md:col-span-2 lg:col-span-1'
+                      : ''
+                  }`}
+                >
+                  {index === 0 && (
+                    <div className="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-sky-500 via-cyan-400 to-teal-400" />
+                  )}
                   <div>
-                    <div className={`flex flex-col ${index === 0 ? 'md:flex-row md:items-center justify-between' : ''} gap-4 pb-4 border-b border-slate-100`}>
-                      <div className="flex items-center gap-4">
-                        {person.avatar ? (
-                          <img
-                            src={person.avatar}
-                            alt={name}
-                            className="h-16 w-16 rounded-2xl object-cover ring-2 ring-slate-100 shadow-sm shrink-0"
-                          />
-                        ) : (
-                          <div className="grid h-16 w-16 place-items-center rounded-2xl bg-gradient-to-br from-slate-900 to-sky-700 font-editorial text-2xl text-white shrink-0">
-                            {name.split(' ').slice(-1)[0][0]}
-                          </div>
-                        )}
-                        <div>
-                          <span className="font-mono text-[10px] font-semibold uppercase tracking-widest text-amber-700">
-                            {index === 0 ? 'HEAD OF LAB' : 'FACULTY & ADVISOR'}
-                          </span>
-                          <h3 className={`mt-1 font-editorial font-bold text-slate-900 leading-tight ${index === 0 ? 'text-2xl' : 'text-xl'}`}>{name}</h3>
-                          <p className="mt-0.5 font-editorial text-sm font-medium text-sky-800">{title}</p>
+                    <div className="flex items-center gap-4">
+                      {person.avatar ? (
+                        <img
+                          src={person.avatar}
+                          alt={name}
+                          className="h-16 w-16 rounded-2xl object-cover ring-2 ring-slate-100 shadow-sm shrink-0"
+                        />
+                      ) : (
+                        <div className="grid h-16 w-16 place-items-center rounded-2xl bg-gradient-to-br from-slate-900 to-sky-700 font-editorial text-2xl text-white shrink-0">
+                          {name.split(' ').slice(-1)[0][0]}
                         </div>
-                      </div>
-                      {person.email && (
-                        <a className="focus-ring self-start inline-flex items-center text-xs font-mono font-medium text-slate-600 hover:text-sky-700 rounded-lg bg-slate-50 border border-slate-200/80 px-2.5 py-1.5 transition" href={`mailto:${person.email}`}>
-                          <Mail className="mr-1.5 h-3.5 w-3.5 text-sky-600" />
-                          {person.email}
-                        </a>
                       )}
+                      <div className="min-w-0 flex-1">
+                        <span className={`inline-flex items-center rounded-md border px-2 py-0.5 font-mono text-[10px] font-bold uppercase tracking-wider ${roleBadge.style}`}>
+                          {roleBadge.label}
+                        </span>
+                        <h3 className="mt-1 font-editorial text-xl font-bold text-slate-900 leading-snug">{name}</h3>
+                        <p className="mt-0.5 font-editorial text-xs font-semibold text-sky-800 leading-snug">{title}</p>
+                      </div>
                     </div>
-                    <div className="mt-4">
-                      <p className="font-editorial text-sm font-semibold text-slate-700">{affiliation}</p>
-                      <p className="mt-2.5 font-editorial text-sm leading-relaxed text-slate-600">{bio}</p>
+
+                    {person.email && (
+                      <div className="mt-3.5 flex items-center">
+                        <a
+                          className="focus-ring inline-flex items-center gap-1.5 rounded-lg border border-slate-200/80 bg-slate-50/80 px-2.5 py-1 font-mono text-xs font-medium text-slate-600 hover:border-sky-300 hover:bg-white hover:text-sky-700 transition"
+                          href={`mailto:${person.email}`}
+                        >
+                          <Mail className="h-3.5 w-3.5 text-sky-600 shrink-0" />
+                          <span>{person.email}</span>
+                        </a>
+                      </div>
+                    )}
+
+                    <div className="mt-3.5 pt-3 border-t border-slate-100/90">
+                      <p className="font-editorial text-xs font-semibold text-slate-500 leading-snug">{affiliation}</p>
+                      <p className="mt-2 font-editorial text-sm leading-relaxed text-slate-600">{bio}</p>
                     </div>
                   </div>
+
                   <div className="mt-5 pt-3 border-t border-slate-100/80">
                     <div className="flex flex-wrap gap-1.5">
                       {person.research_interests.slice(0, 4).map((interest) => (
-                        <span key={interest} className="rounded-md bg-slate-100 px-2.5 py-1 font-editorial text-xs text-slate-600">
+                        <span
+                          key={interest}
+                          className="rounded-lg border border-slate-200/80 bg-white/95 px-2.5 py-1 font-editorial text-xs font-medium text-slate-700 shadow-xs"
+                        >
                           {interest}
                         </span>
                       ))}
