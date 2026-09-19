@@ -836,9 +836,9 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className="mt-12 flex flex-col justify-between gap-3 border-t border-slate-800 pt-6 font-mono text-[10px] sm:flex-row">
-          <span>© 2025-2026 SLSCM Lab · National Economics University. All rights reserved.</span>
-          <span>Typeset in Faculty Glyphic · Onest · JetBrains Mono</span>
+        <div className="mt-12 flex flex-col justify-between gap-3 border-t border-slate-800 pt-6 font-mono text-[11px] text-slate-400 sm:flex-row">
+          <span>© 2025–2026 SLSCM Lab · National Economics University. All rights reserved.</span>
+          <span>Developed by Trung Le Huu · Supervised by Dr. Duc-Minh Vu</span>
         </div>
       </div>
     </footer>
