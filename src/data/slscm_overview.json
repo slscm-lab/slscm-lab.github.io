@@ -74,7 +74,8 @@
         "Computers & Operations Research (COR)",
         "International Transactions in Operational Research (ITOR)",
         "European Journal of Operational Research (EJOR)"
-      ]
+      ],
+      "description_en": "Analysis and design of exact algorithms, constraint programming, and state-of-the-art metaheuristics for complex routing (VRP, FSTSP), parallel machine scheduling with conflict jobs, and large-scale packing."
     },
     {
       "id": "ml_optimization",
@@ -92,7 +93,8 @@
         "Neurocomputing",
         "Computer Standards & Interfaces",
         "CSONET / SOICT"
-      ]
+      ],
+      "description_en": "Developing gradient-free optimization frameworks, metaheuristic-driven neural architectures (MetaPerceptron, GrafoRVFL), and predictive-prescriptive models for intelligent decision support."
     },
     {
       "id": "green_transportation",
@@ -111,7 +113,8 @@
         "Journal of the Operational Research Society (JORS)",
         "Energy Research & Social Science (ERSS)",
         "COMOSA / CITA"
-      ]
+      ],
+      "description_en": "Next-generation sustainable transport systems integrating multi-trip drone delivery (FSTSP), electric vehicles with station/route charging (EVRP-TW), school bus rescheduling, and robust facility location."
     }
   ],
   "hall_of_fame_summary": {

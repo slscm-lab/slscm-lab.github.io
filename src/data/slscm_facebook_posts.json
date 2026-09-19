@@ -1,56 +1,56 @@
 [
   {
     "type": "publication_news",
-    "title": "Công bố mới trên ITOR về bài toán lập lịch song song có yếu tố xung đột",
+    "title": "New ITOR Publication on Parallel Machine Scheduling with Conflicting Jobs",
     "authors": [
-      "ThS. Tạ Đình Quý",
-      "PGS. TS. Hà Minh Hoàng",
-      "TS. Roberto Rosati (Áo)",
-      "GS. Andrea Schaerf (Italia)"
+      "Ta Dinh Quy",
+      "Ha Minh Hoang",
+      "Roberto Rosati (Austria)",
+      "Andrea Schaerf (Italy)"
     ],
     "journal": "International Transactions in Operational Research (ITOR)",
     "link": "https://onlinelibrary.wiley.com/doi/10.1111/itor.70177",
-    "abstract": "Nghiên cứu tập trung vào bài toán lập lịch các công việc xung đột trên các máy song song đồng nhất với mục tiêu tối thiểu hóa makespan. Đề xuất mô hình lập trình ràng buộc (CP) mới và 2 phương pháp metaheuristic (simulated annealing đa lân cận MNSA và large neighborhood search dựa trên CP)."
+    "abstract": "Research focuses on scheduling conflicting jobs on identical parallel machines with makespan minimization. Proposes a novel constraint programming (CP) model and two metaheuristics (multineighborhood simulated annealing and CP-based LNS)."
   },
   {
     "type": "publication_news",
-    "title": "Công bố trên INFORMS Journal on Computing (IJOC)",
+    "title": "Paper Accepted in INFORMS Journal on Computing (IJOC)",
     "paper_title": "Competitive Facility Location under Cross-Nested Logit Customer Choice Model: Hardness and Exact Approaches",
     "authors": [
-      "Lê Bá Luật",
-      "GS. Mai Tiến (SMU Singapore)",
-      "TS. Tạ Thúy Anh (Phenikaa)",
-      "PGS. TS. Hà Minh Hoàng",
-      "TS. Vũ Đức Minh"
+      "Le Ba Luat",
+      "Mai Tien (SMU Singapore)",
+      "Ta Thuy Anh (Phenikaa)",
+      "Ha Minh Hoang",
+      "Vu Duc Minh"
     ],
     "journal": "INFORMS Journal on Computing (IJOC)",
-    "significance": "Tạp chí hàng đầu thế giới về tính toán trong Vận trù học (Operations Research) của hiệp hội INFORMS Hoa Kỳ."
+    "significance": "Premier computing journal in Operations Research by the INFORMS Society (USA)."
   },
   {
     "type": "publication_news",
-    "title": "Công bố quốc tế của thành viên trẻ Trần Nam Khánh",
+    "title": "International Publication by Young Scholar Tran Nam Khanh",
     "paper_title": "A Stage-based Formulation and Meta-heuristic Algorithm for the Revisit Flying SideKick Traveling Salesman Problem",
     "authors": [
-      "Trần Nam Khánh",
-      "Các thành viên SLSCM Lab"
+      "Tran Nam Khanh",
+      "SLSCM Lab Members"
     ],
-    "venue": "International Conference / Journal on Routing & Drone Optimization"
+    "venue": "Transportation Research / Drone Routing"
   },
   {
     "type": "recruitment_project",
-    "title": "Dự án nghiên cứu thực chiến: AI & OR trong Quản lý Cấp thoát nước Đô thị Hà Nội",
-    "collaboration": "Liên Lab CADA (P1601 A1) & SLSCM (P1613 A1) - Khoa FDA NEU",
+    "title": "Real-World Initiative: AI & OR for Hanoi Urban Drainage & Smart Water Network",
+    "collaboration": "Joint Lab Initiative: CADA (P1601 A1) & SLSCM (P1613 A1) - FDA College of Technology, NEU",
     "scope": [
-      "AI Side: Mô hình dự báo nhu cầu nước, phát hiện rò rỉ, dự báo điểm ngập lụt bằng Machine Learning",
-      "OR Side: Tối ưu hóa vị trí trạm bơm, điều tiết dòng chảy, giảm chi phí vận hành mạng lưới",
-      "Data Side: Xử lý và phân tích dữ liệu IoT từ cảm biến thực tế của thành phố Hà Nội"
+      "AI Side: Water demand forecasting, leakage detection, and flood risk prediction using Machine Learning",
+      "OR Side: Optimal pump station placement, flow regulation, and network operational cost minimization",
+      "Data Side: IoT sensor data processing and spatial telemetry from Hanoi municipal infrastructure"
     ],
-    "contact": "Thầy Lê Duy Khánh (khanhld@neu.edu.vn) & TS. Vũ Đức Minh (minhvd@neu.edu.vn)"
+    "contact": "Le Duy Khanh (khanhld@neu.edu.vn) & Dr. Vu Duc Minh (minhvd@neu.edu.vn)"
   },
   {
     "type": "training_education",
-    "title": "Khóa học đào tạo ngắn hạn",
-    "name": "Từ dữ liệu đến phân tích và ra quyết định thông minh",
-    "organizer": "SLSCM Lab & Khoa FDA - Đại học Kinh tế Quốc dân"
+    "title": "Executive Professional Workshop",
+    "name": "From Data to Decision Intelligence & Prescriptive Analytics",
+    "organizer": "SLSCM Lab & FDA Faculty - National Economics University"
   }
 ]
