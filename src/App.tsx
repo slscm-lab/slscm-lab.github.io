@@ -137,26 +137,28 @@ function Header() {
         </div>
       </div>
       <nav aria-label="Main Navigation" className="sticky top-0 z-40 border-b border-slate-200/70 bg-white/90 backdrop-blur-md">
-        <div className="section-shell flex h-[72px] items-center justify-between gap-5">
-          <a href="#top" className="focus-ring flex min-w-0 items-center gap-3 rounded-xl">
-            <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-gradient-to-br from-sky-700 to-cyan-500 font-mono text-sm font-bold text-white shadow-lg shadow-sky-200">
-              SL
-            </span>
+        <div className="section-shell flex h-[76px] items-center justify-between gap-5">
+          <a href="#top" className="focus-ring group flex min-w-0 items-center gap-3 rounded-xl">
+            <img
+              src="/assets/images/slscm_logo.png"
+              alt="SLSCM Lab Logo"
+              className="h-11 w-11 shrink-0 rounded-full object-cover ring-1 ring-slate-200 shadow-sm transition group-hover:scale-105"
+            />
             <span className="min-w-0">
-              <span className="block font-editorial text-xl leading-none text-slate-950">SLSCM Lab</span>
-              <span className="hidden text-[10px] text-slate-500 sm:block">Smart Logistics & Supply Chain · NEU</span>
+              <span className="block font-editorial text-xl font-bold leading-none text-slate-950 group-hover:text-sky-800 transition">SLSCM Lab</span>
+              <span className="hidden font-editorial text-xs font-normal tracking-wide text-slate-500 sm:block mt-1">Smart Logistics &amp; Supply Chain · NEU</span>
             </span>
           </a>
-          <div className="hidden items-center gap-5 lg:flex">
+          <div className="hidden items-center gap-7 lg:flex">
             {navLinks.map(([label, href]) => (
-              <a key={href} className="focus-ring rounded text-sm font-medium text-slate-600 transition hover:text-sky-700" href={href}>
+              <a key={href} className="focus-ring font-editorial text-[15px] font-medium tracking-wide text-slate-700 transition hover:text-sky-700" href={href}>
                 {label}
               </a>
             ))}
           </div>
           <div className="flex items-center gap-2">
-            <a href="#join" className="focus-ring hidden rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white transition hover:bg-sky-700 sm:inline-flex">
-              Join Lab <ArrowRight className="ml-1 h-4 w-4" />
+            <a href="#join" className="focus-ring hidden rounded-xl bg-slate-900 px-4 py-2 font-editorial text-sm font-medium tracking-wide text-white transition hover:bg-sky-700 sm:inline-flex">
+              Join Lab <ArrowRight className="ml-1.5 h-4 w-4" />
             </a>
             <button
               aria-label={open ? 'Close menu' : 'Open menu'}
@@ -182,7 +184,7 @@ function Header() {
                     onClick={() => setOpen(false)}
                     key={href}
                     href={href}
-                    className="rounded-xl px-3 py-2.5 text-sm font-medium text-slate-700 hover:bg-slate-50"
+                    className="rounded-xl px-3 py-2.5 font-editorial text-base font-medium text-slate-700 hover:bg-slate-50"
                   >
                     {label}
                   </a>
@@ -208,14 +210,14 @@ function Hero() {
           <h1 className="mt-6 max-w-4xl font-editorial text-5xl leading-[1.04] tracking-tight text-slate-950 sm:text-6xl lg:text-7xl">
             The <em className="bg-gradient-to-r from-sky-800 to-cyan-600 bg-clip-text text-transparent">Optimizing Frontier</em> for resilient supply chains.
           </h1>
-          <p className="mt-7 max-w-3xl text-lg leading-relaxed text-slate-600 sm:text-xl">
+          <p className="mt-7 max-w-3xl font-editorial text-xl sm:text-2xl leading-relaxed text-slate-600 font-normal">
             At the intersection of modern Operations Research, Artificial Intelligence, and Next-Generation Transportation — transforming complex mathematical challenges into intelligent, sustainable infrastructure.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <a href="#research" className="focus-ring inline-flex items-center rounded-xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-slate-300/60 transition hover:bg-sky-700">
+            <a href="#research" className="focus-ring inline-flex items-center rounded-xl bg-slate-900 px-5 py-3 font-editorial text-sm font-medium tracking-wide text-white shadow-lg shadow-slate-300/60 transition hover:bg-sky-700">
               Explore Research <ArrowRight className="ml-2 h-4 w-4" />
             </a>
-            <a href="#publications" className="focus-ring inline-flex items-center rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-700 transition hover:border-sky-300 hover:bg-sky-50">
+            <a href="#publications" className="focus-ring inline-flex items-center rounded-xl border border-slate-200 bg-white px-5 py-3 font-editorial text-sm font-medium tracking-wide text-slate-700 transition hover:border-sky-300 hover:bg-sky-50">
               Open Research Vault
             </a>
           </div>
@@ -264,11 +266,17 @@ function ResearchAndProjects() {
                   <p className="mt-5 font-mono text-[10px] font-semibold tracking-widest opacity-70">
                     0{index + 1} / {index === 0 ? 'EXACT + HEURISTIC' : index === 1 ? 'AI / OR INTERSECTION' : 'GREEN LOGISTICS'}
                   </p>
-                  <h3 className="mt-2 text-xl font-bold leading-snug text-slate-900">{pillar.title_en}</h3>
+                  <h3 className="mt-2 font-editorial text-2xl font-bold leading-snug text-slate-900">{pillar.title_en}</h3>
                   <p className="mt-3 text-sm leading-relaxed text-slate-600">{desc}</p>
-                  <pre className="mt-5 overflow-x-auto rounded-xl bg-slate-950 p-3 font-mono text-[10px] leading-relaxed text-cyan-200">
-                    {index === 0 ? 'min Σ cᵢⱼxᵢⱼ  |  x ∈ feasible routes' : index === 1 ? 'min_W 𝓛(y, f(X; W)) + λ||W||²' : 'SOCᵢ₊₁ = SOCᵢ - P · Δt + Echarge'}
-                  </pre>
+                  <div className="mt-5 rounded-2xl border border-slate-200/90 bg-white/95 p-3.5 shadow-sm backdrop-blur">
+                    <div className="flex items-center justify-between gap-2 border-b border-slate-100 pb-1.5 font-mono text-[9px] font-semibold uppercase tracking-wider text-slate-500">
+                      <span>MATHEMATICAL FORMULATION</span>
+                      <span className="text-sky-700">CORE MODEL</span>
+                    </div>
+                    <div className="mt-2 overflow-x-auto font-mono text-xs font-semibold text-slate-900">
+                      {index === 0 ? 'min Σ cᵢⱼxᵢⱼ  |  x ∈ feasible routes' : index === 1 ? 'min_W 𝓛(y, f(X; W)) + λ||W||²' : 'SOCᵢ₊₁ = SOCᵢ - P · Δt + Echarge'}
+                    </div>
+                  </div>
                   <div className="mt-5 flex flex-wrap gap-1.5">
                     {pillar.topics.slice(0, 3).map((topic) => (
                       <span key={topic} className="rounded-md bg-white/80 px-2 py-1 font-mono text-[10px] text-slate-600">
@@ -717,11 +725,15 @@ function Footer() {
         <div className="grid gap-9 md:grid-cols-[1.2fr_.7fr_.7fr]">
           <div>
             <div className="flex items-center gap-3 text-white">
-              <span className="grid h-9 w-9 place-items-center rounded-xl bg-sky-600 font-mono text-xs font-bold">SL</span>
-              <span className="font-editorial text-xl">SLSCM Lab</span>
+              <img
+                src="/assets/images/slscm_logo.png"
+                alt="SLSCM Lab Logo"
+                className="h-10 w-10 rounded-full object-cover ring-1 ring-white/20"
+              />
+              <span className="font-editorial text-xl font-bold tracking-tight">SLSCM Lab</span>
             </div>
-            <p className="mt-4 max-w-md text-sm leading-relaxed">
-              Smart Logistics & Supply Chain Management Lab<br />
+            <p className="mt-4 max-w-md font-editorial text-sm leading-relaxed text-slate-300">
+              Smart Logistics &amp; Supply Chain Management Lab<br />
               College of Technology · National Economics University
             </p>
             <p className="mt-4 flex items-start gap-2 font-mono text-[11px]">
@@ -731,9 +743,9 @@ function Footer() {
           </div>
           <div>
             <h3 className="font-mono text-xs font-semibold uppercase tracking-widest text-white">Explore</h3>
-            <div className="mt-4 grid gap-2 text-sm">
+            <div className="mt-4 grid gap-2 font-editorial text-sm">
               {navLinks.map(([label, href]) => (
-                <a className="hover:text-white" key={href} href={href}>
+                <a className="text-slate-400 transition hover:text-white" key={href} href={href}>
                   {label}
                 </a>
               ))}
@@ -756,7 +768,7 @@ function Footer() {
         </div>
         <div className="mt-12 flex flex-col justify-between gap-3 border-t border-slate-800 pt-6 font-mono text-[10px] sm:flex-row">
           <span>© 2025-2026 SLSCM Lab · National Economics University. All rights reserved.</span>
-          <span>Typeset in Onest · Faculty Glyphic · JetBrains Mono</span>
+          <span>Typeset in Faculty Glyphic · Onest · JetBrains Mono</span>
         </div>
       </div>
     </footer>
@@ -765,10 +777,10 @@ function Footer() {
 
 function SectionHead({ eyebrow, title, text }: { eyebrow: string; title: string; text: string }) {
   return (
-    <div className="max-w-2xl">
+    <div className="max-w-3xl">
       <p className="font-mono text-[10px] font-semibold uppercase tracking-[.16em] text-sky-700">{eyebrow}</p>
       <h2 className="mt-3 font-editorial text-4xl leading-tight text-slate-950 sm:text-5xl">{title}</h2>
-      <p className="mt-4 text-base leading-relaxed text-slate-600">{text}</p>
+      <p className="mt-4 font-editorial text-lg sm:text-xl leading-relaxed text-slate-600 font-normal">{text}</p>
     </div>
   );
 }
