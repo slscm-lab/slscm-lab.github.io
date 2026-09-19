@@ -136,7 +136,7 @@ function Header() {
           </a>
         </div>
       </div>
-      <nav aria-label="Main Navigation" className="sticky top-0 z-40 border-b border-slate-200/70 bg-white/90 backdrop-blur-md">
+      <nav aria-label="Main Navigation" className="sticky top-0 z-40 border-b border-slate-200/80 bg-white/80 backdrop-blur-md">
         <div className="section-shell flex h-[76px] items-center justify-between gap-5">
           <a href="#top" className="focus-ring group flex min-w-0 items-center gap-3 rounded-xl">
             <img
@@ -200,7 +200,7 @@ function Header() {
 
 function Hero() {
   return (
-    <section id="top" className="mesh overflow-hidden bg-white py-20 sm:py-28">
+    <section id="top" className="overflow-hidden py-20 sm:py-28">
       <div className="section-shell">
         <motion.div initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .55 }} className="max-w-4xl">
           <div className="inline-flex items-center gap-2 rounded-full border border-sky-200/70 bg-sky-50 px-3.5 py-1.5 font-mono text-[11px] font-medium uppercase tracking-wider text-sky-800">
@@ -208,7 +208,7 @@ function Hero() {
             COLLEGE OF TECHNOLOGY · NATIONAL ECONOMICS UNIVERSITY
           </div>
           <h1 className="mt-6 max-w-4xl font-editorial text-5xl leading-[1.04] tracking-tight text-slate-950 sm:text-6xl lg:text-7xl">
-            The <em className="bg-gradient-to-r from-sky-800 to-cyan-600 bg-clip-text text-transparent">Optimizing Frontier</em> for resilient supply chains.
+            The <em className="bg-gradient-to-r from-sky-900 via-sky-800 to-cyan bg-clip-text text-transparent">Optimizing Frontier</em> for resilient supply chains.
           </h1>
           <p className="mt-7 max-w-3xl font-editorial text-xl sm:text-2xl leading-relaxed text-slate-600 font-normal">
             At the intersection of modern Operations Research, Artificial Intelligence, and Next-Generation Transportation — transforming complex mathematical challenges into intelligent, sustainable infrastructure.
@@ -243,13 +243,13 @@ function Hero() {
 function ResearchAndProjects() {
   const icons = [Truck, Bot, Leaf];
   const treatments = [
-    'border-sky-200 bg-sky-50/55 text-sky-800',
-    'border-cyan-200 bg-cyan-50/55 text-cyan-800',
-    'border-emerald-200 bg-emerald-50/55 text-emerald-800',
+    'border-sky-200/90 bg-sky-50/70 text-sky-800 backdrop-blur-sm',
+    'border-cyan-200/90 bg-cyan-50/70 text-cyan-800 backdrop-blur-sm',
+    'border-emerald-200/90 bg-emerald-50/70 text-emerald-800 backdrop-blur-sm',
   ];
   return (
     <>
-      <section id="research" className="bg-slate-50 py-20">
+      <section id="research" className="py-20">
         <div className="section-shell">
           <SectionHead
             eyebrow="RESEARCH ARCHITECTURE"
@@ -291,7 +291,7 @@ function ResearchAndProjects() {
         </div>
       </section>
 
-      <section id="impact" className="bg-white py-20">
+      <section id="impact" className="py-20">
         <div className="section-shell">
           <SectionHead
             eyebrow="FROM MODELS TO IMPACT"
@@ -369,14 +369,14 @@ function PublicationsVault() {
   };
 
   return (
-    <section id="publications" className="bg-slate-50 py-20">
+    <section id="publications" className="py-20">
       <div className="section-shell">
         <SectionHead
           eyebrow="RESEARCH VAULT / 19 RECORDS"
           title="Discoverable, citable, and verifiable scholarship."
           text="Comprehensive search across all 19 publications by title, author, venue, or DOI. Direct 1-click BibTeX export."
         />
-        <div className="mt-9 rounded-3xl border border-slate-200 bg-white p-4 shadow-soft sm:p-6">
+        <div className="mt-9 rounded-3xl border border-slate-200/80 bg-white/85 p-4 shadow-soft backdrop-blur-md sm:p-6">
           <div className="relative">
             <Search className="absolute left-4 top-3.5 h-5 w-5 text-slate-400" />
             <input
@@ -415,7 +415,7 @@ function PublicationsVault() {
         <p className="mt-5 font-mono text-xs text-slate-500">{filtered.length} / {publications.length} publications found</p>
         <div className="mt-4 grid gap-3">
           {filtered.map((paper) => (
-            <article key={paper.id} className="rounded-2xl border border-slate-200 bg-white p-5 shadow-soft transition hover:border-sky-200 hover:shadow-lift">
+            <article key={paper.id} className="rounded-2xl border border-slate-200/80 bg-white/85 p-5 shadow-soft backdrop-blur-sm transition hover:border-sky-300 hover:bg-white/95 hover:shadow-lift">
               <div className="flex flex-col justify-between gap-4 sm:flex-row">
                 <div>
                   <div className="flex flex-wrap items-center gap-2 font-mono text-[10px]">
@@ -453,7 +453,7 @@ function PublicationsVault() {
           ))}
         </div>
         {filtered.length === 0 && (
-          <p className="rounded-2xl border border-dashed border-slate-300 bg-white py-12 text-center text-slate-500">
+          <p className="rounded-2xl border border-dashed border-slate-300 bg-white/80 backdrop-blur-sm py-12 text-center text-slate-500">
             No matching publications found.
           </p>
         )}
@@ -526,7 +526,7 @@ function PeopleAndLife() {
 
   return (
     <>
-      <section id="people" className="bg-white py-20">
+      <section id="people" className="py-20">
         <div className="section-shell">
           <SectionHead
             eyebrow="MENTORSHIP & TRAJECTORIES"
@@ -586,7 +586,7 @@ function PeopleAndLife() {
                 const achievement = entry.achievement_en || entry.achievement_vi;
                 const name = entry.name_en || entry.name;
                 return (
-                  <article key={entry.id} className="rounded-2xl border border-amber-200 bg-amber-50/60 p-5">
+                  <article key={entry.id} className="rounded-2xl border border-amber-200/80 bg-amber-50/70 p-5 backdrop-blur-sm shadow-soft transition hover:shadow-lift">
                     <GraduationCap className="h-6 w-6 text-amber-700" />
                     <p className="mt-4 font-mono text-[10px] text-amber-800">PH.D. SCHOLARSHIP / {entry.year}</p>
                     <h4 className="mt-2 text-lg font-bold text-slate-900">{entry.destination_institution}</h4>
@@ -600,7 +600,7 @@ function PeopleAndLife() {
         </div>
       </section>
 
-      <section id="lab-life" className="bg-slate-50 py-20">
+      <section id="lab-life" className="py-20">
         <div className="section-shell">
           <SectionHead
             eyebrow="LAB LIFE / CURATED NEWS DIGEST"
@@ -630,7 +630,7 @@ function PeopleAndLife() {
             ))}
           </div>
           <a
-            className="focus-ring mt-8 inline-flex items-center rounded-xl border border-sky-200 bg-sky-50 px-4 py-3 text-sm font-semibold text-sky-800 hover:bg-sky-100"
+            className="focus-ring mt-8 inline-flex items-center rounded-xl border border-sky-200/80 bg-white/80 backdrop-blur-sm px-4 py-3 text-sm font-semibold text-sky-800 hover:bg-white shadow-soft"
             href="https://www.facebook.com/slscm.lab"
             target="_blank"
             rel="noreferrer"
@@ -640,7 +640,7 @@ function PeopleAndLife() {
         </div>
       </section>
 
-      <section id="join" className="bg-white py-20">
+      <section id="join" className="py-20">
         <div className="section-shell">
           <div className="overflow-hidden rounded-3xl bg-slate-950 p-7 text-white shadow-2xl sm:p-10">
             <div className="grid gap-10 lg:grid-cols-[1.2fr_.8fr]">
@@ -794,9 +794,21 @@ function FilterGroup({ title, children }: { title: string; children: React.React
   );
 }
 
+function AmbientGlow() {
+  return (
+    <div aria-hidden="true" className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
+      <div className="absolute -top-40 -left-40 h-[500px] w-[500px] rounded-full bg-cyan-400/15 blur-[120px]" />
+      <div className="absolute top-[20%] -right-40 h-[600px] w-[600px] rounded-full bg-emerald-400/12 blur-[140px]" />
+      <div className="absolute top-[50%] left-[10%] h-[500px] w-[500px] rounded-full bg-amber-300/10 blur-[130px]" />
+      <div className="absolute top-[75%] -right-20 h-[550px] w-[550px] rounded-full bg-sky-400/14 blur-[130px]" />
+    </div>
+  );
+}
+
 export default function App() {
   return (
-    <>
+    <div className="relative min-h-screen">
+      <AmbientGlow />
       <Header />
       <main>
         <Hero />
@@ -805,6 +817,6 @@ export default function App() {
         <PeopleAndLife />
       </main>
       <Footer />
-    </>
+    </div>
   );
 }
