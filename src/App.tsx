@@ -20,11 +20,12 @@ type Publication = {
 type Person = {
   id: string; name: string; name_en?: string; title_vi: string; title_en?: string;
   affiliation_vi: string; affiliation_en?: string; email?: string; bio_vi: string;
-  bio_en?: string; research_interests: string[];
+  bio_en?: string; research_interests: string[]; avatar?: string;
 };
 type HallEntry = {
   id: string; name: string; name_en?: string; destination_institution: string;
   country: string; achievement_vi: string; achievement_en?: string; field: string; year: number;
+  avatar?: string;
 };
 type Project = {
   id: string; title_vi: string; title_en?: string; description_vi: string;
@@ -146,7 +147,7 @@ function Header() {
             />
             <span className="min-w-0">
               <span className="block font-editorial text-xl font-bold leading-none text-slate-950 group-hover:text-sky-800 transition">SLSCM Lab</span>
-              <span className="hidden font-editorial text-xs font-normal tracking-wide text-slate-500 sm:block mt-1">Smart Logistics &amp; Supply Chain · NEU</span>
+              <span className="hidden font-editorial text-xs font-normal tracking-wide text-slate-500 sm:block mt-1">Smart Logistics &amp; Supply Chain Management Lab · NEU</span>
             </span>
           </a>
           <div className="hidden items-center gap-7 lg:flex">
@@ -540,33 +541,49 @@ function PeopleAndLife() {
               const affiliation = person.affiliation_en || person.affiliation_vi;
               const bio = person.bio_en || person.bio_vi;
               return (
-                <article key={person.id} className={`soft-card p-6 ${index === 0 ? 'lg:col-span-2 lg:grid lg:grid-cols-2 lg:gap-8' : ''}`}>
+                <article key={person.id} className={`soft-card flex flex-col justify-between p-6 ${index === 0 ? 'lg:col-span-2' : ''}`}>
                   <div>
-                    <span className="font-mono text-[10px] uppercase tracking-widest text-amber-700">
-                      {index === 0 ? 'HEAD OF LAB' : 'FACULTY & ADVISOR'}
-                    </span>
-                    <div className="mt-4 grid h-14 w-14 place-items-center rounded-2xl bg-gradient-to-br from-slate-900 to-sky-700 font-editorial text-2xl text-white">
-                      {name.split(' ').slice(-1)[0][0]}
+                    <div className={`flex flex-col ${index === 0 ? 'md:flex-row md:items-center justify-between' : ''} gap-4 pb-4 border-b border-slate-100`}>
+                      <div className="flex items-center gap-4">
+                        {person.avatar ? (
+                          <img
+                            src={person.avatar}
+                            alt={name}
+                            className="h-16 w-16 rounded-2xl object-cover ring-2 ring-slate-100 shadow-sm shrink-0"
+                          />
+                        ) : (
+                          <div className="grid h-16 w-16 place-items-center rounded-2xl bg-gradient-to-br from-slate-900 to-sky-700 font-editorial text-2xl text-white shrink-0">
+                            {name.split(' ').slice(-1)[0][0]}
+                          </div>
+                        )}
+                        <div>
+                          <span className="font-mono text-[10px] font-semibold uppercase tracking-widest text-amber-700">
+                            {index === 0 ? 'HEAD OF LAB' : 'FACULTY & ADVISOR'}
+                          </span>
+                          <h3 className={`mt-1 font-editorial font-bold text-slate-900 leading-tight ${index === 0 ? 'text-2xl' : 'text-xl'}`}>{name}</h3>
+                          <p className="mt-0.5 font-editorial text-sm font-medium text-sky-800">{title}</p>
+                        </div>
+                      </div>
+                      {person.email && (
+                        <a className="focus-ring self-start inline-flex items-center text-xs font-mono font-medium text-slate-600 hover:text-sky-700 rounded-lg bg-slate-50 border border-slate-200/80 px-2.5 py-1.5 transition" href={`mailto:${person.email}`}>
+                          <Mail className="mr-1.5 h-3.5 w-3.5 text-sky-600" />
+                          {person.email}
+                        </a>
+                      )}
                     </div>
-                    <h3 className="mt-4 font-editorial text-2xl font-bold text-slate-900">{name}</h3>
-                    <p className="mt-1 font-editorial text-sm font-medium text-sky-800">{title}</p>
-                    <p className="mt-3 font-editorial text-sm leading-relaxed text-slate-600">{affiliation}</p>
+                    <div className="mt-4">
+                      <p className="font-editorial text-sm font-semibold text-slate-700">{affiliation}</p>
+                      <p className="mt-2.5 font-editorial text-sm leading-relaxed text-slate-600">{bio}</p>
+                    </div>
                   </div>
-                  <div className={index === 0 ? 'mt-5 lg:mt-0' : 'mt-5'}>
-                    <p className="font-editorial text-sm leading-relaxed text-slate-600">{bio}</p>
-                    <div className="mt-4 flex flex-wrap gap-1.5">
-                      {person.research_interests.slice(0, 3).map((interest) => (
-                        <span key={interest} className="rounded-md bg-slate-100 px-2 py-1 text-[10px] text-slate-600">
+                  <div className="mt-5 pt-3 border-t border-slate-100/80">
+                    <div className="flex flex-wrap gap-1.5">
+                      {person.research_interests.slice(0, 4).map((interest) => (
+                        <span key={interest} className="rounded-md bg-slate-100 px-2.5 py-1 font-editorial text-xs text-slate-600">
                           {interest}
                         </span>
                       ))}
                     </div>
-                    {person.email && (
-                      <a className="focus-ring mt-5 inline-flex items-center text-sm font-semibold text-sky-700 hover:underline" href={`mailto:${person.email}`}>
-                        <Mail className="mr-2 h-4 w-4" />
-                        {person.email}
-                      </a>
-                    )}
                   </div>
                 </article>
               );
@@ -586,12 +603,31 @@ function PeopleAndLife() {
                 const achievement = entry.achievement_en || entry.achievement_vi;
                 const name = entry.name_en || entry.name;
                 return (
-                  <article key={entry.id} className="rounded-2xl border border-amber-200/80 bg-amber-50/70 p-5 backdrop-blur-sm shadow-soft transition hover:shadow-lift">
-                    <GraduationCap className="h-6 w-6 text-amber-700" />
-                    <p className="mt-4 font-mono text-[10px] text-amber-800">PH.D. SCHOLARSHIP / {entry.year}</p>
-                    <h4 className="mt-2 font-editorial text-xl font-bold text-slate-900">{entry.destination_institution}</h4>
-                    <p className="mt-1 font-editorial text-sm font-semibold text-slate-700">{name} · {entry.country}</p>
-                    <p className="mt-3 font-editorial text-sm leading-relaxed text-slate-600">{achievement}</p>
+                  <article key={entry.id} className="rounded-2xl border border-amber-200/80 bg-amber-50/70 p-5 backdrop-blur-sm shadow-soft transition hover:shadow-lift flex flex-col justify-between">
+                    <div>
+                      <div className="flex items-center gap-3.5">
+                        {entry.avatar ? (
+                          <img
+                            src={entry.avatar}
+                            alt={name}
+                            className="h-12 w-12 rounded-xl object-cover ring-2 ring-amber-300/80 shadow-sm shrink-0"
+                          />
+                        ) : (
+                          <div className="grid h-12 w-12 place-items-center rounded-xl bg-amber-200/80 text-amber-900 shrink-0">
+                            <GraduationCap className="h-6 w-6" />
+                          </div>
+                        )}
+                        <div>
+                          <p className="font-mono text-[10px] font-semibold tracking-wider text-amber-800 uppercase">PH.D. SCHOLARSHIP / {entry.year}</p>
+                          <h4 className="font-editorial text-lg font-bold text-slate-900 leading-snug">{name}</h4>
+                          <p className="font-editorial text-xs font-medium text-slate-600">{entry.country}</p>
+                        </div>
+                      </div>
+                      <div className="mt-4 pt-3 border-t border-amber-200/60">
+                        <p className="font-editorial text-sm font-semibold text-slate-800">{entry.destination_institution}</p>
+                        <p className="mt-2 font-editorial text-xs leading-relaxed text-slate-600">{achievement}</p>
+                      </div>
+                    </div>
                   </article>
                 );
               })}
@@ -608,26 +644,33 @@ function PeopleAndLife() {
             text="Real-world milestones and research updates curated from the official SLSCM Lab channel."
           />
           <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-            {posts.map((post, index) => (
-              <article key={`${post.type}-${index}`} className="soft-card flex flex-col p-6">
-                <span className="font-mono text-[10px] uppercase tracking-widest text-cyan-700">
-                  {post.type.replace('_', ' ')}
-                </span>
-                <h3 className="mt-3 font-editorial text-xl font-bold leading-snug text-slate-900">{post.title}</h3>
-                <p className="mt-3 font-editorial text-sm leading-relaxed text-slate-600">
-                  {post.abstract || post.collaboration || post.organizer || post.name || post.journal}
-                </p>
-                {post.link ? (
-                  <a className="focus-ring mt-auto pt-5 font-editorial text-sm font-semibold text-sky-700 hover:underline" href={post.link} target="_blank" rel="noreferrer">
-                    Read Publication <ExternalLink className="ml-1 inline h-3.5 w-3.5" />
-                  </a>
-                ) : (
-                  <a className="focus-ring mt-auto pt-5 font-editorial text-sm font-semibold text-sky-700 hover:underline" href="https://www.facebook.com/slscm.lab" target="_blank" rel="noreferrer">
-                    Visit Fanpage <ExternalLink className="ml-1 inline h-3.5 w-3.5" />
-                  </a>
-                )}
-              </article>
-            ))}
+            {posts.map((post, index) => {
+              const typeBadge = post.type === 'publication_news'
+                ? 'PUBLICATION HIGHLIGHT'
+                : post.type === 'recruitment_project'
+                ? 'ACTIVE INITIATIVE'
+                : 'WORKSHOP & SYMPOSIUM';
+              return (
+                <article key={`${post.type}-${index}`} className="soft-card flex flex-col p-6">
+                  <span className="font-mono text-[10px] font-semibold uppercase tracking-wider text-cyan-800 bg-cyan-100/60 border border-cyan-200/70 px-2.5 py-1 rounded-md inline-flex items-center gap-1.5 w-fit">
+                    {typeBadge}
+                  </span>
+                  <h3 className="mt-3.5 font-editorial text-xl font-bold leading-snug text-slate-900">{post.title}</h3>
+                  <p className="mt-2.5 font-editorial text-sm leading-relaxed text-slate-600">
+                    {post.abstract || post.collaboration || post.organizer || post.name || post.journal}
+                  </p>
+                  {post.link ? (
+                    <a className="focus-ring mt-auto pt-5 font-editorial text-sm font-semibold text-sky-700 hover:text-sky-900 inline-flex items-center gap-1.5" href={post.link} target="_blank" rel="noreferrer">
+                      Read Publication <ExternalLink className="h-3.5 w-3.5" />
+                    </a>
+                  ) : (
+                    <a className="focus-ring mt-auto pt-5 font-editorial text-sm font-semibold text-sky-700 hover:text-sky-900 inline-flex items-center gap-1.5" href="https://www.facebook.com/slscm.lab" target="_blank" rel="noreferrer">
+                      Visit Fanpage <ExternalLink className="h-3.5 w-3.5" />
+                    </a>
+                  )}
+                </article>
+              );
+            })}
           </div>
           <a
             className="focus-ring mt-8 inline-flex items-center rounded-xl border border-sky-200/80 bg-white/80 backdrop-blur-sm px-4 py-3 text-sm font-semibold text-sky-800 hover:bg-white shadow-soft"
@@ -675,28 +718,28 @@ function PeopleAndLife() {
                 </div>
               </div>
 
-              <form onSubmit={submit} className="rounded-2xl border border-white/10 bg-white/10 p-5 backdrop-blur">
-                <h3 className="text-lg font-bold">Start a Conversation</h3>
-                <label className="mt-5 block text-xs font-medium text-slate-300">
+              <form onSubmit={submit} className="rounded-2xl border border-white/10 bg-white/10 p-6 backdrop-blur">
+                <h3 className="font-editorial text-2xl font-bold text-white">Start a Conversation</h3>
+                <label className="mt-5 block font-mono text-[11px] font-semibold uppercase tracking-wider text-slate-300">
                   FULL NAME
                   <input
                     required
-                    className="focus-ring mt-1.5 w-full rounded-xl border border-white/15 bg-slate-900/50 px-3 py-2.5 text-sm text-white placeholder:text-slate-500"
-                    placeholder="e.g., Alex Hoang"
+                    className="focus-ring mt-1.5 w-full rounded-xl border border-white/15 bg-slate-900/60 px-3.5 py-2.5 font-editorial text-sm text-white placeholder:text-slate-400"
+                    placeholder="Your Full Name"
                   />
                 </label>
-                <label className="mt-4 block text-xs font-medium text-slate-300">
+                <label className="mt-4 block font-mono text-[11px] font-semibold uppercase tracking-wider text-slate-300">
                   EMAIL ADDRESS
                   <input
                     required
                     type="email"
-                    className="focus-ring mt-1.5 w-full rounded-xl border border-white/15 bg-slate-900/50 px-3 py-2.5 text-sm text-white placeholder:text-slate-500"
+                    className="focus-ring mt-1.5 w-full rounded-xl border border-white/15 bg-slate-900/60 px-3.5 py-2.5 font-editorial text-sm text-white placeholder:text-slate-400"
                     placeholder="you@university.edu"
                   />
                 </label>
-                <label className="mt-4 block text-xs font-medium text-slate-300">
+                <label className="mt-4 block font-mono text-[11px] font-semibold uppercase tracking-wider text-slate-300">
                   INTENDED TRACK
-                  <select className="focus-ring mt-1.5 w-full rounded-xl border border-white/15 bg-slate-900/50 px-3 py-2.5 text-sm text-white">
+                  <select className="focus-ring mt-1.5 w-full rounded-xl border border-white/15 bg-slate-900/60 px-3.5 py-2.5 font-editorial text-sm text-white">
                     <option>Undergraduate Research Assistant</option>
                     <option>Graduate / Ph.D. Candidate</option>
                     <option>Industry Research Partnership</option>
@@ -704,9 +747,9 @@ function PeopleAndLife() {
                 </label>
                 <button
                   type="submit"
-                  className="focus-ring mt-5 inline-flex w-full items-center justify-center rounded-xl bg-cyan-400 px-4 py-3 text-sm font-bold text-slate-950 hover:bg-cyan-300"
+                  className="focus-ring mt-6 inline-flex w-full items-center justify-center rounded-xl bg-gradient-to-r from-sky-400 via-cyan-400 to-teal-300 px-5 py-3.5 text-sm font-bold text-slate-950 shadow-lg shadow-cyan-500/25 hover:from-sky-300 hover:via-cyan-300 hover:to-teal-200 transition-all hover:shadow-cyan-500/40 hover:-translate-y-0.5"
                 >
-                  <Send className="mr-2 h-4 w-4" />
+                  <Send className="mr-2 h-4 w-4 text-slate-950" />
                   {submitted ? 'Inquiry Recorded — Thank You!' : 'Submit Inquiry'}
                 </button>
               </form>
