@@ -4,9 +4,9 @@
     "title_vi": "AI & OR trong Quản lý Mạng lưới Cấp thoát nước Đô thị Hà Nội",
     "title_en": "AI & OR for Hanoi Urban Smart Water Supply and Drainage Network Management",
     "category": "Dự án Nghiên cứu Thực chiến & Hợp tác Liên phòng Thí nghiệm",
-    "collaboration": "Liên Lab CADA (P1601 A1) & SLSCM (P1613 A1) - Khoa Khoa học Dữ liệu & Trí tuệ Nhân tạo (FDA), Trường Công nghệ, Đại học Kinh tế Quốc dân",
-    "period": "2025 - Nay",
-    "status": "Đang triển khai (Active)",
+    "collaboration": "Joint Lab Initiative: CADA (Room P1601 A1) & SLSCM (Room P1613 A1) · Faculty of Data Science & AI (FDA), College of Technology, NEU",
+    "period": "2025 – Present",
+    "status": "Active",
     "leads": [
       {
         "name": "TS. Vũ Đức Minh",
@@ -52,8 +52,8 @@
     "category": "Đề tài Nghiên cứu Khoa học Cấp cơ sở (Institutional Research Grant)",
     "sponsor": "Đại học Kinh tế Quốc dân (NEU)",
     "grant_code": "NEU.CS.2025.SLSCM01",
-    "period": "2025 – Nay",
-    "status": "Đang triển khai (Active)",
+    "period": "2025 – Present",
+    "status": "Active",
     "leads": [
       {
         "name": "TS. Vũ Đức Minh",
@@ -79,7 +79,8 @@
       "Công bố bài báo quốc tế Q1 trên tạp chí đỉnh cao Transportation Research Part C: Emerging Technologies (2026, Vol. 192)",
       "Công bố bài báo tại Hội nghị Quốc tế CITA 2025 (Lecture Notes in Networks and Systems, Springer)",
       "Phát triển mô hình toán học Stage-based formulation kết hợp giải thuật metaheuristic CMSA với hiệu năng vượt trội"
-    ]
+    ],
+    "collaboration": "Institutional Grant · National Economics University (NEU.CS.2025.SLSCM01)"
   },
   {
     "id": "vinif-cfl-cross-nested-logit",
@@ -89,7 +90,7 @@
     "sponsor": "Quỹ Đổi mới sáng tạo Vingroup (VINIF)",
     "grant_code": "Grant VINIF.2024.DA072",
     "period": "2024 – 2026",
-    "status": "Đã công bố & Tiếp tục mở rộng (Active)",
+    "status": "Active",
     "leads": [
       {
         "name": "Lê Bá Luật",
@@ -122,7 +123,8 @@
       "Công bố bài báo quốc tế đỉnh cao trên INFORMS Journal on Computing (IJOC, 2026)",
       "Được biên tập viên Area Editor Andrea Lodi trực tiếp chấp nhận",
       "Mã nguồn mở và toàn bộ dữ liệu thực nghiệm được tích hợp chính thức vào IJOC GitHub Software Repository"
-    ]
+    ],
+    "collaboration": "Vingroup Innovation Foundation (VINIF) · Grant VINIF.2024.DA072 (Collaboration with SMU & VNU-HUS)"
   },
   {
     "id": "training-smart-decisions",
@@ -130,8 +132,8 @@
     "title_en": "Executive & Academic Training: From Data to Analytics and Intelligent Decision Making",
     "category": "Chương trình Đào tạo Chuyên sâu & Chuyển giao Tri thức",
     "organizer": "SLSCM Lab & Khoa Khoa học Dữ liệu và Trí tuệ Nhân tạo (FDA) – Trường Công nghệ, Đại học Kinh tế Quốc dân",
-    "period": "Định kỳ hàng quý (2025 – 2026)",
-    "status": "Đang tổ chức (Active)",
+    "period": "Quarterly (2025 – 2026)",
+    "status": "Active",
     "target_audience_vi": "Sinh viên ưu tú, học viên cao học, kỹ sư phân tích dữ liệu và chuyên viên quản trị vận hành, chuỗi cung ứng tại các doanh nghiệp sản xuất, bán lẻ và logistics.",
     "target_audience_en": "Talented undergraduates, graduate students, data analysts, and supply chain professionals from manufacturing, retail, and logistics enterprises.",
     "description_vi": "Khóa đào tạo ngắn hạn nhằm trang bị tư duy mô hình hóa toán học, kỹ năng lập trình tối ưu hóa với Python, Gurobi, OR-Tools và ứng dụng các thuật toán Machine Learning vào việc đưa ra các quyết định kinh doanh tối ưu.",
@@ -160,6 +162,8 @@
     "instructors": [
       "TS. Vũ Đức Minh (Head of SLSCM Lab, NEU)",
       "Đội ngũ giảng viên và chuyên gia nghiên cứu từ Khoa FDA, Trường Công nghệ - NEU"
-    ]
+    ],
+    "collaboration": "SLSCM Lab & Faculty of Data Science and AI (FDA) · College of Technology, NEU",
+    "description_en": "A specialized executive and academic training curriculum equipping researchers, students, and industry professionals with mathematical modeling principles, optimization solvers (Gurobi, OR-Tools, SCIP), and machine learning integrations for intelligent business decision-making."
   }
 ]

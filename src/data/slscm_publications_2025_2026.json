@@ -6,7 +6,7 @@
       "Ba Luat Le",
       "Tien Mai",
       "Thuy Anh Ta",
-      "Minh Hoàng Hà",
+      "Minh Hoang Ha",
       "Duc-Minh Vu"
     ],
     "venue": "INFORMS Journal on Computing",
@@ -16,7 +16,7 @@
     "link": "https://doi.org/10.1287/ijoc.2025.1150",
     "research_pillar": "operational_optimization",
     "abstract": "We study the competitive facility location problem, in which a firm aims to establish new facilities in a market already occupied by competitors. In this problem, customer behavior is a crucial factor in making optimal location decisions. We explore a general class of customer choice models, known as the cross-nested logit model, which is recognized for its flexibility and generality in predicting people’s choice behavior. To explore the problem, we first demonstrate that it is NP-hard even when there is only one customer class and the cross-nested structure has only two nests. To tackle the challenging facility location problem, we demonstrate that the objective function under a general cross-nested structure is not concave. Interestingly, we show that, by a change of variables, the objective function can be converted to a mixed-integer exponential cone convex program, enabling it to be solved to optimality via an outer approximation algorithm. Extensive experiments show the efficiency of our approach and provide analyses on the benefits of using the cross-nested model in the facility location context.",
-    "bibtex": "@article{Le2026CFL,\n  title = {Competitive Facility Location Under Cross-Nested Logit Customer Choice Model: Hardness and Exact Approaches},\n  author = {Ba Luat Le and Tien Mai and Thuy Anh Ta and Minh Hoàng Hà and Duc-Minh Vu},\n  journal = {INFORMS Journal on Computing},\n  year = {2026},\n  doi = {10.1287/ijoc.2025.1150}\n}",
+    "bibtex": "@article{Le2026CFL,\n  title = {Competitive Facility Location Under Cross-Nested Logit Customer Choice Model: Hardness and Exact Approaches},\n  author = {Ba Luat Le and Tien Mai and Thuy Anh Ta and Minh Hoang Ha and Duc-Minh Vu},\n  journal = {INFORMS Journal on Computing},\n  year = {2026},\n  doi = {10.1287/ijoc.2025.1150}\n}",
     "is_featured": true
   },
   {
@@ -25,7 +25,7 @@
     "authors": [
       "Roberto Maria Rosati",
       "Dinh Quy Ta",
-      "Minh Hoàng Hà",
+      "Minh Hoang Ha",
       "Andrea Schaerf"
     ],
     "venue": "International Transactions in Operational Research",
@@ -34,15 +34,15 @@
     "doi": "10.1111/itor.70177",
     "link": "https://onlinelibrary.wiley.com/doi/10.1111/itor.70177",
     "research_pillar": "operational_optimization",
-    "abstract": "Nghiên cứu tập trung vào bài toán lập lịch các công việc xung đột trên các máy song song đồng nhất với mục tiêu tối thiểu hóa makespan. Đề xuất mô hình lập trình ràng buộc (CP) mới và hai phương pháp metaheuristic hiệu quả cao: thuật toán luyện kim mô phỏng đa lân cận (MNSA) và tìm kiếm lân cận lớn dựa trên lập trình ràng buộc (CP-based LNS).",
-    "bibtex": "@article{Rosati2026ITOR,\n  title = {Exact and Metaheuristic Approaches to Minimizing Makespan in Parallel Machine Scheduling with Conflicting Jobs},\n  author = {Roberto Maria Rosati and Dinh Quy Ta and Minh Hoàng Hà and Andrea Schaerf},\n  journal = {International Transactions in Operational Research},\n  pages = {1--27},\n  year = {2026},\n  doi = {10.1111/itor.70177}\n}",
+    "abstract": "This study addresses the problem of scheduling conflicting jobs on identical parallel machines to minimize the makespan. We propose a novel constraint programming (CP) formulation and two highly effective metaheuristic frameworks: a multi-neighborhood simulated annealing (MNSA) algorithm and a constraint programming-based large neighborhood search (CP-based LNS).",
+    "bibtex": "@article{Rosati2026ITOR,\n  title = {Exact and Metaheuristic Approaches to Minimizing Makespan in Parallel Machine Scheduling with Conflicting Jobs},\n  author = {Roberto Maria Rosati and Dinh Quy Ta and Minh Hoang Ha and Andrea Schaerf},\n  journal = {International Transactions in Operational Research},\n  pages = {1--27},\n  year = {2026},\n  doi = {10.1111/itor.70177}\n}",
     "is_featured": true
   },
   {
     "id": "ha-2026-hdc-cor",
     "title": "On the Hierarchical Directed Capacitated Arc Routing Problem",
     "authors": [
-      "Minh Hoàng Hà",
+      "Minh Hoang Ha",
       "Thu Huong Dang",
       "Ba Luat Le",
       "Trung Thanh Nguyen",
@@ -55,7 +55,7 @@
     "link": "https://doi.org/10.1016/j.cor.2026.107495",
     "research_pillar": "operational_optimization",
     "abstract": "This paper introduces and studies the Hierarchical Directed Capacitated Arc Routing Problem (HDCARP), motivated by urban waste collection and winter road maintenance under strict service priority hierarchies. We develop compact formulations, valid inequalities, and advanced metaheuristics providing superior performance on large realistic street networks.",
-    "bibtex": "@article{Ha2026HDC,\n  title = {On the Hierarchical Directed Capacitated Arc Routing Problem},\n  author = {Minh Hoàng Hà and Thu Huong Dang and Ba Luat Le and Trung Thanh Nguyen and André Langevin},\n  journal = {Computers & Operations Research},\n  volume = {192},\n  pages = {107495},\n  year = {2026},\n  doi = {10.1016/j.cor.2026.107495}\n}",
+    "bibtex": "@article{Ha2026HDC,\n  title = {On the Hierarchical Directed Capacitated Arc Routing Problem},\n  author = {Minh Hoang Ha and Thu Huong Dang and Ba Luat Le and Trung Thanh Nguyen and André Langevin},\n  journal = {Computers & Operations Research},\n  volume = {192},\n  pages = {107495},\n  year = {2026},\n  doi = {10.1016/j.cor.2026.107495}\n}",
     "is_featured": true
   },
   {
@@ -103,7 +103,7 @@
     "authors": [
       "Quy Ta Dinh",
       "Thu Huong Dang",
-      "Minh Hoàng Hà",
+      "Minh Hoang Ha",
       "Duc Minh Vu",
       "Tien Mai"
     ],
@@ -114,7 +114,7 @@
     "link": "https://www.tandfonline.com/doi/full/10.1080/01605682.2025.2519991",
     "research_pillar": "green_transportation",
     "abstract": "This study addresses the school bus rescheduling problem under sudden operational disruptions such as vehicle breakdowns or road closures. We introduce an explicit constraint limiting the number of students subject to negative service adjustments and develop branch-and-cut and adaptive large neighborhood search procedures.",
-    "bibtex": "@article{Dinh2025SchoolBus,\n  title = {The Rescheduling School Bus Routing Problem Under a Constraint on the Number of Students with Negative Impact},\n  author = {Quy Ta Dinh and Thu Huong Dang and Minh Hoàng Hà and Duc Minh Vu and Tien Mai},\n  journal = {Journal of the Operational Research Society},\n  year = {2025},\n  doi = {10.1080/01605682.2025.2519991}\n}",
+    "bibtex": "@article{Dinh2025SchoolBus,\n  title = {The Rescheduling School Bus Routing Problem Under a Constraint on the Number of Students with Negative Impact},\n  author = {Quy Ta Dinh and Thu Huong Dang and Minh Hoang Ha and Duc Minh Vu and Tien Mai},\n  journal = {Journal of the Operational Research Society},\n  year = {2025},\n  doi = {10.1080/01605682.2025.2519991}\n}",
     "is_featured": true
   },
   {
@@ -181,7 +181,7 @@
       "Tat Dat Nguyen",
       "Rafael Martinelli",
       "Quang Anh Pham",
-      "Minh Hoàng Hà"
+      "Minh Hoang Ha"
     ],
     "venue": "European Journal of Operational Research",
     "year": 2025,
@@ -190,7 +190,7 @@
     "link": "https://doi.org/10.1016/j.ejor.2024.09.021",
     "research_pillar": "operational_optimization",
     "abstract": "We study the Set Team Orienteering Problem (Set TOP), where targets are grouped into clusters and visiting any customer within a cluster collects the cluster profit. We design branch-and-cut algorithms and metaheuristics for coordinating multiple vehicles under travel budget limitations.",
-    "bibtex": "@article{Nguyen2025SetTOP,\n  title = {The Set Team Orienteering Problem},\n  author = {Tat Dat Nguyen and Rafael Martinelli and Quang Anh Pham and Minh Hoàng Hà},\n  journal = {European Journal of Operational Research},\n  volume = {321},\n  pages = {45--60},\n  year = {2025},\n  doi = {10.1016/j.ejor.2024.09.021}\n}",
+    "bibtex": "@article{Nguyen2025SetTOP,\n  title = {The Set Team Orienteering Problem},\n  author = {Tat Dat Nguyen and Rafael Martinelli and Quang Anh Pham and Minh Hoang Ha},\n  journal = {European Journal of Operational Research},\n  volume = {321},\n  pages = {45--60},\n  year = {2025},\n  doi = {10.1016/j.ejor.2024.09.021}\n}",
     "is_featured": true
   },
   {
@@ -220,7 +220,7 @@
       "Duc Minh Vu",
       "Trung Thanh Nguyen",
       "Anh Duc Le",
-      "Minh Hoàng Hà"
+      "Minh Hoang Ha"
     ],
     "venue": "Handbook of Combinatorial Optimization (Springer Nature)",
     "year": 2025,
@@ -229,7 +229,7 @@
     "link": "https://link.springer.com/referenceworkentry/10.1007/978-1-4614-6624-6_108-1",
     "research_pillar": "operational_optimization",
     "abstract": "A comprehensive chapter surveying exact mathematical programming, branch-and-price, and constraint programming models for parallel identical machine scheduling under job conflict graphs.",
-    "bibtex": "@incollection{Dinh2025ParallelScheduling,\n  title = {Exact Approaches for Scheduling Problems on Parallel Identical Machines with Conflict Jobs},\n  author = {Quy Ta Dinh and Duc Minh Vu and Trung Thanh Nguyen and Anh Duc Le and Minh Hoàng Hà},\n  booktitle = {Handbook of Combinatorial Optimization},\n  publisher = {Springer Nature},\n  year = {2025},\n  doi = {10.1007/978-1-4614-6624-6_108-1}\n}",
+    "bibtex": "@incollection{Dinh2025ParallelScheduling,\n  title = {Exact Approaches for Scheduling Problems on Parallel Identical Machines with Conflict Jobs},\n  author = {Quy Ta Dinh and Duc Minh Vu and Trung Thanh Nguyen and Anh Duc Le and Minh Hoang Ha},\n  booktitle = {Handbook of Combinatorial Optimization},\n  publisher = {Springer Nature},\n  year = {2025},\n  doi = {10.1007/978-1-4614-6624-6_108-1}\n}",
     "is_featured": false
   },
   {
@@ -239,7 +239,7 @@
       "Hoang Giang Pham",
       "Tien Mai",
       "Thuy Anh Ta",
-      "Minh Hoàng Hà"
+      "Minh Hoang Ha"
     ],
     "venue": "Proceedings of the Thirty-Fifth International Joint Conference on Artificial Intelligence (IJCAI 2026)",
     "year": 2026,
@@ -248,7 +248,7 @@
     "link": "https://doi.org/10.24963/ijcai.2026/392",
     "research_pillar": "ml_optimization",
     "abstract": "We study Stackelberg security games under mixed quantal response adversaries, capturing heterogeneous attacker populations. We develop a polynomial-time approximation scheme (PTAS) based on exponential cone programming and branch-and-bound.",
-    "bibtex": "@inproceedings{Pham2026SSG,\n  title = {Beyond Homogeneous Adversaries: Stackelberg Security Games with Mixed Quantal Response},\n  author = {Hoang Giang Pham and Tien Mai and Thuy Anh Ta and Minh Hoàng Hà},\n  booktitle = {Proceedings of the Thirty-Fifth International Joint Conference on Artificial Intelligence (IJCAI 2026)},\n  year = {2026},\n  doi = {10.24963/ijcai.2026/392}\n}",
+    "bibtex": "@inproceedings{Pham2026SSG,\n  title = {Beyond Homogeneous Adversaries: Stackelberg Security Games with Mixed Quantal Response},\n  author = {Hoang Giang Pham and Tien Mai and Thuy Anh Ta and Minh Hoang Ha},\n  booktitle = {Proceedings of the Thirty-Fifth International Joint Conference on Artificial Intelligence (IJCAI 2026)},\n  year = {2026},\n  doi = {10.24963/ijcai.2026/392}\n}",
     "is_featured": true
   },
   {
@@ -318,7 +318,7 @@
       "Ba Luat Le",
       "Thuy Anh Ta",
       "Ngoc Anh Vu Thi",
-      "Minh Hoàng Hà"
+      "Minh Hoang Ha"
     ],
     "venue": "International Conference on Computational Data and Social Networks (CSONET 2025), Springer",
     "year": 2025,
@@ -327,7 +327,7 @@
     "link": "https://doi.org/10.1007/978-981-96-6389-7_3",
     "research_pillar": "operational_optimization",
     "abstract": "Develops a Fully Polynomial-Time Approximation Scheme (FPTAS) for competitive facility location problems where consumer demand functions are nonlinear and price-sensitive.",
-    "bibtex": "@inproceedings{Le2025FPTAS,\n  title = {Facility Location Under Nonlinear Customer Demand: A Fully Polynomial-Time Approximation Scheme},\n  author = {Ba Luat Le and Thuy Anh Ta and Ngoc Anh Vu Thi and Minh Hoàng Hà},\n  booktitle = {Computational Social Networks (CSONET 2025)},\n  publisher = {Springer},\n  year = {2025},\n  doi = {10.1007/978-981-96-6389-7_3}\n}",
+    "bibtex": "@inproceedings{Le2025FPTAS,\n  title = {Facility Location Under Nonlinear Customer Demand: A Fully Polynomial-Time Approximation Scheme},\n  author = {Ba Luat Le and Thuy Anh Ta and Ngoc Anh Vu Thi and Minh Hoang Ha},\n  booktitle = {Computational Social Networks (CSONET 2025)},\n  publisher = {Springer},\n  year = {2025},\n  doi = {10.1007/978-981-96-6389-7_3}\n}",
     "is_featured": false
   },
   {
@@ -336,7 +336,7 @@
     "authors": [
       "Hoang Giang Pham",
       "Tien Mai",
-      "Minh Hoàng Hà"
+      "Minh Hoang Ha"
     ],
     "venue": "International Symposium on Information and Communication Technology (SOICT 2025), Springer",
     "year": 2025,
@@ -345,7 +345,7 @@
     "link": "https://doi.org/10.1007/978-981-96-4282-3_29",
     "research_pillar": "operational_optimization",
     "abstract": "We propose a cutting plane algorithm powered by constraint programming to solve the joint orienteering and customer capture problem on dense urban graphs.",
-    "bibtex": "@inproceedings{Pham2025SOICT,\n  title = {Constraint Programming-Based Cutting Plane Algorithm for a Combination of Orienteering and Maximum Capture Problem},\n  author = {Hoang Giang Pham and Tien Mai and Minh Hoàng Hà},\n  booktitle = {The 14th International Symposium on Information and Communication Technology (SOICT 2025)},\n  publisher = {Springer},\n  year = {2025},\n  doi = {10.1007/978-981-96-4282-3_29}\n}",
+    "bibtex": "@inproceedings{Pham2025SOICT,\n  title = {Constraint Programming-Based Cutting Plane Algorithm for a Combination of Orienteering and Maximum Capture Problem},\n  author = {Hoang Giang Pham and Tien Mai and Minh Hoang Ha},\n  booktitle = {The 14th International Symposium on Information and Communication Technology (SOICT 2025)},\n  publisher = {Springer},\n  year = {2025},\n  doi = {10.1007/978-981-96-4282-3_29}\n}",
     "is_featured": false
   },
   {
