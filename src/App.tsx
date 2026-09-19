@@ -267,7 +267,7 @@ function ResearchAndProjects() {
                     0{index + 1} / {index === 0 ? 'EXACT + HEURISTIC' : index === 1 ? 'AI / OR INTERSECTION' : 'GREEN LOGISTICS'}
                   </p>
                   <h3 className="mt-2 font-editorial text-2xl font-bold leading-snug text-slate-900">{pillar.title_en}</h3>
-                  <p className="mt-3 text-sm leading-relaxed text-slate-600">{desc}</p>
+                  <p className="mt-3 font-editorial text-base leading-relaxed text-slate-600">{desc}</p>
                   <div className="mt-5 rounded-2xl border border-slate-200/90 bg-white/95 p-3.5 shadow-sm backdrop-blur">
                     <div className="flex items-center justify-between gap-2 border-b border-slate-100 pb-1.5 font-mono text-[9px] font-semibold uppercase tracking-wider text-slate-500">
                       <span>MATHEMATICAL FORMULATION</span>
@@ -307,11 +307,11 @@ function ResearchAndProjects() {
                   <span className="font-mono text-[10px] font-semibold uppercase tracking-widest text-sky-700">
                     0{i + 1} / {project.status.toUpperCase()}
                   </span>
-                  <h3 className="mt-4 text-xl font-bold leading-snug text-slate-900">{title}</h3>
-                  <p className="mt-3 line-clamp-5 text-sm leading-relaxed text-slate-600">{desc}</p>
+                  <h3 className="mt-4 font-editorial text-2xl font-bold leading-snug text-slate-900">{title}</h3>
+                  <p className="mt-3 line-clamp-5 font-editorial text-base leading-relaxed text-slate-600">{desc}</p>
                   <div className="mt-auto pt-6">
-                    <div className="border-t border-slate-100 pt-4 font-mono text-[10px] text-slate-500">{project.period}</div>
-                    {project.collaboration && <p className="mt-2 text-xs text-slate-500">{project.collaboration}</p>}
+                    <div className="border-t border-slate-100 pt-4 font-mono text-[11px] font-medium text-slate-500">{project.period}</div>
+                    {project.collaboration && <p className="mt-2 font-editorial text-xs leading-normal text-slate-500">{project.collaboration}</p>}
                   </div>
                 </article>
               );
@@ -425,8 +425,8 @@ function PublicationsVault() {
                     <span className="text-slate-500">{paper.year}</span>
                     <span className="text-emerald-700">{pillarNames[paper.research_pillar]}</span>
                   </div>
-                  <h3 className="mt-3 text-base font-bold leading-snug text-slate-900 sm:text-lg">{paper.title}</h3>
-                  <p className="mt-2 text-sm text-slate-600">{paper.authors.join(', ')}</p>
+                  <h3 className="mt-3 font-editorial text-lg font-bold leading-snug text-slate-900 sm:text-xl">{paper.title}</h3>
+                  <p className="mt-2 font-editorial text-sm text-slate-600">{paper.authors.join(', ')}</p>
                   <p className="mt-1 font-editorial text-base italic text-slate-700">{paper.venue}</p>
                   <p className="mt-2 font-mono text-[10px] text-slate-500">DOI: {paper.doi}</p>
                 </div>
@@ -548,12 +548,12 @@ function PeopleAndLife() {
                     <div className="mt-4 grid h-14 w-14 place-items-center rounded-2xl bg-gradient-to-br from-slate-900 to-sky-700 font-editorial text-2xl text-white">
                       {name.split(' ').slice(-1)[0][0]}
                     </div>
-                    <h3 className="mt-4 text-xl font-bold text-slate-900">{name}</h3>
-                    <p className="mt-1 text-sm font-medium text-sky-800">{title}</p>
-                    <p className="mt-3 text-sm leading-relaxed text-slate-600">{affiliation}</p>
+                    <h3 className="mt-4 font-editorial text-2xl font-bold text-slate-900">{name}</h3>
+                    <p className="mt-1 font-editorial text-sm font-medium text-sky-800">{title}</p>
+                    <p className="mt-3 font-editorial text-sm leading-relaxed text-slate-600">{affiliation}</p>
                   </div>
                   <div className={index === 0 ? 'mt-5 lg:mt-0' : 'mt-5'}>
-                    <p className="text-sm leading-relaxed text-slate-600">{bio}</p>
+                    <p className="font-editorial text-sm leading-relaxed text-slate-600">{bio}</p>
                     <div className="mt-4 flex flex-wrap gap-1.5">
                       {person.research_interests.slice(0, 3).map((interest) => (
                         <span key={interest} className="rounded-md bg-slate-100 px-2 py-1 text-[10px] text-slate-600">
@@ -589,9 +589,9 @@ function PeopleAndLife() {
                   <article key={entry.id} className="rounded-2xl border border-amber-200/80 bg-amber-50/70 p-5 backdrop-blur-sm shadow-soft transition hover:shadow-lift">
                     <GraduationCap className="h-6 w-6 text-amber-700" />
                     <p className="mt-4 font-mono text-[10px] text-amber-800">PH.D. SCHOLARSHIP / {entry.year}</p>
-                    <h4 className="mt-2 text-lg font-bold text-slate-900">{entry.destination_institution}</h4>
-                    <p className="mt-1 text-sm font-semibold text-slate-700">{name} · {entry.country}</p>
-                    <p className="mt-3 text-sm leading-relaxed text-slate-600">{achievement}</p>
+                    <h4 className="mt-2 font-editorial text-xl font-bold text-slate-900">{entry.destination_institution}</h4>
+                    <p className="mt-1 font-editorial text-sm font-semibold text-slate-700">{name} · {entry.country}</p>
+                    <p className="mt-3 font-editorial text-sm leading-relaxed text-slate-600">{achievement}</p>
                   </article>
                 );
               })}
@@ -613,16 +613,16 @@ function PeopleAndLife() {
                 <span className="font-mono text-[10px] uppercase tracking-widest text-cyan-700">
                   {post.type.replace('_', ' ')}
                 </span>
-                <h3 className="mt-3 text-lg font-bold leading-snug text-slate-900">{post.title}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-slate-600">
+                <h3 className="mt-3 font-editorial text-xl font-bold leading-snug text-slate-900">{post.title}</h3>
+                <p className="mt-3 font-editorial text-sm leading-relaxed text-slate-600">
                   {post.abstract || post.collaboration || post.organizer || post.name || post.journal}
                 </p>
                 {post.link ? (
-                  <a className="focus-ring mt-auto pt-5 text-sm font-semibold text-sky-700 hover:underline" href={post.link} target="_blank" rel="noreferrer">
+                  <a className="focus-ring mt-auto pt-5 font-editorial text-sm font-semibold text-sky-700 hover:underline" href={post.link} target="_blank" rel="noreferrer">
                     Read Publication <ExternalLink className="ml-1 inline h-3.5 w-3.5" />
                   </a>
                 ) : (
-                  <a className="focus-ring mt-auto pt-5 text-sm font-semibold text-sky-700 hover:underline" href="https://www.facebook.com/slscm.lab" target="_blank" rel="noreferrer">
+                  <a className="focus-ring mt-auto pt-5 font-editorial text-sm font-semibold text-sky-700 hover:underline" href="https://www.facebook.com/slscm.lab" target="_blank" rel="noreferrer">
                     Visit Fanpage <ExternalLink className="ml-1 inline h-3.5 w-3.5" />
                   </a>
                 )}
