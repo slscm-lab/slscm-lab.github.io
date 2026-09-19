@@ -1,0 +1,56 @@
+[
+  {
+    "type": "publication_news",
+    "title": "Công bố mới trên ITOR về bài toán lập lịch song song có yếu tố xung đột",
+    "authors": [
+      "ThS. Tạ Đình Quý",
+      "PGS. TS. Hà Minh Hoàng",
+      "TS. Roberto Rosati (Áo)",
+      "GS. Andrea Schaerf (Italia)"
+    ],
+    "journal": "International Transactions in Operational Research (ITOR)",
+    "link": "https://onlinelibrary.wiley.com/doi/10.1111/itor.70177",
+    "abstract": "Nghiên cứu tập trung vào bài toán lập lịch các công việc xung đột trên các máy song song đồng nhất với mục tiêu tối thiểu hóa makespan. Đề xuất mô hình lập trình ràng buộc (CP) mới và 2 phương pháp metaheuristic (simulated annealing đa lân cận MNSA và large neighborhood search dựa trên CP)."
+  },
+  {
+    "type": "publication_news",
+    "title": "Công bố trên INFORMS Journal on Computing (IJOC)",
+    "paper_title": "Competitive Facility Location under Cross-Nested Logit Customer Choice Model: Hardness and Exact Approaches",
+    "authors": [
+      "Lê Bá Luật",
+      "GS. Mai Tiến (SMU Singapore)",
+      "TS. Tạ Thúy Anh (Phenikaa)",
+      "PGS. TS. Hà Minh Hoàng",
+      "TS. Vũ Đức Minh"
+    ],
+    "journal": "INFORMS Journal on Computing (IJOC)",
+    "significance": "Tạp chí hàng đầu thế giới về tính toán trong Vận trù học (Operations Research) của hiệp hội INFORMS Hoa Kỳ."
+  },
+  {
+    "type": "publication_news",
+    "title": "Công bố quốc tế của thành viên trẻ Trần Nam Khánh",
+    "paper_title": "A Stage-based Formulation and Meta-heuristic Algorithm for the Revisit Flying SideKick Traveling Salesman Problem",
+    "authors": [
+      "Trần Nam Khánh",
+      "Các thành viên SLSCM Lab"
+    ],
+    "venue": "International Conference / Journal on Routing & Drone Optimization"
+  },
+  {
+    "type": "recruitment_project",
+    "title": "Dự án nghiên cứu thực chiến: AI & OR trong Quản lý Cấp thoát nước Đô thị Hà Nội",
+    "collaboration": "Liên Lab CADA (P1601 A1) & SLSCM (P1613 A1) - Khoa FDA NEU",
+    "scope": [
+      "AI Side: Mô hình dự báo nhu cầu nước, phát hiện rò rỉ, dự báo điểm ngập lụt bằng Machine Learning",
+      "OR Side: Tối ưu hóa vị trí trạm bơm, điều tiết dòng chảy, giảm chi phí vận hành mạng lưới",
+      "Data Side: Xử lý và phân tích dữ liệu IoT từ cảm biến thực tế của thành phố Hà Nội"
+    ],
+    "contact": "Thầy Lê Duy Khánh (khanhld@neu.edu.vn) & TS. Vũ Đức Minh (minhvd@neu.edu.vn)"
+  },
+  {
+    "type": "training_education",
+    "title": "Khóa học đào tạo ngắn hạn",
+    "name": "Từ dữ liệu đến phân tích và ra quyết định thông minh",
+    "organizer": "SLSCM Lab & Khoa FDA - Đại học Kinh tế Quốc dân"
+  }
+]

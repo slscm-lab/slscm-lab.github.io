@@ -1,0 +1,342 @@
+{
+  "leadership_and_faculty": [
+    {
+      "id": "vu-duc-minh",
+      "name": "TS. Vũ Đức Minh",
+      "name_en": "Dr. Duc-Minh Vu",
+      "title_vi": "Trưởng phòng thí nghiệm / Giảng viên",
+      "title_en": "Head of Lab / Lecturer",
+      "affiliation_vi": "Khoa Khoa học Dữ liệu & Trí tuệ Nhân tạo (FDA), Trường Công nghệ, Đại học Kinh tế Quốc dân (NEU)",
+      "affiliation_en": "Faculty of Data Science and AI (FDA), College of Technology, National Economics University (NEU)",
+      "email": "minhvd@neu.edu.vn",
+      "office": "P1613, Tòa nhà A1, Đại học Kinh tế Quốc dân – 207 Giải Phóng, Hà Nội",
+      "research_interests": [
+        "Tối ưu hóa Vận tải & Logistics (Transportation & Logistics Optimization)",
+        "Định tuyến Drone & Phương tiện Hỗn hợp (FSTSP & Drone Routing)",
+        "Bài toán Vị trí Cơ sở Cạnh tranh (Competitive Facility Location)",
+        "AI & Phân tích Dữ liệu Ra Quyết định Thông minh"
+      ],
+      "bio_vi": "Tiến sĩ Vũ Đức Minh là Trưởng phòng thí nghiệm SLSCM Lab, giảng viên Trường Công nghệ - NEU. Thầy chủ trì nhiều đề tài nghiên cứu về tối ưu hóa vận tải, định tuyến drone và bài toán vị trí cơ sở, là tác giả của các công trình công bố trên các tạp chí quốc tế hàng đầu như INFORMS Journal on Computing, Transportation Research Part C, Journal of the Operational Research Society.",
+      "avatar": "/assets/images/people/vu_duc_minh.jpg"
+    },
+    {
+      "id": "ha-minh-hoang",
+      "name": "PGS. TS. Hà Minh Hoàng",
+      "name_en": "Assoc. Prof. Dr. Minh Hoang Ha",
+      "title_vi": "Cố vấn khoa học / Nghiên cứu gia cao cấp",
+      "title_en": "Scientific Advisor / Senior Researcher",
+      "affiliation_vi": "Trường Đại học Khoa học Tự nhiên - ĐHQGHN (VNU-HUS) & SLSCM Lab",
+      "affiliation_en": "VNU University of Science (VNU-HUS) & SLSCM Lab",
+      "email": "minhhoang.ha@vnu.edu.vn",
+      "research_interests": [
+        "Vận trù học & Lý thuyết Tối ưu (Operations Research & Optimization)",
+        "Thuật toán Chính xác & Phân nhánh Cắt (Exact Algorithms & Branch-and-Cut)",
+        "Thuật toán Metaheuristics & Matheuristics",
+        "Định tuyến Xe & Lập lịch Sản xuất (VRP, Machine Scheduling)"
+      ],
+      "bio_vi": "Phó Giáo sư, Tiến sĩ chuyên ngành Vận trù học và Khoa học Máy tính. Chuyên gia hàng đầu Việt Nam về thiết kế thuật toán tối ưu hóa tổ hợp, tác giả của hàng chục công trình uy tín trên EJOR, Computers & Operations Research, ITOR, IJOC, JORS.",
+      "avatar": "/assets/images/people/ha_minh_hoang.jpg"
+    },
+    {
+      "id": "ta-dinh-quy",
+      "name": "ThS. Tạ Đình Quý",
+      "name_en": "MSc. Quy Ta Dinh",
+      "title_vi": "Nghiên cứu viên / Nghiên cứu sinh Tiến sĩ",
+      "title_en": "Researcher / PhD Candidate",
+      "affiliation_vi": "SLSCM Lab & Viện Toán học / Đại học Bách Khoa Hà Nội",
+      "affiliation_en": "SLSCM Lab & Institute of Mathematics / HUST",
+      "email": "quytd@neu.edu.vn",
+      "research_interests": [
+        "Lập lịch Máy Song song & Công việc Xung đột (Conflict Job Scheduling)",
+        "Quy hoạch Ràng buộc (Constraint Programming)",
+        "Định tuyến Xe buýt Trường học & Giảm thiểu Tác động Tiêu cực",
+        "Giải thuật Tìm kiếm Lân cận Lớn (Large Neighborhood Search)"
+      ],
+      "bio_vi": "Thạc sĩ, nghiên cứu sinh chuyên sâu về tối ưu hóa lập lịch công nghiệp và điều độ máy móc có xung đột, tác giả chính của các công trình công bố trên ITOR, Journal of the Operational Research Society và Handbook of Combinatorial Optimization (Springer Nature).",
+      "avatar": "/assets/images/people/ta_dinh_quy.jpg"
+    }
+  ],
+  "young_researchers_and_authors": [
+    {
+      "id": "le-ba-luat",
+      "name": "Lê Bá Luật",
+      "name_en": "Ba Luat Le",
+      "role_vi": "Nghiên cứu viên trẻ / Tác giả chính",
+      "role_en": "Junior Researcher / Lead Author",
+      "current_status_vi": "Thủ khoa toàn trường Đại học Phenikaa (2025), Nhận học bổng Tiến sĩ toàn phần tại Singapore Management University (SMU, 2026)",
+      "current_status_en": "Valedictorian of Phenikaa University (2025), Full PhD Scholarship at Singapore Management University (SMU, 2026)",
+      "featured_publications": [
+        "INFORMS Journal on Computing (2026)",
+        "Computers & Operations Research (2026)",
+        "CSONET (2025)"
+      ],
+      "research_interests": [
+        "Competitive Facility Location",
+        "Conic Programming & Outer Approximation",
+        "Discrete Optimization"
+      ]
+    },
+    {
+      "id": "tran-nam-khanh",
+      "name": "Trần Nam Khánh",
+      "name_en": "Nam-Khanh Tran",
+      "role_vi": "Nghiên cứu viên trẻ / Đồng tác giả chính",
+      "role_en": "Junior Researcher / Co-Author",
+      "current_status_vi": "Tác giả chính công bố trên Transportation Research Part C (2026) & CITA (2025)",
+      "current_status_en": "Co-author in Transportation Research Part C (2026) & CITA (2025)",
+      "featured_publications": [
+        "Transportation Research Part C: Emerging Technologies (2026)",
+        "CITA (2025)"
+      ],
+      "research_interests": [
+        "Revisit Flying Sidekick Traveling Salesman Problem (RV-FSTSP)",
+        "Drone Routing & Multi-Trip Delivery Logistics"
+      ]
+    },
+    {
+      "id": "tran-trung-duc",
+      "name": "Trần Trung Đức",
+      "name_en": "Trung Duc Tran",
+      "role_vi": "Nghiên cứu viên / Tác giả",
+      "role_en": "Researcher / Author",
+      "featured_publications": [
+        "COMOSA (2025/2026)"
+      ],
+      "research_interests": [
+        "Electric Vehicle Routing Problem with Time Windows (EVRP-TW)",
+        "Green Supply Chain & Smart Charging Stations"
+      ]
+    },
+    {
+      "id": "le-thanh-hong",
+      "name": "Lê Thanh Hồng",
+      "name_en": "Le Thanh Hong",
+      "role_vi": "Nghiên cứu viên / Tác giả chính",
+      "role_en": "Researcher / Lead Author",
+      "featured_publications": [
+        "Transportation Research Part C: Emerging Technologies (2026)",
+        "CITA (2025)"
+      ],
+      "research_interests": [
+        "Stage-Based Mathematical Modeling",
+        "Construct-Merge-Solve & Adapt Metaheuristics",
+        "Drone-Assisted Routing"
+      ]
+    },
+    {
+      "id": "nguyen-duc-cong",
+      "name": "Nguyễn Đức Công",
+      "name_en": "Nguyen Dinh Cong",
+      "role_vi": "Nghiên cứu viên / Tác giả",
+      "role_en": "Researcher / Author",
+      "featured_publications": [
+        "Transportation Research Part C: Emerging Technologies (2026)",
+        "CITA (2025)"
+      ],
+      "research_interests": [
+        "Combinatorial Optimization",
+        "UAV Routing and Scheduling"
+      ]
+    },
+    {
+      "id": "le-huu-trung",
+      "name": "Lê Hữu Trung",
+      "name_en": "Le Huu Trung",
+      "role_vi": "Nghiên cứu viên / Tác giả",
+      "role_en": "Researcher / Author",
+      "featured_publications": [
+        "CITA (2025)"
+      ],
+      "research_interests": [
+        "Algorithmic Engineering",
+        "Metaheuristics for Routing Problems"
+      ]
+    },
+    {
+      "id": "pham-tuan-anh",
+      "name": "Phạm Tuấn Anh",
+      "name_en": "Tuan Anh Pham",
+      "role_vi": "Nghiên cứu viên / Tác giả",
+      "role_en": "Researcher / Author",
+      "featured_publications": [
+        "European Journal of Operational Research (2025)",
+        "COMOSA (2025/2026)"
+      ],
+      "research_interests": [
+        "Inventory Routing Problems (IRP)",
+        "Hybrid Genetic Search",
+        "Energy-Aware Drone Logistics"
+      ]
+    },
+    {
+      "id": "pham-hoang-giang",
+      "name": "Phạm Hoàng Giang",
+      "name_en": "Hoang Giang Pham",
+      "role_vi": "Nghiên cứu viên / Tác giả",
+      "role_en": "Researcher / Author",
+      "featured_publications": [
+        "IJCAI (2026)",
+        "SOICT (2025)"
+      ],
+      "research_interests": [
+        "Stackelberg Security Games",
+        "Quantal Response Models",
+        "Constraint Programming Cutting-Plane Algorithms"
+      ]
+    }
+  ],
+  "hall_of_fame": [
+    {
+      "id": "hof-le-ba-luat",
+      "name": "Lê Bá Luật",
+      "name_en": "Ba Luat Le",
+      "achievement_vi": "Thủ khoa toàn trường – Trường Công nghệ, Đại học Phenikaa (2025); Giành học bổng nghiên cứu sinh Tiến sĩ (PhD) toàn phần tại Singapore Management University (SMU, 2026).",
+      "achievement_en": "Valedictorian of College of Technology, Phenikaa University (2025); Awarded Full PhD Scholarship at Singapore Management University (SMU, 2026).",
+      "destination_institution": "Singapore Management University (SMU)",
+      "country": "Singapore",
+      "year": 2025,
+      "award_type": "PhD Scholarship & Valedictorian",
+      "field": "Operations Research & Computer Science",
+      "advisors": "GS. Mai Tiến (SMU), TS. Vũ Đức Minh (NEU), PGS. TS. Hà Minh Hoàng"
+    },
+    {
+      "id": "hof-nguyen-tat-dat",
+      "name": "Nguyễn Tất Đạt",
+      "name_en": "Tat Dat Nguyen",
+      "achievement_vi": "Tác giả chính công bố trên European Journal of Operational Research (EJOR, Q1); Giành học bổng nghiên cứu sinh Tiến sĩ (PhD) toàn phần tại Trường Đại học Liverpool John Moores (LJMU, Vương quốc Anh, 2025).",
+      "achievement_en": "Lead author in European Journal of Operational Research (EJOR, Q1); Awarded Full PhD Scholarship at Liverpool John Moores University (LJMU, UK, 2025).",
+      "destination_institution": "Liverpool John Moores University (LJMU)",
+      "country": "United Kingdom",
+      "year": 2025,
+      "award_type": "PhD Scholarship",
+      "field": "Logistics & Operations Research",
+      "advisors": "PGS. TS. Hà Minh Hoàng, Rafael Martinelli"
+    },
+    {
+      "id": "hof-nguyen-hai-thu",
+      "name": "Nguyễn Hải Thu",
+      "name_en": "Hai Thu Nguyen",
+      "achievement_vi": "Thủ khoa chương trình Định phí Bảo hiểm và Quản trị rủi ro – Khóa 63, Đại học Kinh tế Quốc dân (NEU); Giành học bổng nghiên cứu sinh Tiến sĩ (PhD) tại University of Connecticut (UConn, Hoa Kỳ, 2025).",
+      "achievement_en": "Valedictorian in Actuarial Science and Risk Management - Intake 63, NEU; Awarded PhD Scholarship at University of Connecticut (UConn, USA, 2025).",
+      "destination_institution": "University of Connecticut (UConn)",
+      "country": "United States",
+      "year": 2025,
+      "award_type": "PhD Scholarship & Program Valedictorian",
+      "field": "Actuarial Science & Quantitative Risk Management",
+      "advisors": "Khoa Toán Kinh tế & SLSCM Lab, NEU"
+    }
+  ],
+  "student_researchers": [
+    {
+      "name": "Hà Thu Hà",
+      "major": "Khoa học Dữ liệu & Trí tuệ Nhân tạo (KHDL&TTNT)",
+      "institution": "Trường Công nghệ, Đại học Kinh tế Quốc dân"
+    },
+    {
+      "name": "Phùng Thị Thu Trang",
+      "major": "Khoa học Dữ liệu & Trí tuệ Nhân tạo (KHDL&TTNT)",
+      "institution": "Trường Công nghệ, Đại học Kinh tế Quốc dân"
+    },
+    {
+      "name": "Tạ Thành Đạt",
+      "major": "Khoa học Dữ liệu & Trí tuệ Nhân tạo (KHDL&TTNT)",
+      "institution": "Trường Công nghệ, Đại học Kinh tế Quốc dân"
+    },
+    {
+      "name": "Đặng Nhật Minh",
+      "major": "Khoa học Dữ liệu & Trí tuệ Nhân tạo (KHDL&TTNT)",
+      "institution": "Trường Công nghệ, Đại học Kinh tế Quốc dân"
+    },
+    {
+      "name": "Mai Thành Lộc",
+      "major": "Toán Kinh tế",
+      "institution": "Đại học Kinh tế Quốc dân"
+    },
+    {
+      "name": "Lã Quang Chiến",
+      "major": "Toán Kinh tế",
+      "institution": "Đại học Kinh tế Quốc dân"
+    },
+    {
+      "name": "Nguyệt Ánh",
+      "major": "Công nghệ Thông tin",
+      "institution": "Trường Công nghệ, Đại học Kinh tế Quốc dân"
+    },
+    {
+      "name": "Nguyễn Trần Quốc Đạt",
+      "major": "Toán Kinh tế",
+      "institution": "Đại học Kinh tế Quốc dân"
+    },
+    {
+      "name": "Lê Quốc Trần Anh",
+      "major": "Toán Kinh tế",
+      "institution": "Đại học Kinh tế Quốc dân"
+    },
+    {
+      "name": "Hà Quang Minh",
+      "major": "Toán Kinh tế",
+      "institution": "Đại học Kinh tế Quốc dân"
+    }
+  ],
+  "global_academic_partners": [
+    {
+      "country": "Singapore",
+      "institution": "Singapore Management University (SMU)",
+      "key_collaborators": [
+        "GS. Mai Tiến (School of Computing and Information Systems)"
+      ],
+      "research_focus": "Discrete Choice Models, Competitive Facility Location, Conic Optimization"
+    },
+    {
+      "country": "Italy",
+      "institution": "University of Udine",
+      "key_collaborators": [
+        "GS. Andrea Schaerf (Department of Polytechnic of Engineering and Architecture)"
+      ],
+      "research_focus": "Parallel Machine Scheduling, Constraint Programming, Metaheuristics"
+    },
+    {
+      "country": "Austria",
+      "institution": "Austrian Research Community / Partner Institutes",
+      "key_collaborators": [
+        "TS. Roberto Maria Rosati"
+      ],
+      "research_focus": "Combinatorial Optimization, Metaheuristic Neighborhood Search"
+    },
+    {
+      "country": "United Kingdom",
+      "institution": "Cardiff University, Lancaster University, Liverpool John Moores University (LJMU)",
+      "key_collaborators": [
+        "Faculty & Research Fellows in Operations Management and Analytics"
+      ],
+      "research_focus": "Supply Chain Analytics, Stochastic Modeling, Logistics Networks"
+    },
+    {
+      "country": "United States",
+      "institution": "University of Connecticut (UConn), Loyola University Chicago, University of Michigan - Flint",
+      "key_collaborators": [
+        "Collaborators in Actuarial Science, Optimization, and Industrial Engineering"
+      ],
+      "research_focus": "Quantitative Risk, Behavioral Economics, Smart Energy Systems"
+    },
+    {
+      "country": "Canada & France",
+      "institution": "Université de Montréal / CIRRELT",
+      "key_collaborators": [
+        "GS. André Langevin",
+        "GS. Thibaut Vidal"
+      ],
+      "research_focus": "Capacitated Arc Routing (CARP), Inventory Routing (IRP), Hybrid Genetic Search"
+    },
+    {
+      "country": "Vietnam",
+      "institution": "VNU-HUS, HUST, Phenikaa University, VinUniversity",
+      "key_collaborators": [
+        "PGS. TS. Hà Minh Hoàng (VNU-HUS)",
+        "TS. Tạ Thúy Anh (Phenikaa University)",
+        "TS. Đức Đồng Đỗ (HUST)"
+      ],
+      "research_focus": "National Science Foundation Collaborations, Graph Algorithms, High-Performance Computing"
+    }
+  ]
+}
