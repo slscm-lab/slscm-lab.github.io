@@ -210,7 +210,21 @@ function Hero() {
             COLLEGE OF TECHNOLOGY · NATIONAL ECONOMICS UNIVERSITY
           </div>
           <h1 className="mt-6 max-w-4xl font-editorial text-5xl leading-[1.04] tracking-tight text-slate-950 sm:text-6xl lg:text-7xl">
-            The <em className="animate-gradient-flow">Optimizing Frontier</em> for resilient supply chains.
+            The{' '}
+            <em
+              className="animate-gradient-flow"
+              style={{
+                backgroundImage: 'linear-gradient(90deg, #0369a1 0%, #0284c7 20%, #06b6d4 40%, #38bdf8 50%, #06b6d4 60%, #0284c7 80%, #0369a1 100%)',
+                backgroundSize: '200% 100%',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                display: 'inline-block',
+                animation: 'flow-gradient-ltr 3.5s linear infinite',
+              }}
+            >
+              Optimizing Frontier
+            </em>{' '}
+            for resilient supply chains.
           </h1>
           <p className="mt-7 max-w-3xl font-editorial text-xl sm:text-2xl leading-relaxed text-slate-600 font-normal">
             At the intersection of modern Operations Research, Artificial Intelligence, and Next-Generation Transportation — transforming complex mathematical challenges into intelligent, sustainable infrastructure.
