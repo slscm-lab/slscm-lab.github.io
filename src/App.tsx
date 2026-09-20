@@ -37,16 +37,37 @@ type Post = {
   organizer?: string; collaboration?: string; name?: string; link?: string;
   action_label?: string;
 };
+type YoungResearcher = {
+  id: string; name: string; name_en?: string; role_vi: string; role_en?: string;
+  current_status_vi?: string; current_status_en?: string;
+  featured_publications?: string[]; research_interests?: string[];
+  avatar?: string;
+};
+type StudentResearcher = {
+  name: string; name_en?: string; major: string; institution: string; avatar?: string;
+};
 
 const overview = overviewData as typeof overviewData;
 const people = peopleData as unknown as {
   leadership_and_faculty: Person[];
   hall_of_fame: HallEntry[];
-  young_researchers_and_authors: { name: string; role_vi?: string }[];
+  young_researchers_and_authors: YoungResearcher[];
+  student_researchers: StudentResearcher[];
 };
 const projects = projectsData as unknown as Project[];
 const publications = publicationsData as Publication[];
 const posts = postsData as Post[];
+
+function getMemberInitials(name: string): string {
+  const parts = name.trim().split(/\s+/);
+  if (parts.length === 0) return 'MB';
+  if (parts.length === 1) return parts[0].slice(0, 2).toUpperCase();
+  const p1 = parts[parts.length - 2];
+  const p2 = parts[parts.length - 1];
+  const clean1 = p1[0].normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  const clean2 = p2[0].normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  return (clean1 + clean2).toUpperCase();
+}
 
 const pillarNames: Record<PillarId, string> = {
   operational_optimization: 'Operations & Algorithms',
@@ -142,7 +163,7 @@ function Header() {
         <div className="section-shell flex h-[76px] items-center justify-between gap-5">
           <a href="#top" className="focus-ring group flex min-w-0 items-center gap-3 rounded-xl">
             <img
-              src="/assets/images/slscm_logo.png"
+              src="/assets/images/slscm_logo.svg"
               alt="SLSCM Lab Logo"
               className="h-11 w-11 shrink-0 rounded-full object-cover ring-1 ring-slate-200 shadow-sm transition group-hover:scale-105"
             />
@@ -538,6 +559,7 @@ function PublicationsVault() {
 
 function PeopleAndLife() {
   const [submitted, setSubmitted] = useState(false);
+  const [memberTab, setMemberTab] = useState<'all' | 'researchers' | 'students'>('all');
   const submit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setSubmitted(true);
@@ -624,6 +646,174 @@ function PeopleAndLife() {
                 </article>
               );
             })}
+          </div>
+
+          {/* LAB MEMBERS */}
+          <div className="mt-16" id="members">
+            <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+              <div>
+                <p className="font-mono text-[10px] font-semibold uppercase tracking-widest text-sky-700">LAB MEMBERS</p>
+                <h3 className="mt-2 font-editorial text-3xl text-slate-900">Researchers &amp; Student Scholars.</h3>
+              </div>
+              <div className="flex items-center rounded-xl border border-slate-200/80 bg-white/80 p-1 backdrop-blur-sm shadow-xs">
+                <button
+                  type="button"
+                  onClick={() => setMemberTab('all')}
+                  className={`rounded-lg px-3 py-1.5 font-editorial text-xs font-semibold transition ${
+                    memberTab === 'all'
+                      ? 'bg-slate-900 text-white shadow-sm'
+                      : 'text-slate-600 hover:text-slate-900'
+                  }`}
+                >
+                  All ({people.young_researchers_and_authors.length + people.student_researchers.length})
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setMemberTab('researchers')}
+                  className={`rounded-lg px-3 py-1.5 font-editorial text-xs font-semibold transition ${
+                    memberTab === 'researchers'
+                      ? 'bg-slate-900 text-white shadow-sm'
+                      : 'text-slate-600 hover:text-slate-900'
+                  }`}
+                >
+                  Researchers &amp; Authors ({people.young_researchers_and_authors.length})
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setMemberTab('students')}
+                  className={`rounded-lg px-3 py-1.5 font-editorial text-xs font-semibold transition ${
+                    memberTab === 'students'
+                      ? 'bg-slate-900 text-white shadow-sm'
+                      : 'text-slate-600 hover:text-slate-900'
+                  }`}
+                >
+                  Student Researchers ({people.student_researchers.length})
+                </button>
+              </div>
+            </div>
+
+            <div className="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+              {(memberTab === 'all' || memberTab === 'researchers') &&
+                people.young_researchers_and_authors.map((member) => {
+                  const name = member.name;
+                  const initials = getMemberInitials(name);
+                  const role = member.role_en || member.role_vi || 'Researcher / Author';
+                  return (
+                    <article
+                      key={member.id}
+                      className="rounded-2xl border border-slate-200/80 bg-white/85 p-5 backdrop-blur-sm shadow-soft transition hover:shadow-lift flex flex-col justify-between"
+                    >
+                      <div>
+                        <div className="flex items-center gap-3.5">
+                          {member.avatar ? (
+                            <img
+                              src={member.avatar}
+                              alt={name}
+                              className="h-12 w-12 rounded-xl object-cover ring-2 ring-sky-200 shadow-sm shrink-0"
+                            />
+                          ) : (
+                            <div className="grid h-12 w-12 place-items-center rounded-xl bg-gradient-to-br from-slate-900 via-sky-950 to-slate-800 font-mono text-sm font-bold text-white shadow-sm ring-2 ring-sky-200/70 shrink-0 tracking-wider">
+                              {initials}
+                            </div>
+                          )}
+                          <div className="min-w-0 flex-1">
+                            <p className="font-editorial text-xs font-semibold tracking-wide text-sky-800 truncate">
+                              {role}
+                            </p>
+                            <h4 className="font-editorial text-lg font-bold text-slate-900 leading-snug truncate">
+                              {name}
+                            </h4>
+                            <p className="font-editorial text-xs font-medium text-slate-500 truncate">
+                              {member.name_en || 'SLSCM Lab'}
+                            </p>
+                          </div>
+                        </div>
+
+                        <div className="mt-4 pt-3 border-t border-slate-100/90">
+                          {member.current_status_vi && (
+                            <p className="font-editorial text-xs font-medium text-slate-700 leading-relaxed line-clamp-2">
+                              {member.current_status_vi}
+                            </p>
+                          )}
+                          {member.featured_publications && member.featured_publications.length > 0 && (
+                            <div className="mt-2.5 flex flex-wrap gap-1.5">
+                              {member.featured_publications.map((pub) => (
+                                <span
+                                  key={pub}
+                                  className="rounded-md border border-sky-200/80 bg-sky-50/70 px-2 py-0.5 font-mono text-[10px] font-medium text-sky-900"
+                                >
+                                  {pub}
+                                </span>
+                              ))}
+                            </div>
+                          )}
+                          {member.research_interests && member.research_interests.length > 0 && (
+                            <div className="mt-2 flex flex-wrap gap-1.5">
+                              {member.research_interests.slice(0, 2).map((item) => (
+                                <span
+                                  key={item}
+                                  className="rounded-md border border-slate-200/80 bg-slate-50/80 px-2 py-0.5 font-editorial text-[11px] font-medium text-slate-600"
+                                >
+                                  {item}
+                                </span>
+                              ))}
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                    </article>
+                  );
+                })}
+
+              {(memberTab === 'all' || memberTab === 'students') &&
+                people.student_researchers.map((student) => {
+                  const name = student.name;
+                  const initials = getMemberInitials(name);
+                  return (
+                    <article
+                      key={student.name}
+                      className="rounded-2xl border border-slate-200/80 bg-white/85 p-5 backdrop-blur-sm shadow-soft transition hover:shadow-lift flex flex-col justify-between"
+                    >
+                      <div>
+                        <div className="flex items-center gap-3.5">
+                          {student.avatar ? (
+                            <img
+                              src={student.avatar}
+                              alt={name}
+                              className="h-12 w-12 rounded-xl object-cover ring-2 ring-emerald-200 shadow-sm shrink-0"
+                            />
+                          ) : (
+                            <div className="grid h-12 w-12 place-items-center rounded-xl bg-gradient-to-br from-slate-900 via-emerald-950 to-slate-800 font-mono text-sm font-bold text-emerald-200 shadow-sm ring-2 ring-emerald-200/60 shrink-0 tracking-wider">
+                              {initials}
+                            </div>
+                          )}
+                          <div className="min-w-0 flex-1">
+                            <p className="font-editorial text-xs font-semibold tracking-wide text-emerald-800 truncate">
+                              Student Researcher
+                            </p>
+                            <h4 className="font-editorial text-lg font-bold text-slate-900 leading-snug truncate">
+                              {name}
+                            </h4>
+                            <p className="font-editorial text-xs font-medium text-slate-500 truncate">
+                              {student.institution}
+                            </p>
+                          </div>
+                        </div>
+
+                        <div className="mt-4 pt-3 border-t border-slate-100/90">
+                          <p className="font-editorial text-sm font-semibold text-slate-800">{student.major}</p>
+                          <p className="mt-1 font-editorial text-xs text-slate-500">{student.institution}</p>
+                          <div className="mt-2.5 flex flex-wrap gap-1.5">
+                            <span className="rounded-md border border-emerald-200/80 bg-emerald-50/70 px-2 py-0.5 font-mono text-[10px] font-medium text-emerald-800">
+                              Undergraduate Research Scholar
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                  );
+                })}
+            </div>
           </div>
 
           <div className="mt-14">
@@ -786,9 +976,9 @@ function PeopleAndLife() {
                 </label>
                 <button
                   type="submit"
-                  className="focus-ring mt-6 inline-flex w-full items-center justify-center rounded-xl bg-sky-600 px-5 py-3.5 font-editorial text-sm font-semibold text-white shadow-md shadow-sky-950/40 hover:bg-sky-500 transition-all hover:-translate-y-0.5"
+                  className="focus-ring mt-6 inline-flex w-full items-center justify-center rounded-xl bg-white px-5 py-3.5 font-editorial text-sm font-bold text-slate-950 shadow-xl shadow-black/20 hover:bg-sky-50 hover:text-sky-950 transition-all hover:-translate-y-0.5"
                 >
-                  <Send className="mr-2 h-4 w-4 text-white" />
+                  <Send className="mr-2 h-4 w-4 text-slate-950" />
                   {submitted ? 'Inquiry Recorded — Thank You!' : 'Submit Inquiry'}
                 </button>
               </form>
@@ -808,7 +998,7 @@ function Footer() {
           <div>
             <div className="flex items-center gap-3 text-white">
               <img
-                src="/assets/images/slscm_logo.png"
+                src="/assets/images/slscm_logo.svg"
                 alt="SLSCM Lab Logo"
                 className="h-10 w-10 rounded-full object-cover ring-1 ring-white/20"
               />
@@ -848,9 +1038,12 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className="mt-12 flex flex-col justify-between gap-3 border-t border-slate-800 pt-6 font-mono text-[11px] text-slate-400 sm:flex-row">
+        <div className="mt-12 flex flex-col justify-between gap-3 border-t border-slate-800 pt-6 font-mono text-[11px] text-slate-400 sm:flex-row sm:items-end">
           <span>© 2025–2026 SLSCM Lab · National Economics University. All rights reserved.</span>
-          <span>Developed by Trung Le Huu · Supervised by Dr. Duc-Minh Vu</span>
+          <div className="flex flex-col sm:items-end gap-1">
+            <span>Developed and maintained by Le Huu Trung @ Warwick</span>
+            <span>Supervised by Dr. Duc-Minh Vu @ NEU</span>
+          </div>
         </div>
       </div>
     </footer>
