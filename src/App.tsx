@@ -38,13 +38,16 @@ type Post = {
   action_label?: string;
 };
 type YoungResearcher = {
-  id: string; name: string; name_en?: string; role_vi: string; role_en?: string;
+  id: string; name: string; name_en?: string; role_vi?: string; role_en?: string;
+  affiliation_vi?: string; affiliation_en?: string; email?: string;
   current_status_vi?: string; current_status_en?: string;
   featured_publications?: string[]; research_interests?: string[];
-  avatar?: string;
+  avatar?: string; affiliation?: string;
 };
 type StudentResearcher = {
-  name: string; name_en?: string; major: string; institution: string; avatar?: string;
+  name: string; name_en?: string; major: string; major_en?: string;
+  institution: string; institution_en?: string; email?: string; avatar?: string;
+  affiliation?: string;
 };
 
 const overview = overviewData as typeof overviewData;
@@ -695,9 +698,9 @@ function PeopleAndLife() {
             <div className="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
               {(memberTab === 'all' || memberTab === 'researchers') &&
                 people.young_researchers_and_authors.map((member) => {
-                  const name = member.name;
+                  const name = member.name_en || member.name;
                   const initials = getMemberInitials(name);
-                  const role = member.role_en || member.role_vi || 'Researcher / Author';
+                  const role = member.role_en || 'Researcher / Author';
                   return (
                     <article
                       key={member.id}
@@ -723,16 +726,27 @@ function PeopleAndLife() {
                             <h4 className="font-editorial text-lg font-bold text-slate-900 leading-snug truncate">
                               {name}
                             </h4>
-                            <p className="font-editorial text-xs font-medium text-slate-500 truncate">
-                              {member.name_en || 'SLSCM Lab'}
-                            </p>
+                            {member.affiliation_en && (
+                              <p className="font-editorial text-xs font-medium text-slate-500 truncate">
+                                {member.affiliation_en}
+                              </p>
+                            )}
+                            {member.email && (
+                              <a
+                                href={`mailto:${member.email}`}
+                                className="mt-1 inline-flex items-center gap-1 font-mono text-[11px] text-sky-700 hover:text-sky-900 truncate"
+                              >
+                                <Mail className="h-3 w-3 shrink-0" />
+                                <span className="truncate">{member.email}</span>
+                              </a>
+                            )}
                           </div>
                         </div>
 
                         <div className="mt-4 pt-3 border-t border-slate-100/90">
-                          {member.current_status_vi && (
+                          {member.current_status_en && (
                             <p className="font-editorial text-xs font-medium text-slate-700 leading-relaxed line-clamp-2">
-                              {member.current_status_vi}
+                              {member.current_status_en}
                             </p>
                           )}
                           {member.featured_publications && member.featured_publications.length > 0 && (
@@ -749,7 +763,7 @@ function PeopleAndLife() {
                           )}
                           {member.research_interests && member.research_interests.length > 0 && (
                             <div className="mt-2 flex flex-wrap gap-1.5">
-                              {member.research_interests.slice(0, 2).map((item) => (
+                              {member.research_interests.slice(0, 3).map((item) => (
                                 <span
                                   key={item}
                                   className="rounded-md border border-slate-200/80 bg-slate-50/80 px-2 py-0.5 font-editorial text-[11px] font-medium text-slate-600"
@@ -767,11 +781,13 @@ function PeopleAndLife() {
 
               {(memberTab === 'all' || memberTab === 'students') &&
                 people.student_researchers.map((student) => {
-                  const name = student.name;
+                  const name = student.name_en || student.name;
                   const initials = getMemberInitials(name);
+                  const major = student.major_en || student.major;
+                  const institution = student.institution_en || student.institution;
                   return (
                     <article
-                      key={student.name}
+                      key={name}
                       className="rounded-2xl border border-slate-200/80 bg-white/85 p-5 backdrop-blur-sm shadow-soft transition hover:shadow-lift flex flex-col justify-between"
                     >
                       <div>
@@ -795,14 +811,23 @@ function PeopleAndLife() {
                               {name}
                             </h4>
                             <p className="font-editorial text-xs font-medium text-slate-500 truncate">
-                              {student.institution}
+                              {institution}
                             </p>
+                            {student.email && (
+                              <a
+                                href={`mailto:${student.email}`}
+                                className="mt-1 inline-flex items-center gap-1 font-mono text-[11px] text-emerald-700 hover:text-emerald-900 truncate"
+                              >
+                                <Mail className="h-3 w-3 shrink-0" />
+                                <span className="truncate">{student.email}</span>
+                              </a>
+                            )}
                           </div>
                         </div>
 
                         <div className="mt-4 pt-3 border-t border-slate-100/90">
-                          <p className="font-editorial text-sm font-semibold text-slate-800">{student.major}</p>
-                          <p className="mt-1 font-editorial text-xs text-slate-500">{student.institution}</p>
+                          <p className="font-editorial text-sm font-semibold text-slate-800">{major}</p>
+                          <p className="mt-1 font-editorial text-xs text-slate-500">{institution}</p>
                           <div className="mt-2.5 flex flex-wrap gap-1.5">
                             <span className="rounded-md border border-emerald-200/80 bg-emerald-50/70 px-2 py-0.5 font-mono text-[10px] font-medium text-emerald-800">
                               Undergraduate Research Scholar
@@ -901,14 +926,6 @@ function PeopleAndLife() {
               );
             })}
           </div>
-          <a
-            className="focus-ring mt-8 inline-flex items-center rounded-xl border border-sky-200/80 bg-white/80 backdrop-blur-sm px-4 py-3 text-sm font-semibold text-sky-800 hover:bg-white shadow-soft"
-            href="https://www.facebook.com/slscm.lab"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Explore facebook.com/slscm.lab <ExternalLink className="ml-2 h-4 w-4" />
-          </a>
         </div>
       </section>
 
