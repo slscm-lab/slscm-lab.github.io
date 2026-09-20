@@ -212,14 +212,12 @@ function Hero() {
           <h1 className="mt-6 max-w-4xl font-editorial text-5xl leading-[1.04] tracking-tight text-slate-950 sm:text-6xl lg:text-7xl">
             The{' '}
             <em
-              className="animate-gradient-flow"
+              className="metallic-gradient-text"
               style={{
-                backgroundImage: 'linear-gradient(110deg, #0284c7 0%, #0891b2 18%, #38bdf8 36%, #ffffff 46%, #e0f2fe 50%, #38bdf8 54%, #0891b2 72%, #0284c7 90%, #0284c7 100%)',
-                backgroundSize: '200% 100%',
+                backgroundImage: 'linear-gradient(135deg, #0284c7 0%, #38bdf8 25%, #0284c7 45%, #0891b2 70%, #22d3ee 85%, #0891b2 100%)',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
                 display: 'inline-block',
-                animation: 'flow-gradient-ltr 3.5s linear infinite',
               }}
             >
               Optimizing Frontier
