@@ -214,7 +214,7 @@ function Hero() {
             <em
               className="animate-gradient-flow"
               style={{
-                backgroundImage: 'linear-gradient(90deg, #0369a1 0%, #0284c7 20%, #06b6d4 40%, #38bdf8 50%, #06b6d4 60%, #0284c7 80%, #0369a1 100%)',
+                backgroundImage: 'linear-gradient(110deg, #0284c7 0%, #0891b2 18%, #38bdf8 36%, #ffffff 46%, #e0f2fe 50%, #38bdf8 54%, #0891b2 72%, #0284c7 90%, #0284c7 100%)',
                 backgroundSize: '200% 100%',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
