@@ -39,15 +39,14 @@ export const Footer: React.FC<FooterProps> = ({ onRouteChange }) => {
             </div>
 
             <p className="mt-4 max-w-md font-editorial text-sm leading-relaxed text-slate-300">
-              Phòng Thí nghiệm Quản trị Logistics &amp; Chuỗi cung ứng Thông minh
-              (Smart Logistics &amp; Supply Chain Management Lab) trực thuộc Trường Công nghệ,
-              Đại học Kinh tế Quốc dân (NEU).
+              Smart Logistics &amp; Supply Chain Management Lab (SLSCM Lab),
+              College of Technology, National Economics University (NEU), Hanoi, Vietnam.
             </p>
 
             <div className="mt-5 space-y-2 font-mono text-xs text-slate-400">
               <p className="flex items-start gap-2.5">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-cyan-400" />
-                <span>P1613, Tòa nhà A1, 207 Giải Phóng, Hai Bà Trưng, Hà Nội, Việt Nam</span>
+                <span>Room P1613, Building A1, 207 Giai Phong Road, Hai Ba Trung, Hanoi, Vietnam</span>
               </p>
               <p className="flex items-center gap-2.5">
                 <Mail className="h-4 w-4 shrink-0 text-cyan-400" />
@@ -92,7 +91,7 @@ export const Footer: React.FC<FooterProps> = ({ onRouteChange }) => {
                 rel="noreferrer"
                 className="flex items-center justify-between text-slate-400 hover:text-white transition-colors"
               >
-                <span>Khoa KHDL &amp; TTNT (FDA)</span>
+                <span>Faculty of Data Science &amp; AI (FDA)</span>
                 <ExternalLink className="h-3.5 w-3.5" />
               </a>
               <a
@@ -101,7 +100,7 @@ export const Footer: React.FC<FooterProps> = ({ onRouteChange }) => {
                 rel="noreferrer"
                 className="flex items-center justify-between text-slate-400 hover:text-white transition-colors"
               >
-                <span>Đại học Kinh tế Quốc dân (NEU)</span>
+                <span>National Economics University (NEU)</span>
                 <ExternalLink className="h-3.5 w-3.5" />
               </a>
               <a
@@ -127,7 +126,7 @@ export const Footer: React.FC<FooterProps> = ({ onRouteChange }) => {
         </div>
 
         <div className="mt-12 flex flex-col justify-between gap-3 border-t border-slate-800 pt-6 font-mono text-[11px] text-slate-500 sm:flex-row sm:items-center">
-          <p>© 2025–2026 SLSCM Lab · Trường Công nghệ, Đại học Kinh tế Quốc dân.</p>
+          <p>© 2025–2026 SLSCM Lab · College of Technology, National Economics University.</p>
           <div className="flex items-center gap-4 text-slate-400">
             <span>Lead: Dr. Duc Minh Vu</span>
             <span>•</span>

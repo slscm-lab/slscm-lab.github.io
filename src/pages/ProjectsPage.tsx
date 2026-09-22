@@ -109,7 +109,7 @@ export const ProjectsPage: React.FC = () => {
                   {/* Category & Grant ID Header */}
                   <div className="flex flex-wrap items-center gap-2 mb-3">
                     <span className="rounded-lg bg-sky-100/90 text-sky-900 px-2.5 py-0.5 font-mono text-[11px] font-bold">
-                      {project.category}
+                      {project.category_en || project.category}
                     </span>
                     {project.grant_code && (
                       <span className="rounded-lg border border-slate-200 bg-slate-50 px-2.5 py-0.5 font-mono text-[11px] text-slate-700 font-medium">
@@ -127,13 +127,11 @@ export const ProjectsPage: React.FC = () => {
 
                   {/* Title */}
                   <h2 className="font-editorial text-2xl sm:text-3xl font-bold text-slate-950 leading-snug">
-                    {project.title_vi}
+                    {project.title_en || project.title_vi}
                   </h2>
-                  {project.title_en && (
-                    <p className="mt-1 font-editorial text-base text-slate-500 italic">
-                      {project.title_en}
-                    </p>
-                  )}
+                  <p className="mt-1 font-editorial text-sm text-slate-500 italic">
+                    {project.title_vi}
+                  </p>
 
                   {/* Sponsor / Collaboration Info */}
                   <div className="mt-3 flex flex-wrap items-center gap-3 text-xs text-slate-600 font-editorial">
@@ -152,7 +150,7 @@ export const ProjectsPage: React.FC = () => {
 
                   {/* Description */}
                   <p className="mt-4 font-editorial text-sm sm:text-base leading-relaxed text-slate-700">
-                    {project.description_vi}
+                    {project.description_en || project.description_vi}
                   </p>
 
                   {/* Methodology Note */}
@@ -164,13 +162,13 @@ export const ProjectsPage: React.FC = () => {
                   )}
 
                   {/* Key Outcomes */}
-                  {project.outcomes && project.outcomes.length > 0 && (
+                  {((project.outcomes_en && project.outcomes_en.length > 0) || (project.outcomes && project.outcomes.length > 0)) && (
                     <div className="mt-5">
                       <h4 className="font-mono text-xs font-semibold uppercase tracking-wider text-slate-500 mb-2.5">
                         Key Outcomes &amp; Deliverables
                       </h4>
                       <ul className="grid gap-2 sm:grid-cols-2">
-                        {project.outcomes.map((outcome, idx) => (
+                        {(project.outcomes_en || project.outcomes || []).map((outcome, idx) => (
                           <li key={idx} className="flex items-start gap-2 font-editorial text-xs text-slate-700">
                             <CheckCircle2 className="h-4 w-4 shrink-0 text-emerald-600 mt-0.5" />
                             <span>{outcome}</span>
