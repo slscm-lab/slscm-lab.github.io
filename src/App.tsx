@@ -25,7 +25,7 @@ type Person = {
 type HallEntry = {
   id: string; name: string; name_en?: string; destination_institution: string;
   country: string; achievement_vi: string; achievement_en?: string; field: string; year: number;
-  avatar?: string;
+  avatar?: string; award_type?: string; advisors?: string;
 };
 type Project = {
   id: string; title_vi: string; title_en?: string; description_vi: string;
@@ -909,14 +909,14 @@ function PeopleAndLife() {
                   }`}
                 >
                   <Trophy className="h-3 w-3" />
-                  Ph.D. Placements ({people.hall_of_fame.length})
+                  Placements &amp; Scholarships ({people.hall_of_fame.length})
                 </button>
               </div>
             </div>
 
-            {/* When viewing Ph.D. Placements (Hall of Fame) */}
+            {/* When viewing Ph.D. & Master Placements (Hall of Fame) */}
             {alumniTab === 'phd' && (
-              <div className="mt-6 grid gap-4 md:grid-cols-3">
+              <div className="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
                 {people.hall_of_fame.map((entry) => {
                   const achievement = entry.achievement_en || entry.achievement_vi;
                   const name = entry.name_en || entry.name;
@@ -940,7 +940,7 @@ function PeopleAndLife() {
                           )}
                           <div>
                             <span className="inline-flex items-center gap-1 text-[10px] font-mono font-semibold text-amber-900 bg-amber-100/90 px-2 py-0.5 rounded">
-                              <Trophy className="h-3 w-3 text-amber-600" /> Ph.D. Scholarship · {entry.year}
+                              <Trophy className="h-3 w-3 text-amber-600" /> {entry.award_type || 'Scholarship'} · {entry.year}
                             </span>
                             <h4 className="mt-1 font-editorial text-lg font-bold text-slate-900 leading-snug">
                               {name}
@@ -1029,7 +1029,14 @@ function PeopleAndLife() {
                         {hofMatch && (
                           <div className="mt-3 inline-flex items-center gap-1.5 rounded-md border border-amber-200/80 bg-amber-50/90 px-2.5 py-1 text-[11px] font-editorial font-semibold text-amber-900">
                             <Trophy className="h-3 w-3 text-amber-600 shrink-0" />
-                            <span>Ph.D. Placement · {hofMatch.destination_institution}</span>
+                            <span>
+                              {hofMatch.award_type
+                                ? hofMatch.award_type
+                                    .replace(' & Program Valedictorian', '')
+                                    .replace(' & Valedictorian', '')
+                                : 'Placement'}{' '}
+                              · {hofMatch.destination_institution}
+                            </span>
                           </div>
                         )}
 
