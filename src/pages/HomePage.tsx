@@ -159,6 +159,46 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
             </p>
           </div>
         </div>
+
+        {/* Institutional & Global Research Network Strip */}
+        <div className="mt-10 rounded-2xl border border-slate-200/80 bg-white/70 p-5 sm:p-6 backdrop-blur-md shadow-xs">
+          <p className="text-center font-mono text-[11px] font-bold uppercase tracking-widest text-slate-400 mb-4">
+            Institutional Research &amp; Doctoral Placement Network
+          </p>
+          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-center">
+            <span className="font-editorial text-xs sm:text-sm font-bold text-slate-700 hover:text-sky-800 transition">
+              National Economics University (NEU)
+            </span>
+            <span className="h-1 w-1 rounded-full bg-slate-300 hidden sm:inline-block" />
+            <span className="font-editorial text-xs sm:text-sm font-bold text-slate-700 hover:text-sky-800 transition">
+              Singapore Management University (SMU)
+            </span>
+            <span className="h-1 w-1 rounded-full bg-slate-300 hidden sm:inline-block" />
+            <span className="font-editorial text-xs sm:text-sm font-bold text-slate-700 hover:text-sky-800 transition">
+              VNU University of Science (VNU-HUS)
+            </span>
+            <span className="h-1 w-1 rounded-full bg-slate-300 hidden sm:inline-block" />
+            <span className="font-editorial text-xs sm:text-sm font-bold text-slate-700 hover:text-sky-800 transition">
+              Hanoi University of Science &amp; Technology (HUST)
+            </span>
+            <span className="h-1 w-1 rounded-full bg-slate-300 hidden sm:inline-block" />
+            <span className="font-editorial text-xs sm:text-sm font-bold text-slate-700 hover:text-sky-800 transition">
+              University of Connecticut (UConn)
+            </span>
+            <span className="h-1 w-1 rounded-full bg-slate-300 hidden sm:inline-block" />
+            <span className="font-editorial text-xs sm:text-sm font-bold text-slate-700 hover:text-sky-800 transition">
+              Liverpool John Moores University (LJMU)
+            </span>
+            <span className="h-1 w-1 rounded-full bg-slate-300 hidden sm:inline-block" />
+            <span className="font-editorial text-xs sm:text-sm font-bold text-slate-700 hover:text-sky-800 transition">
+              University of Warwick (WMG)
+            </span>
+            <span className="h-1 w-1 rounded-full bg-slate-300 hidden sm:inline-block" />
+            <span className="font-editorial text-xs sm:text-sm font-bold text-slate-700 hover:text-sky-800 transition">
+              University of Udine
+            </span>
+          </div>
+        </div>
       </section>
 
       {/* 3 Core Research Pillars */}
