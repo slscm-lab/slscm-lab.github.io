@@ -3,7 +3,7 @@
     {
       "id": "vu-duc-minh",
       "name": "TS. Vũ Đức Minh",
-      "name_en": "Dr. Duc-Minh Vu",
+      "name_en": "Dr. Duc Minh Vu",
       "title_vi": "Trưởng phòng thí nghiệm / Giảng viên",
       "title_en": "Head of Lab / Lecturer",
       "affiliation_vi": "Khoa Khoa học Dữ liệu & Trí tuệ Nhân tạo (FDA), Trường Công nghệ, Đại học Kinh tế Quốc dân (NEU)",
@@ -23,7 +23,7 @@
     {
       "id": "ha-minh-hoang",
       "name": "PGS. TS. Hà Minh Hoàng",
-      "name_en": "Assoc. Prof. Dr. Minh Hoang Ha",
+      "name_en": "Assoc. Prof. Minh Hoang Ha",
       "title_vi": "Trưởng khoa / Cố vấn khoa học cao cấp",
       "title_en": "Dean of Faculty / Senior Scientific Advisor",
       "role_badge": "DEAN OF FACULTY",
@@ -43,10 +43,10 @@
     {
       "id": "dinh-nho-minh",
       "name": "TS. Đinh Nho Minh",
-      "name_en": "Dr. Dinh Nho Minh",
+      "name_en": "Dr. Nho Minh Dinh",
       "title_vi": "Giảng viên / Nghiên cứu viên",
-      "title_en": "Lecturer / Researcher",
-      "role_badge": "FACULTY RESEARCHER",
+      "title_en": "Lecturer / Faculty Member",
+      "role_badge": "FACULTY MEMBER",
       "affiliation_vi": "Khoa Khoa học Dữ liệu & Trí tuệ Nhân tạo (FDA), Trường Công nghệ, Đại học Kinh tế Quốc dân (NEU)",
       "affiliation_en": "Faculty of Data Science and AI (FDA), College of Technology, National Economics University (NEU)",
       "email": "",
@@ -84,8 +84,8 @@
     },
     {
       "id": "pham-tuan-anh",
-      "name": "Phạm Tuấn Anh",
-      "name_en": "Tuan Anh Pham",
+      "name": "ThS. Phạm Tuấn Anh",
+      "name_en": "MSc. Tuan Anh Pham",
       "title_vi": "Giảng viên / Nghiên cứu viên",
       "title_en": "Lecturer / Faculty Member",
       "role_badge": "FACULTY MEMBER",
@@ -99,9 +99,9 @@
         "Energy-Aware Drone Logistics",
         "Combinatorial Optimization"
       ],
-      "bio_vi": "Giảng viên tại Trường Công nghệ, Đại học Kinh tế Quốc dân (NEU) và nghiên cứu viên tại SLSCM Lab. Tác giả của các công trình công bố trên các tạp chí vận trù học danh tiếng quốc tế như European Journal of Operational Research (EJOR, Q1) và Springer Optimization and Its Applications (COMOSA), chuyên sâu về các thuật toán tìm kiếm di truyền lai ghép (HGS) và bài toán quản lý tồn kho - định tuyến (IRP).",
+      "bio_vi": "Thạc sĩ, Giảng viên tại Trường Công nghệ, Đại học Kinh tế Quốc dân (NEU) và nghiên cứu viên tại SLSCM Lab. Tác giả của các công trình công bố trên các tạp chí vận trù học danh tiếng quốc tế như European Journal of Operational Research (EJOR, Q1) và Springer Optimization and Its Applications (COMOSA), chuyên sâu về các thuật toán tìm kiếm di truyền lai ghép (HGS) và bài toán quản lý tồn kho - định tuyến (IRP).",
       "avatar": "/assets/images/people/pham_tuan_anh.jpg",
-      "bio_en": "Lecturer at College of Technology, National Economics University (NEU) and researcher at SLSCM Lab. Author of publications in premier international operations research journals including European Journal of Operational Research (EJOR, Q1) and Springer Optimization and Its Applications (COMOSA), specializing in hybrid genetic search (HGS) and inventory routing problems (IRP)."
+      "bio_en": "Master of Science, Lecturer at College of Technology, National Economics University (NEU) and researcher at SLSCM Lab. Author of publications in premier international operations research journals including European Journal of Operational Research (EJOR, Q1) and Springer Optimization and Its Applications (COMOSA), specializing in hybrid genetic search (HGS) and inventory routing problems (IRP)."
     }
   ],
   "young_researchers_and_authors": [
