@@ -190,7 +190,7 @@ export const SeminarsPage: React.FC = () => {
                   <div className="mt-4 rounded-xl bg-slate-50/80 p-4 border border-slate-200/60">
                     <p className="font-mono text-[10px] uppercase font-bold text-slate-400 mb-1.5">Talk Abstract</p>
                     <p className="font-editorial text-xs sm:text-sm leading-relaxed text-slate-700">
-                      {item.abstract}
+                      {item.abstract_en || item.abstract}
                     </p>
                   </div>
 

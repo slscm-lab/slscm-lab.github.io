@@ -26,6 +26,7 @@ export type Project = {
   title_vi: string;
   title_en?: string;
   category: string;
+  category_en?: string;
   sponsor?: string;
   grant_code?: string;
   period: string;
@@ -37,6 +38,7 @@ export type Project = {
   description_en?: string;
   methodology?: string;
   outcomes?: string[];
+  outcomes_en?: string[];
   tags?: string[];
   related_publications?: RelatedPublication[];
   pillars?: {
