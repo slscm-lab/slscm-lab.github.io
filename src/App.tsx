@@ -572,7 +572,7 @@ function PublicationsVault() {
 
 function PeopleAndLife() {
   const [submitted, setSubmitted] = useState(false);
-  const [memberTab, setMemberTab] = useState<'all' | 'researchers' | 'students' | 'alumni'>('all');
+  const [memberTab, setMemberTab] = useState<'all' | 'researchers' | 'students'>('all');
   const [alumniTab, setAlumniTab] = useState<'all' | 'phd'>('all');
 
   const hofMap = useMemo(() => {
@@ -689,7 +689,7 @@ function PeopleAndLife() {
                       : 'text-slate-600 hover:text-slate-900'
                   }`}
                 >
-                  All ({people.young_researchers_and_authors.length + people.student_researchers.length + (people.alumni?.length || 0)})
+                  All ({people.young_researchers_and_authors.length + people.student_researchers.length})
                 </button>
                 <button
                   type="button"
@@ -712,17 +712,6 @@ function PeopleAndLife() {
                   }`}
                 >
                   Student Researchers ({people.student_researchers.length})
-                </button>
-                <button
-                  type="button"
-                  onClick={() => setMemberTab('alumni')}
-                  className={`rounded-lg px-3 py-1.5 font-editorial text-xs font-semibold transition ${
-                    memberTab === 'alumni'
-                      ? 'bg-slate-900 text-white shadow-sm'
-                      : 'text-slate-600 hover:text-slate-900'
-                  }`}
-                >
-                  Alumni ({people.alumni?.length || 0})
                 </button>
               </div>
             </div>
@@ -865,66 +854,6 @@ function PeopleAndLife() {
                               Undergraduate Research Scholar
                             </span>
                           </div>
-                        </div>
-                      </div>
-                    </article>
-                  );
-                })}
-
-              {(memberTab === 'all' || memberTab === 'alumni') &&
-                people.alumni &&
-                people.alumni.map((alum) => {
-                  const name = alum.name_en || alum.name;
-                  const initials = getMemberInitials(name);
-                  const formerRole = alum.former_role_en || alum.former_role_vi;
-                  const currentPos = alum.current_position_en || alum.current_position_vi;
-                  const institution = alum.institution_en || alum.institution;
-                  return (
-                    <article
-                      key={alum.id}
-                      className="rounded-2xl border border-indigo-200/80 bg-white/85 p-5 backdrop-blur-sm shadow-soft transition hover:shadow-lift flex flex-col justify-between"
-                    >
-                      <div>
-                        <div className="flex items-center gap-3.5">
-                          {alum.avatar ? (
-                            <img
-                              src={alum.avatar}
-                              alt={name}
-                              className="h-12 w-12 rounded-xl object-cover ring-2 ring-indigo-200 shadow-sm shrink-0"
-                            />
-                          ) : (
-                            <div className="grid h-12 w-12 place-items-center rounded-xl bg-gradient-to-br from-indigo-950 via-slate-900 to-indigo-900 font-mono text-sm font-bold text-indigo-200 shadow-sm ring-2 ring-indigo-200/60 shrink-0 tracking-wider">
-                              {initials}
-                            </div>
-                          )}
-                          <div className="min-w-0 flex-1">
-                            <div className="flex items-center justify-between gap-1">
-                              <p className="font-editorial text-xs font-semibold tracking-wide text-indigo-800 truncate">
-                                {formerRole}
-                              </p>
-                              <span className="font-mono text-[10px] font-semibold text-indigo-700 shrink-0 bg-indigo-50 px-1.5 py-0.5 rounded border border-indigo-100">
-                                {alum.period}
-                              </span>
-                            </div>
-                            <h4 className="font-editorial text-lg font-bold text-slate-900 leading-snug truncate">
-                              {name}
-                            </h4>
-                            <p className="font-editorial text-xs font-medium text-slate-500 truncate">
-                              {institution}
-                            </p>
-                          </div>
-                        </div>
-
-                        <div className="mt-4 pt-3 border-t border-slate-100/90">
-                          <p className="font-editorial text-sm font-semibold text-indigo-950">{currentPos}</p>
-                          <p className="mt-1 font-editorial text-xs text-slate-500">{institution}</p>
-                          {alum.research_focus && (
-                            <div className="mt-2.5 flex flex-wrap gap-1.5">
-                              <span className="rounded-md border border-indigo-200/80 bg-indigo-50/70 px-2 py-0.5 font-mono text-[10px] font-medium text-indigo-900">
-                                Focus: {alum.research_focus}
-                              </span>
-                            </div>
-                          )}
                         </div>
                       </div>
                     </article>
