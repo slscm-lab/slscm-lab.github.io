@@ -86,7 +86,9 @@ export type EventBrief = {
   badge?: string;
   summary: string;
   summary_vi?: string;
+  summary_en?: string;
   content_vi?: string;
+  content_en?: string;
   tags?: string[];
   link?: string;
   link_label?: string;

@@ -192,11 +192,8 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
               >
                 <div className="text-3xl mb-4">{detail.icon}</div>
                 <h3 className="font-editorial text-xl font-bold text-slate-950 leading-snug">
-                  {pillar.title_en || pillar.title_vi}
+                  {pillar.title_en}
                 </h3>
-                <p className="mt-1 font-editorial text-xs text-slate-500 italic">
-                  {pillar.title_vi}
-                </p>
                 <p className="mt-3 font-editorial text-xs sm:text-sm text-slate-600 leading-relaxed">
                   {detail.desc}
                 </p>
@@ -250,7 +247,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
               <div>
                 <div className="flex items-center justify-between gap-2 mb-2">
                   <span className="rounded-lg bg-sky-100 px-2.5 py-0.5 font-mono text-[10px] font-bold text-sky-900">
-                    {project.category_en || project.category.split('(')[0]}
+                    {project.category_en || project.category}
                   </span>
                   <span className="font-mono text-[11px] text-slate-500">
                     {project.period}
@@ -258,18 +255,15 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                 </div>
 
                 <h3 className="font-editorial text-lg font-bold text-slate-950 leading-snug">
-                  {project.title_en || project.title_vi}
+                  {project.title_en}
                 </h3>
-                <p className="mt-0.5 font-editorial text-xs text-slate-500 italic">
-                  {project.title_vi}
-                </p>
                 {project.sponsor && (
                   <p className="mt-1.5 font-editorial text-xs font-semibold text-sky-800">
                     Sponsor: {project.sponsor}
                   </p>
                 )}
                 <p className="mt-3 font-editorial text-xs sm:text-sm text-slate-600 leading-relaxed line-clamp-3">
-                  {project.description_en || project.description_vi}
+                  {project.description_en}
                 </p>
 
                 {/* Related Papers Preview */}
