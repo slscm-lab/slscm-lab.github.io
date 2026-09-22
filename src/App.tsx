@@ -598,17 +598,17 @@ function PeopleAndLife() {
             title="Rigorous in mentorship, borderless in trajectory."
             text="A scholarly community of professors, researchers, and students advancing Vietnamese scientific excellence on global stages."
           />
-          <div className="mt-10 grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-10 grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4">
             {people.leadership_and_faculty.map((person, index) => {
               const name = person.name_en || person.name;
               const title = person.title_en || person.title_vi;
               const affiliation = person.affiliation_en || person.affiliation_vi;
               const bio = person.bio_en || person.bio_vi;
-              const roleLabel = index === 0
+              const roleLabel = (person as { role_badge?: string }).role_badge || (index === 0
                 ? 'HEAD OF LAB'
                 : index === 1
                 ? 'SCIENTIFIC ADVISOR'
-                : 'RESEARCH FELLOW';
+                : 'RESEARCH FELLOW');
 
               return (
                 <article
@@ -624,8 +624,8 @@ function PeopleAndLife() {
                           className="h-16 w-16 rounded-2xl object-cover ring-2 ring-slate-100 shadow-sm shrink-0"
                         />
                       ) : (
-                        <div className="grid h-16 w-16 place-items-center rounded-2xl bg-gradient-to-br from-slate-900 to-sky-700 font-editorial text-2xl text-white shrink-0">
-                          {name.split(' ').slice(-1)[0][0]}
+                        <div className="grid h-16 w-16 place-items-center rounded-2xl bg-gradient-to-br from-slate-900 to-sky-700 font-editorial text-lg font-bold text-white shrink-0 tracking-wider">
+                          {getMemberInitials(name)}
                         </div>
                       )}
                       <div className="min-w-0 flex-1">
