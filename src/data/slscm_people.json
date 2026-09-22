@@ -246,6 +246,34 @@
       "award_type": "PhD Scholarship & Program Valedictorian",
       "field": "Actuarial Science & Quantitative Risk Management",
       "advisors": "Khoa Toán Kinh tế & SLSCM Lab, NEU"
+    },
+    {
+      "id": "hof-mai-thanh-loc",
+      "name": "Mai Thành Lộc",
+      "name_en": "Thanh Loc Mai",
+      "avatar": "",
+      "achievement_vi": "Cựu Sinh viên nghiên cứu Toán Kinh tế – NEU; Giành học bổng Thạc sĩ toàn phần tại Đại học VinUniversity (VinUni, Việt Nam, 2025).",
+      "achievement_en": "Former Student Researcher in Mathematical Economics - NEU; Awarded Full Master's Scholarship at VinUniversity (VinUni, Vietnam, 2025).",
+      "destination_institution": "VinUniversity (VinUni)",
+      "country": "Vietnam",
+      "year": 2025,
+      "award_type": "Master's Scholarship",
+      "field": "Computer Science & Analytics",
+      "advisors": "Khoa Toán Kinh tế & SLSCM Lab, NEU"
+    },
+    {
+      "id": "hof-la-quang-chien",
+      "name": "Lã Quang Chiến",
+      "name_en": "Quang Chien La",
+      "avatar": "",
+      "achievement_vi": "Cựu Sinh viên nghiên cứu Toán Kinh tế – NEU; Giành học bổng Thạc sĩ toàn phần tại Đại học VinUniversity (VinUni, Việt Nam, 2025).",
+      "achievement_en": "Former Student Researcher in Mathematical Economics - NEU; Awarded Full Master's Scholarship at VinUniversity (VinUni, Vietnam, 2025).",
+      "destination_institution": "VinUniversity (VinUni)",
+      "country": "Vietnam",
+      "year": 2025,
+      "award_type": "Master's Scholarship",
+      "field": "Operations Research & Analytics",
+      "advisors": "Khoa Toán Kinh tế & SLSCM Lab, NEU"
     }
   ],
   "student_researchers": [
@@ -274,24 +302,6 @@
       "major_en": "Data Science & Artificial Intelligence (DS&AI)",
       "institution": "Trường Công nghệ, Đại học Kinh tế Quốc dân",
       "institution_en": "College of Technology, National Economics University (NEU)",
-      "email": ""
-    },
-    {
-      "name": "Mai Thành Lộc",
-      "name_en": "Thanh Loc Mai",
-      "major": "Toán Kinh tế",
-      "major_en": "Mathematical Economics",
-      "institution": "Đại học Kinh tế Quốc dân",
-      "institution_en": "National Economics University (NEU)",
-      "email": ""
-    },
-    {
-      "name": "Lã Quang Chiến",
-      "name_en": "Quang Chien La",
-      "major": "Toán Kinh tế",
-      "major_en": "Mathematical Economics",
-      "institution": "Đại học Kinh tế Quốc dân",
-      "institution_en": "National Economics University (NEU)",
       "email": ""
     },
     {
@@ -409,6 +419,38 @@
       "institution": "University of South Florida (USF)",
       "institution_en": "University of South Florida (USF), USA",
       "research_focus": "Supply Chain Analytics, Operations Research, Industrial Engineering",
+      "email": "",
+      "linkedin": ""
+    },
+    {
+      "id": "alumni-mai-thanh-loc",
+      "name": "Mai Thành Lộc",
+      "name_en": "Thanh Loc Mai",
+      "avatar": "",
+      "period": "2025",
+      "former_role_vi": "Cựu Sinh viên nghiên cứu Toán Kinh tế",
+      "former_role_en": "Former Student Researcher in Mathematical Economics",
+      "current_position_vi": "Học viên Thạc sĩ (Master Fellow)",
+      "current_position_en": "Master's Scholar in Computer Science & Analytics",
+      "institution": "VinUniversity (VinUni)",
+      "institution_en": "VinUniversity (VinUni), Vietnam",
+      "research_focus": "Mathematical Economics, Optimization & Analytics",
+      "email": "",
+      "linkedin": ""
+    },
+    {
+      "id": "alumni-la-quang-chien",
+      "name": "Lã Quang Chiến",
+      "name_en": "Quang Chien La",
+      "avatar": "",
+      "period": "2025",
+      "former_role_vi": "Cựu Sinh viên nghiên cứu Toán Kinh tế",
+      "former_role_en": "Former Student Researcher in Mathematical Economics",
+      "current_position_vi": "Học viên Thạc sĩ (Master Fellow)",
+      "current_position_en": "Master's Scholar in Operations Research & Analytics",
+      "institution": "VinUniversity (VinUni)",
+      "institution_en": "VinUniversity (VinUni), Vietnam",
+      "research_focus": "Mathematical Economics, Operations Research & Analytics",
       "email": "",
       "linkedin": ""
     }
