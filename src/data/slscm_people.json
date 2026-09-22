@@ -121,27 +121,6 @@
         "Revisit Flying Sidekick Traveling Salesman Problem (RV-FSTSP)",
         "Drone Routing & Multi-Trip Delivery Logistics"
       ]
-    },
-    {
-      "id": "pham-hoang-giang",
-      "name": "Phạm Hoàng Giang",
-      "name_en": "Hoang Giang Pham",
-      "role_vi": "Nghiên cứu viên / Tác giả",
-      "role_en": "Researcher / Author",
-      "current_status_vi": "Tác giả công bố trên IJCAI (2026) & SOICT (2025)",
-      "current_status_en": "Author in IJCAI (2026) & SOICT (2025)",
-      "affiliation": "National Economics University (NEU)",
-      "affiliation_en": "National Economics University (NEU)",
-      "email": "",
-      "featured_publications": [
-        "IJCAI (2026)",
-        "SOICT (2025)"
-      ],
-      "research_interests": [
-        "Stackelberg Security Games",
-        "Quantal Response Models",
-        "Constraint Programming Cutting-Plane Algorithms"
-      ]
     }
   ],
   "hall_of_fame": [
@@ -284,24 +263,6 @@
     {
       "name": "Nguyễn Trần Quốc Đạt",
       "name_en": "Quoc Dat Nguyen Tran",
-      "major": "Toán Kinh tế",
-      "major_en": "Mathematical Economics",
-      "institution": "Đại học Kinh tế Quốc dân",
-      "institution_en": "National Economics University (NEU)",
-      "email": ""
-    },
-    {
-      "name": "Lê Quốc Trần Anh",
-      "name_en": "Tran Anh Le Quoc",
-      "major": "Toán Kinh tế",
-      "major_en": "Mathematical Economics",
-      "institution": "Đại học Kinh tế Quốc dân",
-      "institution_en": "National Economics University (NEU)",
-      "email": ""
-    },
-    {
-      "name": "Hà Quang Minh",
-      "name_en": "Quang Minh Ha",
       "major": "Toán Kinh tế",
       "major_en": "Mathematical Economics",
       "institution": "Đại học Kinh tế Quốc dân",
