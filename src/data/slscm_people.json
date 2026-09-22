@@ -268,6 +268,42 @@
       "institution": "Đại học Kinh tế Quốc dân",
       "institution_en": "National Economics University (NEU)",
       "email": ""
+    },
+    {
+      "name": "Phùng Thị Thu Trang",
+      "name_en": "Thu Trang Phung",
+      "major": "Khoa học Dữ liệu & Trí tuệ Nhân tạo (KHDL&TTNT)",
+      "major_en": "Data Science & Artificial Intelligence (DS&AI)",
+      "institution": "Khoa KHDL&TTNT (FDA), Trường Công nghệ, Đại học Kinh tế Quốc dân",
+      "institution_en": "Faculty of Data Science & AI (FDA), College of Technology, NEU",
+      "email": ""
+    },
+    {
+      "name": "Hoa Phong",
+      "name_en": "Phong Hoa",
+      "major": "Khoa học Dữ liệu & Trí tuệ Nhân tạo",
+      "major_en": "Data Science & Artificial Intelligence",
+      "institution": "Trường Công nghệ, Đại học Kinh tế Quốc dân",
+      "institution_en": "College of Technology, National Economics University (NEU)",
+      "email": ""
+    },
+    {
+      "name": "Trần Tuấn Anh",
+      "name_en": "Tuan Anh Tran",
+      "major": "Công nghệ Thông tin & Khoa học Máy tính",
+      "major_en": "Information Technology & Computer Science",
+      "institution": "Trường Đại học Công nghệ, ĐHQGHN (VNU-UET)",
+      "institution_en": "VNU University of Engineering and Technology (VNU-UET)",
+      "email": ""
+    },
+    {
+      "name": "Phạm Gia Nguyên",
+      "name_en": "Gia Nguyen Pham",
+      "major": "Toán học & Khoa học Máy tính",
+      "major_en": "Mathematics & Computer Science",
+      "institution": "Trường Đại học Khoa học Tự nhiên, ĐHQGHN (VNU-HUS)",
+      "institution_en": "VNU University of Science (VNU-HUS)",
+      "email": ""
     }
   ],
   "alumni": [

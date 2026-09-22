@@ -677,7 +677,7 @@ function PeopleAndLife() {
             <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
               <div>
                 <p className="font-mono text-[10px] font-semibold uppercase tracking-widest text-sky-700">LAB MEMBERS</p>
-                <h3 className="mt-2 font-editorial text-3xl text-slate-900">Researchers &amp; Student Scholars.</h3>
+                <h3 className="mt-2 font-editorial text-3xl text-slate-900">Research Assistants.</h3>
               </div>
               <div className="flex items-center rounded-xl border border-slate-200/80 bg-white/80 p-1 backdrop-blur-sm shadow-xs flex-wrap gap-1">
                 <button
@@ -711,7 +711,7 @@ function PeopleAndLife() {
                       : 'text-slate-600 hover:text-slate-900'
                   }`}
                 >
-                  Student Researchers ({people.student_researchers.length})
+                  Research Assistants ({people.student_researchers.length})
                 </button>
               </div>
             </div>
@@ -826,7 +826,7 @@ function PeopleAndLife() {
                           )}
                           <div className="min-w-0 flex-1">
                             <p className="font-editorial text-xs font-semibold tracking-wide text-emerald-800 truncate">
-                              Student Researcher
+                              Research Assistant
                             </p>
                             <h4 className="font-editorial text-lg font-bold text-slate-900 leading-snug truncate">
                               {name}
@@ -851,7 +851,7 @@ function PeopleAndLife() {
                           <p className="mt-1 font-editorial text-xs text-slate-500">{institution}</p>
                           <div className="mt-2.5 flex flex-wrap gap-1.5">
                             <span className="rounded-md border border-emerald-200/80 bg-emerald-50/70 px-2 py-0.5 font-mono text-[10px] font-medium text-emerald-800">
-                              Undergraduate Research Scholar
+                              Research Assistant
                             </span>
                           </div>
                         </div>
