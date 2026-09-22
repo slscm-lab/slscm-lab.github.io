@@ -33,6 +33,64 @@ export const PaperCard: React.FC<PaperCardProps> = ({ paper, showBadge = true })
 
   const badgeInfo = 'research_pillar' in paper ? getPillarBadge(paper.research_pillar) : null;
 
+  // Helper to control whether an author name is bold
+  const formatAuthor = (rawAuthor: string) => {
+    const trimmed = rawAuthor.trim();
+
+    // 1. Explicit Markdown syntax in JSON: *Name* or **Name** -> ALWAYS bold
+    if (/^\*+.+\*+$/.test(trimmed)) {
+      return {
+        name: trimmed.replace(/^\*+|\*+$/g, '').trim(),
+        isBold: true,
+      };
+    }
+
+    // 2. Explicit non-bold marker: ~Name -> NEVER bold
+    if (trimmed.startsWith('~')) {
+      return {
+        name: trimmed.slice(1).trim(),
+        isBold: false,
+      };
+    }
+
+    // 3. Per-paper highlighted_authors array in JSON
+    if (paper.highlighted_authors && Array.isArray(paper.highlighted_authors)) {
+      const isExplicit = paper.highlighted_authors.some((h) =>
+        trimmed.toLowerCase().includes(h.toLowerCase())
+      );
+      if (isExplicit) {
+        return { name: trimmed, isBold: true };
+      }
+    }
+
+    // 4. Default Lab Member Roster Matching
+    const labRoster = [
+      'Vu Duc Minh', 'Duc Minh Vu',
+      'Ha Minh Hoang', 'Minh Hoang Ha',
+      'Ta Dinh Quy', 'Dinh Quy Ta',
+      'Dinh Nho Minh', 'Nho Minh Dinh',
+      'Pham Tuan Anh', 'Tuan Anh Pham',
+      'Le Ba Luat', 'Ba Luat Le',
+      'Le Huu Trung', 'Trung Le Huu',
+      'Tran Nam Khanh', 'Nam-Khanh Tran', 'Tran Ngoc Khanh',
+      'Tat Dat Tran', 'Tran Tat Dat', 'Tat Dat Nguyen',
+      'Hai Thu Nguyen', 'Nguyen Hai Thu',
+      'Dang Trung Cuong', 'Trung Cuong Dang',
+      'Thu Ha Ha', 'Ha Thu Ha',
+      'Mai Thanh Loc', 'Thanh Loc Mai',
+      'Hoa Thi Thu Trang', 'Thu Trang Hoa Thi',
+      'La Quang Chien', 'Quang Chien La',
+    ];
+
+    const isMember = labRoster.some(
+      (m) =>
+        trimmed.toLowerCase() === m.toLowerCase() ||
+        trimmed.toLowerCase().includes(m.toLowerCase())
+    );
+
+    return { name: trimmed, isBold: isMember };
+  };
+
   return (
     <article className="rounded-2xl border border-slate-200/80 bg-white/90 p-5 shadow-xs backdrop-blur-sm transition duration-200 hover:border-sky-300 hover:shadow-soft flex flex-col justify-between">
       <div>
@@ -84,12 +142,12 @@ export const PaperCard: React.FC<PaperCardProps> = ({ paper, showBadge = true })
 
         {/* Authors */}
         <div className="mt-2.5 flex flex-wrap gap-1 text-xs text-slate-600">
-          {paper.authors.map((author, index) => {
-            const isLabLeader = author.includes('Vu') || author.includes('Minh') || author.includes('Hoang') || author.includes('Luat') || author.includes('Quy') || author.includes('Khanh');
+          {paper.authors.map((rawAuthor, index) => {
+            const { name, isBold } = formatAuthor(rawAuthor);
             return (
               <span key={index} className="inline-flex items-center">
-                <span className={isLabLeader ? 'font-semibold text-slate-900' : 'text-slate-600'}>
-                  {author}
+                <span className={isBold ? 'font-bold text-slate-950' : 'text-slate-600'}>
+                  {name}
                 </span>
                 {index < paper.authors.length - 1 && <span className="mr-1 text-slate-400">,</span>}
               </span>
