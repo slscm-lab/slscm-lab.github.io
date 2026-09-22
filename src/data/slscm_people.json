@@ -57,6 +57,27 @@
       "bio_vi": "Thạc sĩ, nghiên cứu sinh chuyên sâu về tối ưu hóa lập lịch công nghiệp và điều độ máy móc có xung đột, tác giả chính của các công trình công bố trên ITOR, Journal of the Operational Research Society và Handbook of Combinatorial Optimization (Springer Nature).",
       "avatar": "/assets/images/people/ta_dinh_quy.jpg",
       "bio_en": "Master of Science and Ph.D. candidate specializing in industrial scheduling and machine scheduling with conflict jobs. Lead author of publications in ITOR, Journal of the Operational Research Society, and Springer's Handbook of Combinatorial Optimization."
+    },
+    {
+      "id": "pham-tuan-anh",
+      "name": "Phạm Tuấn Anh",
+      "name_en": "Tuan Anh Pham",
+      "title_vi": "Nghiên cứu viên / Cố vấn nghiên cứu",
+      "title_en": "Researcher / Research Mentor",
+      "role_badge": "RESEARCH MENTOR",
+      "affiliation_vi": "Trường Công nghệ, Đại học Kinh tế Quốc dân (NEU) & SLSCM Lab",
+      "affiliation_en": "College of Technology, National Economics University (NEU) & SLSCM Lab",
+      "email": "",
+      "office": "P1613, Tòa nhà A1, Đại học Kinh tế Quốc dân – 207 Giải Phóng, Hà Nội",
+      "research_interests": [
+        "Inventory Routing Problems (IRP)",
+        "Hybrid Genetic Search (HGS)",
+        "Energy-Aware Drone Logistics",
+        "Combinatorial Optimization"
+      ],
+      "bio_vi": "Nghiên cứu viên tại SLSCM Lab và Đại học Kinh tế Quốc dân (NEU). Tác giả của các công trình công bố trên các tạp chí vận trù học danh tiếng quốc tế như European Journal of Operational Research (EJOR, Q1) và Springer Optimization and Its Applications (COMOSA), chuyên sâu về các thuật toán tìm kiếm di truyền lai ghép (HGS) và bài toán quản lý tồn kho - định tuyến (IRP).",
+      "avatar": "",
+      "bio_en": "Researcher and mentor at SLSCM Lab and National Economics University (NEU). Author of publications in premier international operations research journals including European Journal of Operational Research (EJOR, Q1) and Springer Optimization and Its Applications (COMOSA), specializing in hybrid genetic search (HGS) and inventory routing problems (IRP)."
     }
   ],
   "young_researchers_and_authors": [
@@ -99,87 +120,6 @@
       "research_interests": [
         "Revisit Flying Sidekick Traveling Salesman Problem (RV-FSTSP)",
         "Drone Routing & Multi-Trip Delivery Logistics"
-      ]
-    },
-    {
-      "id": "tran-trung-duc",
-      "name": "Trần Trung Đức",
-      "name_en": "Trung Duc Tran",
-      "role_vi": "Nghiên cứu viên / Tác giả",
-      "role_en": "Researcher / Author",
-      "current_status_vi": "Đồng tác giả công bố trên COMOSA (2025/2026)",
-      "current_status_en": "Co-author in COMOSA (2025/2026)",
-      "affiliation": "National Economics University (NEU)",
-      "affiliation_en": "National Economics University (NEU)",
-      "email": "",
-      "featured_publications": [
-        "COMOSA (2025/2026)"
-      ],
-      "research_interests": [
-        "Electric Vehicle Routing Problem with Time Windows (EVRP-TW)",
-        "Green Supply Chain & Smart Charging Stations"
-      ]
-    },
-    {
-      "id": "le-thi-hong",
-      "name": "Lê Thị Hồng",
-      "name_en": "Thi Hong Le",
-      "role_vi": "Nghiên cứu viên / Tác giả chính",
-      "role_en": "Researcher / Lead Author",
-      "current_status_vi": "Tác giả chính công bố trên Transportation Research Part C (2026) & CITA (2025)",
-      "current_status_en": "Lead author in Transportation Research Part C (2026) & CITA (2025)",
-      "affiliation": "Phenikaa University",
-      "affiliation_en": "Phenikaa University",
-      "email": "",
-      "featured_publications": [
-        "Transportation Research Part C: Emerging Technologies (2026)",
-        "CITA (2025)"
-      ],
-      "research_interests": [
-        "Stage-Based Mathematical Modeling",
-        "Construct-Merge-Solve & Adapt Metaheuristics",
-        "Drone-Assisted Routing"
-      ]
-    },
-    {
-      "id": "nguyen-dinh-cong",
-      "name": "Nguyễn Đình Công",
-      "name_en": "Nguyen Dinh Cong",
-      "role_vi": "Nghiên cứu viên / Tác giả",
-      "role_en": "Researcher / Author",
-      "current_status_vi": "Đồng tác giả công bố trên Transportation Research Part C (2026) & CITA (2025)",
-      "current_status_en": "Co-author in Transportation Research Part C (2026) & CITA (2025)",
-      "affiliation": "Phenikaa University",
-      "affiliation_en": "Phenikaa University",
-      "email": "",
-      "featured_publications": [
-        "Transportation Research Part C: Emerging Technologies (2026)",
-        "CITA (2025)"
-      ],
-      "research_interests": [
-        "Combinatorial Optimization",
-        "UAV Routing and Scheduling"
-      ]
-    },
-    {
-      "id": "pham-tuan-anh",
-      "name": "Phạm Tuấn Anh",
-      "name_en": "Tuan Anh Pham",
-      "role_vi": "Nghiên cứu viên / Tác giả",
-      "role_en": "Researcher / Author",
-      "current_status_vi": "Tác giả công bố trên European Journal of Operational Research (2025) & COMOSA (2025/2026)",
-      "current_status_en": "Author in European Journal of Operational Research (2025) & COMOSA (2025/2026)",
-      "affiliation": "National Economics University (NEU)",
-      "affiliation_en": "National Economics University (NEU)",
-      "email": "",
-      "featured_publications": [
-        "European Journal of Operational Research (2025)",
-        "COMOSA (2025/2026)"
-      ],
-      "research_interests": [
-        "Inventory Routing Problems (IRP)",
-        "Hybrid Genetic Search",
-        "Energy-Aware Drone Logistics"
       ]
     },
     {
