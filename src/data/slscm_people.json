@@ -363,6 +363,88 @@
       "email": ""
     }
   ],
+  "alumni": [
+    {
+      "id": "alumni-nguyen-tat-dat",
+      "name": "Nguyễn Tất Đạt",
+      "name_en": "Tat Dat Nguyen",
+      "avatar": "/assets/images/people/nguyen_tat_dat.jpg",
+      "period": "2022 – 2025",
+      "former_role_vi": "Cựu Nghiên cứu viên / Tác giả chính (EJOR Q1)",
+      "former_role_en": "Former Research Fellow & Lead Author (EJOR Q1)",
+      "current_position_vi": "Nghiên cứu sinh Tiến sĩ (PhD Candidate)",
+      "current_position_en": "PhD Researcher in Operations Research",
+      "institution": "Liverpool John Moores University (LJMU)",
+      "institution_en": "Liverpool John Moores University (LJMU), UK",
+      "research_focus": "Combinatorial Optimization, Exact Branch-and-Cut, Vehicle Routing",
+      "email": "",
+      "linkedin": ""
+    },
+    {
+      "id": "alumni-nguyen-hai-thu",
+      "name": "Nguyễn Hải Thu",
+      "name_en": "Hai Thu Nguyen",
+      "avatar": "/assets/images/people/nguyen_hai_thu.jpg",
+      "period": "2021 – 2025",
+      "former_role_vi": "Cựu Sinh viên nghiên cứu (Thủ khoa K63 NEU)",
+      "former_role_en": "Former Undergraduate Scholar (Valedictorian Intake 63)",
+      "current_position_vi": "Nghiên cứu sinh Tiến sĩ (PhD Fellow)",
+      "current_position_en": "PhD Fellow in Actuarial Science & Risk Analytics",
+      "institution": "University of Connecticut (UConn)",
+      "institution_en": "University of Connecticut (UConn), USA",
+      "research_focus": "Quantitative Risk Modeling, Stochastic Decision Analytics",
+      "email": "",
+      "linkedin": ""
+    },
+    {
+      "id": "alumni-le-ba-luat",
+      "name": "Lê Bá Luật",
+      "name_en": "Ba Luat Le",
+      "avatar": "/assets/images/people/le_ba_luat.jpg",
+      "period": "2023 – 2025",
+      "former_role_vi": "Cựu Nghiên cứu viên trẻ / Tác giả chính",
+      "former_role_en": "Former Lead Author & Junior Researcher",
+      "current_position_vi": "Nghiên cứu sinh Tiến sĩ (PhD Candidate)",
+      "current_position_en": "PhD Candidate in Operations Research",
+      "institution": "Singapore Management University (SMU)",
+      "institution_en": "Singapore Management University (SMU), Singapore",
+      "research_focus": "Competitive Facility Location, Conic Optimization, Discrete Choice",
+      "email": "",
+      "linkedin": ""
+    },
+    {
+      "id": "alumni-tran-nam-khanh",
+      "name": "Trần Nam Khánh",
+      "name_en": "Nam-Khanh Tran",
+      "avatar": "",
+      "period": "2023 – 2025",
+      "former_role_vi": "Cựu Sinh viên nghiên cứu / Đồng tác giả",
+      "former_role_en": "Former Student Researcher & Co-Author",
+      "current_position_vi": "Học viên Cao học & Kỹ sư Tối ưu hóa Logistics",
+      "current_position_en": "Graduate Scholar & Optimization Algorithm Engineer",
+      "institution": "Phenikaa University",
+      "institution_en": "Phenikaa University",
+      "research_focus": "Drone Routing, Revisit FSTSP, Metaheuristics",
+      "email": "",
+      "linkedin": ""
+    },
+    {
+      "id": "alumni-do-manh-cuong",
+      "name": "Đỗ Mạnh Cường",
+      "name_en": "Manh-Cuong Do",
+      "avatar": "",
+      "period": "2022 – 2024",
+      "former_role_vi": "Cựu Nghiên cứu sinh viên chuỗi cung ứng",
+      "former_role_en": "Former Logistics Research Scholar",
+      "current_position_vi": "Chuyên viên Tối ưu hóa Chuỗi cung ứng",
+      "current_position_en": "Supply Chain Optimization Specialist",
+      "institution": "Viettel Post Logistics Technology Center",
+      "institution_en": "Viettel Post Logistics Technology Center",
+      "research_focus": "Urban Freight Distribution, Multi-Depot Fleet Dispatching",
+      "email": "",
+      "linkedin": ""
+    }
+  ],
   "global_academic_partners": [
     {
       "country": "Singapore",
