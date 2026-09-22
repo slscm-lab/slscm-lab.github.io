@@ -7,7 +7,7 @@
       "Tien Mai",
       "Thuy Anh Ta",
       "Minh Hoang Ha",
-      "Duc-Minh Vu"
+      "Duc Minh Vu"
     ],
     "venue": "INFORMS Journal on Computing",
     "year": 2026,
@@ -16,7 +16,7 @@
     "link": "https://doi.org/10.1287/ijoc.2025.1150",
     "research_pillar": "operational_optimization",
     "abstract": "We study the competitive facility location problem, in which a firm aims to establish new facilities in a market already occupied by competitors. In this problem, customer behavior is a crucial factor in making optimal location decisions. We explore a general class of customer choice models, known as the cross-nested logit model, which is recognized for its flexibility and generality in predicting people’s choice behavior. To explore the problem, we first demonstrate that it is NP-hard even when there is only one customer class and the cross-nested structure has only two nests. To tackle the challenging facility location problem, we demonstrate that the objective function under a general cross-nested structure is not concave. Interestingly, we show that, by a change of variables, the objective function can be converted to a mixed-integer exponential cone convex program, enabling it to be solved to optimality via an outer approximation algorithm. Extensive experiments show the efficiency of our approach and provide analyses on the benefits of using the cross-nested model in the facility location context.",
-    "bibtex": "@article{Le2026CFL,\n  title = {Competitive Facility Location Under Cross-Nested Logit Customer Choice Model: Hardness and Exact Approaches},\n  author = {Ba Luat Le and Tien Mai and Thuy Anh Ta and Minh Hoang Ha and Duc-Minh Vu},\n  journal = {INFORMS Journal on Computing},\n  year = {2026},\n  doi = {10.1287/ijoc.2025.1150}\n}",
+    "bibtex": "@article{Le2026CFL,\n  title = {Competitive Facility Location Under Cross-Nested Logit Customer Choice Model: Hardness and Exact Approaches},\n  author = {Ba Luat Le and Tien Mai and Thuy Anh Ta and Minh Hoang Ha and Duc Minh Vu},\n  journal = {INFORMS Journal on Computing},\n  year = {2026},\n  doi = {10.1287/ijoc.2025.1150}\n}",
     "is_featured": true
   },
   {
@@ -123,7 +123,7 @@
     "authors": [
       "Duc D. Vu",
       "Akhtar Hussain",
-      "Duc-Minh Vu",
+      "Duc Minh Vu",
       "Xiao Zhang",
       "Van-Hai Bui"
     ],
@@ -134,7 +134,7 @@
     "link": "https://doi.org/10.1016/j.erss.2025.104474",
     "research_pillar": "green_transportation",
     "abstract": "A comprehensive interdisciplinary review synthesizing consumer behavior, behavioral economic nudges, and operational optimization strategies to deploy resilient and equitable demand response mechanisms in smart energy distribution networks.",
-    "bibtex": "@article{Vu2026DemandResponse,\n  title = {Designing Effective Demand Response: A Review of Behavioral Insights, Consumer Engagement, and Operational Strategies in Energy Systems},\n  author = {Duc D. Vu and Akhtar Hussain and Duc-Minh Vu and Xiao Zhang and Van-Hai Bui},\n  journal = {Energy Research & Social Science},\n  volume = {131},\n  pages = {104474},\n  year = {2026},\n  doi = {10.1016/j.erss.2025.104474}\n}",
+    "bibtex": "@article{Vu2026DemandResponse,\n  title = {Designing Effective Demand Response: A Review of Behavioral Insights, Consumer Engagement, and Operational Strategies in Energy Systems},\n  author = {Duc D. Vu and Akhtar Hussain and Duc Minh Vu and Xiao Zhang and Van-Hai Bui},\n  journal = {Energy Research & Social Science},\n  volume = {131},\n  pages = {104474},\n  year = {2026},\n  doi = {10.1016/j.erss.2025.104474}\n}",
     "is_featured": true
   },
   {
@@ -336,7 +336,7 @@
       "Duy-Phuong Pham",
       "Thanh-Hoang Le",
       "Tien-Dzung Vu",
-      "Duc-Minh Vu",
+      "Duc Minh Vu",
       "Ba-Tuan Tran",
       "Van-Tu Nguyen",
       "Van-Nhan Truong",
@@ -350,7 +350,7 @@
     "link": "https://doi.org/10.1007/978-981-92-4646-5_16",
     "research_pillar": "ml_optimization",
     "abstract": "Analyzes and forecasts Asian LNG spot prices (Japan Korea Marker - JKM) using machine learning algorithms, highlighting the impact of global energy fluctuations and market sentiment on LNG spot volatility.",
-    "bibtex": "@inproceedings{Pham2025LNG,\n  title = {Machine Learning-Based Forecasting of LNG Spot Prices: A Case Study on the JKM Index},\n  author = {Duy-Phuong Pham and Thanh-Hoang Le and Tien-Dzung Vu and Duc-Minh Vu and Ba-Tuan Tran and Van-Tu Nguyen and Van-Nhan Truong and Thanh-Sang Nguyen and Tuyet-Vy Vu},\n  booktitle = {Computational Social Networks (CSONET 2025)},\n  publisher = {Springer},\n  year = {2025},\n  doi = {10.1007/978-981-92-4646-5_16}\n}",
+    "bibtex": "@inproceedings{Pham2025LNG,\n  title = {Machine Learning-Based Forecasting of LNG Spot Prices: A Case Study on the JKM Index},\n  author = {Duy-Phuong Pham and Thanh-Hoang Le and Tien-Dzung Vu and Duc Minh Vu and Ba-Tuan Tran and Van-Tu Nguyen and Van-Nhan Truong and Thanh-Sang Nguyen and Tuyet-Vy Vu},\n  booktitle = {Computational Social Networks (CSONET 2025)},\n  publisher = {Springer},\n  year = {2025},\n  doi = {10.1007/978-981-92-4646-5_16}\n}",
     "is_featured": false
   }
 ]

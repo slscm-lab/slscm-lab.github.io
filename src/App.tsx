@@ -1260,7 +1260,7 @@ function Footer() {
           <span>© 2025–2026 SLSCM Lab · National Economics University. All rights reserved.</span>
           <div className="flex flex-col sm:items-end gap-1">
             <span>Developed and maintained by Le Huu Trung @ Warwick</span>
-            <span>Supervised by Dr. Duc-Minh Vu @ NEU</span>
+            <span>Supervised by Dr. Duc Minh Vu @ NEU</span>
           </div>
         </div>
       </div>
