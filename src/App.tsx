@@ -637,18 +637,6 @@ function PeopleAndLife() {
                       </div>
                     </div>
 
-                    {person.email && (
-                      <div className="mt-3.5 flex items-center">
-                        <a
-                          className="focus-ring inline-flex items-center gap-1.5 rounded-lg border border-slate-200/80 bg-slate-50/80 px-2.5 py-1 font-mono text-xs font-medium text-slate-600 hover:border-sky-300 hover:bg-white hover:text-sky-700 transition"
-                          href={`mailto:${person.email}`}
-                        >
-                          <Mail className="h-3.5 w-3.5 text-sky-600 shrink-0" />
-                          <span>{person.email}</span>
-                        </a>
-                      </div>
-                    )}
-
                     <div className="mt-3.5 pt-3 border-t border-slate-100/90">
                       <p className="font-editorial text-xs font-semibold text-slate-500 leading-snug">{affiliation}</p>
                       <p className="mt-2 font-editorial text-sm leading-relaxed text-slate-600">{bio}</p>
