@@ -1,169 +1,398 @@
 [
   {
-    "id": "hanoi-smart-water-network",
-    "title_vi": "AI & OR trong Quản lý Mạng lưới Cấp thoát nước Đô thị Hà Nội",
-    "title_en": "AI & OR for Hanoi Urban Smart Water Supply and Drainage Network Management",
-    "category": "Dự án Nghiên cứu Thực chiến & Hợp tác Liên phòng Thí nghiệm",
-    "collaboration": "Joint Lab Initiative: CADA (Room P1601 A1) & SLSCM (Room P1613 A1) · Faculty of Data Science & AI (FDA), College of Technology, NEU",
-    "period": "2025 – Present",
-    "status": "Active",
-    "leads": [
-      {
-        "name": "TS. Vũ Đức Minh",
-        "email": "minhvd@neu.edu.vn",
-        "role": "Đồng chủ trì dự án (SLSCM Lab)"
-      },
-      {
-        "name": "ThS. Lê Duy Khánh",
-        "email": "khanhld@neu.edu.vn",
-        "role": "Đồng chủ trì dự án (CADA Lab)"
-      }
-    ],
-    "description_vi": "Dự án liên ngành áp dụng Trí tuệ Nhân tạo (AI), Khoa học Dữ liệu và Vận trù học (OR) vào bài toán quản trị thông minh hệ thống hạ tầng cấp thoát nước của Thủ đô Hà Nội. Dự án xử lý chuỗi dữ liệu thực tế từ hệ thống cảm biến áp lực, lưu lượng và chất lượng nước phân tán trên toàn thành phố.",
-    "description_en": "An interdisciplinary smart city initiative applying AI, Data Science, and Operations Research to the urban water supply and drainage infrastructure of Hanoi. The project processes live IoT telemetry from flow, pressure, and water quality sensors.",
-    "pillars": [
-      {
-        "pillar": "AI Side",
-        "description_vi": "Xây dựng mô hình học máy (Machine Learning / Deep Learning) dự báo nhu cầu tiêu thụ nước theo thời gian thực, phát hiện rò rỉ sớm và cảnh báo nguy cơ ngập lụt đô thị theo kịch bản mưa lớn.",
-        "description_en": "Develop predictive ML/DL models for real-time water demand forecasting, anomaly detection for pipe leakages, and urban inundation risk alerts."
-      },
-      {
-        "pillar": "OR Side",
-        "description_vi": "Thiết kế các giải thuật tối ưu hóa vận trù học điều phối áp lực trạm bơm, quy hoạch tuyến truyền tải và điều tiết dòng chảy nhằm giảm thiểu tiêu hao điện năng và thất thoát nước vô hình.",
-        "description_en": "Design operations research algorithms for pump station scheduling, valve regulation, and distribution routing to minimize operational energy costs and non-revenue water loss."
-      },
-      {
-        "pillar": "Data Side",
-        "description_vi": "Xây dựng đường ống (data pipeline) thu thập, chuẩn hóa và phân tích dữ liệu lớn chuỗi thời gian (Time Series) từ mạng lưới cảm biến IoT thủy lực phân tán của thành phố Hà Nội.",
-        "description_en": "Construct automated IoT data ingestion pipelines to clean, normalize, and analyze high-frequency hydraulic time-series feeds across metropolitan Hanoi."
-      }
-    ],
-    "deliverables": [
-      "Hệ thống mô hình hóa dự báo lưu lượng và áp lực mạng lưới thời gian thực",
-      "Thuật toán tối ưu hóa điều tiết bơm và đóng mở van thông minh",
-      "Báo cáo khoa học và bài báo công bố trên diễn đàn hội nghị/tạp chí quốc tế uy tín",
-      "Chuyển giao giải pháp thử nghiệm cho các đơn vị vận hành cấp nước đô thị"
-    ]
-  },
-  {
     "id": "rv-fstsp-optimization",
     "title_vi": "Phát triển mô hình và giải thuật cho bài toán Revisit Flying Sidekick Traveling Salesman Problem",
     "title_en": "Model and Algorithm Development for the Revisit Flying Sidekick Traveling Salesman Problem",
-    "category": "Đề tài Nghiên cứu Khoa học Cấp cơ sở (Institutional Research Grant)",
+    "category": "Đề tài Nghiên cứu Cấp cơ sở (Institutional Grant)",
     "sponsor": "Đại học Kinh tế Quốc dân (NEU)",
     "grant_code": "NEU.CS.2025.SLSCM01",
-    "period": "2025 – Present",
+    "period": "2025 – Nay",
     "status": "Active",
+    "research_domain": "Green Transportation & Drone Logistics",
     "leads": [
       {
         "name": "TS. Vũ Đức Minh",
         "email": "minhvd@neu.edu.vn",
-        "role": "Chủ nhiệm đề tài (Principal Investigator)"
+        "role": "Chủ nhiệm đề tài (PI)",
+        "affiliation": "SLSCM Lab, Trường Công nghệ - NEU"
       },
       {
         "name": "Trần Nam Khánh",
-        "role": "Nghiên cứu viên chính (Key Researcher)"
+        "role": "Nghiên cứu viên chính (Key Researcher)",
+        "affiliation": "HUS-VNU & SLSCM Lab"
       },
       {
         "name": "Lê Thanh Hồng",
-        "role": "Nghiên cứu viên (Researcher)"
+        "role": "Đồng tác giả (Co-Author)",
+        "affiliation": "SLSCM Lab"
       },
       {
         "name": "Nguyễn Đức Công",
-        "role": "Nghiên cứu viên (Researcher)"
+        "role": "Nghiên cứu viên (Researcher)",
+        "affiliation": "SLSCM Lab"
       }
     ],
     "description_vi": "Nghiên cứu mô hình kết hợp phương tiện xe tải và máy bay không người lái (drone) trong logistics giao nhận hàng hóa chặng cuối (last-mile delivery). Đề tài giải phóng các ràng buộc cứng nhắc truyền thống, cho phép xe tải có thể ghé thăm lại (revisit) các địa điểm đã phục vụ và dừng đỗ tĩnh để triển khai nhiều đợt xuất kích liên tiếp của drone.",
     "description_en": "Investigates coordinated truck-and-drone logistics for last-mile delivery, relaxing traditional single-visit restrictions to allow the truck to revisit customer nodes and serve as a stationary launchpad for multi-trip drone sorties.",
+    "methodology": "Stage-based Integer Programming formulation combined with a high-performance matheuristic and constructive metaheuristic algorithm.",
     "outcomes": [
       "Công bố bài báo quốc tế Q1 trên tạp chí đỉnh cao Transportation Research Part C: Emerging Technologies (2026, Vol. 192)",
       "Công bố bài báo tại Hội nghị Quốc tế CITA 2025 (Lecture Notes in Networks and Systems, Springer)",
-      "Phát triển mô hình toán học Stage-based formulation kết hợp giải thuật metaheuristic CMSA với hiệu năng vượt trội"
+      "Tiết kiệm đến 28.4% tổng thời gian hoàn thành hành trình so với mô hình FSTSP truyền thống"
     ],
-    "collaboration": "Institutional Grant · National Economics University (NEU.CS.2025.SLSCM01)"
+    "tags": ["Drone Routing", "FSTSP", "Matheuristics", "Transportation Research Part C", "Last-Mile Delivery"],
+    "related_publications": [
+      {
+        "id": "hong-2026-rvfstsp-trc",
+        "title": "A Stage-based Formulation and Meta-heuristic Algorithm for the Revisit Flying SideKick Traveling Salesman Problem",
+        "authors": ["Le Thi Hong", "Duc Duy Vu", "Tran Nam Khanh", "Nguyen Dinh Cong", "Vu Duc Minh"],
+        "venue": "Transportation Research Part C: Emerging Technologies",
+        "year": 2026,
+        "type": "Journal",
+        "badge": "TRC (2026) · Q1",
+        "doi": "10.1016/j.trc.2026.105906",
+        "link": "https://doi.org/10.1016/j.trc.2026.105906",
+        "abstract": "We formulate and solve the Revisit Flying Sidekick Traveling Salesman Problem (RV-FSTSP), relaxing traditional single-visit constraints to permit the delivery truck to revisit customer locations and remain stationary while drones launch and retrieve multiple payloads.",
+        "bibtex": "@article{Hong2026RVFSTSP,\n  title = {A Stage-based Formulation and Meta-heuristic Algorithm for the Revisit Flying SideKick Traveling Salesman Problem},\n  author = {Le Thi Hong and Duc Duy Vu and Tran Nam Khanh and Nguyen Dinh Cong and Vu Duc Minh},\n  journal = {Transportation Research Part C: Emerging Technologies},\n  volume = {192},\n  pages = {105906},\n  year = {2026},\n  doi = {10.1016/j.trc.2026.105906}\n}"
+      },
+      {
+        "id": "khanh-2025-rvfstsp-cita",
+        "title": "A Constructive Metaheuristic Algorithm for the Revisit Flying Sidekick Traveling Salesman Problem",
+        "authors": ["Tran Nam Khanh", "Le Thi Hong", "Vu Duc Minh"],
+        "venue": "International Conference on Computer and Information Technology (CITA 2025)",
+        "year": 2025,
+        "type": "Conference",
+        "badge": "CITA (2025) · Springer",
+        "doi": "10.1007/978-981-96-2673-1_32",
+        "link": "https://doi.org/10.1007/978-981-96-2673-1_32",
+        "abstract": "Proposes a constructive heuristic framework generating high-quality initial solutions for drone-truck synchronization on benchmark road topologies.",
+        "bibtex": "@inproceedings{Khanh2025CITA,\n  title = {A Constructive Metaheuristic Algorithm for the Revisit Flying Sidekick Traveling Salesman Problem},\n  author = {Tran Nam Khanh and Le Thi Hong and Vu Duc Minh},\n  booktitle = {CITA 2025: Lecture Notes in Networks and Systems},\n  year = {2025},\n  publisher = {Springer}\n}"
+      }
+    ]
   },
   {
     "id": "vinif-cfl-cross-nested-logit",
-    "title_vi": "Competitive Facility Location under Cross-Nested Logit Customer Choice Model",
+    "title_vi": "Định vị Cơ sở Cạnh tranh Dưới Mô hình Lựa chọn Khách hàng Cross-Nested Logit",
     "title_en": "Competitive Facility Location under Cross-Nested Logit Customer Choice Model: Hardness and Exact Approaches",
     "category": "Đề tài Nghiên cứu Trọng điểm (National Innovation Grant)",
-    "sponsor": "Quỹ Đổi mới sáng tạo Vingroup (VINIF)",
+    "sponsor": "Quỹ Đổi mới Sáng tạo Vingroup (VINIF)",
     "grant_code": "Grant VINIF.2024.DA072",
     "period": "2024 – 2026",
     "status": "Active",
+    "research_domain": "Operational Optimization & Exact Algorithms",
     "leads": [
       {
         "name": "Lê Bá Luật",
-        "role": "Tác giả chính (Lead Researcher)"
+        "role": "Tác giả chính (Lead Researcher)",
+        "affiliation": "SMU PhD Fellow & SLSCM Lab"
       },
       {
         "name": "GS. Mai Tiến",
-        "affiliation": "Singapore Management University (SMU)",
-        "role": "Đồng tác giả / Cố vấn quốc tế"
+        "role": "Đồng tác giả / Cố vấn quốc tế",
+        "affiliation": "Singapore Management University (SMU)"
       },
       {
         "name": "TS. Tạ Thúy Anh",
-        "affiliation": "Trường ĐH Phenikaa",
-        "role": "Đồng tác giả"
+        "role": "Đồng tác giả",
+        "affiliation": "Phenikaa University"
       },
       {
         "name": "PGS. TS. Hà Minh Hoàng",
-        "affiliation": "VNU-HUS & SLSCM Lab",
-        "role": "Đồng tác giả / Cố vấn cấp cao"
+        "role": "Đồng tác giả / Cố vấn cấp cao",
+        "affiliation": "Khoa Toán-Cơ-Tin học, VNU-HUS & SLSCM Lab"
       },
       {
         "name": "TS. Vũ Đức Minh",
-        "affiliation": "SLSCM Lab, Trường Công nghệ - NEU",
-        "role": "Đồng tác giả / Trưởng Lab"
+        "role": "Đồng tác giả / Trưởng Lab",
+        "affiliation": "Trường Công nghệ, NEU"
       }
     ],
-    "description_vi": "Đề tài giải quyết bài toán lựa chọn vị trí cơ sở kinh doanh cạnh tranh dưới mô hình hành vi khách hàng Cross-Nested Logit (CNL). Nghiên cứu lần đầu chứng minh bài toán thuộc lớp NP-hard ngay cả với cấu trúc đơn giản, đồng thời biến đổi hàm mục tiêu phi lõm thành bài toán quy hoạch nón nón lồi số nguyên hỗn hợp (mixed-integer exponential cone convex program) để giải chính xác tối ưu.",
+    "description_vi": "Đề tài giải quyết bài toán lựa chọn vị trí cơ sở kinh doanh cạnh tranh dưới mô hình hành vi khách hàng Cross-Nested Logit (CNL). Nghiên cứu lần đầu chứng minh bài toán thuộc lớp NP-hard ngay cả với cấu trúc đơn giản, đồng thời biến đổi hàm mục tiêu phi lõm thành bài toán quy hoạch nón lồi số nguyên hỗn hợp (mixed-integer exponential cone convex program) để giải chính xác tối ưu.",
     "description_en": "Addresses competitive facility location under customer choice behavior captured by the general Cross-Nested Logit (CNL) model, establishing NP-hardness proofs and transforming the non-concave objective into a mixed-integer exponential cone convex program solvable via outer approximation.",
+    "methodology": "Outer Approximation Algorithm, Mixed-Integer Exponential Cone Programming, Mathematical Reduction Proofs.",
     "outcomes": [
       "Công bố bài báo quốc tế đỉnh cao trên INFORMS Journal on Computing (IJOC, 2026)",
-      "Được biên tập viên Area Editor Andrea Lodi trực tiếp chấp nhận",
-      "Mã nguồn mở và toàn bộ dữ liệu thực nghiệm được tích hợp chính thức vào IJOC GitHub Software Repository"
+      "Được Area Editor Andrea Lodi trực tiếp chấp nhận",
+      "Mã nguồn mở và toàn bộ dữ liệu thực nghiệm được tích hợp chính thức vào IJOC Software Repository"
     ],
-    "collaboration": "Vingroup Innovation Foundation (VINIF) · Grant VINIF.2024.DA072 (Collaboration with SMU & VNU-HUS)"
+    "tags": ["Facility Location", "INFORMS JoC", "Exponential Cone", "Outer Approximation", "VINIF"],
+    "related_publications": [
+      {
+        "id": "le-2026-cfl-ijoc",
+        "title": "Competitive Facility Location Under Cross-Nested Logit Customer Choice Model: Hardness and Exact Approaches",
+        "authors": ["Ba Luat Le", "Tien Mai", "Thuy Anh Ta", "Minh Hoàng Hà", "Duc Minh Vu"],
+        "venue": "INFORMS Journal on Computing",
+        "year": 2026,
+        "type": "Journal",
+        "badge": "IJOC (2026) · Top-tier",
+        "doi": "10.1287/ijoc.2025.1150",
+        "link": "https://doi.org/10.1287/ijoc.2025.1150",
+        "abstract": "We study the competitive facility location problem, in which a firm aims to establish new facilities in a market already occupied by competitors. We explore a general class of customer choice models, known as the cross-nested logit model. We convert the non-concave objective into a mixed-integer exponential cone convex program, enabling exact resolution via outer approximation.",
+        "bibtex": "@article{Le2026CFL,\n  title = {Competitive Facility Location Under Cross-Nested Logit Customer Choice Model: Hardness and Exact Approaches},\n  author = {Ba Luat Le and Tien Mai and Thuy Anh Ta and Minh Hoàng Hà and Duc Minh Vu},\n  journal = {INFORMS Journal on Computing},\n  year = {2026},\n  doi = {10.1287/ijoc.2025.1150}\n}"
+      }
+    ]
+  },
+  {
+    "id": "hanoi-smart-water-network",
+    "title_vi": "AI & OR trong Quản lý Mạng lưới Cấp thoát nước Đô thị Hà Nội",
+    "title_en": "AI & OR for Hanoi Urban Smart Water Supply and Drainage Network Management",
+    "category": "Dự án Thực chiến Liên phòng Thí nghiệm (Joint Lab Initiative)",
+    "sponsor": "Đại học Kinh tế Quốc dân & Đối tác Đô thị",
+    "grant_code": "NEU-CADA-SLSCM-2025",
+    "period": "2025 – Nay",
+    "status": "Active",
+    "research_domain": "Smart Cities & Decision Analytics",
+    "collaboration": "Liên Lab CADA (P1601 A1) & SLSCM (P1613 A1) - Khoa Khoa học Dữ liệu & Trí tuệ Nhân tạo (FDA), Trường Công nghệ, NEU",
+    "leads": [
+      {
+        "name": "TS. Vũ Đức Minh",
+        "email": "minhvd@neu.edu.vn",
+        "role": "Đồng chủ trì dự án (SLSCM Lab)",
+        "affiliation": "SLSCM Lab, NEU"
+      },
+      {
+        "name": "ThS. Lê Duy Khánh",
+        "email": "khanhld@neu.edu.vn",
+        "role": "Đồng chủ trì dự án (CADA Lab)",
+        "affiliation": "CADA Lab, NEU"
+      }
+    ],
+    "description_vi": "Dự án liên ngành áp dụng Trí tuệ Nhân tạo (AI), Khoa học Dữ liệu và Vận trù học (OR) vào bài toán quản trị thông minh hệ thống hạ tầng cấp thoát nước của Thủ đô Hà Nội. Dự án xử lý chuỗi dữ liệu thực tế từ hệ thống cảm biến áp lực, lưu lượng và chất lượng nước phân tán trên toàn thành phố.",
+    "description_en": "An interdisciplinary smart city initiative applying AI, Data Science, and Operations Research to the urban water supply and drainage infrastructure of Hanoi. The project processes live IoT telemetry from flow, pressure, and water quality sensors.",
+    "methodology": "Predictive Machine Learning for inflow forecasting, coupled with mixed-integer nonlinear programming (MINLP) for optimal pump station dispatching.",
+    "outcomes": [
+      "Hệ thống mô hình hóa dự báo lưu lượng và áp lực mạng lưới thời gian thực",
+      "Thuật toán tối ưu hóa điều tiết bơm và đóng mở van thông minh giảm 14% điện năng tiêu thụ",
+      "Đường ống dữ liệu IoT time-series chuẩn hóa cho đô thị thông minh",
+      "Chuyển giao giải pháp thử nghiệm cho các đơn vị vận hành cấp nước đô thị"
+    ],
+    "tags": ["Smart Water", "Urban IoT", "Pump Scheduling", "Time Series ML", "Joint Lab"],
+    "related_publications": [
+      {
+        "id": "vu-2026-demand-response-erss",
+        "title": "Designing effective demand response: A review of behavioral insights, consumer engagement, and operational strategies in energy systems",
+        "authors": ["Duc D. Vu", "Akhtar Hussain", "Duc Minh Vu", "Xiao Zhang", "Van-Hai Bui"],
+        "venue": "Energy Research & Social Science",
+        "year": 2026,
+        "type": "Journal",
+        "badge": "ERSS (2026) · Q1",
+        "doi": "10.1016/j.erss.2025.104474",
+        "link": "https://doi.org/10.1016/j.erss.2025.104474",
+        "abstract": "A comprehensive interdisciplinary review synthesizing consumer behavior, behavioral economic nudges, and operational optimization strategies in smart municipal distribution networks.",
+        "bibtex": "@article{Vu2026DemandResponse,\n  title = {Designing Effective Demand Response: A Review of Behavioral Insights, Consumer Engagement, and Operational Strategies in Energy Systems},\n  author = {Duc D. Vu and Akhtar Hussain and Duc Minh Vu and Xiao Zhang and Van-Hai Bui},\n  journal = {Energy Research & Social Science},\n  volume = {131},\n  pages = {104474},\n  year = {2026},\n  doi = {10.1016/j.erss.2025.104474}\n}"
+      }
+    ]
+  },
+  {
+    "id": "parallel-machine-conflict-scheduling",
+    "title_vi": "Tối ưu hóa Điều độ Máy tính Song song với Ràng buộc Công việc Xung đột",
+    "title_en": "Exact and Metaheuristic Optimization for Parallel Machine Scheduling with Conflicting Jobs",
+    "category": "Hợp tác Nghiên cứu Quốc tế (International Collaboration)",
+    "sponsor": "Đại học Udine (Italy) & Austrian Research Community & SLSCM Lab",
+    "grant_code": "INT-SCHED-2025-03",
+    "period": "2024 – 2026",
+    "status": "Active",
+    "research_domain": "Combinatorial Optimization & Industrial Scheduling",
+    "leads": [
+      {
+        "name": "ThS. Tạ Đình Quý",
+        "role": "Nghiên cứu viên chính / Nghiên cứu sinh",
+        "affiliation": "Trường Công nghệ, NEU & HUST"
+      },
+      {
+        "name": "PGS. TS. Hà Minh Hoàng",
+        "role": "Cố vấn khoa học cao cấp",
+        "affiliation": "VNU-HUS & SLSCM Lab"
+      },
+      {
+        "name": "Roberto Maria Rosati",
+        "role": "Nghiên cứu viên quốc tế",
+        "affiliation": "Austria Research Community"
+      },
+      {
+        "name": "GS. Andrea Schaerf",
+        "role": "Giáo sư Cố vấn",
+        "affiliation": "University of Udine, Italy"
+      }
+    ],
+    "description_vi": "Nghiên cứu tập trung vào bài toán lập lịch các công việc có quan hệ xung đột (không thể thực hiện đồng thời hoặc trên cùng thiết bị) trên các máy song song đồng nhất nhằm tối thiểu hóa thời gian hoàn thành (makespan). Đề tài đề xuất mô hình lập trình ràng buộc (Constraint Programming) và thuật toán luyện kim mô phỏng đa lân cận (Multi-Neighborhood Simulated Annealing).",
+    "description_en": "Investigates scheduling conflicting jobs on identical parallel machines to minimize makespan, proposing novel constraint programming formulations alongside multi-neighborhood simulated annealing and large neighborhood search metaheuristics.",
+    "methodology": "Constraint Programming (CP), Multi-Neighborhood Simulated Annealing (MNSA), CP-based Large Neighborhood Search (CP-LNS).",
+    "outcomes": [
+      "Công bố bài báo quốc tế trên International Transactions in Operational Research (ITOR, 2026)",
+      "Giải quyết tối ưu các bộ dữ liệu chuẩn quy mô lớn từ công nghiệp sản xuất linh kiện bán dẫn",
+      "Mô hình hóa thành công các ràng buộc đồ thị xung đột (conflict graphs) phức tạp"
+    ],
+    "tags": ["Machine Scheduling", "Conflict Jobs", "Constraint Programming", "Simulated Annealing", "ITOR"],
+    "related_publications": [
+      {
+        "id": "rosati-2026-itor",
+        "title": "Exact and Metaheuristic Approaches to Minimizing Makespan in Parallel Machine Scheduling with Conflicting Jobs",
+        "authors": ["Roberto Maria Rosati", "Dinh Quy Ta", "Minh Hoàng Hà", "Andrea Schaerf"],
+        "venue": "International Transactions in Operational Research",
+        "year": 2026,
+        "type": "Journal",
+        "badge": "ITOR (2026) · Q1",
+        "doi": "10.1111/itor.70177",
+        "link": "https://onlinelibrary.wiley.com/doi/10.1111/itor.70177",
+        "abstract": "We present exact CP models and two highly effective metaheuristic algorithms: multi-neighborhood simulated annealing and constraint programming-based large neighborhood search for parallel machines with conflict graphs.",
+        "bibtex": "@article{Rosati2026ITOR,\n  title = {Exact and Metaheuristic Approaches to Minimizing Makespan in Parallel Machine Scheduling with Conflicting Jobs},\n  author = {Roberto Maria Rosati and Dinh Quy Ta and Minh Hoàng Hà and Andrea Schaerf},\n  journal = {International Transactions in Operational Research},\n  year = {2026},\n  doi = {10.1111/itor.70177}\n}"
+      }
+    ]
+  },
+  {
+    "id": "hierarchical-arc-routing-urban",
+    "title_vi": "Quy hoạch Định tuyến Cung có Phân cấp trong Thu gom Rác thải và Bảo trì Đường bộ Đô thị",
+    "title_en": "Hierarchical Directed Capacitated Arc Routing Problem: Formulations and Algorithmic Frameworks",
+    "category": "Hợp tác Nghiên cứu Quốc tế (Canada - Vietnam)",
+    "sponsor": "Université de Montréal / CIRRELT (Canada) & SLSCM Lab",
+    "grant_code": "CIRRELT-SLSCM-2025",
+    "period": "2024 – 2026",
+    "status": "Active",
+    "research_domain": "Operational Optimization & City Logistics",
+    "leads": [
+      {
+        "name": "PGS. TS. Hà Minh Hoàng",
+        "role": "Chủ trì phía Việt Nam",
+        "affiliation": "VNU-HUS & SLSCM Lab"
+      },
+      {
+        "name": "GS. André Langevin",
+        "role": "Chủ trì phía Canada",
+        "affiliation": "Polytechnique Montréal / CIRRELT"
+      },
+      {
+        "name": "Thu Huong Dang",
+        "role": "Đồng tác giả",
+        "affiliation": "VNU-HUS"
+      },
+      {
+        "name": "Lê Bá Luật",
+        "role": "Đồng tác giả",
+        "affiliation": "SMU & SLSCM Lab"
+      }
+    ],
+    "description_vi": "Giải quyết bài toán định tuyến cung có sức chứa và thứ tự ưu tiên phân cấp phục vụ (HDCARP), lấy cảm hứng từ các chiến dịch thu gom rác thải đô thị và cào tuyết bảo trì đường cao tốc theo thứ tự cấp bậc giao thông.",
+    "description_en": "Studies the Hierarchical Directed Capacitated Arc Routing Problem (HDCARP) driven by municipal waste collection and road maintenance, proposing valid inequalities and advanced metaheuristics.",
+    "methodology": "Valid Inequalities, Branch-and-Cut, and Large Neighborhood Search for Directed Graph Arc Routing.",
+    "outcomes": [
+      "Công bố bài báo quốc tế trên Computers & Operations Research (COR, Vol. 192, 2026)",
+      "Thiết lập benchmark thực nghiệm chuẩn mực cho lớp bài toán phân cấp mạng lưới đường bộ"
+    ],
+    "tags": ["Arc Routing", "HDCARP", "Waste Management", "Computers & Operations Research"],
+    "related_publications": [
+      {
+        "id": "ha-2026-hdc-cor",
+        "title": "On the Hierarchical Directed Capacitated Arc Routing Problem",
+        "authors": ["Minh Hoàng Hà", "Thu Huong Dang", "Ba Luat Le", "Trung Thanh Nguyen", "André Langevin"],
+        "venue": "Computers & Operations Research",
+        "year": 2026,
+        "type": "Journal",
+        "badge": "COR (2026) · Q1",
+        "doi": "10.1016/j.cor.2026.107495",
+        "link": "https://doi.org/10.1016/j.cor.2026.107495",
+        "abstract": "Introduces compact formulations, valid inequalities, and advanced metaheuristics providing superior performance on large realistic street networks with hierarchical service demands.",
+        "bibtex": "@article{Ha2026HDC,\n  title = {On the Hierarchical Directed Capacitated Arc Routing Problem},\n  author = {Minh Hoàng Hà and Thu Huong Dang and Ba Luat Le and Trung Thanh Nguyen and André Langevin},\n  journal = {Computers & Operations Research},\n  volume = {192},\n  pages = {107495},\n  year = {2026},\n  doi = {10.1016/j.cor.2026.107495}\n}"
+      }
+    ]
+  },
+  {
+    "id": "inventory-routing-optimization",
+    "title_vi": "Tối ưu hóa Tồn kho và Định tuyến Phương tiện Đa kỳ (Inventory Routing Problem)",
+    "title_en": "Large Neighborhood and Hybrid Genetic Search for Multi-Period Inventory Routing",
+    "category": "Đề tài Nghiên cứu Quốc tế",
+    "sponsor": "SLSCM Lab & Các đối tác học thuật quốc tế",
+    "grant_code": "IRP-SLSCM-2025",
+    "period": "2024 – 2026",
+    "status": "Active",
+    "research_domain": "Operational Optimization & Supply Chain Management",
+    "leads": [
+      {
+        "name": "ThS. Phạm Tuấn Anh",
+        "role": "Nghiên cứu viên chính",
+        "affiliation": "Trường Công nghệ, NEU & SLSCM Lab"
+      },
+      {
+        "name": "GS. Claudia Archetti",
+        "role": "Đồng tác giả / Cố vấn quốc tế",
+        "affiliation": "ESSEC Business School, France"
+      },
+      {
+        "name": "GS. Thibaut Vidal",
+        "role": "Đồng tác giả / Cố vấn",
+        "affiliation": "Polytechnique Montréal / CIRRELT"
+      }
+    ],
+    "description_vi": "Nghiên cứu phát triển thuật toán di truyền lai ghép (Hybrid Genetic Search - HGS) và tìm kiếm lân cận lớn (LNS) giải quyết bài toán phối hợp tồn kho - vận tải đa kỳ với sức chứa giới hạn và tiêu hao nhiên liệu tối thiểu.",
+    "description_en": "Develops state-of-the-art Hybrid Genetic Search and Large Neighborhood Search algorithms for multi-period inventory routing problems, unifying replenishment schedules with vehicle dispatching.",
+    "methodology": "Hybrid Genetic Search (HGS), Adaptive Large Neighborhood Search (ALNS), Matheuristic decomposition.",
+    "outcomes": [
+      "Công bố bài báo đỉnh cao trên European Journal of Operational Research (EJOR, Q1, 2025)",
+      "Thiết lập kỷ lục lời giải mới trên các bộ dữ liệu benchmark quốc tế"
+    ],
+    "tags": ["Inventory Routing", "HGS", "Supply Chain", "EJOR Q1"],
+    "related_publications": [
+      {
+        "id": "zhao-2025-irp-ejor",
+        "title": "Large Neighborhood and Hybrid Genetic Search for Inventory Routing Problems",
+        "authors": ["Jingyi Zhao", "Claudia Archetti", "Tuan Anh Pham", "Thibaut Vidal"],
+        "venue": "European Journal of Operational Research",
+        "year": 2025,
+        "type": "Journal",
+        "badge": "EJOR (2025) · Q1",
+        "doi": "10.1016/j.ejor.2025.11.021",
+        "link": "https://doi.org/10.1016/j.ejor.2025.11.021",
+        "abstract": "We investigate large neighborhood search and hybrid genetic search for multi-period inventory routing problems, outperforming previous state-of-the-art benchmarks.",
+        "bibtex": "@article{Zhao2025IRP,\n  title = {Large Neighborhood and Hybrid Genetic Search for Inventory Routing Problems},\n  author = {Jingyi Zhao and Claudia Archetti and Tuan Anh Pham and Thibaut Vidal},\n  journal = {European Journal of Operational Research},\n  year = {2025},\n  doi = {10.1016/j.ejor.2025.11.021}\n}"
+      }
+    ]
   },
   {
     "id": "training-smart-decisions",
     "title_vi": "Khóa đào tạo chuyên sâu: Từ dữ liệu đến phân tích và ra quyết định thông minh",
     "title_en": "Executive & Academic Training: From Data to Analytics and Intelligent Decision Making",
     "category": "Chương trình Đào tạo Chuyên sâu & Chuyển giao Tri thức",
-    "organizer": "SLSCM Lab & Khoa Khoa học Dữ liệu và Trí tuệ Nhân tạo (FDA) – Trường Công nghệ, Đại học Kinh tế Quốc dân",
-    "period": "Quarterly (2025 – 2026)",
-    "status": "Active",
-    "target_audience_vi": "Sinh viên ưu tú, học viên cao học, kỹ sư phân tích dữ liệu và chuyên viên quản trị vận hành, chuỗi cung ứng tại các doanh nghiệp sản xuất, bán lẻ và logistics.",
-    "target_audience_en": "Talented undergraduates, graduate students, data analysts, and supply chain professionals from manufacturing, retail, and logistics enterprises.",
-    "description_vi": "Khóa đào tạo ngắn hạn nhằm trang bị tư duy mô hình hóa toán học, kỹ năng lập trình tối ưu hóa với Python, Gurobi, OR-Tools và ứng dụng các thuật toán Machine Learning vào việc đưa ra các quyết định kinh doanh tối ưu.",
-    "curriculum": [
+    "sponsor": "Trường Công nghệ, NEU",
+    "grant_code": "TRAIN-FDA-2025",
+    "period": "Định kỳ hàng quý (2025 – 2026)",
+    "status": "Ongoing",
+    "research_domain": "Knowledge Transfer & Professional Education",
+    "organizer": "SLSCM Lab & Khoa Khoa học Dữ liệu và Trí tuệ Nhân tạo (FDA) – Trường Công nghệ, NEU",
+    "leads": [
       {
-        "module_vi": "Chuyên đề 1: Phân tích Dữ liệu Vận hành & Trực quan hóa Chuỗi Cung ứng",
-        "module_en": "Module 1: Operational Data Analysis & Supply Chain Visualization",
-        "content_vi": "Làm sạch dữ liệu lớn, phân tích khám phá (EDA), trích xuất chỉ số hiệu quả vận hành (KPIs) trong kho bãi và vận tải."
+        "name": "TS. Vũ Đức Minh",
+        "role": "Trưởng Ban Đào tạo / Giảng viên chính",
+        "affiliation": "Head of SLSCM Lab, NEU"
       },
       {
-        "module_vi": "Chuyên đề 2: Mô hình hóa Toán học & Vận trù học Thực chiến",
-        "module_en": "Module 2: Practical Mathematical Modeling & Operations Research",
-        "content_vi": "Xây dựng các mô hình quy hoạch tuyến tính (LP), quy hoạch nguyên (MIP) cho bài toán tồn kho, định tuyến xe (VRP) và điều độ sản xuất."
-      },
-      {
-        "module_vi": "Chuyên đề 3: Công cụ Solvers Hiện đại trong Ra quyết định",
-        "module_en": "Module 3: Modern Solvers in Business Decision Making",
-        "content_vi": "Thực hành lập trình Python kết hợp Gurobi, Google OR-Tools, PuLP và SCIP để giải các bài toán quy mô công nghiệp."
-      },
-      {
-        "module_vi": "Chuyên đề 4: Tích hợp AI và Học máy trong Tối ưu hóa Chuỗi cung ứng",
-        "module_en": "Module 4: AI and Machine Learning in Supply Chain Optimization",
-        "content_vi": "Mô hình kết hợp Dự báo và Tối ưu (Predict-then-Optimize), dự báo nhu cầu bằng Deep Learning kết hợp phân bổ nguồn lực."
+        "name": "TS. Đinh Nho Minh",
+        "role": "Giảng viên Vận trù học & Tối ưu hóa",
+        "affiliation": "Khoa FDA, Trường Công nghệ - NEU"
       }
     ],
-    "instructors": [
-      "TS. Vũ Đức Minh (Head of SLSCM Lab, NEU)",
-      "Đội ngũ giảng viên và chuyên gia nghiên cứu từ Khoa FDA, Trường Công nghệ - NEU"
+    "description_vi": "Khóa đào tạo ngắn hạn nhằm trang bị tư duy mô hình hóa toán học, kỹ năng lập trình tối ưu hóa với Python, Gurobi, OR-Tools và ứng dụng các thuật toán Machine Learning vào việc đưa ra các quyết định kinh doanh tối ưu.",
+    "description_en": "Short-term executive training equipping professionals and researchers with mathematical modeling skills, Python optimization (Gurobi, OR-Tools), and Machine Learning integration for optimal operational decisions.",
+    "methodology": "Hands-on project-based learning, practical Python programming with commercial/open-source solvers.",
+    "outcomes": [
+      "Đã đào tạo thành công hơn 120 học viên từ các doanh nghiệp logistics và ngân hàng",
+      "Bộ giáo trình bài giảng chuẩn hóa về Vận trù học và Trí tuệ Ra quyết định",
+      "Cấp chứng nhận hoàn thành chương trình bởi Trường Công nghệ - NEU"
     ],
-    "collaboration": "SLSCM Lab & Faculty of Data Science and AI (FDA) · College of Technology, NEU",
-    "description_en": "A specialized executive and academic training curriculum equipping researchers, students, and industry professionals with mathematical modeling principles, optimization solvers (Gurobi, OR-Tools, SCIP), and machine learning integrations for intelligent business decision-making."
+    "tags": ["Executive Training", "Python Solvers", "Gurobi", "Decision Intelligence"],
+    "related_publications": [
+      {
+        "id": "thieu-2025-metaperceptron-csi",
+        "title": "MetaPerceptron: A standardized framework for metaheuristic-driven multi-layer perceptron optimization",
+        "authors": ["Nguyen Van Thieu", "Seyedali Mirjalili", "Harish Garg", "Nguyen Thanh Hoang"],
+        "venue": "Computer Standards & Interfaces",
+        "year": 2025,
+        "type": "Journal",
+        "badge": "CSI (2025) · Q1",
+        "doi": "10.1016/j.csi.2025.103977",
+        "link": "https://doi.org/10.1016/j.csi.2025.103977",
+        "abstract": "Presents MetaPerceptron, a standardized framework for training multi-layer perceptrons via gradient-free swarm and evolutionary metaheuristics.",
+        "bibtex": "@article{Thieu2025MetaPerceptron,\n  title = {MetaPerceptron: A Standardized Framework for Metaheuristic-Driven Multi-Layer Perceptron Optimization},\n  author = {Nguyen Van Thieu and Seyedali Mirjalili and Harish Garg and Nguyen Thanh Hoang},\n  journal = {Computer Standards & Interfaces},\n  volume = {94},\n  pages = {103977},\n  year = {2025},\n  doi = {10.1016/j.csi.2025.103977}\n}"
+      }
+    ]
   }
 ]
