@@ -598,7 +598,7 @@ function PeopleAndLife() {
             title="Rigorous in mentorship, borderless in trajectory."
             text="A scholarly community of professors, researchers, and students advancing Vietnamese scientific excellence on global stages."
           />
-          <div className="mt-10 grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4">
+          <div className="mt-10 grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             {people.leadership_and_faculty.map((person, index) => {
               const name = person.name_en || person.name;
               const title = person.title_en || person.title_vi;
