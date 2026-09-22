@@ -24,10 +24,11 @@
       "id": "ha-minh-hoang",
       "name": "PGS. TS. Hà Minh Hoàng",
       "name_en": "Assoc. Prof. Dr. Minh Hoang Ha",
-      "title_vi": "Cố vấn khoa học / Nghiên cứu gia cao cấp",
-      "title_en": "Scientific Advisor / Senior Researcher",
-      "affiliation_vi": "Trường Đại học Khoa học Tự nhiên - ĐHQGHN (VNU-HUS) & SLSCM Lab",
-      "affiliation_en": "VNU University of Science (VNU-HUS) & SLSCM Lab",
+      "title_vi": "Trưởng khoa / Cố vấn khoa học cao cấp",
+      "title_en": "Dean of Faculty / Senior Scientific Advisor",
+      "role_badge": "DEAN OF FACULTY",
+      "affiliation_vi": "Khoa Toán - Cơ - Tin học, Trường ĐHKHTN (VNU-HUS) & SLSCM Lab",
+      "affiliation_en": "Faculty of Mathematics, Mechanics and Informatics, VNU-HUS & SLSCM Lab",
       "email": "",
       "research_interests": [
         "Operations Research & Optimization",
@@ -35,9 +36,9 @@
         "Metaheuristics & Matheuristics",
         "Vehicle Routing & Scheduling"
       ],
-      "bio_vi": "Phó Giáo sư, Tiến sĩ chuyên ngành Vận trù học và Khoa học Máy tính. Chuyên gia hàng đầu Việt Nam về thiết kế thuật toán tối ưu hóa tổ hợp, tác giả của hàng chục công trình uy tín trên EJOR, Computers & Operations Research, ITOR, IJOC, JORS.",
+      "bio_vi": "Phó Giáo sư, Tiến sĩ, Trưởng khoa Toán - Cơ - Tin học (Trường Đại học Khoa học Tự nhiên, ĐHQGHN), Cố vấn khoa học cao cấp tại SLSCM Lab. Chuyên gia hàng đầu Việt Nam về thiết kế thuật toán tối ưu hóa tổ hợp, tác giả của hàng chục công trình uy tín trên EJOR, Computers & Operations Research, ITOR, IJOC, JORS.",
       "avatar": "/assets/images/people/ha_minh_hoang.jpg",
-      "bio_en": "Associate Professor in Operations Research and Computer Science. A leading Vietnamese expert in combinatorial optimization algorithm design, with dozens of authoritative publications in EJOR, Computers & Operations Research, ITOR, IJOC, and JORS."
+      "bio_en": "Associate Professor, Ph.D., Dean of the Faculty of Mathematics, Mechanics and Informatics at VNU University of Science (VNU-HUS), Senior Scientific Advisor at SLSCM Lab. A leading Vietnamese expert in combinatorial optimization algorithm design, with dozens of authoritative publications in EJOR, Computers & Operations Research, ITOR, IJOC, and JORS."
     },
     {
       "id": "dinh-nho-minh",
@@ -65,10 +66,11 @@
       "id": "ta-dinh-quy",
       "name": "ThS. Tạ Đình Quý",
       "name_en": "MSc. Ta Dinh Quy",
-      "title_vi": "Nghiên cứu viên / Nghiên cứu sinh Tiến sĩ",
-      "title_en": "Researcher / PhD Candidate",
-      "affiliation_vi": "SLSCM Lab & Viện Toán học / Đại học Bách Khoa Hà Nội",
-      "affiliation_en": "SLSCM Lab & Institute of Mathematics / HUST",
+      "title_vi": "Giảng viên / Nghiên cứu sinh Tiến sĩ",
+      "title_en": "Lecturer / Faculty Member / PhD Candidate",
+      "role_badge": "FACULTY MEMBER",
+      "affiliation_vi": "Trường Công nghệ, Đại học Kinh tế Quốc dân (NEU) & Đại học Bách Khoa Hà Nội (HUST)",
+      "affiliation_en": "College of Technology, National Economics University (NEU) & HUST",
       "email": "",
       "research_interests": [
         "Parallel Machine Scheduling with Conflicting Jobs",
@@ -76,17 +78,17 @@
         "School Bus Routing & Transit",
         "Large Neighborhood Search (LNS)"
       ],
-      "bio_vi": "Thạc sĩ, nghiên cứu sinh chuyên sâu về tối ưu hóa lập lịch công nghiệp và điều độ máy móc có xung đột, tác giả chính của các công trình công bố trên ITOR, Journal of the Operational Research Society và Handbook of Combinatorial Optimization (Springer Nature).",
+      "bio_vi": "Thạc sĩ, Giảng viên Trường Công nghệ - NEU và nghiên cứu sinh chuyên sâu về tối ưu hóa lập lịch công nghiệp và điều độ máy móc có xung đột, tác giả chính của các công trình công bố trên ITOR, Journal of the Operational Research Society và Handbook of Combinatorial Optimization (Springer Nature).",
       "avatar": "/assets/images/people/ta_dinh_quy.jpg",
-      "bio_en": "Master of Science and Ph.D. candidate specializing in industrial scheduling and machine scheduling with conflict jobs. Lead author of publications in ITOR, Journal of the Operational Research Society, and Springer's Handbook of Combinatorial Optimization."
+      "bio_en": "Master of Science, Lecturer at College of Technology, NEU and Ph.D. candidate specializing in industrial scheduling and machine scheduling with conflict jobs. Lead author of publications in ITOR, Journal of the Operational Research Society, and Springer's Handbook of Combinatorial Optimization."
     },
     {
       "id": "pham-tuan-anh",
       "name": "Phạm Tuấn Anh",
       "name_en": "Tuan Anh Pham",
-      "title_vi": "Nghiên cứu viên / Cố vấn nghiên cứu",
-      "title_en": "Researcher / Research Mentor",
-      "role_badge": "RESEARCH MENTOR",
+      "title_vi": "Giảng viên / Nghiên cứu viên",
+      "title_en": "Lecturer / Faculty Member",
+      "role_badge": "FACULTY MEMBER",
       "affiliation_vi": "Trường Công nghệ, Đại học Kinh tế Quốc dân (NEU) & SLSCM Lab",
       "affiliation_en": "College of Technology, National Economics University (NEU) & SLSCM Lab",
       "email": "",
@@ -97,9 +99,9 @@
         "Energy-Aware Drone Logistics",
         "Combinatorial Optimization"
       ],
-      "bio_vi": "Nghiên cứu viên tại SLSCM Lab và Đại học Kinh tế Quốc dân (NEU). Tác giả của các công trình công bố trên các tạp chí vận trù học danh tiếng quốc tế như European Journal of Operational Research (EJOR, Q1) và Springer Optimization and Its Applications (COMOSA), chuyên sâu về các thuật toán tìm kiếm di truyền lai ghép (HGS) và bài toán quản lý tồn kho - định tuyến (IRP).",
+      "bio_vi": "Giảng viên tại Trường Công nghệ, Đại học Kinh tế Quốc dân (NEU) và nghiên cứu viên tại SLSCM Lab. Tác giả của các công trình công bố trên các tạp chí vận trù học danh tiếng quốc tế như European Journal of Operational Research (EJOR, Q1) và Springer Optimization and Its Applications (COMOSA), chuyên sâu về các thuật toán tìm kiếm di truyền lai ghép (HGS) và bài toán quản lý tồn kho - định tuyến (IRP).",
       "avatar": "/assets/images/people/pham_tuan_anh.jpg",
-      "bio_en": "Researcher and mentor at SLSCM Lab and National Economics University (NEU). Author of publications in premier international operations research journals including European Journal of Operational Research (EJOR, Q1) and Springer Optimization and Its Applications (COMOSA), specializing in hybrid genetic search (HGS) and inventory routing problems (IRP)."
+      "bio_en": "Lecturer at College of Technology, National Economics University (NEU) and researcher at SLSCM Lab. Author of publications in premier international operations research journals including European Journal of Operational Research (EJOR, Q1) and Springer Optimization and Its Applications (COMOSA), specializing in hybrid genetic search (HGS) and inventory routing problems (IRP)."
     }
   ],
   "young_researchers_and_authors": [
