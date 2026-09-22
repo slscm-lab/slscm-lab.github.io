@@ -194,25 +194,6 @@
     "is_featured": true
   },
   {
-    "id": "nguyen-2026-quadratic-covering-ejor",
-    "title": "On the approximability of covering problem under a quadratic constraint",
-    "authors": [
-      "Trung Thanh Nguyen",
-      "Khaled Elbassioni",
-      "Areg Karapetyan",
-      "Majid Khonji"
-    ],
-    "venue": "European Journal of Operational Research",
-    "year": 2026,
-    "type": "Journal",
-    "doi": "10.1016/j.ejor.2026.08.039",
-    "link": "https://doi.org/10.1016/j.ejor.2026.08.039",
-    "research_pillar": "operational_optimization",
-    "abstract": "We explore the theoretical approximability and complexity of combinatorial set covering problems subject to non-linear quadratic budget constraints, proving hardness bounds and polynomial-time approximation ratios.",
-    "bibtex": "@article{Nguyen2026Covering,\n  title = {On the Approximability of Covering Problem Under a Quadratic Constraint},\n  author = {Trung Thanh Nguyen and Khaled Elbassioni and Areg Karapetyan and Majid Khonji},\n  journal = {European Journal of Operational Research},\n  year = {2026},\n  doi = {10.1016/j.ejor.2026.08.039}\n}",
-    "is_featured": true
-  },
-  {
     "id": "dinh-2025-parallel-scheduling-hbco",
     "title": "Exact approaches for scheduling problems on parallel identical machines with conflict job",
     "authors": [

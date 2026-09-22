@@ -271,8 +271,8 @@ function Hero() {
           </div>
         </motion.div>
         <div className="mt-14 grid grid-cols-2 gap-3 lg:grid-cols-4">
-          <Counter target={19} suffix="" label="International Publications" detail="2025 - 2026 CATALOG" />
-          <Counter target={11} suffix="" label="Q1 Journal Articles" detail="PREMIER SCHOLARSHIP" />
+          <Counter target={publications.length} suffix="" label="International Publications" detail="2025 - 2026 CATALOG" />
+          <Counter target={publications.filter((p) => p.type === 'Journal').length} suffix="" label="Q1 Journal Articles" detail="PREMIER SCHOLARSHIP" />
           <Counter target={3} suffix="" label="Ph.D. Placements" detail="SMU · UCONN · LJMU" />
           <Counter target={4} suffix="" label="Active Impact Projects" detail="REAL-WORLD VALUE" />
         </div>
