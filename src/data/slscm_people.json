@@ -222,8 +222,8 @@
     {
       "id": "hof-hoa-thi-thu-trang",
       "name": "Hoa Thị Thu Trang",
-      "name_en": "Thu Trang Hoa",
-      "avatar": "",
+      "name_en": "Thu Trang Hoa Thi",
+      "avatar": "/assets/images/people/hoa_thi_thu_trang.jpg",
       "achievement_vi": "Cựu Sinh viên nghiên cứu; Kỹ sư Nghiên cứu (Research Engineer) tại Singapore Management University (SMU, Singapore, 2026).",
       "achievement_en": "Former Student Scholar; Appointed Research Engineer at Singapore Management University (SMU, Singapore, 2026).",
       "destination_institution": "Singapore Management University (SMU)",
@@ -389,8 +389,8 @@
     {
       "id": "alumni-hoa-thi-thu-trang",
       "name": "Hoa Thị Thu Trang",
-      "name_en": "Thu Trang Hoa",
-      "avatar": "",
+      "name_en": "Thu Trang Hoa Thi",
+      "avatar": "/assets/images/people/hoa_thi_thu_trang.jpg",
       "period": "2026",
       "former_role_vi": "Cựu Sinh viên nghiên cứu / Kỹ sư nghiên cứu",
       "former_role_en": "Former Student Researcher & Scholar",
