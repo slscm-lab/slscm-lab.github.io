@@ -573,6 +573,17 @@ function PublicationsVault() {
 function PeopleAndLife() {
   const [submitted, setSubmitted] = useState(false);
   const [memberTab, setMemberTab] = useState<'all' | 'researchers' | 'students' | 'alumni'>('all');
+  const [alumniTab, setAlumniTab] = useState<'all' | 'phd'>('all');
+
+  const hofMap = useMemo(() => {
+    const map = new Map<string, typeof people.hall_of_fame[0]>();
+    people.hall_of_fame.forEach((hof) => {
+      map.set(hof.name.toLowerCase(), hof);
+      if (hof.name_en) map.set(hof.name_en.toLowerCase(), hof);
+    });
+    return map;
+  }, []);
+
   const submit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setSubmitted(true);
@@ -922,133 +933,198 @@ function PeopleAndLife() {
             </div>
           </div>
 
-          <div className="mt-14">
-            <div className="flex items-end justify-between gap-5">
-              <div>
-                <p className="font-mono text-[10px] font-semibold uppercase tracking-widest text-amber-700">HALL OF FAME</p>
-                <h3 className="mt-2 font-editorial text-3xl text-slate-900">Placements without borders.</h3>
-              </div>
-              <Trophy className="hidden h-10 w-10 text-amber-500 sm:block" />
-            </div>
-            <div className="mt-6 grid gap-4 md:grid-cols-3">
-              {people.hall_of_fame.map((entry) => {
-                const achievement = entry.achievement_en || entry.achievement_vi;
-                const name = entry.name_en || entry.name;
-                return (
-                  <article key={entry.id} className="rounded-2xl border border-amber-200/80 bg-amber-50/70 p-5 backdrop-blur-sm shadow-soft transition hover:shadow-lift flex flex-col justify-between">
-                    <div>
-                      <div className="flex items-center gap-3.5">
-                        {entry.avatar ? (
-                          <img
-                            src={entry.avatar}
-                            alt={name}
-                            className="h-12 w-12 rounded-xl object-cover ring-2 ring-amber-300/80 shadow-sm shrink-0"
-                          />
-                        ) : (
-                          <div className="grid h-12 w-12 place-items-center rounded-xl bg-amber-200/80 text-amber-900 shrink-0">
-                            <GraduationCap className="h-6 w-6" />
-                          </div>
-                        )}
-                        <div>
-                          <p className="font-editorial text-xs font-semibold tracking-wide text-amber-900">Ph.D. Scholarship · {entry.year}</p>
-                          <h4 className="font-editorial text-lg font-bold text-slate-900 leading-snug">{name}</h4>
-                          <p className="font-editorial text-xs font-medium text-slate-600">{entry.country}</p>
-                        </div>
-                      </div>
-                      <div className="mt-4 pt-3 border-t border-amber-200/60">
-                        <p className="font-editorial text-sm font-semibold text-slate-800">{entry.destination_institution}</p>
-                        <p className="mt-2 font-editorial text-xs leading-relaxed text-slate-600">{achievement}</p>
-                      </div>
-                    </div>
-                  </article>
-                );
-              })}
-            </div>
-          </div>
-
-          {/* ALUMNI & FORMER MEMBERS */}
+          {/* MERGED: PLACEMENTS WITHOUT BORDERS · SCHOLARS & ALUMNI WORLDWIDE */}
           <div className="mt-16" id="alumni">
             <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
               <div>
-                <p className="font-mono text-[10px] font-semibold uppercase tracking-widest text-indigo-700">
-                  ALUMNI NETWORK
-                </p>
-                <h3 className="mt-2 font-editorial text-3xl text-slate-900">
-                  Scholars &amp; Alumni Worldwide.
+                <div className="flex items-center gap-2 flex-wrap">
+                  <span className="font-mono text-[10px] font-semibold uppercase tracking-widest text-amber-800 bg-amber-50 px-2.5 py-0.5 rounded border border-amber-200/80 inline-flex items-center gap-1.5">
+                    <Trophy className="h-3 w-3 text-amber-600" />
+                    HALL OF FAME
+                  </span>
+                  <span className="font-mono text-[10px] font-semibold uppercase tracking-widest text-indigo-800 bg-indigo-50 px-2.5 py-0.5 rounded border border-indigo-200/80 inline-flex items-center gap-1.5">
+                    <GraduationCap className="h-3.5 w-3.5 text-indigo-600" />
+                    ALUMNI NETWORK
+                  </span>
+                </div>
+                <h3 className="mt-2.5 font-editorial text-3xl text-slate-900">
+                  Placements without borders.
                 </h3>
+                <p className="mt-1 font-editorial text-lg font-medium text-slate-700">
+                  Scholars &amp; Alumni Worldwide
+                </p>
                 <p className="mt-2 font-editorial text-sm text-slate-600 max-w-2xl">
-                  Honoring former researchers and student scholars of SLSCM Lab who contributed to our scientific foundations and are now pursuing doctorates, research, and leadership careers at leading institutions and enterprises.
+                  Honoring former researchers and student scholars of SLSCM Lab who contributed to our scientific foundations and are now pursuing fully-funded doctorates, advanced research, and leadership careers at leading global institutions and enterprises.
                 </p>
               </div>
-              <div className="hidden sm:flex items-center gap-2 rounded-xl border border-indigo-200/80 bg-indigo-50/80 px-3.5 py-1.5 font-mono text-xs font-semibold text-indigo-900">
-                <GraduationCap className="h-4 w-4 text-indigo-600" />
-                <span>{people.alumni.length} Distinguished Alumni</span>
+
+              <div className="flex items-center gap-1.5 rounded-xl border border-slate-200/80 bg-white/90 p-1 backdrop-blur-sm shadow-xs self-start sm:self-auto">
+                <button
+                  type="button"
+                  onClick={() => setAlumniTab('all')}
+                  className={`rounded-lg px-3 py-1.5 font-editorial text-xs font-semibold transition ${
+                    alumniTab === 'all'
+                      ? 'bg-slate-900 text-white shadow-sm'
+                      : 'text-slate-600 hover:text-slate-900'
+                  }`}
+                >
+                  All Alumni ({people.alumni?.length || 0})
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setAlumniTab('phd')}
+                  className={`rounded-lg px-3 py-1.5 font-editorial text-xs font-semibold transition inline-flex items-center gap-1.5 ${
+                    alumniTab === 'phd'
+                      ? 'bg-amber-600 text-white shadow-sm'
+                      : 'text-amber-800 hover:text-amber-950 bg-amber-50/60'
+                  }`}
+                >
+                  <Trophy className="h-3 w-3" />
+                  Ph.D. Placements ({people.hall_of_fame.length})
+                </button>
               </div>
             </div>
 
-            <div className="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-              {people.alumni.map((alum) => {
-                const name = alum.name_en || alum.name;
-                const initials = getMemberInitials(name);
-                const formerRole = alum.former_role_en || alum.former_role_vi;
-                const currentPos = alum.current_position_en || alum.current_position_vi;
-                const institution = alum.institution_en || alum.institution;
-                return (
-                  <article
-                    key={alum.id}
-                    className="rounded-2xl border border-indigo-200/70 bg-gradient-to-br from-white/95 via-indigo-50/30 to-white/90 p-5 backdrop-blur-sm shadow-soft transition hover:shadow-lift flex flex-col justify-between"
-                  >
-                    <div>
-                      <div className="flex items-center gap-3.5">
-                        {alum.avatar ? (
-                          <img
-                            src={alum.avatar}
-                            alt={name}
-                            className="h-12 w-12 rounded-xl object-cover ring-2 ring-indigo-200 shadow-sm shrink-0"
-                          />
-                        ) : (
-                          <div className="grid h-12 w-12 place-items-center rounded-xl bg-gradient-to-br from-indigo-900 via-slate-900 to-indigo-950 font-mono text-sm font-bold text-indigo-200 shadow-sm ring-2 ring-indigo-200/60 shrink-0 tracking-wider">
-                            {initials}
-                          </div>
-                        )}
-                        <div className="min-w-0 flex-1">
-                          <div className="flex items-center justify-between gap-1">
-                            <p className="font-editorial text-xs font-semibold tracking-wide text-indigo-800 truncate">
-                              {formerRole}
-                            </p>
-                            <span className="font-mono text-[10px] font-semibold text-indigo-700 shrink-0 bg-indigo-50 px-1.5 py-0.5 rounded border border-indigo-100">
-                              {alum.period}
+            {/* When viewing Ph.D. Placements (Hall of Fame) */}
+            {alumniTab === 'phd' && (
+              <div className="mt-6 grid gap-4 md:grid-cols-3">
+                {people.hall_of_fame.map((entry) => {
+                  const achievement = entry.achievement_en || entry.achievement_vi;
+                  const name = entry.name_en || entry.name;
+                  return (
+                    <article
+                      key={entry.id}
+                      className="rounded-2xl border border-amber-200/80 bg-amber-50/70 p-5 backdrop-blur-sm shadow-soft transition hover:shadow-lift flex flex-col justify-between"
+                    >
+                      <div>
+                        <div className="flex items-center gap-3.5">
+                          {entry.avatar ? (
+                            <img
+                              src={entry.avatar}
+                              alt={name}
+                              className="h-12 w-12 rounded-xl object-cover ring-2 ring-amber-300/80 shadow-sm shrink-0"
+                            />
+                          ) : (
+                            <div className="grid h-12 w-12 place-items-center rounded-xl bg-amber-200/80 text-amber-900 shrink-0">
+                              <GraduationCap className="h-6 w-6" />
+                            </div>
+                          )}
+                          <div>
+                            <span className="inline-flex items-center gap-1 text-[10px] font-mono font-semibold text-amber-900 bg-amber-100/90 px-2 py-0.5 rounded">
+                              <Trophy className="h-3 w-3 text-amber-600" /> Ph.D. Scholarship · {entry.year}
                             </span>
+                            <h4 className="mt-1 font-editorial text-lg font-bold text-slate-900 leading-snug">
+                              {name}
+                            </h4>
+                            <p className="font-editorial text-xs font-medium text-slate-600">
+                              {entry.country}
+                            </p>
                           </div>
-                          <h4 className="font-editorial text-lg font-bold text-slate-900 leading-snug truncate">
-                            {name}
-                          </h4>
-                          <p className="font-editorial text-xs font-medium text-slate-500 truncate">
-                            {institution}
+                        </div>
+                        <div className="mt-4 pt-3 border-t border-amber-200/60">
+                          <p className="font-editorial text-sm font-semibold text-slate-800">
+                            {entry.destination_institution}
+                          </p>
+                          <p className="mt-2 font-editorial text-xs leading-relaxed text-slate-600">
+                            {achievement}
                           </p>
                         </div>
                       </div>
+                    </article>
+                  );
+                })}
+              </div>
+            )}
 
-                      <div className="mt-4 pt-3 border-t border-indigo-100/80">
-                        <p className="font-editorial text-xs font-semibold text-indigo-950">
-                          {currentPos}
-                        </p>
-                        <p className="mt-0.5 font-editorial text-xs text-slate-600">
-                          {institution}
-                        </p>
-                        {alum.research_focus && (
-                          <div className="mt-2.5 flex flex-wrap gap-1.5">
-                            <span className="rounded-md border border-indigo-200/60 bg-white/90 px-2 py-0.5 font-editorial text-[11px] font-medium text-indigo-900">
-                              Focus: {alum.research_focus}
-                            </span>
+            {/* When viewing All Alumni (with integrated Ph.D. Scholarship badges) */}
+            {alumniTab === 'all' && (
+              <div className="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+                {people.alumni.map((alum) => {
+                  const name = alum.name_en || alum.name;
+                  const initials = getMemberInitials(name);
+                  const formerRole = alum.former_role_en || alum.former_role_vi;
+                  const currentPos = alum.current_position_en || alum.current_position_vi;
+                  const institution = alum.institution_en || alum.institution;
+                  const hofMatch =
+                    hofMap.get(alum.name.toLowerCase()) ||
+                    (alum.name_en ? hofMap.get(alum.name_en.toLowerCase()) : undefined);
+
+                  return (
+                    <article
+                      key={alum.id}
+                      className={`rounded-2xl border p-5 backdrop-blur-sm shadow-soft transition hover:shadow-lift flex flex-col justify-between ${
+                        hofMatch
+                          ? 'border-amber-200/90 bg-gradient-to-br from-white/95 via-amber-50/25 to-white/90 ring-1 ring-amber-200/50'
+                          : 'border-indigo-200/70 bg-gradient-to-br from-white/95 via-indigo-50/30 to-white/90'
+                      }`}
+                    >
+                      <div>
+                        <div className="flex items-center gap-3.5">
+                          {alum.avatar ? (
+                            <img
+                              src={alum.avatar}
+                              alt={name}
+                              className={`h-12 w-12 rounded-xl object-cover shadow-sm shrink-0 ring-2 ${
+                                hofMatch ? 'ring-amber-300' : 'ring-indigo-200'
+                              }`}
+                            />
+                          ) : (
+                            <div
+                              className={`grid h-12 w-12 place-items-center rounded-xl font-mono text-sm font-bold shadow-sm ring-2 shrink-0 tracking-wider ${
+                                hofMatch
+                                  ? 'bg-gradient-to-br from-amber-950 via-slate-900 to-amber-900 text-amber-200 ring-amber-300/60'
+                                  : 'bg-gradient-to-br from-indigo-900 via-slate-900 to-indigo-950 text-indigo-200 ring-indigo-200/60'
+                              }`}
+                            >
+                              {initials}
+                            </div>
+                          )}
+                          <div className="min-w-0 flex-1">
+                            <div className="flex items-center justify-between gap-1">
+                              <p className="font-editorial text-xs font-semibold tracking-wide text-slate-700 truncate">
+                                {formerRole}
+                              </p>
+                              <span className="font-mono text-[10px] font-semibold text-slate-600 shrink-0 bg-slate-100 px-1.5 py-0.5 rounded border border-slate-200/80">
+                                {alum.period}
+                              </span>
+                            </div>
+                            <h4 className="font-editorial text-lg font-bold text-slate-900 leading-snug truncate">
+                              {name}
+                            </h4>
+                            <p className="font-editorial text-xs font-medium text-slate-500 truncate">
+                              {institution}
+                            </p>
+                          </div>
+                        </div>
+
+                        {hofMatch && (
+                          <div className="mt-3 inline-flex items-center gap-1.5 rounded-md border border-amber-200/80 bg-amber-50/90 px-2.5 py-1 text-[11px] font-editorial font-semibold text-amber-900">
+                            <Trophy className="h-3 w-3 text-amber-600 shrink-0" />
+                            <span>Ph.D. Placement · {hofMatch.destination_institution}</span>
                           </div>
                         )}
+
+                        <div className="mt-3.5 pt-3 border-t border-slate-100/90">
+                          <p className="font-editorial text-xs font-semibold text-slate-900">
+                            {currentPos}
+                          </p>
+                          <p className="mt-0.5 font-editorial text-xs text-slate-600">
+                            {institution}
+                          </p>
+                          {alum.research_focus && (
+                            <div className="mt-2.5 flex flex-wrap gap-1.5">
+                              <span className="rounded-md border border-slate-200/80 bg-white/90 px-2 py-0.5 font-editorial text-[11px] font-medium text-slate-700">
+                                Focus: {alum.research_focus}
+                              </span>
+                            </div>
+                          )}
+                        </div>
                       </div>
-                    </div>
-                  </article>
-                );
-              })}
-            </div>
+                    </article>
+                  );
+                })}
+              </div>
+            )}
           </div>
         </div>
       </section>
