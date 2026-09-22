@@ -19,6 +19,7 @@ export type RelatedPublication = {
   link?: string;
   abstract?: string;
   bibtex?: string;
+  highlighted_authors?: string[];
 };
 
 export type Project = {
@@ -108,6 +109,7 @@ export type Publication = {
   abstract?: string;
   bibtex?: string;
   is_featured?: boolean;
+  highlighted_authors?: string[];
 };
 
 export type Person = {
