@@ -40,6 +40,28 @@
       "bio_en": "Associate Professor in Operations Research and Computer Science. A leading Vietnamese expert in combinatorial optimization algorithm design, with dozens of authoritative publications in EJOR, Computers & Operations Research, ITOR, IJOC, and JORS."
     },
     {
+      "id": "dinh-nho-minh",
+      "name": "TS. Đinh Nho Minh",
+      "name_en": "Dr. Dinh Nho Minh",
+      "title_vi": "Giảng viên / Nghiên cứu viên",
+      "title_en": "Lecturer / Researcher",
+      "role_badge": "FACULTY RESEARCHER",
+      "affiliation_vi": "Khoa Khoa học Dữ liệu & Trí tuệ Nhân tạo (FDA), Trường Công nghệ, Đại học Kinh tế Quốc dân (NEU)",
+      "affiliation_en": "Faculty of Data Science and AI (FDA), College of Technology, National Economics University (NEU)",
+      "email": "",
+      "office": "P1613, Tòa nhà A1, Đại học Kinh tế Quốc dân – 207 Giải Phóng, Hà Nội",
+      "research_interests": [
+        "Applied Operations Research",
+        "Inventory Routing Problems (IRP)",
+        "Matheuristic Algorithms",
+        "Stochastic Optimization",
+        "Supply Chain & Logistics Management"
+      ],
+      "bio_vi": "Tiến sĩ Phân tích dữ liệu trong Kinh tế – Chuyên ngành Vận trù học tại Đại học Brescia (Italy, 2023), từng nghiên cứu sau tiến sĩ (Postdoc) tại Đại học Calabria (Italy). Giảng viên Khoa KHDL&TTNT (FDA), Trường Công nghệ - NEU. Hướng nghiên cứu chuyên sâu về vận trù học ứng dụng, tối ưu hóa chuỗi cung ứng, các thuật toán matheuristic cho bài toán định tuyến và quản lý kho (IRP).",
+      "avatar": "/assets/images/people/dinh_nho_minh.jpg",
+      "bio_en": "Ph.D. in Data Analytics in Business and Economics specializing in Operations Research from the University of Brescia (Italy, 2023), former Postdoctoral Researcher at the University of Calabria (Italy). Lecturer at the Faculty of Data Science and AI (FDA), College of Technology, NEU. Specializes in applied operations research, supply chain optimization, matheuristics, and inventory routing problems (IRP)."
+    },
+    {
       "id": "ta-dinh-quy",
       "name": "ThS. Tạ Đình Quý",
       "name_en": "MSc. Ta Dinh Quy",

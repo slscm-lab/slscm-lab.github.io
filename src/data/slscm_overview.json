@@ -26,9 +26,9 @@
     "international_partner_countries": 7
   },
   "team_structure": {
-    "total_faculty_researchers": 6,
+    "total_faculty_researchers": 7,
     "professors": 1,
-    "phd": 2,
+    "phd": 3,
     "phd_candidates": 2,
     "masters": 1,
     "talented_students": 10,
@@ -39,6 +39,11 @@
       "name": "PGS. TS. Hà Minh Hoàng",
       "role": "Cố vấn khoa học / Nghiên cứu gia cao cấp",
       "affiliation": "VNU University of Science & SLSCM Lab"
+    },
+    {
+      "name": "TS. Đinh Nho Minh",
+      "role": "Giảng viên / Nghiên cứu viên",
+      "affiliation": "Khoa KHDL&TTNT (FDA), NEU & SLSCM Lab"
     },
     {
       "name": "ThS. Tạ Đình Quý",
