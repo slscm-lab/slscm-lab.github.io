@@ -27,10 +27,9 @@ export const EventsPage: React.FC = () => {
     const matchesSearch =
       searchQuery.trim() === '' ||
       item.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      (item.title_vi && item.title_vi.toLowerCase().includes(searchQuery.toLowerCase())) ||
       item.summary.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      (item.summary_vi && item.summary_vi.toLowerCase().includes(searchQuery.toLowerCase())) ||
-      (item.content_vi && item.content_vi.toLowerCase().includes(searchQuery.toLowerCase())) ||
+      (item.summary_en && item.summary_en.toLowerCase().includes(searchQuery.toLowerCase())) ||
+      (item.content_en && item.content_en.toLowerCase().includes(searchQuery.toLowerCase())) ||
       item.tags?.some((t) => t.toLowerCase().includes(searchQuery.toLowerCase()));
 
     return matchesCategory && matchesSearch;
@@ -126,21 +125,16 @@ export const EventsPage: React.FC = () => {
                 <h3 className="font-editorial text-xl font-bold text-slate-950 leading-snug">
                   {item.title}
                 </h3>
-                {item.title_vi && (
-                  <p className="mt-1 font-editorial text-xs text-slate-500 italic">
-                    {item.title_vi}
-                  </p>
-                )}
 
                 {/* Summary */}
                 <p className="mt-3 font-editorial text-xs sm:text-sm text-slate-700 leading-relaxed">
-                  {item.summary}
+                  {item.summary_en || item.summary}
                 </p>
 
                 {/* Extended Content if available */}
-                {item.content_vi && (
+                {item.content_en && (
                   <div className="mt-3 rounded-xl bg-slate-50 p-3.5 border border-slate-200/60 font-editorial text-xs text-slate-600 leading-relaxed">
-                    {item.content_vi}
+                    {item.content_en}
                   </div>
                 )}
               </div>

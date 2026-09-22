@@ -130,13 +130,13 @@ export const PeoplePage: React.FC = () => {
                           {name}
                         </h3>
                         <p className="font-editorial text-xs font-semibold text-sky-800">
-                          {mentor.title_en || mentor.title_vi}
+                          {mentor.title_en}
                         </p>
                       </div>
                     </div>
 
                     <p className="mt-3 font-editorial text-xs text-slate-600 leading-relaxed">
-                      {mentor.affiliation_en || mentor.affiliation_vi}
+                      {mentor.affiliation_en}
                     </p>
 
                     {mentor.bio_en && (

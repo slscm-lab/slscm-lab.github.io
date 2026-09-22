@@ -33,10 +33,9 @@ export const SeminarsPage: React.FC = () => {
     const matchesSearch =
       searchQuery.trim() === '' ||
       item.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      (item.title_vi && item.title_vi.toLowerCase().includes(searchQuery.toLowerCase())) ||
       item.speaker.toLowerCase().includes(searchQuery.toLowerCase()) ||
       item.affiliation.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      item.abstract.toLowerCase().includes(searchQuery.toLowerCase());
+      (item.abstract_en || item.abstract || '').toLowerCase().includes(searchQuery.toLowerCase());
 
     return matchesTab && matchesTrack && matchesSearch;
   });
@@ -165,11 +164,6 @@ export const SeminarsPage: React.FC = () => {
                   <h3 className="font-editorial text-xl sm:text-2xl font-bold text-slate-950 leading-snug">
                     {item.title}
                   </h3>
-                  {item.title_vi && (
-                    <p className="mt-1 font-editorial text-sm text-slate-500 italic">
-                      {item.title_vi}
-                    </p>
-                  )}
 
                   {/* Speaker Info */}
                   <div className="mt-3 flex items-center gap-3">

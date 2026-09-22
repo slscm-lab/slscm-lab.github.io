@@ -68,7 +68,7 @@ export const AlumniPage: React.FC = () => {
               </div>
 
               <p className="mt-4 font-editorial text-xs sm:text-sm text-slate-700 leading-relaxed">
-                {entry.achievement_en || entry.achievement_vi}
+                {entry.achievement_en}
               </p>
 
               <div className="mt-3 rounded-xl bg-slate-50 p-3 border border-slate-200/60 text-xs">
@@ -115,10 +115,10 @@ export const AlumniPage: React.FC = () => {
                   {alum.name_en || alum.name}
                 </h4>
                 <p className="font-editorial text-xs font-semibold text-sky-800 mt-0.5">
-                  {alum.current_position_en || alum.current_position_vi}
+                  {alum.current_position_en}
                 </p>
                 <p className="font-editorial text-xs text-slate-600 mt-1">
-                  {alum.institution_en || alum.institution}
+                  {alum.institution_en}
                 </p>
                 {alum.research_focus && (
                   <p className="mt-2.5 rounded-lg bg-slate-50 p-2 font-editorial text-[11px] text-slate-600 border border-slate-100">
