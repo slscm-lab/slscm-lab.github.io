@@ -51,17 +51,17 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
     operational_optimization: {
       icon: '📐',
       color: 'from-sky-500/10 to-sky-600/5 border-sky-200',
-      desc: 'Phân tích và thiết kế thuật toán chính xác (Branch-and-Cut, Conic Outer Approximation) và metaheuristic cho các bài toán định tuyến (VRP, CARP), lập lịch máy móc và vị trí cơ sở cạnh tranh.',
+      desc: 'Analysis and algorithmic design of exact methods (Branch-and-Cut, Conic Outer Approximation) and high-performance metaheuristics for complex routing (VRP, CARP), parallel machine scheduling, and competitive facility location.',
     },
     ml_optimization: {
       icon: '🧠',
       color: 'from-emerald-500/10 to-emerald-600/5 border-emerald-200',
-      desc: 'Nghiên cứu các thuật toán tối ưu hóa không sử dụng đạo hàm (Gradient-free metaheuristics) ứng dụng trong huấn luyện mạng nơ-ron, MetaPerceptron và học máy chuỗi thời gian.',
+      desc: 'Developing gradient-free optimization frameworks, metaheuristic-driven neural architectures (MetaPerceptron, GrafoRVFL), and predictive-prescriptive models for intelligent decision support.',
     },
     green_transportation: {
       icon: '⚡',
       color: 'from-amber-500/10 to-amber-600/5 border-amber-200',
-      desc: 'Xây dựng các mô hình vận tải hiện đại trong chuỗi cung ứng xanh, tối ưu hóa phối hợp đa phương tiện xe tải - drone xuất kích nhiều đợt và điều độ mạng lưới xe buýt trường học.',
+      desc: 'Formulating next-generation sustainable logistics networks, coordinating multi-trip truck-and-drone deliveries, energy-aware electric vehicle routing, and resilient transit scheduling.',
     },
   };
 
@@ -73,7 +73,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
           {/* Eyebrow badge */}
           <div className="inline-flex items-center gap-2 rounded-full border border-sky-300/80 bg-white/90 px-4 py-1.5 font-mono text-xs font-semibold text-sky-900 shadow-xs backdrop-blur-md">
             <span className="flex h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
-            <span>Trường Công nghệ · Đại học Kinh tế Quốc dân (NEU)</span>
+            <span>College of Technology · National Economics University (NEU)</span>
           </div>
 
           {/* Hero Headline */}
@@ -192,10 +192,10 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
               >
                 <div className="text-3xl mb-4">{detail.icon}</div>
                 <h3 className="font-editorial text-xl font-bold text-slate-950 leading-snug">
-                  {pillar.title_vi}
+                  {pillar.title_en || pillar.title_vi}
                 </h3>
                 <p className="mt-1 font-editorial text-xs text-slate-500 italic">
-                  {pillar.title_en}
+                  {pillar.title_vi}
                 </p>
                 <p className="mt-3 font-editorial text-xs sm:text-sm text-slate-600 leading-relaxed">
                   {detail.desc}
@@ -250,7 +250,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
               <div>
                 <div className="flex items-center justify-between gap-2 mb-2">
                   <span className="rounded-lg bg-sky-100 px-2.5 py-0.5 font-mono text-[10px] font-bold text-sky-900">
-                    {project.category.split('(')[0]}
+                    {project.category_en || project.category.split('(')[0]}
                   </span>
                   <span className="font-mono text-[11px] text-slate-500">
                     {project.period}
@@ -258,15 +258,18 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                 </div>
 
                 <h3 className="font-editorial text-lg font-bold text-slate-950 leading-snug">
-                  {project.title_vi}
+                  {project.title_en || project.title_vi}
                 </h3>
+                <p className="mt-0.5 font-editorial text-xs text-slate-500 italic">
+                  {project.title_vi}
+                </p>
                 {project.sponsor && (
-                  <p className="mt-1 font-editorial text-xs font-semibold text-sky-800">
+                  <p className="mt-1.5 font-editorial text-xs font-semibold text-sky-800">
                     Sponsor: {project.sponsor}
                   </p>
                 )}
                 <p className="mt-3 font-editorial text-xs sm:text-sm text-slate-600 leading-relaxed line-clamp-3">
-                  {project.description_vi}
+                  {project.description_en || project.description_vi}
                 </p>
 
                 {/* Related Papers Preview */}

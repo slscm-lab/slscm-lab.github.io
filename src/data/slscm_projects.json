@@ -3,32 +3,33 @@
     "id": "rv-fstsp-optimization",
     "title_vi": "Phát triển mô hình và giải thuật cho bài toán Revisit Flying Sidekick Traveling Salesman Problem",
     "title_en": "Model and Algorithm Development for the Revisit Flying Sidekick Traveling Salesman Problem",
-    "category": "Đề tài Nghiên cứu Cấp cơ sở (Institutional Grant)",
-    "sponsor": "Đại học Kinh tế Quốc dân (NEU)",
+    "category": "Đề tài Nghiên cứu Cấp cơ sở",
+    "category_en": "Institutional Research Grant",
+    "sponsor": "National Economics University (NEU)",
     "grant_code": "NEU.CS.2025.SLSCM01",
-    "period": "2025 – Nay",
+    "period": "2025 – Present",
     "status": "Active",
     "research_domain": "Green Transportation & Drone Logistics",
     "leads": [
       {
         "name": "TS. Vũ Đức Minh",
         "email": "minhvd@neu.edu.vn",
-        "role": "Chủ nhiệm đề tài (PI)",
-        "affiliation": "SLSCM Lab, Trường Công nghệ - NEU"
+        "role": "Principal Investigator (PI)",
+        "affiliation": "SLSCM Lab, College of Technology - NEU"
       },
       {
         "name": "Trần Nam Khánh",
-        "role": "Nghiên cứu viên chính (Key Researcher)",
+        "role": "Key Researcher",
         "affiliation": "HUS-VNU & SLSCM Lab"
       },
       {
         "name": "Lê Thanh Hồng",
-        "role": "Đồng tác giả (Co-Author)",
+        "role": "Co-Author",
         "affiliation": "SLSCM Lab"
       },
       {
         "name": "Nguyễn Đức Công",
-        "role": "Nghiên cứu viên (Researcher)",
+        "role": "Researcher",
         "affiliation": "SLSCM Lab"
       }
     ],
@@ -39,6 +40,11 @@
       "Công bố bài báo quốc tế Q1 trên tạp chí đỉnh cao Transportation Research Part C: Emerging Technologies (2026, Vol. 192)",
       "Công bố bài báo tại Hội nghị Quốc tế CITA 2025 (Lecture Notes in Networks and Systems, Springer)",
       "Tiết kiệm đến 28.4% tổng thời gian hoàn thành hành trình so với mô hình FSTSP truyền thống"
+    ],
+    "outcomes_en": [
+      "Published in premier Q1 journal Transportation Research Part C: Emerging Technologies (2026, Vol. 192)",
+      "Presented and published in Springer LNNS at International Conference CITA 2025",
+      "Achieved up to 28.4% reduction in delivery mission completion time compared to classic FSTSP benchmarks"
     ],
     "tags": ["Drone Routing", "FSTSP", "Matheuristics", "Transportation Research Part C", "Last-Mile Delivery"],
     "related_publications": [
@@ -74,8 +80,9 @@
     "id": "vinif-cfl-cross-nested-logit",
     "title_vi": "Định vị Cơ sở Cạnh tranh Dưới Mô hình Lựa chọn Khách hàng Cross-Nested Logit",
     "title_en": "Competitive Facility Location under Cross-Nested Logit Customer Choice Model: Hardness and Exact Approaches",
-    "category": "Đề tài Nghiên cứu Trọng điểm (National Innovation Grant)",
-    "sponsor": "Quỹ Đổi mới Sáng tạo Vingroup (VINIF)",
+    "category": "Đề tài Nghiên cứu Trọng điểm",
+    "category_en": "National Innovation Research Grant",
+    "sponsor": "Vingroup Innovation Foundation (VINIF)",
     "grant_code": "Grant VINIF.2024.DA072",
     "period": "2024 – 2026",
     "status": "Active",
@@ -83,28 +90,28 @@
     "leads": [
       {
         "name": "Lê Bá Luật",
-        "role": "Tác giả chính (Lead Researcher)",
+        "role": "Lead Researcher",
         "affiliation": "SMU PhD Fellow & SLSCM Lab"
       },
       {
         "name": "GS. Mai Tiến",
-        "role": "Đồng tác giả / Cố vấn quốc tế",
+        "role": "International Co-Advisor",
         "affiliation": "Singapore Management University (SMU)"
       },
       {
         "name": "TS. Tạ Thúy Anh",
-        "role": "Đồng tác giả",
+        "role": "Co-Author",
         "affiliation": "Phenikaa University"
       },
       {
         "name": "PGS. TS. Hà Minh Hoàng",
-        "role": "Đồng tác giả / Cố vấn cấp cao",
-        "affiliation": "Khoa Toán-Cơ-Tin học, VNU-HUS & SLSCM Lab"
+        "role": "Senior Scientific Advisor",
+        "affiliation": "VNU-HUS & SLSCM Lab"
       },
       {
         "name": "TS. Vũ Đức Minh",
-        "role": "Đồng tác giả / Trưởng Lab",
-        "affiliation": "Trường Công nghệ, NEU"
+        "role": "Co-Author / Head of Lab",
+        "affiliation": "College of Technology, NEU"
       }
     ],
     "description_vi": "Đề tài giải quyết bài toán lựa chọn vị trí cơ sở kinh doanh cạnh tranh dưới mô hình hành vi khách hàng Cross-Nested Logit (CNL). Nghiên cứu lần đầu chứng minh bài toán thuộc lớp NP-hard ngay cả với cấu trúc đơn giản, đồng thời biến đổi hàm mục tiêu phi lõm thành bài toán quy hoạch nón lồi số nguyên hỗn hợp (mixed-integer exponential cone convex program) để giải chính xác tối ưu.",
@@ -114,6 +121,11 @@
       "Công bố bài báo quốc tế đỉnh cao trên INFORMS Journal on Computing (IJOC, 2026)",
       "Được Area Editor Andrea Lodi trực tiếp chấp nhận",
       "Mã nguồn mở và toàn bộ dữ liệu thực nghiệm được tích hợp chính thức vào IJOC Software Repository"
+    ],
+    "outcomes_en": [
+      "Accepted in flagship premier journal INFORMS Journal on Computing (IJOC, 2026)",
+      "Directly handled and accepted by Area Editor Andrea Lodi",
+      "Open-source code and full benchmark suite integrated into the official IJOC GitHub Software Repository"
     ],
     "tags": ["Facility Location", "INFORMS JoC", "Exponential Cone", "Outer Approximation", "VINIF"],
     "related_publications": [
@@ -136,24 +148,25 @@
     "id": "hanoi-smart-water-network",
     "title_vi": "AI & OR trong Quản lý Mạng lưới Cấp thoát nước Đô thị Hà Nội",
     "title_en": "AI & OR for Hanoi Urban Smart Water Supply and Drainage Network Management",
-    "category": "Dự án Thực chiến Liên phòng Thí nghiệm (Joint Lab Initiative)",
-    "sponsor": "Đại học Kinh tế Quốc dân & Đối tác Đô thị",
+    "category": "Dự án Thực chiến Liên phòng Thí nghiệm",
+    "category_en": "Joint Lab Smart City Initiative",
+    "sponsor": "National Economics University & Municipal Partners",
     "grant_code": "NEU-CADA-SLSCM-2025",
-    "period": "2025 – Nay",
+    "period": "2025 – Present",
     "status": "Active",
     "research_domain": "Smart Cities & Decision Analytics",
-    "collaboration": "Liên Lab CADA (P1601 A1) & SLSCM (P1613 A1) - Khoa Khoa học Dữ liệu & Trí tuệ Nhân tạo (FDA), Trường Công nghệ, NEU",
+    "collaboration": "Joint Lab Initiative: CADA (P1601 A1) & SLSCM (P1613 A1) - Faculty of Data Science & AI (FDA), College of Technology, NEU",
     "leads": [
       {
         "name": "TS. Vũ Đức Minh",
         "email": "minhvd@neu.edu.vn",
-        "role": "Đồng chủ trì dự án (SLSCM Lab)",
+        "role": "Co-Principal Investigator (SLSCM Lab)",
         "affiliation": "SLSCM Lab, NEU"
       },
       {
         "name": "ThS. Lê Duy Khánh",
         "email": "khanhld@neu.edu.vn",
-        "role": "Đồng chủ trì dự án (CADA Lab)",
+        "role": "Co-Principal Investigator (CADA Lab)",
         "affiliation": "CADA Lab, NEU"
       }
     ],
@@ -165,6 +178,12 @@
       "Thuật toán tối ưu hóa điều tiết bơm và đóng mở van thông minh giảm 14% điện năng tiêu thụ",
       "Đường ống dữ liệu IoT time-series chuẩn hóa cho đô thị thông minh",
       "Chuyển giao giải pháp thử nghiệm cho các đơn vị vận hành cấp nước đô thị"
+    ],
+    "outcomes_en": [
+      "Real-time hydraulic telemetry and forecasting system for urban water distribution",
+      "Intelligent pump and valve optimization algorithms reducing energy consumption by 14%",
+      "Standardized IoT time-series telemetry data pipeline for smart municipal operations",
+      "Experimental solution deployed to municipal drainage and water supply management units"
     ],
     "tags": ["Smart Water", "Urban IoT", "Pump Scheduling", "Time Series ML", "Joint Lab"],
     "related_publications": [
@@ -187,8 +206,9 @@
     "id": "parallel-machine-conflict-scheduling",
     "title_vi": "Tối ưu hóa Điều độ Máy tính Song song với Ràng buộc Công việc Xung đột",
     "title_en": "Exact and Metaheuristic Optimization for Parallel Machine Scheduling with Conflicting Jobs",
-    "category": "Hợp tác Nghiên cứu Quốc tế (International Collaboration)",
-    "sponsor": "Đại học Udine (Italy) & Austrian Research Community & SLSCM Lab",
+    "category": "Hợp tác Nghiên cứu Quốc tế",
+    "category_en": "International Collaborative Project",
+    "sponsor": "University of Udine (Italy), Austrian Research Community & SLSCM Lab",
     "grant_code": "INT-SCHED-2025-03",
     "period": "2024 – 2026",
     "status": "Active",
@@ -196,22 +216,22 @@
     "leads": [
       {
         "name": "ThS. Tạ Đình Quý",
-        "role": "Nghiên cứu viên chính / Nghiên cứu sinh",
-        "affiliation": "Trường Công nghệ, NEU & HUST"
+        "role": "Lead Researcher / PhD Candidate",
+        "affiliation": "College of Technology, NEU & HUST"
       },
       {
         "name": "PGS. TS. Hà Minh Hoàng",
-        "role": "Cố vấn khoa học cao cấp",
+        "role": "Senior Scientific Advisor",
         "affiliation": "VNU-HUS & SLSCM Lab"
       },
       {
         "name": "Roberto Maria Rosati",
-        "role": "Nghiên cứu viên quốc tế",
-        "affiliation": "Austria Research Community"
+        "role": "International Research Fellow",
+        "affiliation": "Austrian Research Community"
       },
       {
         "name": "GS. Andrea Schaerf",
-        "role": "Giáo sư Cố vấn",
+        "role": "Faculty Advisor",
         "affiliation": "University of Udine, Italy"
       }
     ],
@@ -222,6 +242,11 @@
       "Công bố bài báo quốc tế trên International Transactions in Operational Research (ITOR, 2026)",
       "Giải quyết tối ưu các bộ dữ liệu chuẩn quy mô lớn từ công nghiệp sản xuất linh kiện bán dẫn",
       "Mô hình hóa thành công các ràng buộc đồ thị xung đột (conflict graphs) phức tạp"
+    ],
+    "outcomes_en": [
+      "Published in premier journal International Transactions in Operational Research (ITOR, 2026)",
+      "Optimally solved large-scale benchmark instances from semiconductor chip manufacturing",
+      "Successfully modeled complex conflict graph constraints under non-trivial makespan objectives"
     ],
     "tags": ["Machine Scheduling", "Conflict Jobs", "Constraint Programming", "Simulated Annealing", "ITOR"],
     "related_publications": [
@@ -244,7 +269,8 @@
     "id": "hierarchical-arc-routing-urban",
     "title_vi": "Quy hoạch Định tuyến Cung có Phân cấp trong Thu gom Rác thải và Bảo trì Đường bộ Đô thị",
     "title_en": "Hierarchical Directed Capacitated Arc Routing Problem: Formulations and Algorithmic Frameworks",
-    "category": "Hợp tác Nghiên cứu Quốc tế (Canada - Vietnam)",
+    "category": "Hợp tác Nghiên cứu Quốc tế",
+    "category_en": "International Collaborative Project",
     "sponsor": "Université de Montréal / CIRRELT (Canada) & SLSCM Lab",
     "grant_code": "CIRRELT-SLSCM-2025",
     "period": "2024 – 2026",
@@ -253,22 +279,22 @@
     "leads": [
       {
         "name": "PGS. TS. Hà Minh Hoàng",
-        "role": "Chủ trì phía Việt Nam",
+        "role": "Vietnam Lead",
         "affiliation": "VNU-HUS & SLSCM Lab"
       },
       {
         "name": "GS. André Langevin",
-        "role": "Chủ trì phía Canada",
+        "role": "Canada Lead",
         "affiliation": "Polytechnique Montréal / CIRRELT"
       },
       {
         "name": "Thu Huong Dang",
-        "role": "Đồng tác giả",
+        "role": "Co-Author",
         "affiliation": "VNU-HUS"
       },
       {
         "name": "Lê Bá Luật",
-        "role": "Đồng tác giả",
+        "role": "Co-Author",
         "affiliation": "SMU & SLSCM Lab"
       }
     ],
@@ -278,6 +304,10 @@
     "outcomes": [
       "Công bố bài báo quốc tế trên Computers & Operations Research (COR, Vol. 192, 2026)",
       "Thiết lập benchmark thực nghiệm chuẩn mực cho lớp bài toán phân cấp mạng lưới đường bộ"
+    ],
+    "outcomes_en": [
+      "Published in top operations research journal Computers & Operations Research (COR, Vol. 192, 2026)",
+      "Established standard experimental benchmarks for hierarchical urban road network routing"
     ],
     "tags": ["Arc Routing", "HDCARP", "Waste Management", "Computers & Operations Research"],
     "related_publications": [
@@ -301,7 +331,8 @@
     "title_vi": "Tối ưu hóa Tồn kho và Định tuyến Phương tiện Đa kỳ (Inventory Routing Problem)",
     "title_en": "Large Neighborhood and Hybrid Genetic Search for Multi-Period Inventory Routing",
     "category": "Đề tài Nghiên cứu Quốc tế",
-    "sponsor": "SLSCM Lab & Các đối tác học thuật quốc tế",
+    "category_en": "International Collaborative Project",
+    "sponsor": "SLSCM Lab & International Academic Collaborators",
     "grant_code": "IRP-SLSCM-2025",
     "period": "2024 – 2026",
     "status": "Active",
@@ -309,17 +340,17 @@
     "leads": [
       {
         "name": "ThS. Phạm Tuấn Anh",
-        "role": "Nghiên cứu viên chính",
-        "affiliation": "Trường Công nghệ, NEU & SLSCM Lab"
+        "role": "Lead Researcher",
+        "affiliation": "College of Technology, NEU & SLSCM Lab"
       },
       {
         "name": "GS. Claudia Archetti",
-        "role": "Đồng tác giả / Cố vấn quốc tế",
+        "role": "International Co-Advisor",
         "affiliation": "ESSEC Business School, France"
       },
       {
         "name": "GS. Thibaut Vidal",
-        "role": "Đồng tác giả / Cố vấn",
+        "role": "Co-Advisor",
         "affiliation": "Polytechnique Montréal / CIRRELT"
       }
     ],
@@ -329,6 +360,10 @@
     "outcomes": [
       "Công bố bài báo đỉnh cao trên European Journal of Operational Research (EJOR, Q1, 2025)",
       "Thiết lập kỷ lục lời giải mới trên các bộ dữ liệu benchmark quốc tế"
+    ],
+    "outcomes_en": [
+      "Published in premier journal European Journal of Operational Research (EJOR, Q1, 2025)",
+      "Established new state-of-the-art solution records across international benchmark suites"
     ],
     "tags": ["Inventory Routing", "HGS", "Supply Chain", "EJOR Q1"],
     "related_publications": [
@@ -351,23 +386,24 @@
     "id": "training-smart-decisions",
     "title_vi": "Khóa đào tạo chuyên sâu: Từ dữ liệu đến phân tích và ra quyết định thông minh",
     "title_en": "Executive & Academic Training: From Data to Analytics and Intelligent Decision Making",
-    "category": "Chương trình Đào tạo Chuyên sâu & Chuyển giao Tri thức",
-    "sponsor": "Trường Công nghệ, NEU",
+    "category": "Chương trình Đào tạo Chuyên sâu",
+    "category_en": "Executive Training & Knowledge Transfer",
+    "sponsor": "College of Technology, NEU",
     "grant_code": "TRAIN-FDA-2025",
-    "period": "Định kỳ hàng quý (2025 – 2026)",
+    "period": "Quarterly (2025 – 2026)",
     "status": "Ongoing",
     "research_domain": "Knowledge Transfer & Professional Education",
-    "organizer": "SLSCM Lab & Khoa Khoa học Dữ liệu và Trí tuệ Nhân tạo (FDA) – Trường Công nghệ, NEU",
+    "organizer": "SLSCM Lab & Faculty of Data Science and AI (FDA) – College of Technology, NEU",
     "leads": [
       {
         "name": "TS. Vũ Đức Minh",
-        "role": "Trưởng Ban Đào tạo / Giảng viên chính",
+        "role": "Director of Training / Lead Instructor",
         "affiliation": "Head of SLSCM Lab, NEU"
       },
       {
         "name": "TS. Đinh Nho Minh",
-        "role": "Giảng viên Vận trù học & Tối ưu hóa",
-        "affiliation": "Khoa FDA, Trường Công nghệ - NEU"
+        "role": "Operations Research Instructor",
+        "affiliation": "Faculty of FDA, College of Technology - NEU"
       }
     ],
     "description_vi": "Khóa đào tạo ngắn hạn nhằm trang bị tư duy mô hình hóa toán học, kỹ năng lập trình tối ưu hóa với Python, Gurobi, OR-Tools và ứng dụng các thuật toán Machine Learning vào việc đưa ra các quyết định kinh doanh tối ưu.",
@@ -377,6 +413,11 @@
       "Đã đào tạo thành công hơn 120 học viên từ các doanh nghiệp logistics và ngân hàng",
       "Bộ giáo trình bài giảng chuẩn hóa về Vận trù học và Trí tuệ Ra quyết định",
       "Cấp chứng nhận hoàn thành chương trình bởi Trường Công nghệ - NEU"
+    ],
+    "outcomes_en": [
+      "Trained over 120 professionals and researchers from supply chain and banking enterprises",
+      "Standardized curriculum on Operations Research and Decision Intelligence with Python & Gurobi",
+      "Executive certificate of completion issued by College of Technology, NEU"
     ],
     "tags": ["Executive Training", "Python Solvers", "Gurobi", "Decision Intelligence"],
     "related_publications": [
