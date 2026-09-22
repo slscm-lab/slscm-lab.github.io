@@ -290,9 +290,9 @@
       "advisors": "Khoa Toán Kinh tế & SLSCM Lab, NEU"
     },
     {
-      "id": "hof-do-trung-cuong",
-      "name": "Đỗ Trung Cường",
-      "name_en": "Trung Cuong Do",
+      "id": "hof-dang-trung-cuong",
+      "name": "Đặng Trung Cường",
+      "name_en": "Trung Cuong Dang",
       "avatar": "",
       "achievement_vi": "Cựu Nghiên cứu viên SLSCM Lab; Học viên Cao học & Nghiên cứu viên tại University of South Florida (USF, Hoa Kỳ, 2024).",
       "achievement_en": "Former SLSCM Researcher; Graduate Researcher at University of South Florida (USF, USA, 2024).",
@@ -467,9 +467,9 @@
       "linkedin": ""
     },
     {
-      "id": "alumni-do-trung-cuong",
-      "name": "Đỗ Trung Cường",
-      "name_en": "Trung Cuong Do",
+      "id": "alumni-dang-trung-cuong",
+      "name": "Đặng Trung Cường",
+      "name_en": "Trung Cuong Dang",
       "avatar": "",
       "period": "2024",
       "former_role_vi": "Cựu Nghiên cứu viên / Học viên",
