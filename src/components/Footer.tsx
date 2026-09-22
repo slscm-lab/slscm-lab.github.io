@@ -25,9 +25,11 @@ export const Footer: React.FC<FooterProps> = ({ onRouteChange }) => {
           {/* Brand Info */}
           <div>
             <div className="flex items-center gap-3 text-white">
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-sky-900/60 p-1 ring-1 ring-white/20">
-                <span className="font-mono text-xs font-bold text-cyan-300">SC</span>
-              </div>
+              <img
+                src="/assets/images/slscm_logo.png"
+                alt="SLSCM Lab Logo"
+                className="h-11 w-11 shrink-0 rounded-full object-cover ring-1 ring-white/20 shadow-sm"
+              />
               <div>
                 <span className="font-editorial text-xl font-bold tracking-tight">
                   SLSCM Lab

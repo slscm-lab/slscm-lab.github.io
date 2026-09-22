@@ -10,6 +10,7 @@ interface NavbarProps {
 export const Navbar: React.FC<NavbarProps> = ({ currentRoute, onRouteChange }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [logoError, setLogoError] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -51,17 +52,19 @@ export const Navbar: React.FC<NavbarProps> = ({ currentRoute, onRouteChange }) =
           onClick={() => handleNavigate('home')}
           className="group flex items-center gap-3 text-left focus-ring rounded-xl p-1 -m-1"
         >
-          <div className="relative flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-gradient-to-tr from-slate-900 via-sky-950 to-slate-800 p-0.5 shadow-md shadow-slate-900/10 transition-transform group-hover:scale-105">
-            <img
-              src="/assets/images/slscm_logo.svg"
-              alt="SLSCM Lab Logo"
-              className="h-full w-full rounded-[10px] object-cover"
-              onError={(e) => {
-                // Fallback to stylized SVG icon if image not found
-                e.currentTarget.style.display = 'none';
-              }}
-            />
-            <span className="font-mono text-xs font-bold tracking-wider text-cyan-300">SC</span>
+          <div className="relative h-11 w-11 shrink-0">
+            {!logoError ? (
+              <img
+                src="/assets/images/slscm_logo.png"
+                alt="SLSCM Lab Logo"
+                onError={() => setLogoError(true)}
+                className="h-11 w-11 rounded-full object-cover ring-1 ring-slate-200/90 shadow-xs transition-transform duration-200 group-hover:scale-105"
+              />
+            ) : (
+              <div className="grid h-11 w-11 place-items-center rounded-full bg-slate-900 font-mono text-xs font-bold text-cyan-300 ring-1 ring-slate-200 shadow-xs">
+                SC
+              </div>
+            )}
           </div>
           <div>
             <div className="flex items-center gap-2">
