@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { Presentation, Calendar, Clock, MapPin, Video, FileText, CheckCircle, Tag, Search, ArrowUpRight } from 'lucide-react';
 import { Seminar } from '../types';
-import seminarsData from '../data/slscm_seminars.json';
+import { getSeminars } from '../repositories';
 
 export const SeminarsPage: React.FC = () => {
-  const seminars = seminarsData as unknown as Seminar[];
+  const seminars = getSeminars();
   const [activeTab, setActiveTab] = useState<'all' | 'upcoming' | 'archived'>('all');
   const [selectedTrack, setSelectedTrack] = useState<string>('all');
   const [searchQuery, setSearchQuery] = useState<string>('');
@@ -25,10 +25,10 @@ export const SeminarsPage: React.FC = () => {
 
     const matchesTrack =
       selectedTrack === 'all' ||
-      (selectedTrack === 'opt' && item.track.toLowerCase().includes('optimization')) ||
-      (selectedTrack === 'drone' && (item.track.toLowerCase().includes('drone') || item.track.toLowerCase().includes('transportation'))) ||
-      (selectedTrack === 'sched' && item.track.toLowerCase().includes('scheduling')) ||
-      (selectedTrack === 'smart' && item.track.toLowerCase().includes('smart'));
+      (selectedTrack === 'opt' && (item.track || '').toLowerCase().includes('optimization')) ||
+      (selectedTrack === 'drone' && ((item.track || '').toLowerCase().includes('drone') || (item.track || '').toLowerCase().includes('transportation'))) ||
+      (selectedTrack === 'sched' && (item.track || '').toLowerCase().includes('scheduling')) ||
+      (selectedTrack === 'smart' && (item.track || '').toLowerCase().includes('smart'));
 
     const matchesSearch =
       searchQuery.trim() === '' ||

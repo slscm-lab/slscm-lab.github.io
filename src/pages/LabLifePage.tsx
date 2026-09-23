@@ -1,10 +1,10 @@
 import React from 'react';
 import { Camera, ExternalLink, Calendar, MessageSquare, ThumbsUp } from 'lucide-react';
 import { SocialPost } from '../types';
-import postsData from '../data/slscm_facebook_posts.json';
+import { getSocialPosts } from '../repositories';
 
 export const LabLifePage: React.FC = () => {
-  const posts = postsData as unknown as SocialPost[];
+  const posts = getSocialPosts();
 
   return (
     <div className="section-shell py-10 sm:py-14 animate-in fade-in duration-300">

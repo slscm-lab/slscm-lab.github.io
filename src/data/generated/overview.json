@@ -10,45 +10,25 @@
     "title": "Head of Lab / Lecturer",
     "office": "Room 1613, A1 Building, National Economics University"
   },
+  "social": {
+    "facebook": "https://www.facebook.com/slscm.lab",
+    "website_fda": "https://fda.neu.edu.vn/slscm/"
+  },
+  "official_kpi_2025": {
+    "internal_scientific_activities": 20,
+    "internal_training_sessions": 8,
+    "seminars_organized": 4,
+    "research_publication_events": 2
+  },
   "metrics": {
-    "total_publications": 18,
-    "journal_articles": 10,
-    "q1_journals": 10,
-    "conference_papers": 7,
-    "book_chapters": 1,
-    "featured_papers": 11,
+    "total_publications": 21,
+    "q1_journals": 8,
+    "active_projects": 6,
     "phd_msc_scholarships": 6,
     "valedictorians": 2,
-    "student_researchers": 9,
-    "international_partner_countries": 7,
-    "active_projects": 2
+    "student_researchers": 11,
+    "international_partner_countries": 6
   },
-  "team_structure": {
-    "total_faculty_researchers": 5,
-    "professors": 1,
-    "phd": 2,
-    "phd_candidates": 2,
-    "masters": 1,
-    "talented_students": 10,
-    "student_community": "Selected talented students from Data Science and Artificial Intelligence, Mathematical Economics, and Information Technology programs at NEU, together with students from HUST, VNU-HUS, and other institutions."
-  },
-  "key_collaborators": [
-    {
-      "name": "Assoc. Prof. Dr. Ha Minh Hoang",
-      "role": "Scientific Advisor / Senior Researcher",
-      "affiliation": "College of Technology, National Economics University"
-    },
-    {
-      "name": "Dr. Dinh Nho Minh",
-      "role": "Lecturer / Researcher",
-      "affiliation": "College of Technology, National Economics University"
-    },
-    {
-      "name": "Ta Dinh Quy",
-      "role": "Researcher / PhD Candidate",
-      "affiliation": "College of Technology, National Economics University"
-    }
-  ],
   "research_pillars": [
     {
       "id": "supply_chain_optimization",
@@ -62,7 +42,7 @@
         "Exact Algorithms & Mathematical Programming",
         "Metaheuristics & Hybrid Optimization"
       ],
-      "featured_journals": [
+      "featured_venues": [
         "INFORMS Journal on Computing (IJOC)",
         "Computers & Operations Research (COR)",
         "International Transactions in Operational Research (ITOR)",
@@ -102,34 +82,12 @@
         "Hospitality & Tourism",
         "Digital & Computing Systems"
       ],
-      "featured_journals": [
+      "featured_venues": [
         "Energy Research & Social Science (ERSS)",
         "Journal of the Operational Research Society (JORS)",
         "Computers & Operations Research (COR)",
         "International Transactions in Operational Research (ITOR)"
       ]
     }
-  ],
-  "hall_of_fame_summary": {
-    "valedictorian_count": 2,
-    "phd_scholarships_count": 4,
-    "master_scholarships_count": 2,
-    "destinations": [
-      "Singapore Management University (SMU), Singapore",
-      "Liverpool John Moores University (LJMU), United Kingdom",
-      "University of Connecticut (UConn), United States",
-      "University of South Florida (USF), United States",
-      "VinUniversity (VinUni), Vietnam"
-    ]
-  },
-  "official_kpi_2025": {
-    "internal_scientific_activities": 20,
-    "internal_training_sessions": 8,
-    "seminars_organized": 4,
-    "research_publication_events": 2
-  },
-  "social": {
-    "facebook": "https://www.facebook.com/slscm.lab",
-    "website_fda": "https://fda.neu.edu.vn/slscm/"
-  }
+  ]
 }

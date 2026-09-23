@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import { BookOpen, Search, Filter, Sparkles } from 'lucide-react';
 import { Publication, PillarId } from '../types';
 import { PaperCard } from '../components/PaperCard';
-import publicationsData from '../data/slscm_publications_2025_2026.json';
+import { getPublications } from '../repositories';
 
 export const PublicationsPage: React.FC = () => {
-  const publications = publicationsData as unknown as Publication[];
+  const publications = getPublications();
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedYear, setSelectedYear] = useState<string>('all');
   const [selectedPillar, setSelectedPillar] = useState<string>('all');
@@ -55,11 +55,11 @@ export const PublicationsPage: React.FC = () => {
           <span>Scholarly Research Archive</span>
         </div>
         <h1 className="font-editorial text-4xl sm:text-5xl font-bold tracking-tight text-slate-950">
-          Publications Vault
+          Research Publications
         </h1>
         <p className="mt-4 font-editorial text-lg text-slate-600 leading-relaxed max-w-3xl">
           Comprehensive, searchable catalog of peer-reviewed journal papers, conference proceedings, and book
-          chapters published by the faculty, researchers, and students of SLSCM Lab (2025–2026).
+          chapters published by the faculty, researchers, and students of SLSCM Lab .
         </p>
       </div>
 

@@ -1,43 +1,107 @@
 import React, { useState } from 'react';
-import { Users, Mail, MapPin, Globe, ExternalLink, GraduationCap } from 'lucide-react';
-import { Person, YoungResearcher, StudentResearcher, AcademicPartner } from '../types';
-import peopleData from '../data/slscm_people.json';
+import { Users, Mail, MapPin, Globe, GraduationCap } from 'lucide-react';
+import { getPeople } from '../repositories';
+
+type FacultyMember = {
+  id: string;
+  name: string;
+  role_badge?: string;
+  email?: string;
+  office?: string;
+  research_interests?: string[];
+  avatar?: string;
+  title: string;
+  affiliation: string;
+  bio?: string;
+};
+
+type WebTechLead = {
+  id: string;
+  name: string;
+  avatar?: string;
+  role_badge?: string;
+  role?: string;
+  affiliation: string;
+  current_status?: string;
+  featured_publications?: string[];
+  research_interests?: string[];
+  email?: string;
+};
+
+type StudentResearcher = {
+  id?: string;
+  name: string;
+  major: string;
+  institution: string;
+  avatar?: string;
+  email?: string;
+  current_status?: string;
+  featured_publications?: string[];
+  research_interests?: string[];
+};
+
+type AcademicPartner = {
+  country: string;
+  institution: string;
+  key_collaborators?: string[];
+  research_focus?: string;
+};
+
+type PeopleTab = 'all' | 'faculty' | 'students' | 'partners' | 'tech';
 
 export const PeoplePage: React.FC = () => {
-  const people = peopleData as unknown as {
-    leadership_and_faculty: Person[];
-    young_researchers_and_authors: YoungResearcher[];
-    student_researchers: StudentResearcher[];
+  const people = getPeople() as unknown as {
+    leadership_and_faculty: FacultyMember[];
+    web_tech_lead: WebTechLead[];
+    graduate_and_undergraduate_student_researchers: StudentResearcher[];
     global_academic_partners: AcademicPartner[];
   };
 
-  const [activeTab, setActiveTab] = useState<'all' | 'faculty' | 'researchers' | 'students' | 'partners'>('all');
+  const [activeTab, setActiveTab] = useState<PeopleTab>('all');
 
   function getMemberInitials(name: string): string {
     const parts = name.trim().split(/\s+/);
+
     if (parts.length === 0) return 'MB';
     if (parts.length === 1) return parts[0].slice(0, 2).toUpperCase();
+
     const p1 = parts[parts.length - 2];
     const p2 = parts[parts.length - 1];
-    const clean1 = p1[0].normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-    const clean2 = p2[0].normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+
+    const clean1 = p1[0]
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '');
+
+    const clean2 = p2[0]
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '');
+
     return (clean1 + clean2).toUpperCase();
   }
+
+
+  const memberCount =
+    people.leadership_and_faculty.length +
+    people.web_tech_lead.length +
+    people.graduate_and_undergraduate_student_researchers.length;
 
   return (
     <div className="section-shell py-10 sm:py-14 animate-in fade-in duration-300">
       {/* Header Banner */}
       <div className="max-w-4xl">
-        <div className="inline-flex items-center gap-2 rounded-full border border-sky-300/80 bg-sky-50 px-3.5 py-1 font-mono text-[11px] font-bold uppercase tracking-wider text-sky-800 mb-4">
+        <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-sky-300/80 bg-sky-50 px-3.5 py-1 font-mono text-[11px] font-bold uppercase tracking-wider text-sky-800">
           <Users className="h-3.5 w-3.5 text-sky-600" />
           <span>People &amp; Mentorship Network</span>
         </div>
-        <h1 className="font-editorial text-4xl sm:text-5xl font-bold tracking-tight text-slate-950">
+
+        <h1 className="font-editorial text-4xl font-bold tracking-tight text-slate-950 sm:text-5xl">
           Faculty, Researchers &amp; Scholars
         </h1>
-        <p className="mt-4 font-editorial text-lg text-slate-600 leading-relaxed max-w-3xl">
-          Meet the multidisciplinary scholars, research fellows, and talented student researchers of
-          SLSCM Lab, collaborating across NEU, VNU-HUS, HUST, SMU, and international partner institutions.
+
+        <p className="mt-4 max-w-3xl font-editorial text-lg leading-relaxed text-slate-600">
+          Meet the multidisciplinary faculty, graduate and undergraduate student
+          research assistants, and technical team of SLSCM Lab, collaborating
+          across NEU, VNU-HUS, HUST, SMU, and international partner institutions.
         </p>
       </div>
 
@@ -47,121 +111,145 @@ export const PeoplePage: React.FC = () => {
           type="button"
           onClick={() => setActiveTab('all')}
           className={`rounded-xl px-3.5 py-1.5 font-editorial text-xs font-semibold transition ${
-            activeTab === 'all' ? 'bg-slate-900 text-white shadow-sm' : 'text-slate-600 hover:text-slate-900'
+            activeTab === 'all'
+              ? 'bg-slate-900 text-white shadow-sm'
+              : 'text-slate-600 hover:text-slate-900'
           }`}
         >
-          All Members ({people.leadership_and_faculty.length + people.young_researchers_and_authors.length + people.student_researchers.length})
+          All Members ({memberCount})
         </button>
+
         <button
           type="button"
           onClick={() => setActiveTab('faculty')}
           className={`rounded-xl px-3.5 py-1.5 font-editorial text-xs font-semibold transition ${
-            activeTab === 'faculty' ? 'bg-slate-900 text-white shadow-sm' : 'text-slate-600 hover:text-slate-900'
+            activeTab === 'faculty'
+              ? 'bg-slate-900 text-white shadow-sm'
+              : 'text-slate-600 hover:text-slate-900'
           }`}
         >
           Leadership &amp; Faculty ({people.leadership_and_faculty.length})
         </button>
-        <button
-          type="button"
-          onClick={() => setActiveTab('researchers')}
-          className={`rounded-xl px-3.5 py-1.5 font-editorial text-xs font-semibold transition ${
-            activeTab === 'researchers' ? 'bg-slate-900 text-white shadow-sm' : 'text-slate-600 hover:text-slate-900'
-          }`}
-        >
-          Young Researchers ({people.young_researchers_and_authors.length})
-        </button>
+
         <button
           type="button"
           onClick={() => setActiveTab('students')}
           className={`rounded-xl px-3.5 py-1.5 font-editorial text-xs font-semibold transition ${
-            activeTab === 'students' ? 'bg-slate-900 text-white shadow-sm' : 'text-slate-600 hover:text-slate-900'
+            activeTab === 'students'
+              ? 'bg-slate-900 text-white shadow-sm'
+              : 'text-slate-600 hover:text-slate-900'
           }`}
         >
-          Student Researchers ({people.student_researchers.length})
+          Graduate &amp; Undergraduate Student Research Assistants (
+          {people.graduate_and_undergraduate_student_researchers.length})
         </button>
+
         <button
           type="button"
           onClick={() => setActiveTab('partners')}
           className={`rounded-xl px-3.5 py-1.5 font-editorial text-xs font-semibold transition ${
-            activeTab === 'partners' ? 'bg-slate-900 text-white shadow-sm' : 'text-slate-600 hover:text-slate-900'
+            activeTab === 'partners'
+              ? 'bg-slate-900 text-white shadow-sm'
+              : 'text-slate-600 hover:text-slate-900'
           }`}
         >
           Global Academic Partners ({people.global_academic_partners.length})
         </button>
+
+        <button
+          type="button"
+          onClick={() => setActiveTab('tech')}
+          className={`rounded-xl px-3.5 py-1.5 font-editorial text-xs font-semibold transition ${
+            activeTab === 'tech'
+              ? 'bg-slate-900 text-white shadow-sm'
+              : 'text-slate-600 hover:text-slate-900'
+          }`}
+        >
+          Web / Tech Lead ({people.web_tech_lead.length})
+        </button>
       </div>
 
-      {/* Leadership & Faculty Section */}
+      {/* Leadership & Faculty */}
       {(activeTab === 'all' || activeTab === 'faculty') && (
         <section className="mt-12">
           <div className="mb-6 flex items-center justify-between border-b border-slate-200 pb-3">
-            <h2 className="font-editorial text-2xl font-bold text-slate-950">Leadership &amp; Faculty</h2>
-            <span className="font-mono text-xs text-slate-500">{people.leadership_and_faculty.length} Mentors</span>
+            <h2 className="font-editorial text-2xl font-bold text-slate-950">
+              Leadership &amp; Faculty
+            </h2>
+
+            <span className="font-mono text-xs text-slate-500">
+              {people.leadership_and_faculty.length} Mentors
+            </span>
           </div>
 
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {people.leadership_and_faculty.map((mentor) => {
-              const name = mentor.name_en || mentor.name;
-              const initials = getMemberInitials(name);
+              const initials = getMemberInitials(mentor.name);
+
               return (
                 <article
                   key={mentor.id}
-                  className="soft-card p-6 bg-white/95 flex flex-col justify-between"
+                  className="soft-card flex flex-col justify-between bg-white/95 p-6"
                 >
                   <div>
                     <div className="flex items-start gap-4">
                       {mentor.avatar ? (
                         <img
                           src={mentor.avatar}
-                          alt={name}
-                          className="h-16 w-16 rounded-2xl object-cover ring-2 ring-sky-200 shadow-sm shrink-0"
+                          alt={mentor.name}
+                          className="h-16 w-16 shrink-0 rounded-2xl object-cover shadow-sm ring-2 ring-sky-200"
                         />
                       ) : (
-                        <div className="grid h-16 w-16 place-items-center rounded-2xl bg-gradient-to-br from-slate-900 via-sky-950 to-slate-800 font-mono text-base font-bold text-white shadow-sm ring-2 ring-sky-200/70 shrink-0">
+                        <div className="grid h-16 w-16 shrink-0 place-items-center rounded-2xl bg-gradient-to-br from-slate-900 via-sky-950 to-slate-800 font-mono text-base font-bold text-white shadow-sm ring-2 ring-sky-200/70">
                           {initials}
                         </div>
                       )}
+
                       <div className="min-w-0 flex-1">
                         {mentor.role_badge && (
-                          <span className="inline-block rounded-md bg-sky-100 px-2 py-0.5 font-mono text-[9px] font-bold uppercase tracking-wider text-sky-900 mb-1">
+                          <span className="mb-1 inline-block rounded-md bg-sky-100 px-2 py-0.5 font-mono text-[9px] font-bold uppercase tracking-wider text-sky-900">
                             {mentor.role_badge}
                           </span>
                         )}
-                        <h3 className="font-editorial text-lg font-bold text-slate-950 leading-snug">
-                          {name}
+
+                        <h3 className="font-editorial text-lg font-bold leading-snug text-slate-950">
+                          {mentor.name}
                         </h3>
+
                         <p className="font-editorial text-xs font-semibold text-sky-800">
-                          {mentor.title_en}
+                          {mentor.title}
                         </p>
                       </div>
                     </div>
 
-                    <p className="mt-3 font-editorial text-xs text-slate-600 leading-relaxed">
-                      {mentor.affiliation_en}
+                    <p className="mt-3 font-editorial text-xs leading-relaxed text-slate-600">
+                      {mentor.affiliation}
                     </p>
 
-                    {mentor.bio_en && (
-                      <p className="mt-3 font-editorial text-xs text-slate-600 leading-relaxed line-clamp-3">
-                        {mentor.bio_en}
+                    {mentor.bio && (
+                      <p className="mt-3 line-clamp-3 font-editorial text-xs leading-relaxed text-slate-600">
+                        {mentor.bio}
                       </p>
                     )}
 
-                    {mentor.research_interests && (
-                      <div className="mt-4 flex flex-wrap gap-1">
-                        {mentor.research_interests.map((interest) => (
-                          <span
-                            key={interest}
-                            className="rounded-lg bg-slate-100 px-2 py-0.5 font-mono text-[10px] text-slate-700 font-medium"
-                          >
-                            {interest}
-                          </span>
-                        ))}
-                      </div>
-                    )}
+                    {mentor.research_interests &&
+                      mentor.research_interests.length > 0 && (
+                        <div className="mt-4 flex flex-wrap gap-1">
+                          {mentor.research_interests.map((interest) => (
+                            <span
+                              key={interest}
+                              className="rounded-lg bg-slate-100 px-2 py-0.5 font-mono text-[10px] font-medium text-slate-700"
+                            >
+                              {interest}
+                            </span>
+                          ))}
+                        </div>
+                      )}
                   </div>
 
                   {mentor.office && (
-                    <div className="mt-4 pt-3 border-t border-slate-100 flex items-center gap-1.5 font-mono text-[11px] text-slate-400">
-                      <MapPin className="h-3.5 w-3.5 text-sky-600 shrink-0" />
+                    <div className="mt-4 flex items-center gap-1.5 border-t border-slate-100 pt-3 font-mono text-[11px] text-slate-400">
+                      <MapPin className="h-3.5 w-3.5 shrink-0 text-sky-600" />
                       <span className="truncate">{mentor.office}</span>
                     </div>
                   )}
@@ -172,121 +260,79 @@ export const PeoplePage: React.FC = () => {
         </section>
       )}
 
-      {/* Young Researchers & Authors */}
-      {(activeTab === 'all' || activeTab === 'researchers') && (
+      {/* Graduate & Undergraduate Student Research Assistants */}
+      {(activeTab === 'all' || activeTab === 'students') && (
         <section className="mt-14">
           <div className="mb-6 flex items-center justify-between border-b border-slate-200 pb-3">
-            <h2 className="font-editorial text-2xl font-bold text-slate-950">Young Researchers &amp; Authors</h2>
-            <span className="font-mono text-xs text-slate-500">{people.young_researchers_and_authors.length} Authors</span>
+            <h2 className="font-editorial text-2xl font-bold text-slate-950">
+              Graduate &amp; Undergraduate Student Research Assistants
+            </h2>
+
+            <span className="font-mono text-xs text-slate-500">
+              {people.graduate_and_undergraduate_student_researchers.length}{' '}
+              Assistants
+            </span>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-2">
-            {people.young_researchers_and_authors.map((member) => {
-              const name = member.name_en || member.name;
-              const initials = getMemberInitials(name);
-              return (
-                <article
-                  key={member.id}
-                  className="soft-card p-6 bg-white/95 flex flex-col justify-between"
-                >
-                  <div>
-                    <div className="flex items-center gap-4">
-                      {member.avatar ? (
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {people.graduate_and_undergraduate_student_researchers.map(
+              (student, idx) => {
+                return (
+                  <div
+                    key={student.id || `${student.name}-${idx}`}
+                    className="rounded-2xl border border-slate-200/80 bg-white/85 p-4 shadow-xs backdrop-blur-sm transition hover:border-sky-300"
+                  >
+                    <div className="flex items-center gap-3">
+                      {student.avatar ? (
                         <img
-                          src={member.avatar}
-                          alt={name}
-                          className="h-14 w-14 rounded-2xl object-cover ring-2 ring-sky-200 shadow-sm shrink-0"
+                          src={student.avatar}
+                          alt={student.name}
+                          className="h-10 w-10 shrink-0 rounded-xl object-cover shadow-2xs ring-1 ring-sky-200"
                         />
                       ) : (
-                        <div className="grid h-14 w-14 place-items-center rounded-2xl bg-gradient-to-br from-slate-900 to-sky-900 font-mono text-sm font-bold text-white shadow-sm shrink-0">
-                          {initials}
+                        <div className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-gradient-to-br from-sky-50 to-indigo-50/80 border border-sky-100/90 text-sky-700 shadow-2xs">
+                          <GraduationCap className="h-5 w-5" />
                         </div>
                       )}
-                      <div>
-                        <span className="font-mono text-[10px] font-bold uppercase tracking-wider text-sky-800">
-                          {member.role_en || 'Researcher / Author'}
-                        </span>
-                        <h3 className="font-editorial text-xl font-bold text-slate-950">
-                          {name}
-                        </h3>
-                        <p className="font-editorial text-xs font-semibold text-slate-600">
-                          {member.affiliation_en || member.affiliation}
+
+                      <div className="min-w-0">
+                        <h4 className="truncate font-editorial text-sm font-bold text-slate-900">
+                          {student.name}
+                        </h4>
+
+                        <p className="truncate font-editorial text-xs text-sky-800">
+                          {student.major}
+                        </p>
+
+                        <p className="truncate font-editorial text-[11px] text-slate-500">
+                          {student.institution}
                         </p>
                       </div>
                     </div>
 
-                    {member.current_status_en && (
-                      <p className="mt-4 rounded-xl bg-sky-50/80 p-3 border border-sky-100 font-editorial text-xs font-medium text-sky-950 leading-relaxed">
-                        {member.current_status_en}
+                    {student.current_status && (
+                      <p className="mt-3 rounded-lg bg-slate-50 p-2 font-editorial text-[11px] leading-relaxed text-slate-600">
+                        {student.current_status}
                       </p>
                     )}
 
-                    {member.featured_publications && member.featured_publications.length > 0 && (
-                      <div className="mt-3">
-                        <p className="font-mono text-[10px] uppercase font-bold text-slate-400 mb-1">Publications</p>
-                        <div className="flex flex-wrap gap-1">
-                          {member.featured_publications.map((pub) => (
+                    {student.featured_publications &&
+                      student.featured_publications.length > 0 && (
+                        <div className="mt-2 flex flex-wrap gap-1">
+                          {student.featured_publications.map((pub) => (
                             <span
                               key={pub}
-                              className="rounded-lg bg-slate-100 px-2 py-0.5 font-mono text-[10px] text-slate-800 font-semibold"
+                              className="rounded-md bg-sky-50 px-2 py-0.5 font-mono text-[9px] font-semibold text-sky-800"
                             >
                               {pub}
                             </span>
                           ))}
                         </div>
-                      </div>
-                    )}
+                      )}
                   </div>
-
-                  {member.email && (
-                    <div className="mt-4 pt-3 border-t border-slate-100 flex items-center gap-1.5 font-mono text-xs text-sky-700">
-                      <Mail className="h-3.5 w-3.5" />
-                      <a href={`mailto:${member.email}`} className="hover:underline">{member.email}</a>
-                    </div>
-                  )}
-                </article>
-              );
-            })}
-          </div>
-        </section>
-      )}
-
-      {/* Student Researchers */}
-      {(activeTab === 'all' || activeTab === 'students') && (
-        <section className="mt-14">
-          <div className="mb-6 flex items-center justify-between border-b border-slate-200 pb-3">
-            <h2 className="font-editorial text-2xl font-bold text-slate-950">Student Researchers &amp; Assistants</h2>
-            <span className="font-mono text-xs text-slate-500">{people.student_researchers.length} Students</span>
-          </div>
-
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {people.student_researchers.map((student, idx) => {
-              const name = student.name_en || student.name;
-              const initials = getMemberInitials(name);
-              return (
-                <div
-                  key={idx}
-                  className="rounded-2xl border border-slate-200/80 bg-white/85 p-4 backdrop-blur-sm shadow-xs hover:border-sky-300 transition"
-                >
-                  <div className="flex items-center gap-3">
-                    <div className="grid h-10 w-10 place-items-center rounded-xl bg-slate-100 font-mono text-xs font-bold text-slate-800 shrink-0">
-                      {initials}
-                    </div>
-                    <div className="min-w-0">
-                      <h4 className="font-editorial text-sm font-bold text-slate-900 truncate">
-                        {name}
-                      </h4>
-                      <p className="font-editorial text-xs text-sky-800 truncate">
-                        {student.major_en || student.major}
-                      </p>
-                      <p className="font-editorial text-[11px] text-slate-500 truncate">
-                        {student.institution_en || student.institution}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
+                );
+              }
+            )}
           </div>
         </section>
       )}
@@ -295,38 +341,171 @@ export const PeoplePage: React.FC = () => {
       {(activeTab === 'all' || activeTab === 'partners') && (
         <section className="mt-14">
           <div className="mb-6 flex items-center justify-between border-b border-slate-200 pb-3">
-            <h2 className="font-editorial text-2xl font-bold text-slate-950">Global Academic Collaborators</h2>
-            <span className="font-mono text-xs text-slate-500">{people.global_academic_partners.length} Institutions</span>
+            <h2 className="font-editorial text-2xl font-bold text-slate-950">
+              Global Academic Collaborators
+            </h2>
+
+            <span className="font-mono text-xs text-slate-500">
+              {people.global_academic_partners.length} Institutions
+            </span>
           </div>
 
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {people.global_academic_partners.map((partner, pIdx) => (
               <div
-                key={pIdx}
+                key={`${partner.country}-${partner.institution}-${pIdx}`}
                 className="rounded-2xl border border-slate-200/80 bg-white/90 p-5 shadow-xs"
               >
-                <div className="flex items-center justify-between mb-2">
-                  <span className="rounded-lg bg-sky-100 px-2.5 py-0.5 font-mono text-[10px] font-bold text-sky-900">
-                    {partner.country}
+                <div className="mb-2 flex items-center justify-between">
+                  <span className="inline-flex items-center gap-1.5 rounded-lg bg-sky-100 px-2.5 py-0.5 font-mono text-[10px] font-bold text-sky-900">
+                    <MapPin className="h-3 w-3 text-sky-700" />
+                    <span>{partner.country}</span>
                   </span>
+
                   <Globe className="h-4 w-4 text-sky-600" />
                 </div>
-                <h4 className="font-editorial text-base font-bold text-slate-900 leading-snug">
-                  {partner.institution}
-                </h4>
-                <div className="mt-2 text-xs text-slate-600 font-editorial">
-                  <p className="font-semibold text-slate-800">Collaborators:</p>
-                  <ul className="list-disc list-inside mt-0.5 space-y-0.5">
-                    {partner.key_collaborators.map((collab, cIdx) => (
-                      <li key={cIdx} className="text-slate-600 truncate">{collab}</li>
-                    ))}
-                  </ul>
+
+                <div className="space-y-0.5">
+                  {partner.institution.split(', ').map((institution, idx) => (
+                    <h4
+                      key={`${institution}-${idx}`}
+                      className="font-editorial text-base font-bold leading-snug text-slate-900"
+                    >
+                      {institution}
+                    </h4>
+                  ))}
                 </div>
-                <p className="mt-3 font-editorial text-xs text-slate-500 italic">
-                  Focus: {partner.research_focus}
-                </p>
+
+                {partner.key_collaborators &&
+                  partner.key_collaborators.length > 0 && (
+                    <div className="mt-2 font-editorial text-xs text-slate-600">
+                      <p className="font-semibold text-slate-800">
+                        Collaborators:
+                      </p>
+
+                      <ul className="mt-0.5 list-inside list-disc space-y-0.5">
+                        {partner.key_collaborators.map((collab, cIdx) => (
+                          <li
+                            key={`${collab}-${cIdx}`}
+                            className="truncate text-slate-600"
+                          >
+                            {collab}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+
+                {partner.research_focus && (
+                  <p className="mt-3 font-editorial text-xs italic text-slate-500">
+                    Focus: {partner.research_focus}
+                  </p>
+                )}
               </div>
             ))}
+          </div>
+        </section>
+      )}
+
+      {/* Web / Tech Lead */}
+      {(activeTab === 'all' || activeTab === 'tech') && (
+        <section className="mt-14">
+          <div className="mb-6 flex items-center justify-between border-b border-slate-200 pb-3">
+            <h2 className="font-editorial text-2xl font-bold text-slate-950">
+              Web / Tech Lead
+            </h2>
+
+            <span className="font-mono text-xs text-slate-500">
+              {people.web_tech_lead.length}{' '}
+              {people.web_tech_lead.length === 1 ? 'Member' : 'Members'}
+            </span>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-2">
+            {people.web_tech_lead.map((member) => {
+              const initials = getMemberInitials(member.name);
+
+              return (
+                <article
+                  key={member.id}
+                  className="soft-card flex flex-col justify-between bg-white/95 p-6"
+                >
+                  <div>
+                    <div className="flex items-center gap-4">
+                      {member.avatar ? (
+                        <img
+                          src={member.avatar}
+                          alt={member.name}
+                          className="h-14 w-14 shrink-0 rounded-2xl object-cover shadow-sm ring-2 ring-sky-200"
+                        />
+                      ) : (
+                        <div className="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-gradient-to-br from-slate-900 to-sky-900 font-mono text-sm font-bold text-white shadow-sm">
+                          {initials}
+                        </div>
+                      )}
+
+                      <div className="min-w-0 flex-1">
+                        {member.role_badge && (
+                          <span className="mb-1 inline-block rounded-md border border-sky-200/80 bg-sky-100 px-2 py-0.5 font-mono text-[9px] font-bold uppercase tracking-wider text-sky-900">
+                            {member.role_badge}
+                          </span>
+                        )}
+
+                        <p className="font-mono text-[10px] font-bold uppercase tracking-wider text-sky-800">
+                          {member.role}
+                        </p>
+
+                        <h3 className="font-editorial text-xl font-bold text-slate-950">
+                          {member.name}
+                        </h3>
+
+                        <p className="font-editorial text-xs font-semibold text-slate-600">
+                          {member.affiliation}
+                        </p>
+                      </div>
+                    </div>
+
+                    {member.current_status && (
+                      <p className="mt-4 rounded-xl border border-sky-100 bg-sky-50/80 p-3 font-editorial text-xs font-medium leading-relaxed text-sky-950">
+                        {member.current_status}
+                      </p>
+                    )}
+
+                    {member.featured_publications &&
+                      member.featured_publications.length > 0 && (
+                        <div className="mt-3">
+                          <p className="mb-1 font-mono text-[10px] font-bold uppercase text-slate-400">
+                            Publications
+                          </p>
+
+                          <div className="flex flex-wrap gap-1">
+                            {member.featured_publications.map((pub) => (
+                              <span
+                                key={pub}
+                                className="rounded-lg bg-slate-100 px-2 py-0.5 font-mono text-[10px] font-semibold text-slate-800"
+                              >
+                                {pub}
+                              </span>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+                  </div>
+
+                  {member.email && (
+                    <div className="mt-4 flex items-center gap-1.5 border-t border-slate-100 pt-3 font-mono text-xs text-sky-700">
+                      <Mail className="h-3.5 w-3.5" />
+                      <a
+                        href={`mailto:${member.email}`}
+                        className="hover:underline"
+                      >
+                        {member.email}
+                      </a>
+                    </div>
+                  )}
+                </article>
+              );
+            })}
           </div>
         </section>
       )}

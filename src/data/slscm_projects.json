@@ -46,32 +46,50 @@
       "Presented and published in Springer LNNS at International Conference CITA 2025",
       "Achieved up to 28.4% reduction in delivery mission completion time compared to classic FSTSP benchmarks"
     ],
-    "tags": ["Drone Routing", "FSTSP", "Matheuristics", "Transportation Research Part C", "Last-Mile Delivery"],
+    "tags": [
+      "Drone Routing",
+      "FSTSP",
+      "Matheuristics",
+      "Transportation Research Part C",
+      "Last-Mile Delivery"
+    ],
     "related_publications": [
       {
         "id": "hong-2026-rvfstsp-trc",
         "title": "A Stage-based Formulation and Meta-heuristic Algorithm for the Revisit Flying SideKick Traveling Salesman Problem",
-        "authors": ["Le Thi Hong", "Duc Duy Vu", "Tran Nam Khanh", "Nguyen Dinh Cong", "Vu Duc Minh"],
+        "authors": [
+          "Le Thi Hong",
+          "Duc Duy Vu",
+          "Tran Nam Khanh",
+          "Nguyen Dinh Cong",
+          "Vu Duc Minh"
+        ],
         "venue": "Transportation Research Part C: Emerging Technologies",
         "year": 2026,
         "type": "Journal",
         "badge": "TRC (2026) · Q1",
         "doi": "10.1016/j.trc.2026.105906",
         "link": "https://doi.org/10.1016/j.trc.2026.105906",
-        "abstract": "We formulate and solve the Revisit Flying Sidekick Traveling Salesman Problem (RV-FSTSP), relaxing traditional single-visit constraints to permit the delivery truck to revisit customer locations and remain stationary while drones launch and retrieve multiple payloads.",
+        "abstract": "In last-mile delivery, coordinating unmanned aerial vehicles (UAVs or drones) with traditional ground delivery vehicles offers significant potential for operational efficiency and carbon emissions reduction. This paper investigates the Revisit Flying Sidekick Traveling Salesman Problem (RV-FSTSP), a novel variant of the drone-truck delivery problem that relaxes traditional single-visit restrictions to allow the delivery truck to revisit customer locations and remain stationary while drones launch, deliver, and retrieve multiple payloads. We propose a new stage-based integer programming formulation that overcomes the computational bottlenecks of classical three-index time-indexed models. To solve large-scale instances within practical computing times, we develop a high-performance metaheuristic combining constructive procedures with adaptive neighborhood search. Extensive computational experiments on benchmark instances show that allowing truck revisits reduces total delivery completion time by up to 28.4% compared to classical FSTSP models, establishing a new state of the art for drone-assisted last-mile distribution.",
         "bibtex": "@article{Hong2026RVFSTSP,\n  title = {A Stage-based Formulation and Meta-heuristic Algorithm for the Revisit Flying SideKick Traveling Salesman Problem},\n  author = {Le Thi Hong and Duc Duy Vu and Tran Nam Khanh and Nguyen Dinh Cong and Vu Duc Minh},\n  journal = {Transportation Research Part C: Emerging Technologies},\n  volume = {192},\n  pages = {105906},\n  year = {2026},\n  doi = {10.1016/j.trc.2026.105906}\n}"
       },
       {
         "id": "khanh-2025-rvfstsp-cita",
-        "title": "A Constructive Metaheuristic Algorithm for the Revisit Flying Sidekick Traveling Salesman Problem",
-        "authors": ["Tran Nam Khanh", "Le Thi Hong", "Vu Duc Minh"],
+        "title": "A 2-Index Stage-Based Formulation and a Construct-Merge-Solve and Adapt Algorithm for the Flying Sidekick Traveling Salesman Problem",
+        "authors": [
+          "Le Thi Hong",
+          "Vu Duc Minh",
+          "Tran Nam Khanh",
+          "Nguyen Dinh Cong",
+          "Le Huu Trung"
+        ],
         "venue": "International Conference on Computer and Information Technology (CITA 2025)",
         "year": 2025,
         "type": "Conference",
         "badge": "CITA (2025) · Springer",
-        "doi": "10.1007/978-981-96-2673-1_32",
-        "link": "https://doi.org/10.1007/978-981-96-2673-1_32",
-        "abstract": "Proposes a constructive heuristic framework generating high-quality initial solutions for drone-truck synchronization on benchmark road topologies.",
+        "doi": "10.1007/978-3-032-00972-2_6",
+        "link": "https://doi.org/10.1007/978-3-032-00972-2_6",
+        "abstract": "In this work, we present the first 2-index stage-based formulation for the Flying Sidekick Traveling Salesman Problem (FSTSP). Additionally, we propose a Construct-Merge-Solve and Adapt (CMSA) algorithm designed to generate high-quality feasible solutions. Experimental results demonstrate that the proposed algorithm consistently produces good solutions in a fraction of the time required by state-of-the-art mixed-integer linear programming solvers, which often struggle to find even the first feasible solution for large and practical instances.",
         "bibtex": "@inproceedings{Khanh2025CITA,\n  title = {A Constructive Metaheuristic Algorithm for the Revisit Flying Sidekick Traveling Salesman Problem},\n  author = {Tran Nam Khanh and Le Thi Hong and Vu Duc Minh},\n  booktitle = {CITA 2025: Lecture Notes in Networks and Systems},\n  year = {2025},\n  publisher = {Springer}\n}"
       }
     ]
@@ -127,19 +145,31 @@
       "Directly handled and accepted by Area Editor Andrea Lodi",
       "Open-source code and full benchmark suite integrated into the official IJOC GitHub Software Repository"
     ],
-    "tags": ["Facility Location", "INFORMS JoC", "Exponential Cone", "Outer Approximation", "VINIF"],
+    "tags": [
+      "Facility Location",
+      "INFORMS JoC",
+      "Exponential Cone",
+      "Outer Approximation",
+      "VINIF"
+    ],
     "related_publications": [
       {
         "id": "le-2026-cfl-ijoc",
         "title": "Competitive Facility Location Under Cross-Nested Logit Customer Choice Model: Hardness and Exact Approaches",
-        "authors": ["Ba Luat Le", "Tien Mai", "Thuy Anh Ta", "Minh Hoàng Hà", "Duc Minh Vu"],
+        "authors": [
+          "Ba Luat Le",
+          "Tien Mai",
+          "Thuy Anh Ta",
+          "Minh Hoàng Hà",
+          "Duc Minh Vu"
+        ],
         "venue": "INFORMS Journal on Computing",
         "year": 2026,
         "type": "Journal",
         "badge": "IJOC (2026) · Top-tier",
         "doi": "10.1287/ijoc.2025.1150",
         "link": "https://doi.org/10.1287/ijoc.2025.1150",
-        "abstract": "We study the competitive facility location problem, in which a firm aims to establish new facilities in a market already occupied by competitors. We explore a general class of customer choice models, known as the cross-nested logit model. We convert the non-concave objective into a mixed-integer exponential cone convex program, enabling exact resolution via outer approximation.",
+        "abstract": "We study the competitive facility location problem, in which a firm aims to establish new facilities in a market already occupied by competitors. In this problem, customer behavior is a crucial factor in making optimal location decisions. We explore a general class of customer choice models, known as the cross-nested logit model, which is recognized for its flexibility and generality in predicting people’s choice behavior. To explore the problem, we first demonstrate that it is NP-hard even when there is only one customer class and the cross-nested structure has only two nests. To tackle the challenging facility location problem, we demonstrate that the objective function under a general cross-nested structure is not concave. Interestingly, we show that, by a change of variables, the objective function can be converted to a mixed-integer exponential cone convex program, enabling it to be solved to optimality via an outer approximation algorithm. Extensive experiments show the efficiency of our approach and provide analyses on the benefits of using the cross-nested model in the facility location context.",
         "bibtex": "@article{Le2026CFL,\n  title = {Competitive Facility Location Under Cross-Nested Logit Customer Choice Model: Hardness and Exact Approaches},\n  author = {Ba Luat Le and Tien Mai and Thuy Anh Ta and Minh Hoàng Hà and Duc Minh Vu},\n  journal = {INFORMS Journal on Computing},\n  year = {2026},\n  doi = {10.1287/ijoc.2025.1150}\n}"
       }
     ]
@@ -185,19 +215,31 @@
       "Standardized IoT time-series telemetry data pipeline for smart municipal operations",
       "Experimental solution deployed to municipal drainage and water supply management units"
     ],
-    "tags": ["Smart Water", "Urban IoT", "Pump Scheduling", "Time Series ML", "Joint Lab"],
+    "tags": [
+      "Smart Water",
+      "Urban IoT",
+      "Pump Scheduling",
+      "Time Series ML",
+      "Joint Lab"
+    ],
     "related_publications": [
       {
         "id": "vu-2026-demand-response-erss",
         "title": "Designing effective demand response: A review of behavioral insights, consumer engagement, and operational strategies in energy systems",
-        "authors": ["Duc D. Vu", "Akhtar Hussain", "Duc Minh Vu", "Xiao Zhang", "Van-Hai Bui"],
+        "authors": [
+          "Duc D. Vu",
+          "Akhtar Hussain",
+          "Duc Minh Vu",
+          "Xiao Zhang",
+          "Van-Hai Bui"
+        ],
         "venue": "Energy Research & Social Science",
         "year": 2026,
         "type": "Journal",
         "badge": "ERSS (2026) · Q1",
         "doi": "10.1016/j.erss.2025.104474",
         "link": "https://doi.org/10.1016/j.erss.2025.104474",
-        "abstract": "A comprehensive interdisciplinary review synthesizing consumer behavior, behavioral economic nudges, and operational optimization strategies in smart municipal distribution networks.",
+        "abstract": "Demand response (DR) programs help electricity systems balance supply and demand by encouraging consumers to adjust their usage in response to price signals or incentives. While DR can lower peak demand, ease network congestion, and support renewable energy integration, customer participation remains low. Successful design and implementation require a comprehensive understanding of human behavior, motivations, and operational strategies. This review synthesizes insights from behavioral economics, operational research, and energy policy to identify the key determinants of consumer engagement in residential and commercial DR programs. We explore non-financial interventions, such as normative messaging, default settings, and gamification, alongside price-based and incentive-based instruments. Furthermore, we analyze operational challenges including baseline estimation, response fatigue, and network constraints. Finally, we propose an integrated framework for designing human-centric, data-driven DR programs that bridge the gap between technical optimization and consumer adoption in modern smart grid ecosystems.",
         "bibtex": "@article{Vu2026DemandResponse,\n  title = {Designing Effective Demand Response: A Review of Behavioral Insights, Consumer Engagement, and Operational Strategies in Energy Systems},\n  author = {Duc D. Vu and Akhtar Hussain and Duc Minh Vu and Xiao Zhang and Van-Hai Bui},\n  journal = {Energy Research & Social Science},\n  volume = {131},\n  pages = {104474},\n  year = {2026},\n  doi = {10.1016/j.erss.2025.104474}\n}"
       }
     ]
@@ -248,19 +290,30 @@
       "Optimally solved large-scale benchmark instances from semiconductor chip manufacturing",
       "Successfully modeled complex conflict graph constraints under non-trivial makespan objectives"
     ],
-    "tags": ["Machine Scheduling", "Conflict Jobs", "Constraint Programming", "Simulated Annealing", "ITOR"],
+    "tags": [
+      "Machine Scheduling",
+      "Conflict Jobs",
+      "Constraint Programming",
+      "Simulated Annealing",
+      "ITOR"
+    ],
     "related_publications": [
       {
         "id": "rosati-2026-itor",
         "title": "Exact and Metaheuristic Approaches to Minimizing Makespan in Parallel Machine Scheduling with Conflicting Jobs",
-        "authors": ["Roberto Maria Rosati", "Dinh Quy Ta", "Minh Hoàng Hà", "Andrea Schaerf"],
+        "authors": [
+          "Roberto Maria Rosati",
+          "Dinh Quy Ta",
+          "Minh Hoàng Hà",
+          "Andrea Schaerf"
+        ],
         "venue": "International Transactions in Operational Research",
         "year": 2026,
         "type": "Journal",
         "badge": "ITOR (2026) · Q1",
         "doi": "10.1111/itor.70177",
         "link": "https://onlinelibrary.wiley.com/doi/10.1111/itor.70177",
-        "abstract": "We present exact CP models and two highly effective metaheuristic algorithms: multi-neighborhood simulated annealing and constraint programming-based large neighborhood search for parallel machines with conflict graphs.",
+        "abstract": "We address the scheduling conflicting jobs on parallel identical machines problem with makespan minimization, a classical and computationally challenging combinatorial optimization problem arising in modern manufacturing and parallel computing environments. In this problem, certain pairs of jobs cannot be executed simultaneously on the same machine due to shared resource contention or physical constraints represented by a conflict graph. We propose exact Constraint Programming (CP) formulations and two effective metaheuristic algorithms: a multi-neighborhood simulated annealing (MNSA) algorithm and a constraint programming-based large neighborhood search (CP-based LNS). Computational experiments on standard benchmark instances as well as large-scale problem sets demonstrate that our metaheuristics consistently find optimal or near-optimal solutions with superior runtime efficiency compared to general-purpose integer programming solvers.",
         "bibtex": "@article{Rosati2026ITOR,\n  title = {Exact and Metaheuristic Approaches to Minimizing Makespan in Parallel Machine Scheduling with Conflicting Jobs},\n  author = {Roberto Maria Rosati and Dinh Quy Ta and Minh Hoàng Hà and Andrea Schaerf},\n  journal = {International Transactions in Operational Research},\n  year = {2026},\n  doi = {10.1111/itor.70177}\n}"
       }
     ]
@@ -309,19 +362,30 @@
       "Published in top operations research journal Computers & Operations Research (COR, Vol. 192, 2026)",
       "Established standard experimental benchmarks for hierarchical urban road network routing"
     ],
-    "tags": ["Arc Routing", "HDCARP", "Waste Management", "Computers & Operations Research"],
+    "tags": [
+      "Arc Routing",
+      "HDCARP",
+      "Waste Management",
+      "Computers & Operations Research"
+    ],
     "related_publications": [
       {
         "id": "ha-2026-hdc-cor",
         "title": "On the Hierarchical Directed Capacitated Arc Routing Problem",
-        "authors": ["Minh Hoàng Hà", "Thu Huong Dang", "Ba Luat Le", "Trung Thanh Nguyen", "André Langevin"],
+        "authors": [
+          "Minh Hoàng Hà",
+          "Thu Huong Dang",
+          "Ba Luat Le",
+          "Trung Thanh Nguyen",
+          "André Langevin"
+        ],
         "venue": "Computers & Operations Research",
         "year": 2026,
         "type": "Journal",
         "badge": "COR (2026) · Q1",
         "doi": "10.1016/j.cor.2026.107495",
         "link": "https://doi.org/10.1016/j.cor.2026.107495",
-        "abstract": "Introduces compact formulations, valid inequalities, and advanced metaheuristics providing superior performance on large realistic street networks with hierarchical service demands.",
+        "abstract": "The Hierarchical Directed Capacitated Arc Routing Problem (HDCARP) is an extension of the Capacitated Arc Routing Problem (CARP), where the arcs of a graph are partitioned into distinct priority classes. Motivated by realistic urban applications such as municipal waste collection and winter road maintenance under strict service priority hierarchies, traversal of these priority classes is governed by precedence constraints or hierarchical objectives. In this paper, we introduce and formalize the HDCARP on directed graphs, develop compact mathematical programming formulations, derive families of valid inequalities, and propose branch-and-cut and advanced metaheuristic search algorithms. Computational experiments on large-scale realistic and benchmark road networks demonstrate the computational efficacy of the proposed formulation and algorithmic frameworks.",
         "bibtex": "@article{Ha2026HDC,\n  title = {On the Hierarchical Directed Capacitated Arc Routing Problem},\n  author = {Minh Hoàng Hà and Thu Huong Dang and Ba Luat Le and Trung Thanh Nguyen and André Langevin},\n  journal = {Computers & Operations Research},\n  volume = {192},\n  pages = {107495},\n  year = {2026},\n  doi = {10.1016/j.cor.2026.107495}\n}"
       }
     ]
@@ -365,19 +429,29 @@
       "Published in premier journal European Journal of Operational Research (EJOR, Q1, 2025)",
       "Established new state-of-the-art solution records across international benchmark suites"
     ],
-    "tags": ["Inventory Routing", "HGS", "Supply Chain", "EJOR Q1"],
+    "tags": [
+      "Inventory Routing",
+      "HGS",
+      "Supply Chain",
+      "EJOR Q1"
+    ],
     "related_publications": [
       {
         "id": "zhao-2025-irp-ejor",
         "title": "Large Neighborhood and Hybrid Genetic Search for Inventory Routing Problems",
-        "authors": ["Jingyi Zhao", "Claudia Archetti", "Tuan Anh Pham", "Thibaut Vidal"],
+        "authors": [
+          "Jingyi Zhao",
+          "Claudia Archetti",
+          "Tuan Anh Pham",
+          "Thibaut Vidal"
+        ],
         "venue": "European Journal of Operational Research",
         "year": 2025,
         "type": "Journal",
         "badge": "EJOR (2025) · Q1",
         "doi": "10.1016/j.ejor.2025.11.021",
         "link": "https://doi.org/10.1016/j.ejor.2025.11.021",
-        "abstract": "We investigate large neighborhood search and hybrid genetic search for multi-period inventory routing problems, outperforming previous state-of-the-art benchmarks.",
+        "abstract": "The Inventory Routing Problem (IRP) integrates inventory management and vehicle routing decisions to optimize the distribution of goods from a central supplier to multiple customers over a discrete planning horizon. Due to the complex interdependency between inventory holding costs, stock-out risks, and routing costs, the IRP presents significant computational challenges. In this paper, we propose a scalable hybrid metaheuristic that unifies a Large Neighborhood Search (LNS) framework with Hybrid Genetic Search (HGS). A core innovation is a new dynamic programming-based delivery-schedule improvement operator tailored for the IRP, which optimizes the removal and reinsertion of all visits to a customer while accounting for delivery quantities and timing trade-offs. We further extend the approach to a stock-out-allowed setting with penalized unmet demand. Extensive computational experiments on 1,040 benchmark instances demonstrate the superior performance of our algorithm, establishing 365 new best solutions and proving highly effective on newly generated large-scale problem instances.",
         "bibtex": "@article{Zhao2025IRP,\n  title = {Large Neighborhood and Hybrid Genetic Search for Inventory Routing Problems},\n  author = {Jingyi Zhao and Claudia Archetti and Tuan Anh Pham and Thibaut Vidal},\n  journal = {European Journal of Operational Research},\n  year = {2025},\n  doi = {10.1016/j.ejor.2025.11.021}\n}"
       }
     ]
@@ -419,19 +493,29 @@
       "Standardized curriculum on Operations Research and Decision Intelligence with Python & Gurobi",
       "Executive certificate of completion issued by College of Technology, NEU"
     ],
-    "tags": ["Executive Training", "Python Solvers", "Gurobi", "Decision Intelligence"],
+    "tags": [
+      "Executive Training",
+      "Python Solvers",
+      "Gurobi",
+      "Decision Intelligence"
+    ],
     "related_publications": [
       {
         "id": "thieu-2025-metaperceptron-csi",
         "title": "MetaPerceptron: A standardized framework for metaheuristic-driven multi-layer perceptron optimization",
-        "authors": ["Nguyen Van Thieu", "Seyedali Mirjalili", "Harish Garg", "Nguyen Thanh Hoang"],
+        "authors": [
+          "Nguyen Van Thieu",
+          "Seyedali Mirjalili",
+          "Harish Garg",
+          "Nguyen Thanh Hoang"
+        ],
         "venue": "Computer Standards & Interfaces",
         "year": 2025,
         "type": "Journal",
         "badge": "CSI (2025) · Q1",
         "doi": "10.1016/j.csi.2025.103977",
         "link": "https://doi.org/10.1016/j.csi.2025.103977",
-        "abstract": "Presents MetaPerceptron, a standardized framework for training multi-layer perceptrons via gradient-free swarm and evolutionary metaheuristics.",
+        "abstract": "While traditional Multi-Layer Perceptron (MLP) training primarily relies on gradient descent techniques, these algorithms often suffer from vulnerability to local optima and overfitting in non-convex optimization landscapes. Metaheuristic algorithms (MHAs) have emerged as powerful gradient-free alternatives, yet the lack of a unified, accessible, and standardized software framework has hindered widespread adoption and fair benchmarking. In this paper, we introduce MetaPerceptron, an open-source Python framework designed to standardize the integration, training, and benchmarking of metaheuristic-driven Multi-Layer Perceptrons. Built upon PyTorch, Scikit-Learn, and Mealpy, MetaPerceptron provides a Scikit-learn-compatible API supporting both regression and classification across more than 200 metaheuristic optimizers alongside classical gradient descent algorithms. The library includes built-in hyperparameter tuning, feature selection, pipeline utilities, and over 67 evaluation metrics. Extensive experimental results across benchmark datasets demonstrate the flexibility, robustness, and performance of MetaPerceptron in complex predictive modeling tasks.",
         "bibtex": "@article{Thieu2025MetaPerceptron,\n  title = {MetaPerceptron: A Standardized Framework for Metaheuristic-Driven Multi-Layer Perceptron Optimization},\n  author = {Nguyen Van Thieu and Seyedali Mirjalili and Harish Garg and Nguyen Thanh Hoang},\n  journal = {Computer Standards & Interfaces},\n  volume = {94},\n  pages = {103977},\n  year = {2025},\n  doi = {10.1016/j.csi.2025.103977}\n}"
       }
     ]

@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { Newspaper, Calendar, Tag, ExternalLink, Search, Sparkles, Award } from 'lucide-react';
 import { EventBrief } from '../types';
-import eventsData from '../data/slscm_events.json';
+import { getEvents } from '../repositories';
 
 export const EventsPage: React.FC = () => {
-  const events = eventsData as unknown as EventBrief[];
+  const events = getEvents();
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [searchQuery, setSearchQuery] = useState<string>('');
 
@@ -133,7 +133,7 @@ export const EventsPage: React.FC = () => {
 
                 {/* Extended Content if available */}
                 {item.content_en && (
-                  <div className="mt-3 rounded-xl bg-slate-50 p-3.5 border border-slate-200/60 font-editorial text-xs text-slate-600 leading-relaxed">
+                  <div className="mt-3 rounded-xl bg-slate-50 p-3.5 border border-slate-200/60 font-editorial text-xs text-slate-600 leading-relaxed whitespace-pre-line">
                     {item.content_en}
                   </div>
                 )}

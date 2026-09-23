@@ -22,12 +22,10 @@ export const Navbar: React.FC<NavbarProps> = ({ currentRoute, onRouteChange }) =
 
   const navItems: { label: string; route: PageRoute; badge?: string }[] = [
     { label: 'Home', route: 'home' },
-    { label: 'Projects', route: 'projects', badge: 'Active' },
-    { label: 'Seminars & Talks', route: 'seminars' },
-    { label: 'Events & Briefs', route: 'events', badge: 'News' },
     { label: 'Publications', route: 'publications' },
     { label: 'People', route: 'people' },
     { label: 'Alumni', route: 'alumni' },
+    { label: 'Events & Briefs', route: 'events', badge: 'News' },
     { label: 'Lab Life', route: 'lab-life' },
   ];
 
@@ -67,22 +65,17 @@ export const Navbar: React.FC<NavbarProps> = ({ currentRoute, onRouteChange }) =
             )}
           </div>
           <div>
-            <div className="flex items-center gap-2">
-              <span className="font-editorial text-lg font-bold tracking-tight text-slate-950 group-hover:text-sky-700 transition-colors">
-                SLSCM Lab
-              </span>
-              <span className="hidden sm:inline-block rounded-full border border-sky-200 bg-sky-50 px-2 py-0.5 font-mono text-[10px] font-semibold text-sky-800">
-                NEU
-              </span>
-            </div>
+            <span className="font-editorial text-lg font-bold tracking-tight text-slate-950 group-hover:text-sky-700 transition-colors">
+              SLSCM Lab
+            </span>
             <p className="hidden md:block font-editorial text-[11px] font-normal text-slate-500">
-              Smart Logistics &amp; Supply Chain Management
+              Smart Logistics &amp; Supply Chain Management Laboratory
             </p>
           </div>
         </button>
 
         {/* Desktop Navigation */}
-        <nav className="hidden xl:flex items-center gap-1 rounded-2xl border border-slate-200/80 bg-white/70 p-1 backdrop-blur-md shadow-xs">
+        <nav className="hidden lg:flex items-center gap-1 rounded-2xl border border-slate-200/80 bg-white/70 p-1 backdrop-blur-md shadow-xs">
           {navItems.map((item) => {
             const isActive = currentRoute === item.route;
             return (
@@ -127,7 +120,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentRoute, onRouteChange }) =
           <button
             type="button"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="xl:hidden flex h-10 w-10 items-center justify-center rounded-xl border border-slate-200 bg-white/80 text-slate-700 hover:bg-slate-100 focus-ring"
+            className="lg:hidden flex h-10 w-10 items-center justify-center rounded-xl border border-slate-200 bg-white/80 text-slate-700 hover:bg-slate-100 focus-ring"
             aria-label="Toggle Navigation Menu"
           >
             {mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -137,7 +130,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentRoute, onRouteChange }) =
 
       {/* Mobile Navigation Drawer */}
       {mobileMenuOpen && (
-        <div className="xl:hidden mt-3 border-b border-slate-200/90 bg-white/95 px-5 py-4 backdrop-blur-xl shadow-lg animate-in fade-in slide-in-from-top-2">
+        <div className="lg:hidden mt-3 border-b border-slate-200/90 bg-white/95 px-5 py-4 backdrop-blur-xl shadow-lg animate-in fade-in slide-in-from-top-2">
           <div className="grid gap-1.5">
             {navItems.map((item) => {
               const isActive = currentRoute === item.route;
