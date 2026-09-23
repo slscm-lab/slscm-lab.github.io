@@ -90,7 +90,7 @@ const pillarNames: Record<PillarId, string> = {
 const navLinks = [
   ['Research', '#research'],
   ['Projects', '#impact'],
-  ['Publications Vault', '#publications'],
+  ['Research Publications', '#publications'],
   ['People', '#people'],
   ['Alumni', '#alumni'],
   ['Lab Life', '#lab-life'],
@@ -312,14 +312,14 @@ function ResearchAndProjects() {
           <div className="mt-10 grid gap-5 md:grid-cols-3">
             {overview.research_pillars.map((pillar, index) => {
               const Icon = icons[index];
-              const desc = (pillar as unknown as { description_en?: string }).description_en || pillar.description_vi;
+              const desc = (pillar as unknown as { description_en?: string; description_vi?: string }).description_en || (pillar as unknown as { description_vi?: string }).description_vi || pillar.description;
               return (
                 <motion.article whileHover={{ y: -5 }} key={pillar.id} className={`rounded-3xl border p-6 shadow-soft ${treatments[index]}`}>
                   <Icon className="h-7 w-7" />
                   <p className="mt-5 font-mono text-[10px] font-semibold tracking-widest opacity-70">
                     0{index + 1} / {index === 0 ? 'EXACT + HEURISTIC' : index === 1 ? 'AI / OR INTERSECTION' : 'GREEN LOGISTICS'}
                   </p>
-                  <h3 className="mt-2 font-editorial text-2xl font-bold leading-snug text-slate-900">{pillar.title_en}</h3>
+                  <h3 className="mt-2 font-editorial text-2xl font-bold leading-snug text-slate-900">{(pillar as unknown as { title_en?: string }).title_en || pillar.title}</h3>
                   <p className="mt-3 font-editorial text-base leading-relaxed text-slate-600">{desc}</p>
                   <div className="mt-5 rounded-2xl border border-slate-200/90 bg-white/95 p-3.5 shadow-sm backdrop-blur">
                     <div className="flex items-center justify-between gap-2 border-b border-slate-100 pb-1.5 font-mono text-[9px] font-semibold uppercase tracking-wider text-slate-500">

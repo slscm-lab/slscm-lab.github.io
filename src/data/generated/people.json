@@ -1,0 +1,481 @@
+{
+  "leadership_and_faculty": [
+    {
+      "id": "vu-duc-minh",
+      "name": "Dr. Duc Minh Vu",
+      "name_en": "Dr. Duc Minh Vu",
+      "title": "",
+      "role_badge": "LAB HEAD / FACULTY MEMBER",
+      "affiliation": "",
+      "email": "",
+      "office": "Room 1613, Building A1",
+      "bio": "Dr. Vu Duc Minh is the Head of SLSCM Lab and Lecturer at the College of Technology, National Economics University (NEU). He leads multiple research projects in transportation optimization, drone routing, and facility location problems, with publications in premier international journals including INFORMS Journal on Computing, Transportation Research Part C, and Journal of the Operational Research Society.",
+      "avatar": "/assets/images/people/vu_duc_minh.jpg",
+      "research_interests": []
+    },
+    {
+      "id": "ha-minh-hoang",
+      "name": "Assoc. Prof. Minh Hoang Ha",
+      "name_en": "Assoc. Prof. Minh Hoang Ha",
+      "title": "",
+      "role_badge": "DEAN OF FACULTY",
+      "affiliation": "",
+      "email": "",
+      "office": "Room 1604, Building A1",
+      "bio": "Associate Professor, Ph.D., Dean of the Faculty of Mathematics, Mechanics and Informatics at VNU University of Science (VNU-HUS), Senior Scientific Advisor at SLSCM Lab. A leading Vietnamese expert in combinatorial optimization algorithm design, with dozens of authoritative publications in EJOR, Computers & Operations Research, ITOR, IJOC, and JORS.",
+      "avatar": "/assets/images/people/ha_minh_hoang.jpg",
+      "research_interests": []
+    },
+    {
+      "id": "dinh-nho-minh",
+      "name": "Dr. Nho Minh Dinh",
+      "name_en": "Dr. Nho Minh Dinh",
+      "title": "",
+      "role_badge": "FACULTY MEMBER",
+      "affiliation": "",
+      "email": "",
+      "office": "Room 1613, Building A1",
+      "bio": "Ph.D. in Data Analytics in Business and Economics specializing in Operations Research from the University of Brescia (Italy, 2023), former Postdoctoral Researcher at the University of Calabria (Italy). Lecturer at the Faculty of Data Science and AI (FDA), College of Technology, NEU. Specializes in applied operations research, supply chain optimization, matheuristics, and inventory routing problems (IRP).",
+      "avatar": "/assets/images/people/dinh_nho_minh.jpg",
+      "research_interests": []
+    },
+    {
+      "id": "ta-dinh-quy",
+      "name": "MSc. Ta Dinh Quy",
+      "name_en": "MSc. Ta Dinh Quy",
+      "title": "",
+      "role_badge": "Deputy Head of Lab / FACULTY MEMBER / PhD Candidate",
+      "affiliation": "",
+      "email": "",
+      "office": "Room 1613, Building A1",
+      "bio": "Master of Science, Lecturer at College of Technology, NEU and Ph.D. candidate specializing in industrial scheduling and machine scheduling with conflict jobs. Lead author of publications in ITOR, Journal of the Operational Research Society, and Springer's Handbook of Combinatorial Optimization.",
+      "avatar": "/assets/images/people/ta_dinh_quy.jpg",
+      "research_interests": []
+    },
+    {
+      "id": "pham-tuan-anh",
+      "name": "MSc. Tuan Anh Pham",
+      "name_en": "MSc. Tuan Anh Pham",
+      "title": "",
+      "role_badge": "FACULTY MEMBER / PhD Candidate",
+      "affiliation": "",
+      "email": "",
+      "office": "Room 1613, Building A1",
+      "bio": "Master of Science, Lecturer at College of Technology, National Economics University (NEU) and researcher at SLSCM Lab. Author of publications in premier international operations research journals including European Journal of Operational Research (EJOR, Q1) and Springer Optimization and Its Applications (COMOSA), specializing in hybrid genetic search (HGS) and inventory routing problems (IRP).",
+      "avatar": "/assets/images/people/pham_tuan_anh.jpg",
+      "research_interests": []
+    }
+  ],
+  "web_tech_lead": [
+    {
+      "id": "trung-le-huu",
+      "name": "Trung Le Huu",
+      "name_en": "Trung Le Huu",
+      "role": "Web / Tech Lead & Senior Researcher",
+      "role_badge": "WEB / TECH LEAD",
+      "affiliation": "University of Warwick (2026)",
+      "email": "",
+      "avatar": "/assets/images/people/trung_le_huu.jpg",
+      "current_status": "Awarded WMG Excellence Scholarship at the University of Warwick (2026)",
+      "featured_publications": [
+        "CITA (2025)"
+      ],
+      "research_interests": [
+        "Bounded-optimal search",
+        "Multi-Agent Systems",
+        "Vehicle Routing & Optimization"
+      ]
+    }
+  ],
+  "hall_of_fame": [
+    {
+      "id": "hof-le-ba-luat",
+      "name": "Ba Luat Le",
+      "name_en": "Ba Luat Le",
+      "avatar": "/assets/images/people/le_ba_luat.jpg",
+      "achievement": "Valedictorian of College of Technology, Phenikaa University (2025); Awarded Full PhD Scholarship at Singapore Management University (SMU, 2026).",
+      "achievement_en": "Valedictorian of College of Technology, Phenikaa University (2025); Awarded Full PhD Scholarship at Singapore Management University (SMU, 2026).",
+      "destination_institution": "Singapore Management University (SMU)",
+      "country": "Singapore",
+      "year": 2026,
+      "award_type": "PhD Scholarship & Valedictorian",
+      "field": "",
+      "former_background_en": "Former Student in Computer Science, Phenikaa University",
+      "advisors": ""
+    },
+    {
+      "id": "hof-hoa-thi-thu-trang",
+      "name": "Thu Trang Hoa Thi",
+      "name_en": "Thu Trang Hoa Thi",
+      "avatar": "/assets/images/people/hoa_thi_thu_trang.jpg",
+      "achievement": "Appointed Research Engineer at Singapore Management University (SMU, Singapore, 2026).",
+      "achievement_en": "Appointed Research Engineer at Singapore Management University (SMU, Singapore, 2026).",
+      "destination_institution": "Singapore Management University (SMU)",
+      "country": "Singapore",
+      "year": 2026,
+      "award_type": "Research Engineer Placement",
+      "field": "",
+      "former_background_en": "Former Student in Computer Science, Phenikaa University",
+      "advisors": ""
+    },
+    {
+      "id": "hof-mai-thanh-loc",
+      "name": "Thanh Loc Mai",
+      "name_en": "Thanh Loc Mai",
+      "avatar": "/assets/images/people/mai_thanh_loc.jpg",
+      "achievement": "Awarded Full Master's Scholarship at VinUniversity (VinUni, Vietnam, 2026).",
+      "achievement_en": "Awarded Full Master's Scholarship at VinUniversity (VinUni, Vietnam, 2026).",
+      "destination_institution": "VinUniversity (VinUni)",
+      "country": "Vietnam",
+      "year": 2026,
+      "award_type": "Master's Scholarship",
+      "field": "",
+      "former_background_en": "Former Student in Mathematical Economics, National Economics University (NEU)",
+      "advisors": ""
+    },
+    {
+      "id": "hof-la-quang-chien",
+      "name": "Quang Chien La",
+      "name_en": "Quang Chien La",
+      "avatar": "",
+      "achievement": "Awarded Full Master's Scholarship at VinUniversity (VinUni, Vietnam, 2026).",
+      "achievement_en": "Awarded Full Master's Scholarship at VinUniversity (VinUni, Vietnam, 2026).",
+      "destination_institution": "VinUniversity (VinUni)",
+      "country": "Vietnam",
+      "year": 2026,
+      "award_type": "Master's Scholarship",
+      "field": "",
+      "former_background_en": "Former Student in Mathematical Economics, National Economics University (NEU)",
+      "advisors": ""
+    },
+    {
+      "id": "hof-tran-tat-dat",
+      "name": "Tat Dat Tran",
+      "name_en": "Tat Dat Tran",
+      "avatar": "/assets/images/people/nguyen_tat_dat.jpg",
+      "achievement": "Lead author in European Journal of Operational Research (EJOR, Q1); Awarded Full PhD Scholarship at Liverpool John Moores University (LJMU, UK, 2025).",
+      "achievement_en": "Lead author in European Journal of Operational Research (EJOR, Q1); Awarded Full PhD Scholarship at Liverpool John Moores University (LJMU, UK, 2025).",
+      "destination_institution": "Liverpool John Moores University (LJMU)",
+      "country": "United Kingdom",
+      "year": 2025,
+      "award_type": "PhD Scholarship",
+      "field": "",
+      "former_background_en": "Former Student in CS, UET-VN",
+      "advisors": ""
+    },
+    {
+      "id": "hof-nguyen-hai-thu",
+      "name": "Hai Thu Nguyen",
+      "name_en": "Hai Thu Nguyen",
+      "avatar": "/assets/images/people/nguyen_hai_thu.jpg",
+      "achievement": "Valedictorian in Actuarial Science and Risk Management - Intake 63, NEU; Awarded PhD Scholarship at University of Connecticut (UConn, USA, 2024).",
+      "achievement_en": "Valedictorian in Actuarial Science and Risk Management - Intake 63, NEU; Awarded PhD Scholarship at University of Connecticut (UConn, USA, 2024).",
+      "destination_institution": "University of Connecticut (UConn)",
+      "country": "United States",
+      "year": 2024,
+      "award_type": "PhD Scholarship & Program Valedictorian",
+      "field": "",
+      "former_background_en": "Former Student in Actuarial Science and Risk Management, National Economics University (NEU)",
+      "advisors": ""
+    },
+    {
+      "id": "hof-dang-trung-cuong",
+      "name": "Trung Cuong Dang",
+      "name_en": "Trung Cuong Dang",
+      "avatar": "/assets/images/people/dang_trung_cuong.jpg",
+      "achievement": "Awarded Full PhD Scholarship at the University of South Florida (USF, USA, 2024).",
+      "achievement_en": "Awarded Full PhD Scholarship at the University of South Florida (USF, USA, 2024).",
+      "destination_institution": "University of South Florida (USF)",
+      "country": "United States",
+      "year": 2024,
+      "award_type": "PhD Scholarship",
+      "field": "",
+      "former_background_en": "Former Student in CS, UET-VN",
+      "advisors": ""
+    }
+  ],
+  "graduate_and_undergraduate_student_researchers": [
+    {
+      "id": "tran-nam-khanh",
+      "name": "Nam-Khanh Tran",
+      "name_en": "Nam-Khanh Tran",
+      "major": "Data Science",
+      "institution": "VNU University of Science (VNU-HUS)",
+      "avatar": "",
+      "email": "",
+      "current_status": "",
+      "featured_publications": [
+        "TRC (2026)",
+        "CITA (2025)"
+      ],
+      "research_interests": []
+    },
+    {
+      "id": "mai-thanh-tien",
+      "name": "Mai Thanh Tien",
+      "name_en": "Mai Thanh Tien",
+      "major": "Computer Science",
+      "institution": "Hanoi University of Science and Technology",
+      "avatar": "",
+      "email": "",
+      "current_status": "",
+      "featured_publications": [],
+      "research_interests": []
+    },
+    {
+      "id": "student-3-phong-hoang",
+      "name": "Phong Hoang",
+      "name_en": "Phong Hoang",
+      "major": "Computer Science",
+      "institution": "National Economics University (NEU)",
+      "avatar": "",
+      "email": "",
+      "current_status": "",
+      "featured_publications": [],
+      "research_interests": []
+    },
+    {
+      "id": "student-4-gia-nguyen-pham",
+      "name": "Gia Nguyen Pham",
+      "name_en": "Gia Nguyen Pham",
+      "major": "Mathematics & Computer Science",
+      "institution": "VNU University of Science (VNU-HUS)",
+      "avatar": "",
+      "email": "",
+      "current_status": "",
+      "featured_publications": [
+        "COMOSA (2025)"
+      ],
+      "research_interests": []
+    },
+    {
+      "id": "student-5-thu-ha-ha",
+      "name": "Thu Ha Ha",
+      "name_en": "Thu Ha Ha",
+      "major": "Data Science",
+      "institution": "National Economics University (NEU)",
+      "avatar": "",
+      "email": "",
+      "current_status": "",
+      "featured_publications": [],
+      "research_interests": []
+    },
+    {
+      "id": "student-6-thanh-dat-ta",
+      "name": "Thanh Dat Ta",
+      "name_en": "Thanh Dat Ta",
+      "major": "Data Science",
+      "institution": "National Economics University (NEU)",
+      "avatar": "",
+      "email": "",
+      "current_status": "",
+      "featured_publications": [],
+      "research_interests": []
+    },
+    {
+      "id": "student-7-nhat-minh-dang",
+      "name": "Nhat Minh Dang",
+      "name_en": "Nhat Minh Dang",
+      "major": "Data Science",
+      "institution": "National Economics University (NEU)",
+      "avatar": "",
+      "email": "",
+      "current_status": "",
+      "featured_publications": [],
+      "research_interests": []
+    },
+    {
+      "id": "student-8-nguyet-anh-cao",
+      "name": "Nguyet Anh Cao",
+      "name_en": "Nguyet Anh Cao",
+      "major": "Information Technology",
+      "institution": "National Economics University (NEU)",
+      "avatar": "",
+      "email": "",
+      "current_status": "",
+      "featured_publications": [
+        "COMOSA (2026)"
+      ],
+      "research_interests": []
+    },
+    {
+      "id": "student-9-quoc-dat-nguyen-tran",
+      "name": "Quoc Dat Nguyen Tran",
+      "name_en": "Quoc Dat Nguyen Tran",
+      "major": "Mathematical Economics",
+      "institution": "National Economics University (NEU)",
+      "avatar": "",
+      "email": "",
+      "current_status": "",
+      "featured_publications": [],
+      "research_interests": []
+    },
+    {
+      "id": "student-10-thu-trang-phung",
+      "name": "Thu Trang Phung",
+      "name_en": "Thu Trang Phung",
+      "major": "Data Science",
+      "institution": "National Economics University (NEU)",
+      "avatar": "",
+      "email": "",
+      "current_status": "",
+      "featured_publications": [],
+      "research_interests": []
+    },
+    {
+      "id": "student-11-tuan-anh-tran",
+      "name": "Tuan Anh Tran",
+      "name_en": "Tuan Anh Tran",
+      "major": "Computer Science",
+      "institution": "VNU School of Engineering and Technology",
+      "avatar": "",
+      "email": "",
+      "current_status": "",
+      "featured_publications": [],
+      "research_interests": []
+    }
+  ],
+  "alumni": [
+    {
+      "id": "alumni-le-ba-luat",
+      "name": "Ba Luat Le",
+      "name_en": "Ba Luat Le",
+      "avatar": "/assets/images/people/le_ba_luat.jpg",
+      "period": "",
+      "former_role": "Former Lead Author & Junior Researcher",
+      "former_role_en": "Former Lead Author & Junior Researcher",
+      "current_position": "PhD Candidate in Operations Research",
+      "current_position_en": "PhD Candidate in Operations Research",
+      "institution": "Singapore Management University (SMU), Singapore",
+      "email": ""
+    },
+    {
+      "id": "alumni-hoa-thi-thu-trang",
+      "name": "Thu Trang Hoa Thi",
+      "name_en": "Thu Trang Hoa Thi",
+      "avatar": "/assets/images/people/hoa_thi_thu_trang.jpg",
+      "period": "",
+      "former_role": "Former Student Researcher & Scholar",
+      "former_role_en": "Former Student Researcher & Scholar",
+      "current_position": "Research Engineer in Computing & AI",
+      "current_position_en": "Research Engineer in Computing & AI",
+      "institution": "Singapore Management University (SMU), Singapore",
+      "email": ""
+    },
+    {
+      "id": "alumni-mai-thanh-loc",
+      "name": "Thanh Loc Mai",
+      "name_en": "Thanh Loc Mai",
+      "avatar": "/assets/images/people/mai_thanh_loc.jpg",
+      "period": "",
+      "former_role": "Former Student in Mathematical Economics, NEU",
+      "former_role_en": "Former Student in Mathematical Economics, NEU",
+      "current_position": "Master's Scholar in Computer Science & Analytics",
+      "current_position_en": "Master's Scholar in Computer Science & Analytics",
+      "institution": "VinUniversity (VinUni), Vietnam",
+      "email": ""
+    },
+    {
+      "id": "alumni-la-quang-chien",
+      "name": "Quang Chien La",
+      "name_en": "Quang Chien La",
+      "avatar": "",
+      "period": "",
+      "former_role": "Former Student in Mathematical Economics, NEU",
+      "former_role_en": "Former Student in Mathematical Economics, NEU",
+      "current_position": "Master's Scholar in Operations Research & Analytics",
+      "current_position_en": "Master's Scholar in Operations Research & Analytics",
+      "institution": "VinUniversity (VinUni), Vietnam",
+      "email": ""
+    },
+    {
+      "id": "alumni-tran-tat-dat",
+      "name": "Tat Dat Tran",
+      "name_en": "Tat Dat Tran",
+      "avatar": "/assets/images/people/nguyen_tat_dat.jpg",
+      "period": "",
+      "former_role": "Former Research Fellow & Lead Author (EJOR Q1)",
+      "former_role_en": "Former Research Fellow & Lead Author (EJOR Q1)",
+      "current_position": "PhD Researcher in Operations Research",
+      "current_position_en": "PhD Researcher in Operations Research",
+      "institution": "Liverpool John Moores University (LJMU), UK",
+      "email": ""
+    },
+    {
+      "id": "alumni-nguyen-hai-thu",
+      "name": "Hai Thu Nguyen",
+      "name_en": "Hai Thu Nguyen",
+      "avatar": "/assets/images/people/nguyen_hai_thu.jpg",
+      "period": "",
+      "former_role": "Former Undergraduate Scholar (Valedictorian Intake 63)",
+      "former_role_en": "Former Undergraduate Scholar (Valedictorian Intake 63)",
+      "current_position": "PhD Fellow in Actuarial Science & Risk Analytics",
+      "current_position_en": "PhD Fellow in Actuarial Science & Risk Analytics",
+      "institution": "University of Connecticut (UConn), USA",
+      "email": ""
+    },
+    {
+      "id": "alumni-dang-trung-cuong",
+      "name": "Trung Cuong Dang",
+      "name_en": "Trung Cuong Dang",
+      "avatar": "/assets/images/people/dang_trung_cuong.jpg",
+      "period": "",
+      "former_role": "Former Graduate Researcher",
+      "former_role_en": "Former Graduate Researcher",
+      "current_position": "PhD Researcher in Industrial Engineering & Analytics",
+      "current_position_en": "PhD Researcher in Industrial Engineering & Analytics",
+      "institution": "University of South Florida (USF), USA",
+      "email": ""
+    }
+  ],
+  "global_academic_partners": [
+    {
+      "country": "Singapore",
+      "institution": "Singapore Management University",
+      "collaborators": "",
+      "key_collaborators": [],
+      "scope": "",
+      "research_focus": ""
+    },
+    {
+      "country": "Italy",
+      "institution": "University of Udine",
+      "collaborators": "",
+      "key_collaborators": [],
+      "scope": "",
+      "research_focus": ""
+    },
+    {
+      "country": "Austria",
+      "institution": "Austrian Research Community / Partner Institutes",
+      "collaborators": "",
+      "key_collaborators": [],
+      "scope": "",
+      "research_focus": ""
+    },
+    {
+      "country": "United Kingdom",
+      "institution": "Cardiff University, Lancaster University, Liverpool John Moores University",
+      "collaborators": "",
+      "key_collaborators": [],
+      "scope": "",
+      "research_focus": ""
+    },
+    {
+      "country": "United States",
+      "institution": "Loyola University Chicago, University of Michigan - Flint",
+      "collaborators": "",
+      "key_collaborators": [],
+      "scope": "",
+      "research_focus": ""
+    },
+    {
+      "country": "Canada & France",
+      "institution": "Université de Montréal / CIRRELT",
+      "collaborators": "",
+      "key_collaborators": [],
+      "scope": "",
+      "research_focus": ""
+    }
+  ]
+}

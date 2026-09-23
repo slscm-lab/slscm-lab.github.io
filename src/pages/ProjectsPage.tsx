@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import { Briefcase, Search, CheckCircle2, Users, Layers, ExternalLink, Calendar, Award } from 'lucide-react';
 import { Project } from '../types';
 import { PaperCard } from '../components/PaperCard';
-import projectsData from '../data/slscm_projects.json';
+import { getProjects } from '../repositories';
 
 export const ProjectsPage: React.FC = () => {
-  const projects = projectsData as unknown as Project[];
+  const projects = getProjects();
   const [selectedDomain, setSelectedDomain] = useState<string>('all');
   const [searchQuery, setSearchQuery] = useState<string>('');
 

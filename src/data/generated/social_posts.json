@@ -1,0 +1,84 @@
+[
+  {
+    "type": "publication_news",
+    "title": "New ITOR Publication on Parallel Machine Scheduling with Conflicting Jobs",
+    "abstract": "Research focuses on scheduling conflicting jobs on identical parallel machines to minimize makespan. Proposes a novel constraint programming model and multineighborhood simulated annealing metaheuristics with proven computational efficiency.",
+    "journal": "International Transactions in Operational Research (ITOR)",
+    "paper_title": null,
+    "authors": [
+      "Ta Dinh Quy",
+      "Ha Minh Hoang",
+      "Roberto Rosati (Austria)",
+      "Andrea Schaerf (Italy)"
+    ],
+    "organizer": null,
+    "collaboration": null,
+    "link": "https://onlinelibrary.wiley.com/doi/10.1111/itor.70177",
+    "action_label": "Read ITOR Paper",
+    "venue": null
+  },
+  {
+    "type": "publication_news",
+    "title": "Paper Accepted in INFORMS Journal on Computing (IJOC)",
+    "abstract": "Investigates competitive facility location under cross-nested logit customer choice models. Establishes NP-hardness and non-concavity, then derives an exact mixed-integer exponential cone formulation solved to optimality via outer approximation.",
+    "journal": "INFORMS Journal on Computing (IJOC)",
+    "paper_title": "Competitive Facility Location under Cross-Nested Logit Customer Choice Model: Hardness and Exact Approaches",
+    "authors": [
+      "Le Ba Luat",
+      "Mai Tien (SMU Singapore)",
+      "Ta Thuy Anh (Phenikaa)",
+      "Ha Minh Hoang",
+      "Vu Duc Minh"
+    ],
+    "organizer": null,
+    "collaboration": null,
+    "link": "https://doi.org/10.1287/ijoc.2025.1150",
+    "action_label": "Read IJOC Paper",
+    "venue": null
+  },
+  {
+    "type": "publication_news",
+    "title": "Young Scholar Publication in Transportation Research Part C",
+    "abstract": "Introduces a novel stage-based integer formulation and metaheuristic algorithm for the Revisit Flying Sidekick TSP, enabling delivery trucks to revisit customer nodes and coordinate multi-trip drone sorties for accelerated last-mile logistics.",
+    "journal": "Transportation Research Part C: Emerging Technologies",
+    "paper_title": "A Stage-based Formulation and Meta-heuristic Algorithm for the Revisit Flying SideKick Traveling Salesman Problem",
+    "authors": [
+      "Le Thi Hong",
+      "Duc Duy Vu",
+      "Tran Nam Khanh",
+      "Nguyen Dinh Cong",
+      "Vu Duc Minh"
+    ],
+    "organizer": null,
+    "collaboration": null,
+    "link": "https://doi.org/10.1016/j.trc.2026.105906",
+    "action_label": "Read TRC Paper",
+    "venue": null
+  },
+  {
+    "type": "recruitment_project",
+    "title": "Real-World Initiative: AI & OR for Hanoi Urban Smart Water Network",
+    "abstract": "A collaborative smart city initiative between CADA and SLSCM Labs applying AI and Operations Research to Hanoi's municipal drainage infrastructure, integrating live IoT telemetry with machine learning for real-time flood mitigation.",
+    "journal": null,
+    "paper_title": null,
+    "authors": null,
+    "organizer": null,
+    "collaboration": "Joint Lab Initiative: CADA (P1601 A1) & SLSCM (P1613 A1) - FDA College of Technology, NEU",
+    "link": "https://fda.neu.edu.vn/slscm/",
+    "action_label": "Explore Project",
+    "venue": null
+  },
+  {
+    "type": "training_education",
+    "title": "Executive Professional Workshop: Decision Intelligence & Analytics",
+    "abstract": "Advanced executive training hosted by SLSCM Lab and FDA College of Technology, equipping professionals with combinatorial optimization, prescriptive analytics, and AI frameworks to solve large-scale logistical operations.",
+    "journal": null,
+    "paper_title": null,
+    "authors": null,
+    "organizer": "SLSCM Lab & FDA Faculty - National Economics University",
+    "collaboration": null,
+    "link": "https://www.facebook.com/slscm.lab",
+    "action_label": "View Announcement",
+    "venue": null
+  }
+]
