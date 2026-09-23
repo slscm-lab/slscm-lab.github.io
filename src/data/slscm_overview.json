@@ -1,134 +1,125 @@
 {
-  "name_en": "Smart Logistics and Supply Chain Management Lab",
-  "name_vi": "Lab Quản trị Logistics và Chuỗi cung ứng thông minh",
+  "name": "Smart Logistics and Supply Chain Management Laboratory",
   "abbreviation": "SLSCM Lab",
-  "affiliation": "Trường Công nghệ, Đại học Kinh tế Quốc dân (College of Technology - National Economics University, NEU)",
-  "faculty_department": "Khoa Khoa học Dữ liệu và Trí tuệ Nhân tạo (Faculty of Data Science and AI - FDA)",
-  "address": "P1613, Tòa nhà A1, Đại học Kinh tế Quốc dân – 207 Giải Phóng, Hà Nội",
+  "affiliation": "College of Technology, National Economics University",
+  "faculty_department": "Faculty of Data Science and Artificial Intelligence (FDA)",
+  "address": "Room 1613, A1 Building, National Economics University, 207 Giai Phong Street, Hanoi, Vietnam",
   "head_of_lab": {
-    "name": "TS. Vũ Đức Minh",
-    "name_en": "Dr. Duc Minh Vu",
+    "name": "Dr. Duc Minh Vu",
     "email": "minhvd@neu.edu.vn",
-    "title": "Trưởng phòng thí nghiệm / Giảng viên (Head of Lab / Lecturer)",
-    "office": "P1613, Tòa nhà A1, NEU"
+    "title": "Head of Lab / Lecturer",
+    "office": "Room 1613, A1 Building, National Economics University"
   },
   "metrics": {
-    "total_publications_2025_2026": 18,
+    "total_publications": 18,
     "journal_articles": 10,
     "q1_journals": 10,
     "conference_papers": 7,
     "book_chapters": 1,
     "featured_papers": 11,
-    "phd_scholarships": 3,
+    "phd_msc_scholarships": 6,
     "valedictorians": 2,
-    "active_projects": 4,
     "student_researchers": 9,
-    "international_partner_countries": 7
+    "international_partner_countries": 7,
+    "active_projects": 2
   },
   "team_structure": {
-    "total_faculty_researchers": 7,
+    "total_faculty_researchers": 5,
     "professors": 1,
-    "phd": 3,
+    "phd": 2,
     "phd_candidates": 2,
     "masters": 1,
     "talented_students": 10,
-    "student_community": "Sinh viên tài năng tuyển chọn từ các ngành KHDL&TTNT, Toán Kinh tế, CNTT của NEU, cùng học viên HUST, VNU-HUS..."
+    "student_community": "Selected talented students from Data Science and Artificial Intelligence, Mathematical Economics, and Information Technology programs at NEU, together with students from HUST, VNU-HUS, and other institutions."
   },
   "key_collaborators": [
     {
-      "name": "PGS. TS. Hà Minh Hoàng",
-      "role": "Cố vấn khoa học / Nghiên cứu gia cao cấp",
-      "affiliation": "VNU University of Science & SLSCM Lab"
+      "name": "Assoc. Prof. Dr. Ha Minh Hoang",
+      "role": "Scientific Advisor / Senior Researcher",
+      "affiliation": "College of Technology, National Economics University"
     },
     {
-      "name": "TS. Đinh Nho Minh",
-      "role": "Giảng viên / Nghiên cứu viên",
-      "affiliation": "Khoa KHDL&TTNT (FDA), NEU & SLSCM Lab"
+      "name": "Dr. Dinh Nho Minh",
+      "role": "Lecturer / Researcher",
+      "affiliation": "College of Technology, National Economics University"
     },
     {
-      "name": "ThS. Tạ Đình Quý",
-      "role": "Nghiên cứu viên / Nghiên cứu sinh Tiến sĩ",
-      "affiliation": "SLSCM Lab & Viện Toán học / HUST"
-    },
-    {
-      "name": "Lê Bá Luật",
-      "role": "Nghiên cứu viên trẻ / Tác giả chính IJOC & COR",
-      "affiliation": "SLSCM Lab & Singapore Management University (SMU)"
-    },
-    {
-      "name": "Trần Nam Khánh",
-      "role": "Nghiên cứu viên trẻ / Đồng tác giả TRC",
-      "affiliation": "SLSCM Lab"
+      "name": "Ta Dinh Quy",
+      "role": "Researcher / PhD Candidate",
+      "affiliation": "College of Technology, National Economics University"
     }
   ],
   "research_pillars": [
     {
-      "id": "operational_optimization",
-      "title_vi": "Tối ưu hóa Vận hành & Thiết kế Thuật toán",
-      "title_en": "Operational Optimization & Algorithmic Design",
-      "description_vi": "Phân tích và thiết kế thuật toán chính xác & metaheuristic cho các bài toán định tuyến (VRP, CARP), lập lịch (parallel machine scheduling, conflict jobs), đóng gói (packing) và bài toán định vị cơ sở cạnh tranh.",
+      "id": "supply_chain_optimization",
+      "title": "Supply Chain & Logistics Optimization",
+      "description": "Advancing operations research and mathematical optimization for complex logistics and supply chain systems, including vehicle routing, scheduling, facility location, network design, inventory management, transportation planning, and integrated supply chain decision-making.",
       "topics": [
-        "Vehicle Routing Problem (VRP, CARP)",
-        "Parallel Machine Scheduling with Conflicting Jobs",
-        "Branch-and-Cut & Exponential Cone Programming",
-        "Orienteering & Set Team Orienteering Problems",
-        "Competitive Facility Location"
+        "Vehicle Routing & Transportation Optimization",
+        "Scheduling & Resource Allocation",
+        "Facility Location & Network Design",
+        "Inventory & Supply Chain Planning",
+        "Exact Algorithms & Mathematical Programming",
+        "Metaheuristics & Hybrid Optimization"
       ],
       "featured_journals": [
         "INFORMS Journal on Computing (IJOC)",
         "Computers & Operations Research (COR)",
         "International Transactions in Operational Research (ITOR)",
-        "European Journal of Operational Research (EJOR)"
-      ],
-      "description_en": "Analysis and design of exact algorithms, constraint programming, and state-of-the-art metaheuristics for complex routing (VRP, FSTSP), parallel machine scheduling with conflict jobs, and large-scale packing."
+        "European Journal of Operational Research (EJOR)",
+        "Transportation Research Part C: Emerging Technologies (TRC)",
+        "Journal of the Operational Research Society (JORS)"
+      ]
     },
     {
-      "id": "ml_optimization",
-      "title_vi": "Tối ưu hóa trong Khoa học Dữ liệu & Trí tuệ Nhân tạo",
-      "title_en": "Optimization in Data Science & Machine Learning",
-      "description_vi": "Nghiên cứu các thuật toán tối ưu hóa phi đạo hàm (gradient-free), metaheuristics cho mạng nơ-ron (MetaPerceptron, GrafoRVFL), lý thuyết trò chơi an ninh Stackelberg và mô hình dự báo thị trường năng lượng.",
+      "id": "ai_supply_chain_intelligence",
+      "title": "AI & Data-Driven Supply Chain Intelligence",
+      "description": "Developing artificial intelligence and data-driven methods for intelligent supply chain decision-making, including machine learning, forecasting, predictive-prescriptive analytics, learning-enhanced optimization, and AI-supported planning and operations.",
       "topics": [
-        "Metaheuristics for Deep Learning (MetaPerceptron)",
-        "Random Vector Functional Link Networks (GrafoRVFL)",
-        "Stackelberg Security Games & Quantal Response",
-        "Predict-then-Optimize & Time Series Forecasting"
+        "Machine Learning for Supply Chains",
+        "Predictive-Prescriptive Analytics",
+        "Demand & Time-Series Forecasting",
+        "Learning-Enhanced Optimization",
+        "Metaheuristics for Machine Learning",
+        "Intelligent Decision Support"
       ],
       "featured_venues": [
         "IJCAI (Top-tier AI Conference)",
         "Neurocomputing",
         "Computer Standards & Interfaces",
-        "CSONET / SOICT"
-      ],
-      "description_en": "Developing gradient-free optimization frameworks, metaheuristic-driven neural architectures (MetaPerceptron, GrafoRVFL), and predictive-prescriptive models for intelligent decision support."
+        "CSoNet / SOICT"
+      ]
     },
     {
-      "id": "green_transportation",
-      "title_vi": "Mô hình Vận tải Hiện đại & Chuỗi Cung ứng Bền vững",
-      "title_en": "Modern Transportation & Green Supply Chain",
-      "description_vi": "Xây dựng mô hình chuỗi cung ứng thế hệ mới với sự tham gia của máy bay không người lái (drones/UAVs), xe điện sạc linh hoạt (EVRP-TW), điều độ xe buýt trường học và tối ưu hóa quản lý tiêu thụ năng lượng.",
+      "id": "decision_analytics",
+      "title": "Optimization & Decision Analytics for Complex Systems",
+      "description": "Developing optimization and decision-analytics approaches for complex systems beyond logistics and supply chains, with applications in energy, healthcare, finance and business, public services, urban systems, hospitality, and digital operations.",
       "topics": [
-        "Revisit Flying Sidekick TSP (RV-FSTSP)",
-        "Multi-Trip Drone Delivery with Time Windows",
-        "Electric Vehicle Routing (Station-based vs Route-based Charging)",
-        "School Bus Rescheduling under Disruption",
-        "Smart Energy Demand Response"
+        "Energy & Sustainable Systems",
+        "Healthcare & Public Services",
+        "Finance & Business Analytics",
+        "Urban & Transportation Systems",
+        "Hospitality & Tourism",
+        "Digital & Computing Systems"
       ],
       "featured_journals": [
-        "Transportation Research Part C: Emerging Technologies (TRC)",
-        "Journal of the Operational Research Society (JORS)",
         "Energy Research & Social Science (ERSS)",
-        "COMOSA / CITA"
-      ],
-      "description_en": "Next-generation sustainable transport systems integrating multi-trip drone delivery (FSTSP), electric vehicles with station/route charging (EVRP-TW), school bus rescheduling, and robust facility location."
+        "Journal of the Operational Research Society (JORS)",
+        "Computers & Operations Research (COR)",
+        "International Transactions in Operational Research (ITOR)"
+      ]
     }
   ],
   "hall_of_fame_summary": {
     "valedictorian_count": 2,
-    "phd_scholarships_count": 3,
+    "phd_scholarships_count": 4,
+    "master_scholarships_count": 2,
     "destinations": [
-      "Singapore Management University (SMU, Singapore)",
-      "Liverpool John Moores University (LJMU, United Kingdom)",
-      "University of Connecticut (UConn, United States)"
+      "Singapore Management University (SMU), Singapore",
+      "Liverpool John Moores University (LJMU), United Kingdom",
+      "University of Connecticut (UConn), United States",
+      "University of South Florida (USF), United States",
+      "VinUniversity (VinUni), Vietnam"
     ]
   },
   "official_kpi_2025": {

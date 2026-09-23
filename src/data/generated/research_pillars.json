@@ -1,0 +1,61 @@
+[
+  {
+    "id": "supply_chain_optimization",
+    "title": "Supply Chain & Logistics Optimization",
+    "description": "Advancing operations research and mathematical optimization for complex logistics and supply chain systems, including vehicle routing, scheduling, facility location, network design, inventory management, transportation planning, and integrated supply chain decision-making.",
+    "topics": [
+      "Vehicle Routing & Transportation Optimization",
+      "Scheduling & Resource Allocation",
+      "Facility Location & Network Design",
+      "Inventory & Supply Chain Planning",
+      "Exact Algorithms & Mathematical Programming",
+      "Metaheuristics & Hybrid Optimization"
+    ],
+    "featured_venues": [
+      "INFORMS Journal on Computing (IJOC)",
+      "Computers & Operations Research (COR)",
+      "International Transactions in Operational Research (ITOR)",
+      "European Journal of Operational Research (EJOR)",
+      "Transportation Research Part C: Emerging Technologies (TRC)",
+      "Journal of the Operational Research Society (JORS)"
+    ]
+  },
+  {
+    "id": "ai_supply_chain_intelligence",
+    "title": "AI & Data-Driven Supply Chain Intelligence",
+    "description": "Developing artificial intelligence and data-driven methods for intelligent supply chain decision-making, including machine learning, forecasting, predictive-prescriptive analytics, learning-enhanced optimization, and AI-supported planning and operations.",
+    "topics": [
+      "Machine Learning for Supply Chains",
+      "Predictive-Prescriptive Analytics",
+      "Demand & Time-Series Forecasting",
+      "Learning-Enhanced Optimization",
+      "Metaheuristics for Machine Learning",
+      "Intelligent Decision Support"
+    ],
+    "featured_venues": [
+      "IJCAI (Top-tier AI Conference)",
+      "Neurocomputing",
+      "Computer Standards & Interfaces",
+      "CSoNet / SOICT"
+    ]
+  },
+  {
+    "id": "decision_analytics",
+    "title": "Optimization & Decision Analytics for Complex Systems",
+    "description": "Developing optimization and decision-analytics approaches for complex systems beyond logistics and supply chains, with applications in energy, healthcare, finance and business, public services, urban systems, hospitality, and digital operations.",
+    "topics": [
+      "Energy & Sustainable Systems",
+      "Healthcare & Public Services",
+      "Finance & Business Analytics",
+      "Urban & Transportation Systems",
+      "Hospitality & Tourism",
+      "Digital & Computing Systems"
+    ],
+    "featured_venues": [
+      "Energy Research & Social Science (ERSS)",
+      "Journal of the Operational Research Society (JORS)",
+      "Computers & Operations Research (COR)",
+      "International Transactions in Operational Research (ITOR)"
+    ]
+  }
+]

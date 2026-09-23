@@ -5,76 +5,89 @@ import {
   BookOpen,
   Users,
   Award,
-  Layers,
-  Presentation,
   Newspaper,
-  Calendar,
   ExternalLink,
   ChevronRight,
   TrendingUp,
   MapPin,
   CheckCircle2,
   Mail,
+  Route,
+  BrainCircuit,
+  LineChart,
 } from 'lucide-react';
-import { PageRoute, PillarId, Project, Seminar, EventBrief, Publication, Person, HallEntry } from '../types';
+import { PageRoute, PillarId } from '../types';
 import { PaperCard } from '../components/PaperCard';
-import overviewData from '../data/slscm_overview.json';
-import projectsData from '../data/slscm_projects.json';
-import seminarsData from '../data/slscm_seminars.json';
-import eventsData from '../data/slscm_events.json';
-import publicationsData from '../data/slscm_publications_2025_2026.json';
-import peopleData from '../data/slscm_people.json';
+import {
+  getLabOverview,
+  getEvents,
+  getRecentEvents,
+  getPublications,
+  getFeaturedPublications,
+} from '../repositories';
 
 interface HomePageProps {
   onNavigate: (route: PageRoute) => void;
 }
 
 export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
-  const overview = overviewData as typeof overviewData;
-  const projects = projectsData as unknown as Project[];
-  const seminars = seminarsData as unknown as Seminar[];
-  const events = eventsData as unknown as EventBrief[];
-  const publications = publicationsData as unknown as Publication[];
-  const people = peopleData as unknown as {
-    leadership_and_faculty: Person[];
-    hall_of_fame: HallEntry[];
-  };
+  const overview = getLabOverview();
+  const events = getEvents();
+  const publications = getPublications();
+  const featuredEvents = getRecentEvents(4);
+  const featuredPapers = getFeaturedPublications(4);
 
-  const [selectedPillar, setSelectedPillar] = useState<PillarId>('operational_optimization');
+  const [selectedPillar, setSelectedPillar] = useState<PillarId>('supply_chain_optimization');
 
-  const featuredProjects = projects.slice(0, 3);
-  const featuredSeminars = seminars.slice(0, 3);
-  const featuredEvents = events.slice(0, 4);
-  const featuredPapers = publications.filter((p) => p.is_featured).slice(0, 4);
+const pillarDetails: Record<
+  PillarId,
+  {
+    icon: React.ComponentType<{ className?: string }>;
+    iconBg: string;
+    iconBorder: string;
+    iconColor: string;
+    color: string;
+    desc: string;
+  }
+> = {
+  supply_chain_optimization: {
+    icon: Route,
+    iconBg: 'bg-sky-50',
+    iconBorder: 'border-sky-200/90',
+    iconColor: 'text-sky-700',
+    color: 'from-sky-500/10 to-sky-600/5 border-sky-200',
+    desc:
+      'Advancing operations research and mathematical optimization for complex logistics and supply chain systems, including vehicle routing, scheduling, facility location, network design, inventory management, transportation planning, and integrated supply chain decision-making.',
+  },
 
-  const pillarDetails: Record<PillarId, { icon: string; color: string; desc: string }> = {
-    operational_optimization: {
-      icon: '📐',
-      color: 'from-sky-500/10 to-sky-600/5 border-sky-200',
-      desc: 'Analysis and algorithmic design of exact methods (Branch-and-Cut, Conic Outer Approximation) and high-performance metaheuristics for complex routing (VRP, CARP), parallel machine scheduling, and competitive facility location.',
-    },
-    ml_optimization: {
-      icon: '🧠',
-      color: 'from-emerald-500/10 to-emerald-600/5 border-emerald-200',
-      desc: 'Developing gradient-free optimization frameworks, metaheuristic-driven neural architectures (MetaPerceptron, GrafoRVFL), and predictive-prescriptive models for intelligent decision support.',
-    },
-    green_transportation: {
-      icon: '⚡',
-      color: 'from-amber-500/10 to-amber-600/5 border-amber-200',
-      desc: 'Formulating next-generation sustainable logistics networks, coordinating multi-trip truck-and-drone deliveries, energy-aware electric vehicle routing, and resilient transit scheduling.',
-    },
-  };
+  ai_supply_chain_intelligence: {
+    icon: BrainCircuit,
+    iconBg: 'bg-emerald-50',
+    iconBorder: 'border-emerald-200/90',
+    iconColor: 'text-emerald-700',
+    color: 'from-emerald-500/10 to-emerald-600/5 border-emerald-200',
+    desc:
+      'Developing artificial intelligence and data-driven methods for intelligent supply chain decision-making, including machine learning, forecasting, predictive-prescriptive analytics, learning-enhanced optimization, and AI-supported planning and operations.',
+  },
+
+  decision_analytics: {
+    icon: LineChart,
+    iconBg: 'bg-amber-50',
+    iconBorder: 'border-amber-200/90',
+    iconColor: 'text-amber-700',
+    color: 'from-amber-500/10 to-amber-600/5 border-amber-200',
+    desc:
+      'Developing optimization and decision-analytics approaches for complex systems beyond logistics and supply chains, with applications in energy, healthcare, finance and business, public services, urban systems, hospitality, and digital operations.',
+  },
+};
 
   return (
     <div className="space-y-24 py-8 animate-in fade-in duration-300">
       {/* Hero Section */}
       <section className="section-shell pt-6 pb-10">
         <div className="mx-auto max-w-4xl text-center">
-          {/* Eyebrow badge */}
-          <div className="inline-flex items-center gap-2 rounded-full border border-sky-300/80 bg-white/90 px-4 py-1.5 font-mono text-xs font-semibold text-sky-900 shadow-xs backdrop-blur-md">
-            <span className="flex h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
-            <span>College of Technology · National Economics University (NEU)</span>
-          </div>
+          {/* Eyebrow badge with Institutional Seals */}
+          {}
 
           {/* Hero Headline */}
           <h1 className="mt-6 font-editorial text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-slate-950 leading-[1.15]">
@@ -93,30 +106,30 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3.5">
             <button
               type="button"
-              onClick={() => onNavigate('projects')}
+              onClick={() => onNavigate('publications')}
               className="inline-flex items-center gap-2 rounded-2xl bg-slate-950 px-6 py-3.5 font-editorial text-sm font-bold text-white shadow-lift hover:bg-sky-950 transition hover:-translate-y-0.5 focus-ring"
             >
-              <Layers className="h-4 w-4 text-cyan-400" />
-              <span>Explore Research Projects</span>
+              <BookOpen className="h-4 w-4 text-cyan-400" />
+              <span>Research Publications</span>
               <ArrowRight className="h-4 w-4" />
             </button>
 
             <button
               type="button"
-              onClick={() => onNavigate('publications')}
+              onClick={() => onNavigate('people')}
               className="inline-flex items-center gap-2 rounded-2xl border border-slate-300/90 bg-white/90 px-6 py-3.5 font-editorial text-sm font-bold text-slate-800 shadow-xs hover:bg-slate-50 transition hover:-translate-y-0.5 focus-ring"
             >
-              <BookOpen className="h-4 w-4 text-sky-700" />
-              <span>Publications Vault</span>
+              <Users className="h-4 w-4 text-sky-700" />
+              <span>Faculty &amp; Researchers</span>
             </button>
 
             <button
               type="button"
-              onClick={() => onNavigate('seminars')}
+              onClick={() => onNavigate('events')}
               className="inline-flex items-center gap-2 rounded-2xl border border-slate-300/90 bg-white/90 px-6 py-3.5 font-editorial text-sm font-bold text-slate-800 shadow-xs hover:bg-slate-50 transition hover:-translate-y-0.5 focus-ring"
             >
-              <Presentation className="h-4 w-4 text-emerald-700" />
-              <span>Seminars &amp; Talks</span>
+              <Newspaper className="h-4 w-4 text-emerald-700" />
+              <span>News &amp; Events</span>
             </button>
           </div>
         </div>
@@ -125,10 +138,10 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
         <div className="mt-14 grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-4">
           <div className="rounded-2xl border border-slate-200/80 bg-white/80 p-5 backdrop-blur-md shadow-xs text-center">
             <p className="font-mono text-3xl sm:text-4xl font-extrabold text-slate-950 tracking-tight">
-              {overview.metrics.total_publications_2025_2026}
+              {overview.metrics.total_publications}
             </p>
             <p className="mt-1 font-editorial text-xs sm:text-sm font-semibold text-slate-600">
-              Publications (2025–2026)
+              Publications 
             </p>
           </div>
 
@@ -143,62 +156,23 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
 
           <div className="rounded-2xl border border-slate-200/80 bg-white/80 p-5 backdrop-blur-md shadow-xs text-center">
             <p className="font-mono text-3xl sm:text-4xl font-extrabold text-emerald-700 tracking-tight">
-              {overview.metrics.active_projects}
+              {overview.metrics.student_researchers}
             </p>
             <p className="mt-1 font-editorial text-xs sm:text-sm font-semibold text-slate-600">
-              Active Grants &amp; Projects
+              Student Researchers &amp; Scholars
             </p>
           </div>
 
           <div className="rounded-2xl border border-slate-200/80 bg-white/80 p-5 backdrop-blur-md shadow-xs text-center">
             <p className="font-mono text-3xl sm:text-4xl font-extrabold text-amber-700 tracking-tight">
-              {overview.metrics.phd_scholarships}
+              {overview.metrics.phd_msc_scholarships}
             </p>
             <p className="mt-1 font-editorial text-xs sm:text-sm font-semibold text-slate-600">
-              Global PhD Scholarships
+              Global PhD & Master's Scholarships
             </p>
           </div>
         </div>
 
-        {/* Institutional & Global Research Network Strip */}
-        <div className="mt-10 rounded-2xl border border-slate-200/80 bg-white/70 p-5 sm:p-6 backdrop-blur-md shadow-xs">
-          <p className="text-center font-mono text-[11px] font-bold uppercase tracking-widest text-slate-400 mb-4">
-            Institutional Research &amp; Doctoral Placement Network
-          </p>
-          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-center">
-            <span className="font-editorial text-xs sm:text-sm font-bold text-slate-700 hover:text-sky-800 transition">
-              National Economics University (NEU)
-            </span>
-            <span className="h-1 w-1 rounded-full bg-slate-300 hidden sm:inline-block" />
-            <span className="font-editorial text-xs sm:text-sm font-bold text-slate-700 hover:text-sky-800 transition">
-              Singapore Management University (SMU)
-            </span>
-            <span className="h-1 w-1 rounded-full bg-slate-300 hidden sm:inline-block" />
-            <span className="font-editorial text-xs sm:text-sm font-bold text-slate-700 hover:text-sky-800 transition">
-              VNU University of Science (VNU-HUS)
-            </span>
-            <span className="h-1 w-1 rounded-full bg-slate-300 hidden sm:inline-block" />
-            <span className="font-editorial text-xs sm:text-sm font-bold text-slate-700 hover:text-sky-800 transition">
-              Hanoi University of Science &amp; Technology (HUST)
-            </span>
-            <span className="h-1 w-1 rounded-full bg-slate-300 hidden sm:inline-block" />
-            <span className="font-editorial text-xs sm:text-sm font-bold text-slate-700 hover:text-sky-800 transition">
-              University of Connecticut (UConn)
-            </span>
-            <span className="h-1 w-1 rounded-full bg-slate-300 hidden sm:inline-block" />
-            <span className="font-editorial text-xs sm:text-sm font-bold text-slate-700 hover:text-sky-800 transition">
-              Liverpool John Moores University (LJMU)
-            </span>
-            <span className="h-1 w-1 rounded-full bg-slate-300 hidden sm:inline-block" />
-            <span className="font-editorial text-xs sm:text-sm font-bold text-slate-700 hover:text-sky-800 transition">
-              University of Warwick (WMG)
-            </span>
-            <span className="h-1 w-1 rounded-full bg-slate-300 hidden sm:inline-block" />
-            <span className="font-editorial text-xs sm:text-sm font-bold text-slate-700 hover:text-sky-800 transition">
-              University of Udine
-            </span>
-          </div>
-        </div>
       </section>
 
       {/* 3 Core Research Pillars */}
@@ -220,6 +194,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
             const id = pillar.id as PillarId;
             const detail = pillarDetails[id];
             const isSelected = selectedPillar === id;
+            const PillarIcon = detail.icon;
             return (
               <div
                 key={pillar.id}
@@ -230,9 +205,13 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                     : 'bg-white/85 hover:bg-white'
                 }`}
               >
-                <div className="text-3xl mb-4">{detail.icon}</div>
+                <div
+                  className={`mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl border ${detail.iconBg} ${detail.iconBorder} ${detail.iconColor} shadow-2xs`}
+                >
+                  <PillarIcon className="h-6 w-6" />
+                </div>
                 <h3 className="font-editorial text-xl font-bold text-slate-950 leading-snug">
-                  {pillar.title_en}
+                  {(pillar as unknown as { title_en?: string }).title_en || pillar.title}
                 </h3>
                 <p className="mt-3 font-editorial text-xs sm:text-sm text-slate-600 leading-relaxed">
                   {detail.desc}
@@ -251,165 +230,6 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
               </div>
             );
           })}
-        </div>
-      </section>
-
-      {/* Featured Projects with Linked Papers */}
-      <section className="section-shell">
-        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-8">
-          <div>
-            <p className="font-mono text-xs font-bold uppercase tracking-widest text-sky-700">
-              DISCOVERY &amp; IMPACT
-            </p>
-            <h2 className="mt-1 font-editorial text-3xl sm:text-4xl font-bold text-slate-950">
-              Featured Research Projects
-            </h2>
-            <p className="mt-2 font-editorial text-base text-slate-600">
-              Directly linking funded projects to their peer-reviewed papers and algorithm repositories.
-            </p>
-          </div>
-          <button
-            type="button"
-            onClick={() => onNavigate('projects')}
-            className="inline-flex items-center gap-1.5 font-editorial text-sm font-bold text-sky-700 hover:text-sky-900 transition self-start sm:self-auto"
-          >
-            <span>View All Projects ({projects.length})</span>
-            <ChevronRight className="h-4 w-4" />
-          </button>
-        </div>
-
-        <div className="grid gap-6 lg:grid-cols-3">
-          {featuredProjects.map((project) => (
-            <div
-              key={project.id}
-              className="soft-card p-6 bg-white/95 flex flex-col justify-between"
-            >
-              <div>
-                <div className="flex items-center justify-between gap-2 mb-2">
-                  <span className="rounded-lg bg-sky-100 px-2.5 py-0.5 font-mono text-[10px] font-bold text-sky-900">
-                    {project.category_en || project.category}
-                  </span>
-                  <span className="font-mono text-[11px] text-slate-500">
-                    {project.period}
-                  </span>
-                </div>
-
-                <h3 className="font-editorial text-lg font-bold text-slate-950 leading-snug">
-                  {project.title_en}
-                </h3>
-                {project.sponsor && (
-                  <p className="mt-1.5 font-editorial text-xs font-semibold text-sky-800">
-                    Sponsor: {project.sponsor}
-                  </p>
-                )}
-                <p className="mt-3 font-editorial text-xs sm:text-sm text-slate-600 leading-relaxed line-clamp-3">
-                  {project.description_en}
-                </p>
-
-                {/* Related Papers Preview */}
-                {project.related_publications && project.related_publications.length > 0 && (
-                  <div className="mt-4 rounded-xl bg-slate-50 p-3 border border-slate-200/60">
-                    <p className="font-mono text-[10px] uppercase font-bold text-slate-500 mb-1">
-                      Related Paper:
-                    </p>
-                    <p className="font-editorial text-xs font-bold text-slate-900 line-clamp-2">
-                      {project.related_publications[0].title}
-                    </p>
-                    <span className="inline-block mt-1 rounded bg-sky-100 px-1.5 py-0.2 font-mono text-[9px] font-bold text-sky-900">
-                      {project.related_publications[0].badge || project.related_publications[0].venue}
-                    </span>
-                  </div>
-                )}
-              </div>
-
-              <div className="mt-5 pt-3 border-t border-slate-100 flex items-center justify-between">
-                <span className="font-mono text-xs text-slate-500">
-                  {project.leads?.length} Investigators
-                </span>
-                <button
-                  type="button"
-                  onClick={() => onNavigate('projects')}
-                  className="font-editorial text-xs font-bold text-sky-700 hover:text-sky-900 inline-flex items-center gap-1"
-                >
-                  <span>Project Details</span>
-                  <ArrowRight className="h-3 w-3" />
-                </button>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Seminars & Colloquia Preview */}
-      <section className="section-shell">
-        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-8">
-          <div>
-            <p className="font-mono text-xs font-bold uppercase tracking-widest text-sky-700">
-              ACADEMIC COLLOQUIA
-            </p>
-            <h2 className="mt-1 font-editorial text-3xl sm:text-4xl font-bold text-slate-950">
-              Seminars &amp; Research Talks
-            </h2>
-            <p className="mt-2 font-editorial text-base text-slate-600">
-              Invited talks and research colloquia from internal scholars and global collaborators.
-            </p>
-          </div>
-          <button
-            type="button"
-            onClick={() => onNavigate('seminars')}
-            className="inline-flex items-center gap-1.5 font-editorial text-sm font-bold text-sky-700 hover:text-sky-900 transition self-start sm:self-auto"
-          >
-            <span>Explore All Talks ({seminars.length})</span>
-            <ChevronRight className="h-4 w-4" />
-          </button>
-        </div>
-
-        <div className="grid gap-6 md:grid-cols-3">
-          {featuredSeminars.map((item) => (
-            <div
-              key={item.id}
-              className="soft-card p-6 bg-white/95 flex flex-col justify-between"
-            >
-              <div>
-                <div className="flex items-center justify-between gap-2 mb-2">
-                  <span className="rounded-lg bg-sky-100 px-2.5 py-0.5 font-mono text-[10px] font-bold text-sky-900">
-                    {item.category}
-                  </span>
-                  <span className="font-mono text-[11px] text-slate-500 flex items-center gap-1">
-                    <Calendar className="h-3 w-3" />
-                    {item.date}
-                  </span>
-                </div>
-
-                <h3 className="font-editorial text-base font-bold text-slate-950 leading-snug">
-                  {item.title}
-                </h3>
-                <p className="mt-2 font-editorial text-xs font-bold text-sky-800">
-                  Speaker: {item.speaker}
-                </p>
-                <p className="font-editorial text-[11px] text-slate-500">
-                  {item.affiliation}
-                </p>
-
-                <p className="mt-3 font-editorial text-xs text-slate-600 line-clamp-3 leading-relaxed">
-                  {item.abstract}
-                </p>
-              </div>
-
-              <div className="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
-                <span className="font-mono text-[10px] text-slate-500">
-                  {item.venue_type} · {item.venue.split(',')[0]}
-                </span>
-                <button
-                  type="button"
-                  onClick={() => onNavigate('seminars')}
-                  className="font-editorial text-xs font-bold text-sky-700 hover:text-sky-900"
-                >
-                  View Abstract →
-                </button>
-              </div>
-            </div>
-          ))}
         </div>
       </section>
 
@@ -501,7 +321,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
             onClick={() => onNavigate('publications')}
             className="inline-flex items-center gap-1.5 font-editorial text-sm font-bold text-sky-700 hover:text-sky-900 transition self-start sm:self-auto"
           >
-            <span>Open Publications Vault ({publications.length})</span>
+            <span>Open Research Publications ({publications.length})</span>
             <ChevronRight className="h-4 w-4" />
           </button>
         </div>
@@ -518,8 +338,9 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
         <div className="rounded-3xl border border-amber-200/80 bg-gradient-to-br from-amber-50/70 via-white to-sky-50/50 p-8 sm:p-10 shadow-soft">
           <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
             <div className="max-w-2xl">
-              <span className="rounded-full border border-amber-300 bg-amber-100/80 px-3 py-1 font-mono text-[11px] font-bold uppercase text-amber-900">
-                ⭐ Mentorship Excellence &amp; Hall of Fame
+              <span className="inline-flex items-center gap-1.5 rounded-full border border-amber-300 bg-amber-100/80 px-3 py-1 font-mono text-[11px] font-bold uppercase text-amber-900">
+                <Sparkles className="h-3.5 w-3.5 text-amber-700" />
+                <span>Mentorship Excellence &amp; Hall of Fame</span>
               </span>
               <h2 className="mt-4 font-editorial text-3xl sm:text-4xl font-bold text-slate-950 leading-tight">
                 Mentoring Scholars for the Global Stage
@@ -544,51 +365,51 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
 
       {/* Join Us / Callout */}
       <section className="section-shell">
-        <div className="rounded-3xl border border-slate-900 bg-slate-950 p-8 sm:p-12 text-white shadow-2xl">
-          <div className="grid gap-8 lg:grid-cols-[1.3fr_.7fr]">
+        <div className="rounded-3xl border border-sky-100 bg-gradient-to-br from-white via-sky-50/50 to-emerald-50/30 p-8 sm:p-12 text-slate-900 shadow-soft relative overflow-hidden">
+          <div className="grid gap-8 lg:grid-cols-[1.3fr_.7fr] relative z-10">
             <div>
-              <p className="font-mono text-xs uppercase tracking-widest text-cyan-300">
-                OPPORTUNITIES FOR RESEARCHERS &amp; STUDENTS
-              </p>
-              <h2 className="mt-3 font-editorial text-3xl sm:text-4xl font-bold text-white leading-tight">
+              <div className="inline-flex items-center gap-2 rounded-full border border-sky-200/80 bg-sky-100/70 px-3 py-1 font-mono text-[11px] font-bold uppercase tracking-wider text-sky-800">
+                <span>Opportunities for Researchers &amp; Students</span>
+              </div>
+              <h2 className="mt-4 font-editorial text-3xl sm:text-4xl font-bold text-slate-950 leading-tight">
                 Tackle Grand Challenges with SLSCM Lab
               </h2>
-              <p className="mt-4 font-editorial text-base text-slate-300 leading-relaxed">
+              <p className="mt-4 font-editorial text-base text-slate-600 leading-relaxed max-w-2xl">
                 We welcome undergraduate researchers, graduate scholars, and industry partners who share a
                 passion for operations research, intelligent algorithms, and sustainable supply chain systems.
               </p>
 
-              <div className="mt-8 flex flex-wrap gap-4 font-mono text-xs text-slate-300">
-                <span className="flex items-center gap-2">
-                  <MapPin className="h-4 w-4 text-cyan-300" />
-                  Room P1613, Building A1, NEU
+              <div className="mt-8 flex flex-wrap gap-4 font-mono text-xs text-slate-600">
+                <span className="flex items-center gap-2 rounded-xl bg-white/80 border border-slate-200/80 px-3.5 py-2 shadow-xs">
+                  <MapPin className="h-4 w-4 text-sky-600" />
+                  <span>Room P1613, Building A1, NEU</span>
                 </span>
                 <a
                   href="mailto:minhvd@neu.edu.vn"
-                  className="flex items-center gap-2 text-white hover:text-cyan-200 transition"
+                  className="flex items-center gap-2 rounded-xl bg-white/80 border border-slate-200/80 px-3.5 py-2 shadow-xs text-slate-700 hover:text-sky-700 hover:border-sky-300 transition"
                 >
-                  <Mail className="h-4 w-4 text-cyan-300" />
-                  minhvd@neu.edu.vn
+                  <Mail className="h-4 w-4 text-sky-600" />
+                  <span>minhvd@neu.edu.vn</span>
                 </a>
               </div>
             </div>
 
-            <div className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur flex flex-col justify-center">
-              <h3 className="font-editorial text-xl font-bold text-white mb-3">
+            <div className="rounded-2xl border border-slate-200/80 bg-white/90 p-6 shadow-sm flex flex-col justify-center">
+              <h3 className="font-editorial text-xl font-bold text-slate-950 mb-3">
                 Research Engagement Tracks
               </h3>
-              <ul className="space-y-3 font-editorial text-xs text-slate-300">
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-4 w-4 text-emerald-400 shrink-0 mt-0.5" />
-                  <span><strong>Undergraduate Scholars:</strong> Mentorship in Python solvers, OR-Tools, and paper co-authorship.</span>
+              <ul className="space-y-3.5 font-editorial text-xs text-slate-600 leading-relaxed">
+                <li className="flex items-start gap-2.5">
+                  <CheckCircle2 className="h-4 w-4 text-emerald-600 shrink-0 mt-0.5" />
+                  <span><strong className="text-slate-900 font-semibold">Undergraduate Scholars:</strong> Mentorship in Python solvers, OR-Tools, and paper co-authorship.</span>
                 </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-4 w-4 text-cyan-400 shrink-0 mt-0.5" />
-                  <span><strong>Graduate &amp; PhD Tracks:</strong> Joint international supervision, Q1 journal pipelines, and global scholarship prep.</span>
+                <li className="flex items-start gap-2.5">
+                  <CheckCircle2 className="h-4 w-4 text-sky-600 shrink-0 mt-0.5" />
+                  <span><strong className="text-slate-900 font-semibold">Graduate &amp; PhD Tracks:</strong> Joint international supervision, Q1 journal pipelines, and global scholarship prep.</span>
                 </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-4 w-4 text-amber-400 shrink-0 mt-0.5" />
-                  <span><strong>Industry Collaboration:</strong> Fleet dispatching, inventory optimization, and urban infrastructure analytics.</span>
+                <li className="flex items-start gap-2.5">
+                  <CheckCircle2 className="h-4 w-4 text-amber-600 shrink-0 mt-0.5" />
+                  <span><strong className="text-slate-900 font-semibold">Industry Collaboration:</strong> Fleet dispatching, inventory optimization, and urban infrastructure analytics.</span>
                 </li>
               </ul>
             </div>

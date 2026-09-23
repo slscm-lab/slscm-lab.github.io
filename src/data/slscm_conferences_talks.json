@@ -1,0 +1,441 @@
+[
+  {
+    "id": "ijcai-2026-ssg-oral",
+    "title": "Beyond Homogeneous Adversaries: Stackelberg Security Games with Mixed Quantal Response",
+    "type": "conference",
+    "type_badge": "Conference Oral (CORE A*)",
+    "event_name": "Thirty-Fifth International Joint Conference on Artificial Intelligence (IJCAI 2026)",
+    "series": "IJCAI Proceedings",
+    "speakers": [
+      {
+        "name": "Hoang Giang Pham",
+        "role": "Presenter / Researcher",
+        "affiliation": "VNU-HUS & SLSCM Lab"
+      },
+      {
+        "name": "Tien Mai",
+        "role": "Faculty Advisor",
+        "affiliation": "Singapore Management University (SMU)"
+      },
+      {
+        "name": "Thuy Anh Ta",
+        "role": "Researcher",
+        "affiliation": "VNU-HUS"
+      },
+      {
+        "name": "Minh Hoàng Hà",
+        "role": "Senior Scientific Advisor",
+        "affiliation": "Dean of Faculty, VNU-HUS & SLSCM Lab"
+      }
+    ],
+    "date": "2026-08-15",
+    "year": 2026,
+    "location": "International Joint Conference on Artificial Intelligence",
+    "format": "In-Person",
+    "abstract": "We study Stackelberg security games (SSGs) with mixed quantal response attackers where the follower population exhibits discrete attacker types. We develop a polynomial-time approximation scheme (PTAS) based on exponential cone programming and branch-and-bound cut generation.",
+    "key_topics": [
+      "Stackelberg Security Games",
+      "Mixed Quantal Response (QR)",
+      "Exponential Cone Programming",
+      "Polynomial-Time Approximation Scheme (PTAS)"
+    ],
+    "paper_doi": "10.24963/ijcai.2026/392",
+    "paper_url": "https://doi.org/10.24963/ijcai.2026/392",
+    "slides_available": true
+  },
+  {
+    "id": "comosa-2026-drone-tw",
+    "title": "A Hybrid Genetic Search for Energy-Aware Multi-Trip Drone Routing with Time-Windows",
+    "type": "conference",
+    "type_badge": "Conference Oral",
+    "event_name": "Optimization, Modeling, Simulation, and Analytics (COMOSA 2025)",
+    "series": "Springer Proceedings",
+    "speakers": [
+      {
+        "name": "Tuan Anh Pham",
+        "role": "Presenter / Researcher",
+        "affiliation": "SLSCM Lab & VNU-HUS"
+      },
+      {
+        "name": "Minh Hoàng Hà",
+        "role": "Co-Author",
+        "affiliation": "VNU-HUS"
+      },
+      {
+        "name": "Duc Minh Vu",
+        "role": "Head of Lab",
+        "affiliation": "College of Technology, NEU"
+      },
+      {
+        "name": "Duc Dong Do",
+        "role": "Co-Author",
+        "affiliation": "HUST"
+      }
+    ],
+    "date": "2026-01-10",
+    "year": 2026,
+    "location": "Springer International Conference",
+    "format": "In-Person",
+    "abstract": "We study an energy-aware multi-trip drone routing problem with customer time windows (MDRP-TW). We formulate the problem and develop a Hybrid Genetic Search (HGS) algorithm that integrates specialized crossover operators with problem-tailored local search routines.",
+    "key_topics": [
+      "Multi-Trip Drone Routing",
+      "Time Window Constraints",
+      "Hybrid Genetic Search (HGS)",
+      "Battery Depletion & Replenishment"
+    ],
+    "paper_url": "https://link.springer.com/book/9783032154194",
+    "slides_available": true
+  },
+  {
+    "id": "comosa-2026-evrptw",
+    "title": "Electric Vehicle Routing Problem with Time Windows and Station-Based or Route-Based Charging Options",
+    "type": "conference",
+    "type_badge": "Conference Oral",
+    "event_name": "Optimization, Modeling, Simulation, and Analytics (COMOSA 2025)",
+    "series": "Springer Proceedings",
+    "speakers": [
+      {
+        "name": "Trung Duc Tran",
+        "role": "Presenter / Researcher",
+        "affiliation": "SLSCM Lab & VinUniversity"
+      },
+      {
+        "name": "Duc Minh Vu",
+        "role": "Head of Lab",
+        "affiliation": "College of Technology, NEU"
+      },
+      {
+        "name": "Ngoc Doanh Nguyen",
+        "role": "Co-Author",
+        "affiliation": "IRD / UMMISCO"
+      },
+      {
+        "name": "Laurent El Ghaoui",
+        "role": "Co-Author",
+        "affiliation": "UC Berkeley & VinUniversity"
+      },
+      {
+        "name": "Minh Hoàng Hà",
+        "role": "Co-Author",
+        "affiliation": "VNU-HUS"
+      }
+    ],
+    "date": "2026-01-08",
+    "year": 2026,
+    "location": "Springer International Conference",
+    "format": "In-Person",
+    "abstract": "Addresses fleet optimization incorporating both conventional charging stations and continuous wireless charging infrastructure, demonstrating operational benefits across standard EVRP-TW benchmark instances.",
+    "key_topics": [
+      "Electric Vehicle Routing (EVRP-TW)",
+      "Wireless Dynamic Charging",
+      "Fleet Minimization",
+      "Green Transportation Infrastructure"
+    ],
+    "paper_url": "https://link.springer.com/book/9783032154194",
+    "slides_available": true
+  },
+  {
+    "id": "cita-2025-fstsp-oral",
+    "title": "A 2-Index Stage-Based Formulation and a Construct-Merge-Solve and Adapt Algorithm for the Flying Sidekick Traveling Salesman Problem",
+    "type": "conference",
+    "type_badge": "Conference Oral",
+    "event_name": "The 14th Conference on Information Technology and its Applications (CITA 2025)",
+    "series": "Springer Lecture Notes in Networks and Systems (LNNS 1162)",
+    "speakers": [
+      {
+        "name": "Le Thi Hong",
+        "role": "Presenter / Researcher",
+        "affiliation": "NEU & SLSCM Lab"
+      },
+      {
+        "name": "Vu Duc Minh",
+        "role": "Head of Lab",
+        "affiliation": "College of Technology, NEU"
+      },
+      {
+        "name": "Tran Nam Khanh",
+        "role": "Co-Author",
+        "affiliation": "VNU-HUS"
+      },
+      {
+        "name": "Nguyen Dinh Cong",
+        "role": "Co-Author",
+        "affiliation": "VNU-HUS"
+      },
+      {
+        "name": "Le Huu Trung",
+        "role": "Co-Author / Web Tech Lead",
+        "affiliation": "College of Technology, NEU"
+      }
+    ],
+    "date": "2025-11-05",
+    "year": 2025,
+    "location": "Danang, Vietnam",
+    "format": "In-Person",
+    "abstract": "Presents the first 2-index stage-based formulation for the Flying Sidekick Traveling Salesman Problem (FSTSP) together with a Construct-Merge-Solve and Adapt (CMSA) metaheuristic algorithm generating high-quality solutions rapidly.",
+    "key_topics": [
+      "Flying Sidekick TSP (FSTSP)",
+      "Stage-Based Mathematical Formulation",
+      "Construct-Merge-Solve and Adapt (CMSA)",
+      "Mixed-Integer Linear Programming"
+    ],
+    "paper_doi": "10.1007/978-3-032-00972-2_6",
+    "paper_url": "https://doi.org/10.1007/978-3-032-00972-2_6",
+    "slides_available": true
+  },
+  {
+    "id": "csonet-2024-fptas",
+    "title": "Facility Location Under Nonlinear Customer Demand: A Fully Polynomial-Time Approximation Scheme",
+    "type": "conference",
+    "type_badge": "Conference Oral",
+    "event_name": "Computational Data and Social Networks (CSoNet 2024)",
+    "series": "Springer Lecture Notes in Computer Science (LNCS 15417)",
+    "speakers": [
+      {
+        "name": "Ba Luat Le",
+        "role": "Presenter / SMU Fellow",
+        "affiliation": "Singapore Management University & SLSCM Lab"
+      },
+      {
+        "name": "Thuy Anh Ta",
+        "role": "Co-Author",
+        "affiliation": "VNU-HUS"
+      },
+      {
+        "name": "Ngoc Anh Vu Thi",
+        "role": "Co-Author",
+        "affiliation": "VNU-HUS"
+      },
+      {
+        "name": "Minh Hoàng Hà",
+        "role": "Co-Author",
+        "affiliation": "VNU-HUS"
+      }
+    ],
+    "date": "2025-09-20",
+    "year": 2025,
+    "location": "Springer LNCS 15417",
+    "format": "In-Person",
+    "abstract": "Examines competitive facility location under the nested-logit demand model. Leverages the unique structure of nested logit choice to develop the first Fully Polynomial-Time Approximation Scheme (FPTAS).",
+    "key_topics": [
+      "Competitive Facility Location",
+      "Nested-Logit Customer Choice",
+      "FPTAS Approximation Scheme",
+      "Nonlinear Demand Optimization"
+    ],
+    "paper_doi": "10.1007/978-981-96-6389-7_3",
+    "paper_url": "https://doi.org/10.1007/978-981-96-6389-7_3",
+    "slides_available": true
+  },
+  {
+    "id": "soict-2024-cutting-plane",
+    "title": "Constraint Programming-Based Cutting Plane Algorithm for a Combination of Orienteering and Maximum Capture Problem",
+    "type": "conference",
+    "type_badge": "Conference Oral",
+    "event_name": "Information and Communication Technology (SOICT 2024)",
+    "series": "Springer Communications in Computer and Information Science (CCIS)",
+    "speakers": [
+      {
+        "name": "Hoang Giang Pham",
+        "role": "Presenter / Researcher",
+        "affiliation": "VNU-HUS & SLSCM Lab"
+      },
+      {
+        "name": "Tien Mai",
+        "role": "Co-Author",
+        "affiliation": "Singapore Management University"
+      },
+      {
+        "name": "Minh Hoàng Hà",
+        "role": "Co-Author",
+        "affiliation": "VNU-HUS"
+      }
+    ],
+    "date": "2025-05-12",
+    "year": 2025,
+    "location": "Springer CCIS",
+    "format": "In-Person",
+    "abstract": "Combines Orienteering with Maximum Capture under random utility choice. Develops an exact Cutting Plane algorithm driven by Constraint Programming (CP) and valid submodular/outer-approximation cuts.",
+    "key_topics": [
+      "Orienteering Problem",
+      "Maximum Capture Facility Location",
+      "Constraint Programming (CP)",
+      "Submodular Valid Cuts"
+    ],
+    "paper_doi": "10.1007/978-981-96-4282-3_29",
+    "paper_url": "https://doi.org/10.1007/978-981-96-4282-3_29",
+    "slides_available": true
+  },
+  {
+    "id": "csonet-2025-lng-workshop",
+    "title": "Machine Learning-Based Forecasting of LNG Spot Prices: A Case Study on the JKM Index",
+    "type": "conference",
+    "type_badge": "Workshop Presentation",
+    "event_name": "CSoNet 2025 – AI-TECH Workshop",
+    "series": "AI-TECH Workshop Series",
+    "speakers": [
+      {
+        "name": "Duy-Phuong Pham",
+        "role": "Presenter / Researcher",
+        "affiliation": "College of Technology, NEU"
+      },
+      {
+        "name": "Duc-Minh Vu",
+        "role": "Head of Lab",
+        "affiliation": "College of Technology, NEU"
+      },
+      {
+        "name": "Thanh-Hoang Le",
+        "role": "Co-Author",
+        "affiliation": "NEU"
+      }
+    ],
+    "date": "2025-03-18",
+    "year": 2025,
+    "location": "CSoNet Workshop",
+    "format": "In-Person",
+    "abstract": "Investigates machine learning forecasting of Asian liquefied natural gas (LNG) spot prices using the JKM index, analyzing multi-source market signals and tree ensemble architectures.",
+    "key_topics": [
+      "Energy Market Forecasting",
+      "JKM LNG Spot Index",
+      "Predictive Machine Learning",
+      "Commodity Logistics Analytics"
+    ],
+    "paper_url": "https://csonet-conf.github.io/csonet25/index.php/program/index.html",
+    "slides_available": true
+  },
+  {
+    "id": "cao-2026-drone-tourism-comosa",
+    "title": "Drone Tourism Routing Under Energy, Time-Window and Communication-Coverage Constraints",
+    "type": "conference",
+    "type_badge": "Conference Oral",
+    "event_name": "Optimization, Modeling, Simulation, and Analytics (COMOSA 2025)",
+    "series": "Springer SOIA Proceedings",
+    "speakers": [
+      {
+        "name": "Cao Nguyet Anh",
+        "role": "Researcher",
+        "affiliation": "NEU & SLSCM Lab"
+      },
+      {
+        "name": "Vu Duc Minh",
+        "role": "Head of Lab",
+        "affiliation": "College of Technology, NEU"
+      },
+      {
+        "name": "Le Thi Bich Hanh",
+        "role": "Co-Author",
+        "affiliation": "HUST"
+      },
+      {
+        "name": "Pham Thanh Binh",
+        "role": "Co-Author",
+        "affiliation": "HUST"
+      }
+    ],
+    "date": "2026-01-12",
+    "year": 2026,
+    "location": "Springer Proceedings",
+    "format": "In-Person",
+    "abstract": "We study the drone tourism routing problem subject to battery energy limitations, customer and scenic viewpoint time-windows, and continuous communication-coverage guarantees. The model optimizes flight paths for unmanned aerial vehicles to maximize tourist utility and sight coverage while ensuring strict energy feasibility and reliable telecommunication links with ground control stations.",
+    "key_topics": [
+      "Drone Tourism Routing",
+      "Communication-Coverage Guarantees",
+      "Time-Window Constraints",
+      "Energy Feasibility"
+    ],
+    "paper_url": "https://comosa.vn/accepted-papers/",
+    "slides_available": true
+  },
+  {
+    "id": "nguyen-2026-parallel-scheduling-comosa",
+    "title": "Improved Bounds for the Energy-Constrained Parallel Machine Scheduling Problem to Minimize Total Completion Time",
+    "type": "conference",
+    "type_badge": "Conference Oral",
+    "event_name": "Optimization, Modeling, Simulation, and Analytics (COMOSA 2025)",
+    "series": "Springer SOIA Proceedings",
+    "speakers": [
+      {
+        "name": "Viet Nguyen Huu",
+        "role": "Researcher",
+        "affiliation": "HUST"
+      },
+      {
+        "name": "Tien Thanh Mai",
+        "role": "Co-Author",
+        "affiliation": "HUST"
+      },
+      {
+        "name": "Quy Ta Dinh",
+        "role": "PhD Candidate",
+        "affiliation": "College of Technology - NEU & HUST"
+      },
+      {
+        "name": "Minh Hoang Ha",
+        "role": "Senior Advisor",
+        "affiliation": "Dean of Faculty, VNU-HUS & SLSCM Lab"
+      },
+      {
+        "name": "Binh Huynh Thi Thanh",
+        "role": "Co-Author",
+        "affiliation": "HUST"
+      }
+    ],
+    "date": "2026-01-11",
+    "year": 2026,
+    "location": "Springer Proceedings",
+    "format": "In-Person",
+    "abstract": "This paper investigates the energy-constrained parallel identical machine scheduling problem to minimize total completion time. We propose novel lower and upper bounding techniques that tightly capture energy consumption thresholds and non-linear power costs across operational periods, accelerating exact branch-and-bound and constraint programming solvers.",
+    "key_topics": [
+      "Parallel Machine Scheduling",
+      "Energy-Constrained Scheduling",
+      "Lower & Upper Bounding",
+      "Total Completion Time"
+    ],
+    "paper_url": "https://comosa.vn/accepted-papers/",
+    "slides_available": true
+  },
+  {
+    "id": "tran-2026-drone-locker-comosa",
+    "title": "On the Drone-Locker Location Scheduling Problem",
+    "type": "conference",
+    "type_badge": "Conference Oral",
+    "event_name": "Optimization, Modeling, Simulation, and Analytics (COMOSA 2025)",
+    "series": "Springer SOIA Proceedings",
+    "speakers": [
+      {
+        "name": "Thi Nhung Tran",
+        "role": "Researcher",
+        "affiliation": "VNU-HUS"
+      },
+      {
+        "name": "Thu Trang Hoa",
+        "role": "Alumni / Researcher",
+        "affiliation": "SLSCM Lab & VNU-HUS"
+      },
+      {
+        "name": "Hai Dang Le",
+        "role": "Co-Author",
+        "affiliation": "VNU-HUS"
+      },
+      {
+        "name": "Minh Hoang Ha",
+        "role": "Senior Advisor",
+        "affiliation": "Dean of Faculty, VNU-HUS & SLSCM Lab"
+      }
+    ],
+    "date": "2026-01-09",
+    "year": 2026,
+    "location": "Springer Proceedings",
+    "format": "In-Person",
+    "abstract": "We introduce and study the Drone-Locker Location Scheduling Problem (DLLSP), which jointly optimizes the placement of automated parcel lockers and the flight scheduling of autonomous delivery drones in urban last-mile logistics. Mixed-integer programming models and tailored metaheuristics are developed to minimize combined facility opening costs and delivery makespan.",
+    "key_topics": [
+      "Drone-Locker Logistics",
+      "Facility Location Scheduling",
+      "Mixed-Integer Programming",
+      "Last-Mile Delivery Optimization"
+    ],
+    "paper_url": "https://comosa.vn/accepted-papers/",
+    "slides_available": true
+  }
+]

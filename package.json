@@ -5,7 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "data:validate": "python3 ../database/scripts/validate_data.py",
+    "data:generate": "python3 ../database/scripts/export_data.py",
+    "data:import": "python3 ../database/scripts/import_existing_json.py",
     "build": "tsc -b && vite build && cp dist/index.html dist/404.html",
+    "build:full": "npm run data:validate && npm run data:generate && npm run build",
     "preview": "vite preview"
   },
   "dependencies": {

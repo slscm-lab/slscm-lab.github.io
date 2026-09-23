@@ -1,5 +1,18 @@
 [
   {
+    "id": "brief-comosa-2026-acceptance",
+    "title": "3 Research Papers Accepted for Presentation at COMOSA 2026 (Springer SOIA)",
+    "date": "2026-04-15",
+    "category": "Scientific Breakthrough",
+    "badge": "COMOSA 2026",
+    "summary": "SLSCM Lab achieves triple acceptance at the 1st International Conference on Optimization, Modeling, Simulation, and Analytics (COMOSA 2026), featuring breakthrough works on drone tourism routing, energy-constrained parallel scheduling, and drone-locker urban logistics.",
+    "content_en": "We are pleased to announce that 3 papers by SLSCM Lab researchers and collaborators have been officially accepted for presentation at COMOSA 2026 (August 7–8, 2026 in Hanoi, Vietnam) and publication in Springer SOIA proceedings:\n\n• Paper #31: \"Drone Tourism Routing Under Energy, Time-Window and Communication-Coverage Constraints\" — Cao Nguyet Anh, Vu Duc Minh, Le Thi Bich Hanh, Pham Thanh Binh\n• Paper #33: \"Improved Bounds for the Energy-Constrained Parallel Machine Scheduling Problem to Minimize Total Completion Time\" — Viet Nguyen Huu, Tien Thanh Mai, Quy Ta Dinh, Minh Hoang Ha, Binh Huynh Thi Thanh\n• Paper #36: \"On the Drone-Locker Location Scheduling Problem\" — Thi Nhung Tran, Thu Trang Hoa, Hai Dang Le, Minh Hoang Ha",
+    "tags": ["COMOSA 2026", "Conference Acceptance", "Drone Routing", "Parallel Scheduling", "Springer SOIA"],
+    "link": "https://comosa.vn/accepted-papers/",
+    "link_label": "Explore COMOSA 2026 Accepted Papers",
+    "featured": true
+  },
+  {
     "id": "brief-trc-publication-2026",
     "title": "SLSCM Lab Researchers Publish in Premier Journal Transportation Research Part C (TRC, 2026)",
     "date": "2026-03-20",

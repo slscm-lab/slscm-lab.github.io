@@ -3,8 +3,6 @@ import { PageRoute } from './types';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { HomePage } from './pages/HomePage';
-import { ProjectsPage } from './pages/ProjectsPage';
-import { SeminarsPage } from './pages/SeminarsPage';
 import { EventsPage } from './pages/EventsPage';
 import { PublicationsPage } from './pages/PublicationsPage';
 import { PeoplePage } from './pages/PeoplePage';
@@ -20,8 +18,6 @@ export function App() {
     const handleHashChange = () => {
       const hash = window.location.hash.replace(/^#\/?/, '');
       if (
-        hash === 'projects' ||
-        hash === 'seminars' ||
         hash === 'events' ||
         hash === 'publications' ||
         hash === 'people' ||
@@ -53,14 +49,10 @@ export function App() {
 
   const getPageTitle = (route: PageRoute): string => {
     switch (route) {
-      case 'projects':
-        return 'Research Projects & Associated Papers';
-      case 'seminars':
-        return 'Academic Seminars & Research Talks';
       case 'events':
         return 'Events & Research Briefs';
       case 'publications':
-        return 'Publications Vault (2025–2026)';
+        return 'Research Publications (2025–2026)';
       case 'people':
         return 'Faculty, Researchers & Mentors';
       case 'alumni':
@@ -109,10 +101,8 @@ export function App() {
         {/* Dynamic Route View */}
         <main>
           {currentRoute === 'home' && <HomePage onNavigate={handleNavigate} />}
-          {currentRoute === 'projects' && <ProjectsPage />}
-          {currentRoute === 'seminars' && <SeminarsPage />}
-          {currentRoute === 'events' && <EventsPage />}
           {currentRoute === 'publications' && <PublicationsPage />}
+          {currentRoute === 'events' && <EventsPage />}
           {currentRoute === 'people' && <PeoplePage />}
           {currentRoute === 'alumni' && <AlumniPage />}
           {currentRoute === 'lab-life' && <LabLifePage />}

@@ -33,6 +33,17 @@ export const PaperCard: React.FC<PaperCardProps> = ({ paper, showBadge = true })
 
   const badgeInfo = 'research_pillar' in paper ? getPillarBadge(paper.research_pillar) : null;
 
+  // Helper to normalize names (strip accents, hyphens, and excess whitespace)
+  const normalizeName = (str: string): string =>
+    str
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .replace(/[đĐ]/g, 'd')
+      .replace(/[-_.]/g, ' ')
+      .replace(/\s+/g, ' ')
+      .toLowerCase()
+      .trim();
+
   // Helper to control whether an author name is bold
   const formatAuthor = (rawAuthor: string) => {
     const trimmed = rawAuthor.trim();
@@ -65,28 +76,36 @@ export const PaperCard: React.FC<PaperCardProps> = ({ paper, showBadge = true })
 
     // 4. Default Lab Member Roster Matching
     const labRoster = [
-      'Vu Duc Minh', 'Duc Minh Vu',
-      'Ha Minh Hoang', 'Minh Hoang Ha',
-      'Ta Dinh Quy', 'Dinh Quy Ta',
-      'Dinh Nho Minh', 'Nho Minh Dinh',
-      'Pham Tuan Anh', 'Tuan Anh Pham',
-      'Le Ba Luat', 'Ba Luat Le',
-      'Le Huu Trung', 'Trung Le Huu',
-      'Tran Nam Khanh', 'Nam-Khanh Tran', 'Tran Ngoc Khanh',
-      'Tat Dat Tran', 'Tran Tat Dat', 'Tat Dat Nguyen',
-      'Hai Thu Nguyen', 'Nguyen Hai Thu',
-      'Dang Trung Cuong', 'Trung Cuong Dang',
-      'Thu Ha Ha', 'Ha Thu Ha',
-      'Mai Thanh Loc', 'Thanh Loc Mai',
-      'Hoa Thi Thu Trang', 'Thu Trang Hoa Thi',
-      'La Quang Chien', 'Quang Chien La',
+      // Leadership & Faculty
+      'Vu Duc Minh', 'Duc Minh Vu', 'Duc-Minh Vu', 'Vũ Đức Minh', 'Đức Minh Vũ',
+      'Ha Minh Hoang', 'Minh Hoang Ha', 'Minh-Hoang Ha', 'Minh Hoàng Hà', 'Hà Minh Hoàng',
+      'Ta Dinh Quy', 'Dinh Quy Ta', 'Quy Ta Dinh', 'Dinh-Quy Ta', 'Tạ Đình Quý', 'Quý Tạ Đình',
+      'Dinh Nho Minh', 'Nho Minh Dinh', 'Đinh Nho Minh',
+      'Pham Tuan Anh', 'Tuan Anh Pham', 'Phạm Tuấn Anh',
+
+      // Researchers, Students & Alumni
+      'Le Ba Luat', 'Ba Luat Le', 'Lê Bá Luật',
+      'Le Huu Trung', 'Trung Le Huu', 'Lê Hữu Trung',
+      'Tran Nam Khanh', 'Nam-Khanh Tran', 'Tran Ngoc Khanh', 'Trần Nam Khánh',
+      'Tat Dat Tran', 'Tran Tat Dat', 'Tat Dat Nguyen', 'Nguyen Tat Dat', 'Trần Tất Đạt', 'Nguyễn Tất Đạt',
+      'Hai Thu Nguyen', 'Nguyen Hai Thu', 'Nguyễn Hải Thư',
+      'Dang Trung Cuong', 'Trung Cuong Dang', 'Đặng Trung Cường',
+      'Thu Ha Ha', 'Ha Thu Ha', 'Hà Thu Hà',
+      'Mai Thanh Loc', 'Thanh Loc Mai', 'Mai Thành Lộc',
+      'Hoa Thi Thu Trang', 'Thu Trang Hoa Thi', 'Hoa Thị Thu Trang',
+      'La Quang Chien', 'Quang Chien La', 'Lã Quang Chiến',
     ];
 
-    const isMember = labRoster.some(
-      (m) =>
-        trimmed.toLowerCase() === m.toLowerCase() ||
-        trimmed.toLowerCase().includes(m.toLowerCase())
-    );
+    const normAuthor = normalizeName(trimmed);
+    const isMember = labRoster.some((m) => {
+      const normMember = normalizeName(m);
+      return (
+        normAuthor === normMember ||
+        normAuthor.startsWith(normMember + ' ') ||
+        normAuthor.endsWith(' ' + normMember) ||
+        ` ${normAuthor} `.includes(` ${normMember} `)
+      );
+    });
 
     return { name: trimmed, isBold: isMember };
   };
