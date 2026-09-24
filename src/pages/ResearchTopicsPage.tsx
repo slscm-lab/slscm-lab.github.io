@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Icon } from '../components/Icon';
 import { PaperCard } from '../components/PaperCard';
+import { ResearchAreaIcon } from '../components/ResearchAreaIcon';
 import { getPublications, getResearchPillars } from '../repositories';
 import { PageRoute, Publication, ResearchPillarId } from '../types';
 import researchKeywords from '../data/research_keywords.json';
@@ -12,14 +13,10 @@ interface ResearchTopicsPageProps {
 
 const areas: {
   id: ResearchPillarId;
-  icon: string;
-  accent: string;
   topics: string[];
 }[] = [
   {
     id: 'supply_chain_optimization',
-    icon: 'local_shipping',
-    accent: 'bg-sky-50 text-sky-700 border-sky-200',
     topics: [
       'vehicle-routing', 'drone-logistics', 'electric-vehicles', 'arc-routing',
       'time-dependent-routing', 'school-transportation', 'facility-location',
@@ -30,14 +27,10 @@ const areas: {
   },
   {
     id: 'ai_supply_chain_intelligence',
-    icon: 'neurology',
-    accent: 'bg-emerald-50 text-emerald-700 border-emerald-200',
     topics: ['machine-learning', 'forecasting'],
   },
   {
     id: 'decision_analytics',
-    icon: 'analytics',
-    accent: 'bg-amber-50 text-amber-800 border-amber-200',
     topics: [
       'energy-systems', 'security-games', 'graph-optimization',
       'healthcare-analytics', 'packing', 'uav-path-planning', 'data-resources',
@@ -118,8 +111,7 @@ export const ResearchTopicsPage: React.FC<ResearchTopicsPageProps> = ({ onNaviga
         <div className="mt-5 flex flex-wrap gap-2 font-mono text-xs text-slate-600">
           <span className="rounded-full border border-slate-200 bg-white px-3 py-1.5">3 research areas</span>
           <span className="rounded-full border border-slate-200 bg-white px-3 py-1.5">{activeTopics.length} topics with papers</span>
-          <span className="rounded-full border border-slate-200 bg-white px-3 py-1.5">{catalogPublications.length} archive papers</span>
-          <span className="rounded-full border border-slate-200 bg-white px-3 py-1.5">{topicOnlyPapers.length} additional research papers</span>
+          <span className="rounded-full border border-slate-200 bg-white px-3 py-1.5">{publications.length} research papers</span>
         </div>
       </div>
 
@@ -146,11 +138,11 @@ export const ResearchTopicsPage: React.FC<ResearchTopicsPageProps> = ({ onNaviga
                   isSelected ? 'border-sky-400 bg-white shadow-lift ring-1 ring-sky-300' : 'bg-white/85 hover:border-sky-200 hover:bg-white'
                 }`}
               >
-                <span className={`inline-flex h-11 w-11 items-center justify-center rounded-xl border ${area.accent}`}>
-                  <Icon name={area.icon} className="h-5 w-5" />
+                <span className="flex min-h-20 items-center gap-4">
+                  <ResearchAreaIcon areaId={area.id} />
+                  <span className="min-w-0 font-editorial text-lg font-bold leading-snug text-slate-950">{pillar?.title}</span>
                 </span>
-                <span className="mt-4 font-editorial text-lg font-bold leading-snug text-slate-950">{pillar?.title}</span>
-                <span className="mt-2 flex-1 font-editorial text-sm leading-relaxed text-slate-600">{pillar?.description}</span>
+                <span className="mt-4 flex-1 font-editorial text-sm leading-relaxed text-slate-600">{pillar?.description}</span>
                 <span className="mt-5 border-t border-slate-100 pt-4 font-mono text-[11px] font-semibold text-sky-700">
                   {areaTopics.length} topics · {paperCount} {paperCount === 1 ? 'paper' : 'papers'}
                 </span>
@@ -167,7 +159,7 @@ export const ResearchTopicsPage: React.FC<ResearchTopicsPageProps> = ({ onNaviga
             Topics in {pillars.find((pillar) => pillar.id === selectedArea)?.title}
           </h2>
         </div>
-        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {currentTopics.map((topic) => {
             const isSelected = currentTopic?.id === topic.id;
             const count = topicCount(topic.id);
