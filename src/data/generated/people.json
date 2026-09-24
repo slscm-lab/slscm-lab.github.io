@@ -507,14 +507,8 @@
     },
     {
       "country": "United States",
-      "institution": "University of Connecticut (UConn), Loyola University Chicago, University of Michigan - Flint",
+      "institution": "Loyola University Chicago, University of Michigan - Flint",
       "institutions": [
-        {
-          "name": "University of Connecticut (UConn)",
-          "short_name": "UConn",
-          "logo": "/assets/images/universities/uconn.svg",
-          "website": "https://uconn.edu"
-        },
         {
           "name": "Loyola University Chicago",
           "short_name": "LUC",
