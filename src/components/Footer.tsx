@@ -41,7 +41,7 @@ export const Footer: React.FC<FooterProps> = ({ onRouteChange }) => {
             <div className="mt-5 space-y-2 font-mono text-xs text-slate-600">
               <p className="flex items-start gap-2.5">
                 <Icon name="location_on" className="mt-0.5 h-4 w-4 shrink-0 text-sky-600" />
-                <span>Room P1613, Building A1, 207 Giai Phong Road, Hai Ba Trung, Hanoi, Vietnam</span>
+                <span>Room 1613, Building A1, 207 Giai Phong, Bach Mai, Hanoi, Vietnam</span>
               </p>
               <p className="flex items-center gap-2.5">
                 <Icon name="mail" className="h-4 w-4 shrink-0 text-sky-600" />
@@ -107,7 +107,7 @@ export const Footer: React.FC<FooterProps> = ({ onRouteChange }) => {
                 <span>Facebook Fanpage (@slscm.lab)</span>
                 <Icon name="open_in_new" className="h-3.5 w-3.5" />
               </a>
-              <a
+              {/* <a
                 href="https://slscm-lab.github.io"
                 target="_blank"
                 rel="noreferrer"
@@ -115,7 +115,7 @@ export const Footer: React.FC<FooterProps> = ({ onRouteChange }) => {
               >
                 <span>Academic Portal (GitHub Pages)</span>
                 <Icon name="public" className="h-3.5 w-3.5 text-emerald-600" />
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
