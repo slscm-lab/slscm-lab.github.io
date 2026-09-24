@@ -104,6 +104,19 @@ export const PeoplePage: React.FC = () => {
   };
 
   const [activeTab, setActiveTab] = useState<PeopleTab>('all');
+  const [expandedFacultyIds, setExpandedFacultyIds] = useState<Set<string>>(new Set());
+
+  const toggleFacultyBio = (facultyId: string) => {
+    setExpandedFacultyIds((current) => {
+      const next = new Set(current);
+      if (next.has(facultyId)) {
+        next.delete(facultyId);
+      } else {
+        next.add(facultyId);
+      }
+      return next;
+    });
+  };
 
   function getMemberInitials(name: string): string {
     const parts = name.trim().split(/\s+/);
@@ -249,6 +262,7 @@ export const PeoplePage: React.FC = () => {
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {people.leadership_and_faculty.map((mentor) => {
               const initials = getMemberInitials(mentor.name);
+              const isBioExpanded = expandedFacultyIds.has(mentor.id);
 
               return (
                 <article
@@ -295,9 +309,29 @@ export const PeoplePage: React.FC = () => {
                     )}
 
                     {mentor.bio && (
-                      <p className="mt-3 line-clamp-3 font-editorial text-xs leading-relaxed text-slate-600">
-                        {mentor.bio}
-                      </p>
+                      <div className="mt-3">
+                        <p
+                          id={`faculty-bio-${mentor.id}`}
+                          className={`font-editorial text-xs leading-relaxed text-slate-600 ${
+                            isBioExpanded ? '' : 'line-clamp-3'
+                          }`}
+                        >
+                          {mentor.bio}
+                        </p>
+                        <button
+                          type="button"
+                          onClick={() => toggleFacultyBio(mentor.id)}
+                          aria-expanded={isBioExpanded}
+                          aria-controls={`faculty-bio-${mentor.id}`}
+                          className="mt-2 inline-flex items-center gap-1 font-editorial text-xs font-bold text-sky-700 transition hover:text-sky-900 focus-ring"
+                        >
+                          {isBioExpanded ? 'Close' : 'Read full'}
+                          <Icon
+                            name={isBioExpanded ? 'expand_less' : 'expand_more'}
+                            className="h-4 w-4"
+                          />
+                        </button>
+                      </div>
                     )}
 
                     {mentor.research_interests &&
