@@ -174,9 +174,7 @@ export const PeoplePage: React.FC = () => {
         </h1>
 
         <p className="mt-4 max-w-3xl font-editorial text-lg leading-relaxed text-slate-600">
-          Meet the multidisciplinary faculty, graduate and undergraduate student
-          research assistants, and technical team of SLSCM Lab, collaborating
-          across NEU, VNU-HUS, HUST, SMU, and international partner institutions.
+Meet the faculty, researchers, and student research assistants of SLSCM Lab, working across operations research, artificial intelligence, data analytics, logistics, and supply chain management.
         </p>
       </div>
 
