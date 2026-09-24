@@ -365,7 +365,7 @@ const pillarDetails: Record<
               <div className="mt-8 flex flex-wrap gap-4 font-mono text-xs text-slate-600">
                 <span className="flex items-center gap-2 rounded-xl bg-white/80 border border-slate-200/80 px-3.5 py-2 shadow-xs">
                   <Icon name="location_on" className="h-4 w-4 text-sky-600" />
-                  <span>Room P1613, Building A1, NEU</span>
+                  <span>Room 1613, Building A1, NEU</span>
                 </span>
                 <a
                   href="mailto:minhvd@neu.edu.vn"
