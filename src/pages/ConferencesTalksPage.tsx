@@ -1,10 +1,28 @@
 import React, { useState } from 'react';
 import { Icon } from '../components/Icon';
 import { ConferenceTalk } from '../types';
-import { getConferenceTalks } from '../repositories';
+import { usePublications } from '../context/DataContext';
 
 export const ConferencesTalksPage: React.FC = () => {
-  const talks = getConferenceTalks();
+  const publications = usePublications();
+  const talks: ConferenceTalk[] = publications
+    .filter((paper) => /conference|proceedings|book chapter/i.test(paper.type))
+    .map((paper) => ({
+      id: paper.id,
+      title: paper.title,
+      type: 'conference',
+      type_badge: paper.badge || 'Conference paper',
+      event_name: paper.venue,
+      speakers: paper.authors.map((name) => ({ name })),
+      date: String(paper.year),
+      year: paper.year,
+      location: 'See publication record',
+      format: 'In-Person',
+      abstract: paper.abstract || '',
+      key_topics: paper.keywords,
+      paper_doi: paper.doi,
+      paper_url: paper.link,
+    }));
   const [selectedVenue, setSelectedVenue] = useState<string>('all');
   const [selectedYear, setSelectedYear] = useState<string>('all');
   const [searchQuery, setSearchQuery] = useState<string>('');

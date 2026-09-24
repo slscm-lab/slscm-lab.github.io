@@ -11,10 +11,11 @@ import { AlumniPage } from './pages/AlumniPage';
 import { LabLifePage } from './pages/LabLifePage';
 import { AdminPage } from './pages/AdminPage';
 import { Icon } from './components/Icon';
-import { DataProvider } from './context/DataContext';
+import { DataProvider, useDataContext } from './context/DataContext';
 
 export function AppContent() {
   const [currentRoute, setCurrentRoute] = useState<PageRoute>('home');
+  const { isLoading, error, refreshAll } = useDataContext();
 
   // Hash Routing Synchronization
   useEffect(() => {
@@ -72,6 +73,36 @@ export function AppContent() {
         return 'Home';
     }
   };
+
+  if (isLoading) {
+    return (
+      <div className="flex min-h-screen items-center justify-center bg-slate-50 px-6">
+        <div className="text-center">
+          <Icon name="hub" className="mx-auto h-9 w-9 animate-pulse text-sky-600" />
+          <p className="mt-4 font-editorial text-sm font-semibold text-slate-700">Loading SLSCM Lab data…</p>
+        </div>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="flex min-h-screen items-center justify-center bg-slate-50 px-6">
+        <div className="max-w-md rounded-2xl border border-slate-200 bg-white p-8 text-center shadow-sm">
+          <Icon name="cloud_off" className="mx-auto h-9 w-9 text-slate-500" />
+          <h1 className="mt-4 font-editorial text-xl font-bold text-slate-950">Content is temporarily unavailable</h1>
+          <p className="mt-2 font-editorial text-sm text-slate-600">{error}</p>
+          <button
+            type="button"
+            onClick={() => void refreshAll()}
+            className="mt-5 rounded-xl bg-slate-950 px-4 py-2.5 font-editorial text-sm font-bold text-white"
+          >
+            Try again
+          </button>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="relative min-h-screen flex flex-col justify-between selection:bg-sky-200 selection:text-slate-900">

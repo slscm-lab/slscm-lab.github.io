@@ -74,6 +74,7 @@ export async function fetchPublicationsFromSupabase(): Promise<Publication[] | n
         is_featured: Boolean(item.is_featured),
         highlighted_authors,
         badge: item.badge || null,
+        status: item.status || 'published',
       };
     });
   } catch (err) {
@@ -184,7 +185,7 @@ export async function fetchPeopleFromSupabase(): Promise<RawPeopleData | null> {
           name: p.name,
           avatar: p.avatar || '',
           role_badge: p.role_badge || '',
-          role: p.role_badge || '',
+          role: p.title || '',
           affiliation,
           current_status: p.current_status || '',
           email: p.email || '',
@@ -402,22 +403,22 @@ export async function fetchLabOverviewFromSupabase(): Promise<LabOverview | null
       dict[row.key] = row.value;
     }
 
-    const head_of_lab = dict.head_of_lab ? JSON.parse(dict.head_of_lab) : {
-      name: 'Dr. Duc Minh Vu',
-      email: 'minhvd@neu.edu.vn',
-      title: 'Lab Head / Faculty Member',
-      office: 'Room 1613, Building A1',
-    };
+    const requiredKeys = ['name', 'abbreviation', 'affiliation', 'faculty_department', 'address', 'head_of_lab', 'metrics'];
+    if (requiredKeys.some((key) => !dict[key])) {
+      console.warn('Supabase lab_overview is missing required content.');
+      return null;
+    }
 
-    const metrics = dict.metrics ? JSON.parse(dict.metrics) : undefined;
+    const head_of_lab = JSON.parse(dict.head_of_lab);
+    const metrics = JSON.parse(dict.metrics);
     const social = dict.social ? JSON.parse(dict.social) : undefined;
 
     return {
-      name: dict.name || 'Smart Logistics and Supply Chain Management Laboratory',
-      abbreviation: dict.abbreviation || 'SLSCM Lab',
-      affiliation: dict.affiliation || 'College of Technology, National Economics University (NEU)',
-      faculty_department: dict.faculty_department || 'Faculty of Data Science and Artificial Intelligence (FDA)',
-      address: dict.address || 'Room 1613, A1 Building, National Economics University, 207 Giai Phong, Hanoi, Vietnam',
+      name: dict.name,
+      abbreviation: dict.abbreviation,
+      affiliation: dict.affiliation,
+      faculty_department: dict.faculty_department,
+      address: dict.address,
       head_of_lab,
       metrics,
       research_pillars: [],

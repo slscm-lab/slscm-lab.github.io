@@ -125,6 +125,22 @@ export const PeoplePage: React.FC = () => {
     return (clean1 + clean2).toUpperCase();
   }
 
+  function getInstitutionShortName(institution: string): string {
+    const normalized = institution.trim().toLowerCase();
+    const knownShortNames: [string, string][] = [
+      ['vnu university of engineering and technology', 'VNU-UET'],
+      ['vnu school of engineering and technology', 'VNU-UET'],
+      ['vnu university of science', 'VNU-HUS'],
+      ['hanoi university of science and technology', 'HUST'],
+      ['national economics university', 'NEU'],
+    ];
+    const knownInstitution = knownShortNames.find(([name]) => normalized.includes(name));
+    if (knownInstitution) return knownInstitution[1];
+
+    const acronym = institution.match(/\(([A-Z][A-Z0-9-]{1,})\)\s*$/)?.[1];
+    return acronym || institution;
+  }
+
 
   const memberCount =
     people.leadership_and_faculty.length +
@@ -264,15 +280,19 @@ export const PeoplePage: React.FC = () => {
                           {mentor.name}
                         </h3>
 
-                        <p className="font-editorial text-xs font-semibold text-sky-800">
-                          {mentor.title}
-                        </p>
+                        {mentor.title && mentor.title.trim().toUpperCase() !== 'NEU' && (
+                          <p className="font-editorial text-xs font-semibold text-sky-800">
+                            {mentor.title}
+                          </p>
+                        )}
                       </div>
                     </div>
 
-                    <p className="mt-3 font-editorial text-xs leading-relaxed text-slate-600">
-                      {mentor.affiliation}
-                    </p>
+                    {mentor.affiliation && mentor.affiliation.trim().toUpperCase() !== 'NEU' && (
+                      <p className="mt-3 font-editorial text-xs leading-relaxed text-slate-600">
+                        {mentor.affiliation}
+                      </p>
+                    )}
 
                     {mentor.bio && (
                       <p className="mt-3 line-clamp-3 font-editorial text-xs leading-relaxed text-slate-600">
@@ -322,24 +342,24 @@ export const PeoplePage: React.FC = () => {
             </span>
           </div>
 
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
             {people.graduate_and_undergraduate_student_researchers.map(
               (student, idx) => {
                 return (
                   <div
                     key={student.id || `${student.name}-${idx}`}
-                    className="rounded-2xl border border-slate-200/80 bg-white/85 p-4 shadow-xs backdrop-blur-sm transition hover:border-sky-300"
+                    className="rounded-xl border border-slate-200/80 bg-white/85 p-3 shadow-xs backdrop-blur-sm transition hover:border-sky-300"
                   >
-                    <div className="flex items-center gap-3">
+                    <div className="flex items-center gap-2.5">
                       {student.avatar ? (
                         <img
                           src={student.avatar}
                           alt={student.name}
-                          className="h-10 w-10 shrink-0 rounded-xl object-cover shadow-2xs ring-1 ring-sky-200"
+                          className="h-9 w-9 shrink-0 rounded-lg object-cover shadow-2xs ring-1 ring-sky-200"
                         />
                       ) : (
-                        <div className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-gradient-to-br from-sky-50 to-indigo-50/80 border border-sky-100/90 text-sky-700 shadow-2xs">
-                          <Icon name="school" className="h-5 w-5" />
+                        <div className="grid h-9 w-9 shrink-0 place-items-center rounded-lg bg-gradient-to-br from-sky-50 to-indigo-50/80 border border-sky-100/90 text-sky-700 shadow-2xs">
+                          <Icon name="school" className="h-4.5 w-4.5" />
                         </div>
                       )}
 
@@ -353,20 +373,20 @@ export const PeoplePage: React.FC = () => {
                         </p>
 
                         <p className="truncate font-editorial text-[11px] text-slate-500">
-                          {student.institution}
+                          {getInstitutionShortName(student.institution)}
                         </p>
                       </div>
                     </div>
 
                     {student.current_status && (
-                      <p className="mt-3 rounded-lg bg-slate-50 p-2 font-editorial text-[11px] leading-relaxed text-slate-600">
+                          <p className="mt-2 line-clamp-2 rounded-lg bg-slate-50 px-2 py-1.5 font-editorial text-[10px] leading-relaxed text-slate-600">
                         {student.current_status}
                       </p>
                     )}
 
                     {student.featured_publications &&
                       student.featured_publications.length > 0 && (
-                        <div className="mt-2 flex flex-wrap gap-1">
+                        <div className="mt-1.5 flex flex-wrap gap-1">
                           {student.featured_publications.map((pub) => (
                             <span
                               key={pub}
@@ -518,23 +538,23 @@ export const PeoplePage: React.FC = () => {
                         </h3>
 
                         <p className="font-editorial text-xs font-semibold text-slate-600">
-                          {member.affiliation}
+                          {[member.role, member.affiliation].filter(Boolean).join(' · ')}
                         </p>
                       </div>
                     </div>
 
                     {member.current_status && (
                       <p className="mt-4 rounded-xl border border-sky-100 bg-sky-50/80 p-3 font-editorial text-xs font-medium leading-relaxed text-sky-950">
-                        {member.current_status}
+                        · {member.current_status}
                       </p>
                     )}
 
                     {member.featured_publications &&
                       member.featured_publications.length > 0 && (
                         <div className="mt-3">
-                          <p className="mb-1 font-mono text-[10px] font-bold uppercase text-slate-400">
+                          {/* <p className="mb-1 font-mono text-[10px] font-bold uppercase text-slate-400">
                             Publications
-                          </p>
+                          </p> */}
 
                           <div className="flex flex-wrap gap-1">
                             {member.featured_publications.map((pub) => (

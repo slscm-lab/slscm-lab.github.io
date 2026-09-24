@@ -172,7 +172,7 @@
       "id": "mai-thanh-tien",
       "name": "Mai Thanh Tien",
       "major": "Computer Science",
-      "institution": "Hanoi University of Science and Technology",
+      "institution": "Hanoi University of Science and Technology (HUST)",
       "email": ""
     },
     {
@@ -225,14 +225,14 @@
     },
     {
       "name": "Phung Thi Thu Trang",
-      "major": "Data Science",
+      "major": "Artificial Intelligence",
       "institution": "National Economics University (NEU)",
       "email": ""
     },
     {
       "name": "Tuan Anh Tran",
       "major": "Computer Science",
-      "institution": "VNU School of Engineering and Technology",
+      "institution": "VNU University of Engineering and Technology (VNU-UET)",
       "email": ""
     }
   ],

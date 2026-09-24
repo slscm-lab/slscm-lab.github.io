@@ -168,6 +168,7 @@ export type Publication = {
   is_featured?: boolean;
   highlighted_authors?: string[];
   badge?: string | null;
+  status?: 'published' | 'topic_only' | string;
 };
 
 export type Person = {
