@@ -513,10 +513,6 @@ export const PeoplePage: React.FC = () => {
                           </span>
                         )}
 
-                        <p className="font-mono text-[10px] font-bold uppercase tracking-wider text-sky-800">
-                          {member.role}
-                        </p>
-
                         <h3 className="font-editorial text-xl font-bold text-slate-950">
                           {member.name}
                         </h3>
