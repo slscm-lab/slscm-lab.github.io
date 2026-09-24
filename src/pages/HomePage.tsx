@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { BrainCircuit, ChartNoAxesCombined, Truck, type LucideIcon } from 'lucide-react';
 import { Icon } from '../components/Icon';
 import { PageRoute, PillarId } from '../types';
 import { PaperCard } from '../components/PaperCard';
@@ -28,40 +29,28 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
 const pillarDetails: Record<
   PillarId,
   {
-    iconName: string;
+    icon: LucideIcon;
     iconBg: string;
-    iconBorder: string;
-    iconColor: string;
-    color: string;
     desc: string;
   }
 > = {
   supply_chain_optimization: {
-    iconName: 'local_shipping',
-    iconBg: 'bg-sky-50',
-    iconBorder: 'border-sky-200/90',
-    iconColor: 'text-sky-700',
-    color: 'from-sky-500/10 to-sky-600/5 border-sky-200',
+    icon: Truck,
+    iconBg: 'bg-sky-700 shadow-sky-700/25',
     desc:
       'Advancing operations research and mathematical optimization for complex logistics and supply chain systems, including vehicle routing, scheduling, facility location, network design, inventory management, transportation planning, and integrated supply chain decision-making.',
   },
 
   ai_supply_chain_intelligence: {
-    iconName: 'neurology',
-    iconBg: 'bg-emerald-50',
-    iconBorder: 'border-emerald-200/90',
-    iconColor: 'text-emerald-700',
-    color: 'from-emerald-500/10 to-emerald-600/5 border-emerald-200',
+    icon: BrainCircuit,
+    iconBg: 'bg-emerald-700 shadow-emerald-700/25',
     desc:
       'Developing artificial intelligence and data-driven methods for intelligent supply chain decision-making, including machine learning, forecasting, predictive-prescriptive analytics, learning-enhanced optimization, and AI-supported planning and operations.',
   },
 
   decision_analytics: {
-    iconName: 'analytics',
-    iconBg: 'bg-amber-50',
-    iconBorder: 'border-amber-200/90',
-    iconColor: 'text-amber-700',
-    color: 'from-amber-500/10 to-amber-600/5 border-amber-200',
+    icon: ChartNoAxesCombined,
+    iconBg: 'bg-orange-700 shadow-orange-700/25',
     desc:
       'Developing optimization and decision-analytics approaches for complex systems beyond logistics and supply chains, with applications in energy, healthcare, finance and business, public services, urban systems, hospitality, and digital operations.',
   },
@@ -82,9 +71,9 @@ const pillarDetails: Record<
           </h1>
 
           {/* Subtitle */}
-          <p className="mt-6 font-editorial text-lg sm:text-xl leading-relaxed text-slate-600 max-w-4xl mx-auto font-normal">
-            SLSCM Lab pioneers research in optimization, analytics, and artificial intelligence—advancing 
-            intelligent decision-making for supply chains, logistics, and complex systems.
+          <p className="mt-10 sm:mt-12 font-editorial text-lg sm:text-xl leading-relaxed text-slate-600 max-w-4xl mx-auto font-normal">
+            SLSCM Lab pioneers research in optimization, analytics, and artificial intelligence — advancing 
+            intelligent decision — making for supply chains, logistics, and complex systems.
           </p>
 
           {/* CTAs */}
@@ -186,6 +175,7 @@ const pillarDetails: Record<
           {overview.research_pillars.map((pillar) => {
             const id = pillar.id as PillarId;
             const detail = pillarDetails[id];
+            const PillarIcon = detail.icon;
             const isSelected = selectedPillar === id;
             return (
               <div
@@ -198,9 +188,9 @@ const pillarDetails: Record<
                 }`}
               >
                 <div
-                  className={`mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl border ${detail.iconBg} ${detail.iconBorder} ${detail.iconColor} shadow-2xs`}
+                  className={`mb-5 inline-flex h-16 w-16 items-center justify-center rounded-2xl text-white shadow-lg ${detail.iconBg}`}
                 >
-                  <Icon name={detail.iconName} className="h-6 w-6" />
+                  <PillarIcon className="h-9 w-9" strokeWidth={2.5} aria-hidden="true" />
                 </div>
                 <h3 className="font-editorial text-xl font-bold text-slate-950 leading-snug">
                   {(pillar as unknown as { title_en?: string }).title_en || pillar.title}
