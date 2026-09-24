@@ -7,7 +7,7 @@
       "title": "",
       "role_badge": "LAB HEAD / FACULTY MEMBER",
       "affiliation": "",
-      "email": "",
+      "email": "minhvd@neu.edu.vn",
       "office": "Room 1613, Building A1",
       "bio": "Dr. Vu Duc Minh is the Head of SLSCM Lab and Lecturer at the College of Technology, National Economics University (NEU). He leads multiple research projects in transportation optimization, drone routing, and facility location problems, with publications in premier international journals including INFORMS Journal on Computing, Transportation Research Part C, and Journal of the Operational Research Society.",
       "avatar": "/assets/images/people/vu_duc_minh.jpg",
@@ -149,9 +149,9 @@
       "advisors": ""
     },
     {
-      "id": "hof-tran-tat-dat",
-      "name": "Tat Dat Tran",
-      "name_en": "Tat Dat Tran",
+      "id": "hof-nguyen-tat-dat",
+      "name": "Nguyen Tat Dat",
+      "name_en": "Nguyen Tat Dat",
       "avatar": "/assets/images/people/nguyen_tat_dat.jpg",
       "achievement": "Lead author in European Journal of Operational Research (EJOR, Q1); Awarded Full PhD Scholarship at Liverpool John Moores University (LJMU, UK, 2025).",
       "achievement_en": "Lead author in European Journal of Operational Research (EJOR, Q1); Awarded Full PhD Scholarship at Liverpool John Moores University (LJMU, UK, 2025).",
@@ -311,9 +311,9 @@
       "research_interests": []
     },
     {
-      "id": "student-10-thu-trang-phung",
-      "name": "Thu Trang Phung",
-      "name_en": "Thu Trang Phung",
+      "id": "student-10-phung-thi-thu-trang",
+      "name": "Phung Thi Thu Trang",
+      "name_en": "Phung Thi Thu Trang",
       "major": "Data Science",
       "institution": "National Economics University (NEU)",
       "avatar": "",
@@ -389,9 +389,9 @@
       "email": ""
     },
     {
-      "id": "alumni-tran-tat-dat",
-      "name": "Tat Dat Tran",
-      "name_en": "Tat Dat Tran",
+      "id": "alumni-nguyen-tat-dat",
+      "name": "Nguyen Tat Dat",
+      "name_en": "Nguyen Tat Dat",
       "avatar": "/assets/images/people/nguyen_tat_dat.jpg",
       "period": "",
       "former_role": "Former Research Fellow & Lead Author (EJOR Q1)",
