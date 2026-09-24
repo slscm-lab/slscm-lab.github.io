@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import { Icon } from '../components/Icon';
-import { Project } from '../types';
 import { PaperCard } from '../components/PaperCard';
-import { getProjects } from '../repositories';
+import { useProjects } from '../context/DataContext';
 
 export const ProjectsPage: React.FC = () => {
-  const projects = getProjects();
+  const projects = useProjects();
   const [selectedDomain, setSelectedDomain] = useState<string>('all');
   const [searchQuery, setSearchQuery] = useState<string>('');
 
