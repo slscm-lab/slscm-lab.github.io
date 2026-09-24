@@ -306,7 +306,7 @@ const pillarDetails: Record<
               Flagship Publications
             </h2>
             <p className="mt-2 font-editorial text-base text-slate-600">
-              Peer-reviewed breakthroughs in INFORMS Journal on Computing, Transportation Research Part C, and EJOR.
+                Selected research published in leading journals across operations research, transportation, optimization, and intelligent decision-making.
             </p>
           </div>
           <button
