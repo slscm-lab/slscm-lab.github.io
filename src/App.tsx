@@ -9,9 +9,11 @@ import { ResearchTopicsPage } from './pages/ResearchTopicsPage';
 import { PeoplePage } from './pages/PeoplePage';
 import { AlumniPage } from './pages/AlumniPage';
 import { LabLifePage } from './pages/LabLifePage';
+import { AdminPage } from './pages/AdminPage';
 import { Icon } from './components/Icon';
+import { DataProvider } from './context/DataContext';
 
-export function App() {
+export function AppContent() {
   const [currentRoute, setCurrentRoute] = useState<PageRoute>('home');
 
   // Hash Routing Synchronization
@@ -24,7 +26,8 @@ export function App() {
         hash === 'publications' ||
         hash === 'people' ||
         hash === 'alumni' ||
-        hash === 'lab-life'
+        hash === 'lab-life' ||
+        hash === 'admin'
       ) {
         setCurrentRoute(hash as PageRoute);
       } else {
@@ -63,6 +66,8 @@ export function App() {
         return 'Hall of Fame & Alumni Placements';
       case 'lab-life':
         return 'Lab Life & Fanpage Feed';
+      case 'admin':
+        return 'Admin Management Console';
       default:
         return 'Home';
     }
@@ -111,12 +116,21 @@ export function App() {
           {currentRoute === 'people' && <PeoplePage />}
           {currentRoute === 'alumni' && <AlumniPage />}
           {currentRoute === 'lab-life' && <LabLifePage />}
+          {currentRoute === 'admin' && <AdminPage />}
         </main>
       </div>
 
       {/* Footer */}
       <Footer onRouteChange={handleNavigate} />
     </div>
+  );
+}
+
+export function App() {
+  return (
+    <DataProvider>
+      <AppContent />
+    </DataProvider>
   );
 }
 

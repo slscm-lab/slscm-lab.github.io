@@ -1,10 +1,11 @@
 import React from 'react';
 import { Icon } from '../components/Icon';
-import { getHallOfFame } from '../repositories';
+import { usePeople } from '../context/DataContext';
 import { HallEntry } from '../types';
 
 export const AlumniPage: React.FC = () => {
-  const hallOfFame = getHallOfFame();
+  const people = usePeople();
+  const hallOfFame = people.hall_of_fame || [];
 
   const hallOfFameByYear = hallOfFame.reduce<
     Record<string, HallEntry[]>
