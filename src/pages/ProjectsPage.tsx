@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Briefcase, Search, CheckCircle2, Users, Layers, ExternalLink, Calendar, Award } from 'lucide-react';
+import { Icon } from '../components/Icon';
 import { Project } from '../types';
 import { PaperCard } from '../components/PaperCard';
 import { getProjects } from '../repositories';
@@ -42,7 +42,7 @@ export const ProjectsPage: React.FC = () => {
       {/* Header Banner */}
       <div className="max-w-4xl">
         <div className="inline-flex items-center gap-2 rounded-full border border-sky-300/80 bg-sky-50 px-3.5 py-1 font-mono text-[11px] font-bold uppercase tracking-wider text-sky-800 mb-4">
-          <Briefcase className="h-3.5 w-3.5 text-sky-600" />
+          <Icon name="work" className="h-3.5 w-3.5 text-sky-600" />
           <span>Research Grants &amp; Projects Vault</span>
         </div>
         <h1 className="font-editorial text-4xl sm:text-5xl font-bold tracking-tight text-slate-950">
@@ -77,7 +77,7 @@ export const ProjectsPage: React.FC = () => {
 
         {/* Search Input */}
         <div className="relative min-w-[240px] sm:min-w-[280px]">
-          <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-slate-400" />
+          <Icon name="search" className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-slate-400" />
           <input
             type="text"
             value={searchQuery}
@@ -119,7 +119,7 @@ export const ProjectsPage: React.FC = () => {
                       {project.status}
                     </span>
                     <span className="flex items-center gap-1 font-mono text-[11px] text-slate-500 ml-auto">
-                      <Calendar className="h-3 w-3" />
+                      <Icon name="calendar_today" className="h-3 w-3" />
                       {project.period}
                     </span>
                   </div>
@@ -133,7 +133,7 @@ export const ProjectsPage: React.FC = () => {
                   <div className="mt-3 flex flex-wrap items-center gap-3 text-xs text-slate-600 font-editorial">
                     {project.sponsor && (
                       <span className="inline-flex items-center gap-1 font-semibold text-sky-900 bg-sky-50 px-2.5 py-1 rounded-lg border border-sky-200/80">
-                        <Award className="h-3.5 w-3.5 text-sky-600" />
+                        <Icon name="workspace_premium" className="h-3.5 w-3.5 text-sky-600" />
                         Sponsor: {project.sponsor}
                       </span>
                     )}
@@ -166,7 +166,7 @@ export const ProjectsPage: React.FC = () => {
                       <ul className="grid gap-2 sm:grid-cols-2">
                         {project.outcomes_en.map((outcome, idx) => (
                           <li key={idx} className="flex items-start gap-2 font-editorial text-xs text-slate-700">
-                            <CheckCircle2 className="h-4 w-4 shrink-0 text-emerald-600 mt-0.5" />
+                            <Icon name="check_circle" className="h-4 w-4 shrink-0 text-emerald-600 mt-0.5" />
                             <span>{outcome}</span>
                           </li>
                         ))}
@@ -192,7 +192,7 @@ export const ProjectsPage: React.FC = () => {
                 {/* Team / Leads Sidebar */}
                 <div className="w-full lg:w-72 shrink-0 rounded-2xl border border-slate-200/80 bg-slate-50/80 p-4">
                   <div className="flex items-center gap-1.5 mb-3 font-mono text-xs font-bold uppercase tracking-wider text-slate-700">
-                    <Users className="h-4 w-4 text-sky-600" />
+                    <Icon name="groups" className="h-4 w-4 text-sky-600" />
                     <span>Project Team</span>
                   </div>
                   <div className="space-y-3">
@@ -214,7 +214,7 @@ export const ProjectsPage: React.FC = () => {
                 <div className="mt-8 pt-6 border-t border-slate-200/90">
                   <div className="flex items-center justify-between mb-4">
                     <div className="flex items-center gap-2">
-                      <Layers className="h-4 w-4 text-sky-700" />
+                      <Icon name="layers" className="h-4 w-4 text-sky-700" />
                       <h3 className="font-editorial text-lg font-bold text-slate-900">
                         Associated Publications ({project.related_publications.length})
                       </h3>

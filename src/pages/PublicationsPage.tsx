@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BookOpen, Search, Filter, Sparkles } from 'lucide-react';
+import { Icon } from '../components/Icon';
 import { Publication, PillarId } from '../types';
 import { PaperCard } from '../components/PaperCard';
 import { getPublications } from '../repositories';
@@ -51,7 +51,7 @@ export const PublicationsPage: React.FC = () => {
       {/* Header Banner */}
       <div className="max-w-4xl">
         <div className="inline-flex items-center gap-2 rounded-full border border-sky-300/80 bg-sky-50 px-3.5 py-1 font-mono text-[11px] font-bold uppercase tracking-wider text-sky-800 mb-4">
-          <BookOpen className="h-3.5 w-3.5 text-sky-600" />
+          <Icon name="menu_book" className="h-3.5 w-3.5 text-sky-600" />
           <span>Scholarly Research Archive</span>
         </div>
         <h1 className="font-editorial text-4xl sm:text-5xl font-bold tracking-tight text-slate-950">
@@ -67,7 +67,7 @@ export const PublicationsPage: React.FC = () => {
       <div className="mt-8 rounded-2xl border border-slate-200/90 bg-white/85 p-5 shadow-xs backdrop-blur-md space-y-4">
         {/* Search Bar */}
         <div className="relative">
-          <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 text-slate-400" />
+          <Icon name="search" className="absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 text-slate-400" />
           <input
             type="text"
             value={searchQuery}

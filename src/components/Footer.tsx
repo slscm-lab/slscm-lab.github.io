@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Mail, ExternalLink, Globe } from 'lucide-react';
+import { Icon } from './Icon';
 import { PageRoute } from '../types';
 
 interface FooterProps {
@@ -40,11 +40,11 @@ export const Footer: React.FC<FooterProps> = ({ onRouteChange }) => {
 
             <div className="mt-5 space-y-2 font-mono text-xs text-slate-600">
               <p className="flex items-start gap-2.5">
-                <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-sky-600" />
+                <Icon name="location_on" className="mt-0.5 h-4 w-4 shrink-0 text-sky-600" />
                 <span>Room P1613, Building A1, 207 Giai Phong Road, Hai Ba Trung, Hanoi, Vietnam</span>
               </p>
               <p className="flex items-center gap-2.5">
-                <Mail className="h-4 w-4 shrink-0 text-sky-600" />
+                <Icon name="mail" className="h-4 w-4 shrink-0 text-sky-600" />
                 <a href="mailto:minhvd@neu.edu.vn" className="hover:text-sky-700 transition-colors">
                   minhvd@neu.edu.vn
                 </a>
@@ -87,7 +87,7 @@ export const Footer: React.FC<FooterProps> = ({ onRouteChange }) => {
                 className="flex items-center justify-between text-slate-600 hover:text-sky-700 transition-colors"
               >
                 <span>Faculty of Data Science &amp; AI (FDA)</span>
-                <ExternalLink className="h-3.5 w-3.5" />
+                <Icon name="open_in_new" className="h-3.5 w-3.5" />
               </a>
               <a
                 href="https://neu.edu.vn/"
@@ -96,7 +96,7 @@ export const Footer: React.FC<FooterProps> = ({ onRouteChange }) => {
                 className="flex items-center justify-between text-slate-600 hover:text-sky-700 transition-colors"
               >
                 <span>National Economics University</span>
-                <ExternalLink className="h-3.5 w-3.5" />
+                <Icon name="open_in_new" className="h-3.5 w-3.5" />
               </a>
               <a
                 href="https://www.facebook.com/slscm.lab"
@@ -105,7 +105,7 @@ export const Footer: React.FC<FooterProps> = ({ onRouteChange }) => {
                 className="flex items-center justify-between text-slate-600 hover:text-sky-700 transition-colors"
               >
                 <span>Facebook Fanpage (@slscm.lab)</span>
-                <ExternalLink className="h-3.5 w-3.5" />
+                <Icon name="open_in_new" className="h-3.5 w-3.5" />
               </a>
               <a
                 href="https://slscm-lab.github.io"
@@ -114,7 +114,7 @@ export const Footer: React.FC<FooterProps> = ({ onRouteChange }) => {
                 className="flex items-center justify-between text-slate-600 hover:text-sky-700 transition-colors"
               >
                 <span>Academic Portal (GitHub Pages)</span>
-                <Globe className="h-3.5 w-3.5 text-emerald-600" />
+                <Icon name="public" className="h-3.5 w-3.5 text-emerald-600" />
               </a>
             </div>
           </div>

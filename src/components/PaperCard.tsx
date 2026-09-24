@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ExternalLink, Copy, Check, ChevronDown, ChevronUp, FileText } from 'lucide-react';
+import { Icon } from './Icon';
 import { RelatedPublication, Publication } from '../types';
 
 interface PaperCardProps {
@@ -147,7 +147,7 @@ export const PaperCard: React.FC<PaperCardProps> = ({ paper, showBadge = true })
           {paper.link ? (
             <a href={paper.link} target="_blank" rel="noreferrer" className="inline-flex items-baseline gap-1">
               <span>{paper.title}</span>
-              <ExternalLink className="inline h-3.5 w-3.5 shrink-0 text-sky-600 self-center" />
+              <Icon name="open_in_new" className="inline h-3.5 w-3.5 shrink-0 text-sky-600 self-center" />
             </a>
           ) : (
             paper.title
@@ -184,9 +184,9 @@ export const PaperCard: React.FC<PaperCardProps> = ({ paper, showBadge = true })
               onClick={() => setShowAbstract(!showAbstract)}
               className="inline-flex items-center gap-1 font-editorial text-xs font-semibold text-slate-600 hover:text-sky-700 transition"
             >
-              <FileText className="h-3.5 w-3.5 text-sky-600" />
+              <Icon name="description" className="h-3.5 w-3.5 text-sky-600" />
               <span>{showAbstract ? 'Hide Abstract' : 'Read Abstract'}</span>
-              {showAbstract ? <ChevronUp className="h-3 w-3" /> : <ChevronDown className="h-3 w-3" />}
+              {showAbstract ? <Icon name="expand_less" className="h-3 w-3" /> : <Icon name="expand_more" className="h-3 w-3" />}
             </button>
           )}
         </div>
@@ -204,12 +204,12 @@ export const PaperCard: React.FC<PaperCardProps> = ({ paper, showBadge = true })
             >
               {copied ? (
                 <>
-                  <Check className="h-3 w-3 text-emerald-600" />
+                  <Icon name="check" className="h-3 w-3 text-emerald-600" />
                   <span>Copied!</span>
                 </>
               ) : (
                 <>
-                  <Copy className="h-3 w-3 text-slate-500" />
+                  <Icon name="content_copy" className="h-3 w-3 text-slate-500" />
                   <span>BibTeX</span>
                 </>
               )}
@@ -224,7 +224,7 @@ export const PaperCard: React.FC<PaperCardProps> = ({ paper, showBadge = true })
               className="inline-flex items-center gap-1 rounded-lg border border-sky-200 bg-sky-50 px-2.5 py-1 font-mono text-[11px] font-semibold text-sky-700 hover:bg-sky-100 transition"
             >
               <span>Paper</span>
-              <ExternalLink className="h-3 w-3" />
+              <Icon name="open_in_new" className="h-3 w-3" />
             </a>
           )}
         </div>

@@ -8,7 +8,7 @@ import { PublicationsPage } from './pages/PublicationsPage';
 import { PeoplePage } from './pages/PeoplePage';
 import { AlumniPage } from './pages/AlumniPage';
 import { LabLifePage } from './pages/LabLifePage';
-import { ChevronRight, Home } from 'lucide-react';
+import { Icon } from './components/Icon';
 
 export function App() {
   const [currentRoute, setCurrentRoute] = useState<PageRoute>('home');
@@ -87,10 +87,10 @@ export function App() {
                 onClick={() => handleNavigate('home')}
                 className="flex items-center gap-1 text-slate-600 hover:text-sky-700 transition"
               >
-                <Home className="h-3.5 w-3.5" />
+                <Icon name="home" className="h-3.5 w-3.5" />
                 <span>Home</span>
               </button>
-              <ChevronRight className="h-3 w-3 text-slate-400" />
+              <Icon name="chevron_right" className="h-3 w-3 text-slate-400" />
               <span className="font-semibold text-slate-900">
                 {getPageTitle(currentRoute)}
               </span>
