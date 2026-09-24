@@ -387,26 +387,15 @@ export const PeoplePage: React.FC = () => {
           resolvedInstitutions: resolveInstitutions(partner),
         }));
 
-        const totalInstitutions = partnerCards.reduce(
-          (acc, p) => acc + p.resolvedInstitutions.length,
-          0
-        );
-
         return (
           <section className="mt-14">
-            <div className="mb-6 flex flex-col sm:flex-row sm:items-center sm:justify-between border-b border-slate-200 pb-3 gap-2">
-              <div>
-                <h2 className="font-editorial text-2xl font-bold text-slate-950">
-                  Global Academic Collaborators
-                </h2>
-                <p className="mt-0.5 font-editorial text-xs text-slate-500">
-                  Joint research grants, doctoral mobility, and international co-authorship alliances
-                </p>
-              </div>
-
-              <span className="font-mono text-xs font-semibold text-sky-800 bg-sky-50 border border-sky-200/80 px-3 py-1 rounded-full w-fit">
-                {totalInstitutions} Partner Institutions · {people.global_academic_partners.length} Regions
-              </span>
+            <div className="mb-6 border-b border-slate-200 pb-3">
+              <h2 className="font-editorial text-2xl font-bold text-slate-950">
+                Global Academic Collaborators
+              </h2>
+              <p className="mt-0.5 font-editorial text-xs text-slate-500">
+                Joint research grants, doctoral mobility, and international co-authorship alliances
+              </p>
             </div>
 
             <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
