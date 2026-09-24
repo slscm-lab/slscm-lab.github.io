@@ -1,5 +1,30 @@
 [
   {
+    "id": "brief-ep20-workshop-series-2026",
+    "title": "EP20 Discovery & Modeling Workshop Series: From Challenges to Models, Data & Decisions",
+    "title_vi": "Chuỗi Workshop Khám phá & Mô hình hóa EP20: Từ Thách thức Chuỗi Cung ứng đến Mô hình, Dữ liệu và Quyết định Thông minh",
+    "date": "2026-09-24",
+    "category": "Workshops & Training",
+    "category_vi": "Hội thảo & Đào tạo",
+    "badge": "EP20 Workshop Series",
+    "summary": "The Smart Logistics and Supply Chain Management Laboratory (SLSCM Lab) invites students to join the EP20 Discovery & Modeling Workshop Series — an introductory program designed to explore how modern supply chains are transformed by data, optimization, and AI, turning real-world logistics challenges into mathematical models and computational decisions.",
+    "summary_en": "The Smart Logistics and Supply Chain Management Laboratory (SLSCM Lab) invites students to join the EP20 Discovery & Modeling Workshop Series — an introductory program designed to explore how modern supply chains are transformed by data, optimization, and AI, turning real-world logistics challenges into mathematical models and computational decisions.",
+    "summary_vi": "SLSCM Lab trân trọng mời sinh viên tham gia Chuỗi Workshop Khám phá & Mô hình hóa EP20 — chương trình nhập môn giúp sinh viên hiểu rõ ngành Logistics và Quản trị Chuỗi cung ứng thông minh, khám phá cách dữ liệu, vận trù học và AI định hình các quyết định thực tế.",
+    "content_en": "The Smart Logistics and Supply Chain Management Laboratory (SLSCM Lab) invites students to join the EP20 Discovery & Modeling Workshop Series, an introductory series designed for students who want to better understand the field of Logistics Technology and Supply Chain Management (EP20) and explore how modern supply chains are being transformed by data, optimization, and artificial intelligence.\n\n### What is EP20 really about?\nLogistics and supply chain management today goes far beyond transportation and warehousing. Modern supply chains involve complex decisions: Where should facilities be located? How should vehicles be routed? How much inventory should a company hold? How can demand be forecast? How should production and transportation be coordinated? How can AI and data help companies make better decisions?\n\nThe opening session will provide a broad introduction to EP20 and explore:\n• What students will learn throughout the EP20 program;\n• How modern logistics and supply chains operate;\n• Major technological and analytical trends shaping supply chains worldwide;\n• The roles of Data Science, Artificial Intelligence, Operations Research, and Optimization in modern supply chains;\n• Real-world applications in transportation, warehousing, inventory, production, e-commerce, and supply chain planning;\n• Career opportunities in logistics, supply chain management, optimization, data analytics, technology, and consulting;\n• Master's and PhD opportunities in Vietnam and internationally;\n• Opportunities for undergraduate research, competitions, projects, and collaboration with SLSCM Lab.\n\n### From Understanding Problems to Modeling Them\nThe following workshops will introduce students to one of the fundamental skills behind modern supply chain analytics: turning real-world problems into mathematical and computational models.\nThrough simple examples, participants will learn how to move through the process: Real-world Problem → Mathematical Model → Computational Solution → Decision.\n\nTopics will include:\n• Introduction to mathematical modeling;\n• Decision variables, objective functions, and constraints;\n• Basic linear and integer optimization models;\n• Modeling fundamental logistics and supply chain problems;\n• Introduction to optimization and modeling software;\n• Implementing simple models using programming tools;\n• Solving models and interpreting computational results.\n(No previous knowledge of Operations Research or mathematical optimization is required.)\n\n### Recommended Background\nParticipants are expected to have: basic programming skills, basic mathematical reasoning, and basic knowledge of Linear Algebra. More importantly, participants should be curious about how mathematics, data, algorithms, and AI can be used to understand and improve real-world logistics and supply chain systems.\n\n### Who Should Join?\nThe series is particularly suitable for EP20 students, especially those in the early stages of the program who want to understand where their studies can lead. It is also suitable for students interested in logistics, supply chain management, optimization, data science, artificial intelligence, and quantitative decision-making.\n\n\"Understand the field. Learn to model. Build the tools to solve real-world supply chain problems.\"",
+    "content_vi": "Phòng thí nghiệm Quản trị Logistics và Chuỗi cung ứng thông minh (SLSCM Lab) trân trọng mời các bạn sinh viên tham gia Chuỗi Workshop Khám phá & Mô hình hóa EP20 — chuỗi chuyên đề nhập môn dành cho sinh viên muốn hiểu sâu sắc về ngành Công nghệ Logistics và Quản trị Chuỗi cung ứng (EP20) và khám phá cách chuỗi cung ứng hiện đại đang chuyển mình mạnh mẽ nhờ dữ liệu, tối ưu hóa và trí tuệ nhân tạo.\n\n### Ngành EP20 thực sự là gì?\nLogistics và quản trị chuỗi cung ứng ngày nay vượt xa khỏi ranh giới vận tải và kho bãi truyền thống. Chuỗi cung ứng hiện đại giải quyết những bài toán ra quyết định phức tạp: Đặt cơ sở ở đâu? Định tuyến phương tiện như thế nào? Dự trữ tồn kho bao nhiêu? Dự báo nhu cầu ra sao? Làm thế nào phối hợp sản xuất và vận tải nhịp nhàng? AI và dữ liệu giúp doanh nghiệp ra quyết định tối ưu như thế nào?\n\nBuổi mở đầu sẽ cung cấp bức tranh toàn cảnh về EP20 và mở rộng:\n• Khung chương trình đào tạo sinh viên sẽ học trong suốt EP20;\n• Cách thức vận hành của logistics và chuỗi cung ứng thông minh hiện đại;\n• Xu hướng công nghệ và phân tích dữ liệu định hình chuỗi cung ứng toàn cầu;\n• Vai trò của Khoa học Dữ liệu, Trí tuệ Nhân tạo, Vận trù học và Tối ưu hóa;\n• Ứng dụng thực tế trong giao vận, kho vận, tồn kho, sản xuất, thương mại điện tử;\n• Cơ hội nghề nghiệp trong logistics, SCM, tối ưu hóa, phân tích dữ liệu, tư vấn giải pháp;\n• Cơ hội học tiếp Thạc sĩ và Tiến sĩ tại Việt Nam và các đại học hàng đầu thế giới;\n• Cơ hội NCKH, tham gia các cuộc thi học thuật, dự án và đồng hành cùng SLSCM Lab.\n\n### Từ Thấu hiểu Bài toán đến Mô hình hóa Toán học\nCác buổi workshop tiếp theo sẽ trang bị cho sinh viên kỹ năng cốt lõi nhất của phân tích chuỗi cung ứng hiện đại: Chuyển đổi bài toán thực tế thành mô hình toán học và tính toán.\nQua các ví dụ trực quan, người học trải nghiệm trọn vẹn quy trình: Bài toán thực tế → Mô hình Toán học → Giải pháp Tính toán → Quyết định.\n\nNội dung chính:\n• Nhập môn mô hình hóa toán học;\n• Biến quyết định, hàm mục tiêu và các ràng buộc bài toán;\n• Các mô hình tối ưu tuyến tính và số nguyên cơ bản;\n• Mô hình hóa các bài toán logistics và chuỗi cung ứng nền tảng;\n• Làm quen với các phần mềm tối ưu hóa và mô hình hóa;\n• Lập trình triển khai mô hình với công cụ tính toán;\n• Giải mô hình và phân tích, diễn giải kết quả tính toán.\n(Không yêu cầu kiến thức trước về Vận trù học hay Tối ưu hóa toán học).\n\n### Yêu cầu nền tảng khuyến nghị\nSinh viên có kỹ năng lập trình cơ bản, tư duy toán học nền tảng và kiến thức Đại số tuyến tính căn bản. Quan trọng nhất là niềm say mê, tò mò tìm hiểu cách toán học, dữ liệu, thuật toán và AI được ứng dụng để tối ưu các hệ thống thực tế.\n\n### Đối tượng tham gia\nĐặc biệt phù hợp với sinh viên EP20 (nhất là các khóa đầu chương trình), cũng như toàn thể sinh viên yêu thích logistics, chuỗi cung ứng, tối ưu hóa, data science, AI và ra quyết định định lượng.\n\n\"Thấu hiểu ngành nghề. Học cách mô hình hóa. Kiến tạo công cụ giải quyết bài toán chuỗi cung ứng thực tế.\"",
+    "tags": [
+      "Workshops & Training",
+      "EP20",
+      "Mathematical Modeling",
+      "Supply Chain",
+      "Operations Research",
+      "Data Science & AI"
+    ],
+    "link": "https://www.facebook.com/slscm.lab",
+    "link_label": "Facebook Lab & Details",
+    "featured": true
+  },
+  {
     "id": "brief-comosa-2026-acceptance",
     "title": "3 Research Papers Accepted for Presentation at COMOSA 2026 (Springer SOIA)",
     "date": "2026-04-15",
@@ -7,7 +32,13 @@
     "badge": "COMOSA 2026",
     "summary": "SLSCM Lab achieves triple acceptance at the 1st International Conference on Optimization, Modeling, Simulation, and Analytics (COMOSA 2026), featuring breakthrough works on drone tourism routing, energy-constrained parallel scheduling, and drone-locker urban logistics.",
     "content_en": "We are pleased to announce that 3 papers by SLSCM Lab researchers and collaborators have been officially accepted for presentation at COMOSA 2026 (August 7–8, 2026 in Hanoi, Vietnam) and publication in Springer SOIA proceedings:\n\n• Paper #31: \"Drone Tourism Routing Under Energy, Time-Window and Communication-Coverage Constraints\" — Cao Nguyet Anh, Vu Duc Minh, Le Thi Bich Hanh, Pham Thanh Binh\n• Paper #33: \"Improved Bounds for the Energy-Constrained Parallel Machine Scheduling Problem to Minimize Total Completion Time\" — Viet Nguyen Huu, Tien Thanh Mai, Quy Ta Dinh, Minh Hoang Ha, Binh Huynh Thi Thanh\n• Paper #36: \"On the Drone-Locker Location Scheduling Problem\" — Thi Nhung Tran, Thu Trang Hoa, Hai Dang Le, Minh Hoang Ha",
-    "tags": ["COMOSA 2026", "Conference Acceptance", "Drone Routing", "Parallel Scheduling", "Springer SOIA"],
+    "tags": [
+      "COMOSA 2026",
+      "Conference Acceptance",
+      "Drone Routing",
+      "Parallel Scheduling",
+      "Springer SOIA"
+    ],
     "link": "https://comosa.vn/accepted-papers/",
     "link_label": "Explore COMOSA 2026 Accepted Papers",
     "featured": true
@@ -20,7 +51,13 @@
     "badge": "Q1 Journal",
     "summary": "Our research team, featuring young researcher Tran Nam Khanh (HUS-VNU) and Dr. Duc Minh Vu, officially published their paper on Stage-Based Formulations and Matheuristic Algorithms for the Revisit Flying Sidekick TSP in TRC (Vol. 192).",
     "content_en": "This research introduces the Revisit Flying Sidekick Traveling Salesman Problem (RV-FSTSP), relaxing rigid classical constraints to permit delivery trucks to revisit previously served customers and operate as stationary launchpads for multiple successive drone sorties. Comprehensive computational experiments prove our matheuristic saves up to 28.4% of total mission makespan.",
-    "tags": ["Transportation Research Part C", "Drone Routing", "FSTSP", "Matheuristics", "HUS-VNU"],
+    "tags": [
+      "Transportation Research Part C",
+      "Drone Routing",
+      "FSTSP",
+      "Matheuristics",
+      "HUS-VNU"
+    ],
     "link": "https://doi.org/10.1016/j.trc.2026.105906",
     "link_label": "View Paper DOI",
     "featured": true
@@ -33,7 +70,13 @@
     "badge": "INFORMS Flagship",
     "summary": "Paper by Le Ba Luat, Prof. Mai Tien (SMU), Dr. Ta Thuy Anh, Assoc. Prof. Minh Hoang Ha, and Dr. Duc Minh Vu on Competitive Facility Location under Cross-Nested Logit models officially accepted by Area Editor Andrea Lodi.",
     "content_en": "INFORMS Journal on Computing is a premier flagship journal in operations research and computing. The paper resolves a longstanding mathematical challenge: establishing NP-hardness proofs and transforming the non-concave objective into a mixed-integer exponential cone convex program solved to optimality via outer approximation. Open-source solvers and benchmark datasets have been integrated into the IJOC Software Repository.",
-    "tags": ["IJOC", "INFORMS", "Facility Location", "Exponential Cone", "Open Source"],
+    "tags": [
+      "IJOC",
+      "INFORMS",
+      "Facility Location",
+      "Exponential Cone",
+      "Open Source"
+    ],
     "link": "https://doi.org/10.1287/ijoc.2025.1150",
     "link_label": "View IJOC Publication",
     "featured": true
@@ -46,7 +89,13 @@
     "badge": "SMU Placement",
     "summary": "Ba Luat Le (Valedictorian) secured a full PhD scholarship in Operations Research at SMU, while former scholar Thu Trang Hoa joined as a Research Engineer in Computing & AI.",
     "content_en": "This milestone highlights the lab's dedication to nurturing young scholars and aligning with global academic standards. Under joint mentorship by Prof. Mai Tien (SMU), Assoc. Prof. Minh Hoang Ha, and Dr. Duc Minh Vu, our scholars build top-tier publication records before entering prestigious doctoral and research engineering programs.",
-    "tags": ["SMU Singapore", "PhD Scholarship", "Research Engineer", "Valedictorian", "Hall of Fame"],
+    "tags": [
+      "SMU Singapore",
+      "PhD Scholarship",
+      "Research Engineer",
+      "Valedictorian",
+      "Hall of Fame"
+    ],
     "link": "https://www.smu.edu.sg/",
     "link_label": "Explore SMU",
     "featured": true
@@ -59,7 +108,13 @@
     "badge": "Smart City Project",
     "summary": "Kick-off of an interdisciplinary project between CADA Lab (P1601) and SLSCM Lab (P1613) at College of Technology - NEU to optimize municipal water infrastructure via AI and Operations Research.",
     "content_en": "The interdisciplinary project integrates real-time IoT hydraulic sensor feeds across Hanoi with deep learning predictive models and mixed-integer nonlinear programming for pump station optimization, significantly curbing energy consumption and bolstering flood defense capabilities.",
-    "tags": ["Smart Water", "CADA Lab", "NEU", "Urban IoT", "Pump Optimization"],
+    "tags": [
+      "Smart Water",
+      "CADA Lab",
+      "NEU",
+      "Urban IoT",
+      "Pump Optimization"
+    ],
     "link": "https://fda.neu.edu.vn/slscm/",
     "link_label": "View Lab Page",
     "featured": false
@@ -72,7 +127,13 @@
     "badge": "Executive Course",
     "summary": "SLSCM Lab and FDA College of Technology hosted an intensive 4-module professional course on mathematical modeling, Python solvers (Gurobi, OR-Tools), and supply chain optimization.",
     "content_en": "More than 50 participants, including talented undergraduates, graduate students, and analytics specialists from retail and logistics enterprises, attended. The intensive 4-module program provided hands-on training in MIP modeling, Python solvers (Gurobi, Google OR-Tools), and supply chain decision intelligence.",
-    "tags": ["Executive Training", "Decision Intelligence", "Python Solvers", "Gurobi", "FDA"],
+    "tags": [
+      "Executive Training",
+      "Decision Intelligence",
+      "Python Solvers",
+      "Gurobi",
+      "FDA"
+    ],
     "link": "https://www.facebook.com/slscm.lab",
     "link_label": "Facebook Event Highlights",
     "featured": false
@@ -83,9 +144,15 @@
     "date": "2025-09-10",
     "category": "Student Honor & Placement",
     "badge": "UK & US Placements",
-    "summary": "Tat Dat Tran joins Liverpool John Moores University (UK); Hai Thu Nguyen (Intake 63 Valedictorian) embarks on PhD in Actuarial Science at University of Connecticut (USA); Trung Cuong Dang awarded PhD at University of South Florida (USA).",
+    "summary": "Nguyen Tat Dat joins Liverpool John Moores University (UK); Hai Thu Nguyen (Intake 63 Valedictorian) embarks on PhD in Actuarial Science at University of Connecticut (USA); Trung Cuong Dang awarded PhD at University of South Florida (USA).",
     "content_en": "Consecutive doctoral placements highlight the academic excellence and global reputation of SLSCM Lab's mentorship track. Our alumni maintain an active research network, continuing scientific collaborations with the lab across the UK and the United States.",
-    "tags": ["LJMU", "UConn", "USF", "PhD Scholarship", "Global Alumni"],
+    "tags": [
+      "LJMU",
+      "UConn",
+      "USF",
+      "PhD Scholarship",
+      "Global Alumni"
+    ],
     "link": "https://fda.neu.edu.vn/slscm/",
     "link_label": "Read Announcement",
     "featured": false

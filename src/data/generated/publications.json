@@ -18,10 +18,7 @@
     "abstract": "We study the drone tourism routing problem subject to battery energy limitations, customer and scenic viewpoint time-windows, and continuous communication-coverage guarantees. The model optimizes flight paths for unmanned aerial vehicles to maximize tourist utility and sight coverage while ensuring strict energy feasibility and reliable telecommunication links with ground control stations.",
     "bibtex": "@inproceedings{cao_2026_drone_tourism_comosa,\n  title = {Drone Tourism Routing Under Energy, Time-Window and Communication-Coverage Constraints},\n  author = {Cao Nguyet Anh and Vu Duc Minh and Le Thi Bich Hanh and Pham Thanh Binh},\n  booktitle = {The 1st International Conference on Optimization, Modeling, Simulation, and Analytics (COMOSA 2025), Springer},\n  year = {2026},\n  url = {https://comosa.vn/accepted-papers/}\n}",
     "is_featured": false,
-    "highlighted_authors": [
-      "Cao Nguyet Anh",
-      "Vu Duc Minh"
-    ],
+    "highlighted_authors": [],
     "badge": null
   },
   {
@@ -44,12 +41,7 @@
     "abstract": "This study presents a case study of the School Bus Routing Problem (SBRP), focusing on improving the quality of student transportation services. Although numerous studies have addressed the SBRP, this study tackles a new variant driven by a negative impact policy to limit the number of continuing students facing extended travel times. We present this variant and propose a mathematical formulation along with a hybrid metaheuristic approach for it. Furthermore, we conduct comprehensive experiments to evaluate algorithms’ performance and various configurations of the negative impact policy on both artificial and real instances. Computational results confirm the effectiveness of our hybrid algorithm.",
     "bibtex": "@article{dinh_2025_schoolbus_jors,\n  title = {The rescheduling school bus routing problem under a constraint on the number of students with negative impact},\n  author = {Quy Ta Dinh and Thu Huong Dang and Minh Hoàng Hà and Duc Minh Vu and Tien Mai},\n  journal = {Journal of the Operational Research Society},\n  year = {2026},\n  doi = {10.1080/01605682.2025.2519991},\n  url = {https://doi.org/10.1080/01605682.2025.2519991}\n}",
     "is_featured": true,
-    "highlighted_authors": [
-      "Quy Ta Dinh",
-      "Minh Hoàng Hà",
-      "Duc Minh Vu",
-      "Tien Mai"
-    ],
+    "highlighted_authors": [],
     "badge": null
   },
   {
@@ -72,10 +64,7 @@
     "abstract": "The Hierarchical Directed Capacitated Arc Routing Problems (HDCARP) is a variant of the Capacitated Arc Routing Problems (CARPs), in which the arcs in a graph are partitioned into clusters. However, unlike traditional CARPs that aim to minimise total time, the HDCARP focuses on minimizing the maximum completion time of each priority class in a hierarchical fashion. Practical applications of the HDCARP include snow plowing, salt spreading, street cleaning, and waste collection. In this study, we explore two variants of the HDCARP. The key difference between these variants lies in the consideration of precedence relations between clusters within routes. We propose MILP formulations and matheuristics for both HDCARP variants. The MILP formulations enable us to find optimal solutions for small-scale instances and evaluate the quality of matheuristics. Our matheuristics are based on decomposing the problem into multiple sub-problems, resulting in faster running time for large-scale instances. We conduct extensive computational experiments to assess the performance of these approaches and present our findings.",
     "bibtex": "@article{ha_2026_hdc_cor,\n  title = {On the Hierarchical Directed Capacitated Arc Routing Problem},\n  author = {Minh Hoàng Hà and Thu Huong Dang and Ba Luat Le and Trung Thanh Nguyen and André Langevin},\n  journal = {Computers & Operations Research},\n  year = {2026},\n  doi = {10.1016/j.cor.2026.107495},\n  url = {https://doi.org/10.1016/j.cor.2026.107495}\n}",
     "is_featured": true,
-    "highlighted_authors": [
-      "Minh Hoàng Hà",
-      "Ba Luat Le"
-    ],
+    "highlighted_authors": [],
     "badge": null
   },
   {
@@ -98,10 +87,7 @@
     "abstract": "The Flying Sidekick Traveling Salesman Problem (FSTSP) is an emerging delivery routing problem that coordinates a truck and an unmanned aerial vehicle (drone) to serve customer requests. In this paper, we study the Revisit Flying Sidekick Traveling Salesman Problem (RV-FSTSP), a generalization of the FSTSP that provides greater operational flexibility by allowing the truck to revisit previously served customer locations and remain stationary to support multi-trip drone sorties. We develop a stage-based mixed-integer linear programming (MILP) formulation to model the problem's combinatorial structure, establishing polynomial-sized constraints for both the revisit and stationary support capabilities. To efficiently solve practical and large-scale instances, we propose a tailored metaheuristic algorithm. Extensive computational experiments on benchmark instances demonstrate the effectiveness of our proposed mathematical formulation and show that the RV-FSTSP approach significantly reduces total delivery times compared to the traditional FSTSP.",
     "bibtex": "@article{hong_2026_rvfstsp_trc,\n  title = {A stage-based formulation and meta-heuristic algorithm for the revisit Flying SideKick Traveling Salesman Problem},\n  author = {Le Thi Hong and Duc D. Vu and Tran Nam Khanh and Nguyen Dinh Cong and Duc-Minh Vu},\n  journal = {Transportation Research Part C: Emerging Technologies},\n  year = {2026},\n  doi = {10.1016/j.trc.2026.105906},\n  url = {https://doi.org/10.1016/j.trc.2026.105906}\n}",
     "is_featured": true,
-    "highlighted_authors": [
-      "Tran Nam Khanh",
-      "Duc-Minh Vu"
-    ],
+    "highlighted_authors": [],
     "badge": null
   },
   {
@@ -124,12 +110,7 @@
     "abstract": "We study the competitive facility location problem, in which a firm aims to establish new facilities in a market already occupied by competitors. In this problem, customer behavior is a crucial factor in making optimal location decisions. We explore a general class of customer choice models, known as the cross-nested logit model, which is recognized for its flexibility and generality in predicting people’s choice behavior. To explore the problem, we first demonstrate that it is NP-hard even when there is only one customer class and the cross-nested structure has only two nests. To tackle the challenging facility location problem, we demonstrate that the objective function under a general cross-nested structure is not concave. Interestingly, we show that, by a change of variables, the objective function can be converted to a mixed-integer exponential cone convex program, enabling it to be solved to optimality via an outer approximation algorithm. Extensive experiments show the efficiency of our approach and provide analyses on the benefits of using the cross-nested model in the facility location context.",
     "bibtex": "@article{le_2026_cfl_ijoc,\n  title = {Competitive Facility Location Under Cross-Nested Logit Customer Choice Model: Hardness and Exact Approaches},\n  author = {Ba Luat Le and Tien Mai and Thuy Anh Ta and Minh Hoàng Hà and Duc-Minh Vu},\n  journal = {INFORMS Journal on Computing},\n  year = {2026},\n  doi = {10.1287/ijoc.2025.1150},\n  url = {https://doi.org/10.1287/ijoc.2025.1150}\n}",
     "is_featured": true,
-    "highlighted_authors": [
-      "Ba Luat Le",
-      "Tien Mai",
-      "Minh Hoàng Hà",
-      "Duc-Minh Vu"
-    ],
+    "highlighted_authors": [],
     "badge": null
   },
   {
@@ -152,10 +133,7 @@
     "abstract": "This paper investigates the energy-constrained parallel identical machine scheduling problem to minimize total completion time. We propose novel lower and upper bounding techniques that tightly capture energy consumption thresholds and non-linear power costs across operational periods, accelerating exact branch-and-bound and constraint programming solvers.",
     "bibtex": "@inproceedings{nguyen_2026_parallel_scheduling_comosa,\n  title = {Improved Bounds for the Energy-Constrained Parallel Machine Scheduling Problem to Minimize Total Completion Time},\n  author = {Viet Nguyen Huu and Tien Thanh Mai and Quy Ta Dinh and Minh Hoang Ha and Binh Huynh Thi Thanh},\n  booktitle = {The 1st International Conference on Optimization, Modeling, Simulation, and Analytics (COMOSA 2025), Springer},\n  year = {2026},\n  url = {https://comosa.vn/accepted-papers/}\n}",
     "is_featured": false,
-    "highlighted_authors": [
-      "Quy Ta Dinh",
-      "Minh Hoang Ha"
-    ],
+    "highlighted_authors": [],
     "badge": null
   },
   {
@@ -177,10 +155,7 @@
     "abstract": "The quantal response (QR) model is widely used in Stackelberg security games (SSGs) to capture boundedly rational adversaries. Existing work on SSGs under QR, however, almost exclusively assumes a homogeneous attacker population, ignoring heterogeneity in attacker preferences and rationality. We study SSG with mixed quantal response attackers, where the follower population consists of multiple discrete attacker types, each following a type-specific QR model. The defender allocates limited resources across targets, while an attacker drawn from this heterogeneous population observes the defender’s strategy and attacks a single target. This results in a highly non-convex equilibrium computation problem. We develop a polynomial-time approximation scheme (PTAS) for this setting when the number of attacker types is bounded, based on an exponential cone programming formulation combined with a carefully designed Branch-and-Bound procedure. Experiments demonstrate that our approach outperforms standard gradient-based methods and that explicitly modeling attacker heterogeneity yields significant gains over traditional SSG models with a single QR attacker.",
     "bibtex": "@inproceedings{pham_2026_ssg_ijcai,\n  title = {Beyond Homogeneous Adversaries: Stackelberg Security Games with Mixed Quantal Response},\n  author = {Hoang Giang Pham and Tien Mai and Thuy Anh Ta and Minh Hoàng Hà},\n  booktitle = {Proceedings of the Thirty-Fifth International Joint Conference on Artificial Intelligence (IJCAI 2026)},\n  year = {2026},\n  doi = {10.24963/ijcai.2026/392},\n  url = {https://doi.org/10.24963/ijcai.2026/392}\n}",
     "is_featured": true,
-    "highlighted_authors": [
-      "Tien Mai",
-      "Minh Hoàng Hà"
-    ],
+    "highlighted_authors": [],
     "badge": null
   },
   {
@@ -202,10 +177,7 @@
     "abstract": "We address the scheduling conflicting jobs on parallel identical machines problem with makespan minimization, a classical and computationally challenging variant of parallel machine scheduling. We develop and evaluate three distinct solution methodologies: a novel constraint programming (CP) formulation, and two metaheuristics: a multi-neighborhood simulated annealing that relies on an implicit solution representation and a greedy decoder, and a CP-based large neighborhood search that employs operators specifically tailored for the problem. The methods are tuned using statistically rigorous procedures and compared to highlight the strengths and weaknesses of each approach. For this purpose, we introduce and make publicly available a novel, challenging dataset, appropriately divided into training and validation instances. This dataset supports our experiments and provides a foundation for future benchmarking. Computational results show that the proposed CP formulation significantly outperforms an existing CP method, proving optimality on several instances within short computing times. Meanwhile, the MNSA metaheuristic consistently delivers high-quality solutions, especially on instances where the exact method has difficulty converging, with more consistent gaps in the presence of high conflict rates.",
     "bibtex": "@article{rosati_2026_itor,\n  title = {Exact and Metaheuristic Approaches to Minimizing Makespan in Parallel Machine Scheduling with Conflicting Jobs},\n  author = {Roberto Maria Rosati and Dinh Quy Ta and Minh Hoàng Hà and Andrea Schaerf},\n  journal = {International Transactions in Operational Research},\n  year = {2026},\n  doi = {10.1111/itor.70177},\n  url = {https://doi.org/10.1111/itor.70177}\n}",
     "is_featured": true,
-    "highlighted_authors": [
-      "Dinh Quy Ta",
-      "Minh Hoàng Hà"
-    ],
+    "highlighted_authors": [],
     "badge": null
   },
   {
@@ -227,10 +199,7 @@
     "abstract": "We introduce and study the Drone-Locker Location Scheduling Problem (DLLSP), which jointly optimizes the placement of automated parcel lockers and the flight scheduling of autonomous delivery drones in urban last-mile logistics. Mixed-integer programming models and tailored metaheuristics are developed to minimize combined facility opening costs and delivery makespan.",
     "bibtex": "@inproceedings{tran_2026_drone_locker_comosa,\n  title = {On the Drone-Locker Location Scheduling Problem},\n  author = {Thi Nhung Tran and Thu Trang Hoa and Hai Dang Le and Minh Hoang Ha},\n  booktitle = {The 1st International Conference on Optimization, Modeling, Simulation, and Analytics (COMOSA 2025), Springer},\n  year = {2026},\n  url = {https://comosa.vn/accepted-papers/}\n}",
     "is_featured": false,
-    "highlighted_authors": [
-      "Thu Trang Hoa",
-      "Minh Hoang Ha"
-    ],
+    "highlighted_authors": [],
     "badge": null
   },
   {
@@ -253,9 +222,7 @@
     "abstract": "Demand response (DR) programs help electricity systems balance supply and demand by encouraging consumers to adjust their usage in response to price signals or incentives. As population growth, urbanization, and the electrification of transportation and industry continue to increase energy needs, flexible and effective DR programs have become increasingly important. However, consumer participation remains difficult to secure because individuals are influenced by a range of cognitive factors that shape how they perceive and respond to DR incentives. In this paper, we identify five broad categories of cognitive influences that systematically affect consumer decision-making in DR settings. For each category, we provide representative examples from DR programs and review the relevant literature. We then develop a conceptual framework linking consumer engagement, cognitive influences, and socioeconomic factors, and propose unified strategies for integrating behavioral interventions at each stage of the DR engagement process. These strategies aim not only to strengthen consumer participation but also to enhance the overall effectiveness of DR programs. By deepening our understanding of how behavioral factors shape consumer responses, this review offers actionable insights for practitioners, policymakers, and researchers seeking to design DR interventions that improve energy system performance while promoting efficiency and sustainable consumption habits.",
     "bibtex": "@article{vu_2026_demand_response_erss,\n  title = {Designing effective demand response: A review of behavioral insights, consumer engagement, and operational strategies in energy systems},\n  author = {Duc D. Vu and Akhtar Hussain and Duc-Minh Vu and Xiao Zhang and Van-Hai Bui},\n  journal = {Energy Research & Social Science},\n  year = {2026},\n  doi = {10.1016/j.erss.2025.104474},\n  url = {https://doi.org/10.1016/j.erss.2025.104474}\n}",
     "is_featured": true,
-    "highlighted_authors": [
-      "Duc-Minh Vu"
-    ],
+    "highlighted_authors": [],
     "badge": null
   },
   {
@@ -277,9 +244,7 @@
     "abstract": "The inventory routing problem (IRP) focuses on jointly optimizing inventory and distribution operations from a supplier to retailers over multiple days. Compared to other problems from the vehicle routing family, the interrelations between inventory and routing decisions render IRP optimization more challenging and call for advanced solution techniques. A few studies have focused on developing large neighborhood search approaches for this class of problems, but this remains a research area with vast possibilities due to the challenges related to the integration of inventory and routing decisions. In this study, we advance this research area by developing a new large neighborhood search operator tailored for the IRP. Specifically, the operator optimally removes and reinserts all visits to a specific retailer while minimizing routing and inventory costs. We propose an efficient tailored dynamic programming algorithm that exploits preprocessing and acceleration strategies. The operator is used to build an effective local search routine, and included in a state-of-the-art routing algorithm, i.e., Hybrid Genetic Search (HGS). Through extensive computational experiments, we demonstrate that the resulting heuristic algorithm leads to solutions of unmatched quality up to this date, especially on large-scale benchmark instances.",
     "bibtex": "@article{zhao_2025_irp_ejor,\n  title = {Large Neighborhood and Hybrid Genetic Search for Inventory Routing Problems},\n  author = {Jingyi Zhao and Claudia Archetti and Tuan Anh Pham and Thibaut Vidal},\n  journal = {European Journal of Operational Research},\n  year = {2026},\n  doi = {10.1016/j.ejor.2025.11.021},\n  url = {https://doi.org/10.1016/j.ejor.2025.11.021}\n}",
     "is_featured": true,
-    "highlighted_authors": [
-      "Tuan Anh Pham"
-    ],
+    "highlighted_authors": [],
     "badge": null
   },
   {
@@ -302,11 +267,7 @@
     "abstract": "Machine scheduling problems involving conflict jobs can be seen as a constrained version of the classical scheduling problem, in which jobs may not be proceeded simultaneously on different machines. This conflict constraint naturally arises in several practical applications and has recently received considerable attentions in the research community. In fact, the problem is typically NP-hard (even for approximation), and most of algorithmic results achieved so far have heavily relied on special structures of the underlying graph used to model the conflict-job relation. Our focus is on three objective functions: minimizing the makespan, minimizing the weighted summation of the jobs’ completion time, and maximizing the total weights of completed jobs; the first two of which have been intensively studied in the scheduling literature, but have been not considered for problems with conflict jobs. For each objective function, we present several mixed integer linear programming models and a constraint programming model, from which we can solve the problems to optimality using dedicated solvers. Binary search-based algorithms are also proposed to solve the makespan problem. The results of numerical experiments performed on randomly generated data sets with up to 90 jobs and 6 machines are reported and analyzed to verify the performance of the considered formulations.",
     "bibtex": "@incollection{dinh_2025_parallel_scheduling_hbco,\n  title = {Exact Approaches for Scheduling Problems on Parallel Identical Machines with Conflict Jobs},\n  author = {Quy Ta Dinh and Duc Minh Vu and Trung Thanh Nguyen and Anh Duc Le and Minh Hoàng Hà},\n  booktitle = {Handbook of Combinatorial Optimization (Springer Nature)},\n  year = {2025},\n  doi = {10.1007/978-1-4614-6624-6_108-1},\n  url = {https://doi.org/10.1007/978-1-4614-6624-6_108-1}\n}",
     "is_featured": false,
-    "highlighted_authors": [
-      "Quy Ta Dinh",
-      "Duc Minh Vu",
-      "Minh Hoàng Hà"
-    ],
+    "highlighted_authors": [],
     "badge": null
   },
   {
@@ -329,11 +290,7 @@
     "abstract": "In this work, we present the first 2-index stage-based formulation for the Flying Sidekick Traveling Salesman Problem (FSTSP). Additionally, we propose a Construct-Merge-Solve and Adapt (CMSA) algorithm designed to generate high-quality feasible solutions. Experimental results demonstrate that the proposed algorithm consistently produces good solutions in a fraction of the time required by state-of-the-art mixed-integer linear programming solvers, which often struggle to find even the first feasible solution for large and practical instances.",
     "bibtex": "@inproceedings{hong_2025_fstsp_cita,\n  title = {A 2-Index Stage-Based Formulation and a Construct-Merge-Solve and Adapt Algorithm for the Flying Sidekick Traveling Salesman Problem},\n  author = {Le Thi Hong and Vu Duc Minh and Tran Nam Khanh and Nguyen Dinh Cong and Le Huu Trung},\n  booktitle = {The 14th Conference on Information Technology and its Applications (CITA 2025), LNNS, Springer},\n  year = {2025 },\n  doi = {10.1007/978-3-032-00972-2_6},\n  url = {https://doi.org/10.1007/978-3-032-00972-2_6}\n}",
     "is_featured": false,
-    "highlighted_authors": [
-      "Vu Duc Minh",
-      "Tran Nam Khanh",
-      "Le Huu Trung"
-    ],
+    "highlighted_authors": [],
     "badge": null
   },
   {
@@ -355,10 +312,7 @@
     "abstract": "This work addresses the facility location problem, a key area of research in Operations Research and Artificial Intelligence. Specifically, we examine a competitive facility location problem where a firm seeks to establish new facilities in a market already served by existing competitors. To predict customer demand, we utilize a general class of customer behavior models, known as the nested-logit model, which is widely recognized as one of the most popular demand models in the literature. The facility location problem under the nested-logit model is characterized by its high nonlinearity and complexity. Existing methods either do not operate within polynomial time or fail to guarantee near-optimal solutions at any desired level of precision. In this study, by leveraging the unique structure of the nested logit choice model, we propose a Fully Polynomial-Time Approximation Scheme (FPTAS) to efficiently solve the problem. To the best of our knowledge, this is the first FPTAS developed for this type of competitive facility location problem.",
     "bibtex": "@inproceedings{le_2025_fptas_csonet,\n  title = {Facility Location Under Nonlinear Customer Demand: A Fully Polynomial-Time Approximation Scheme},\n  author = {Ba Luat Le and Thuy Anh Ta and Ngoc Anh Vu Thi and Minh Hoàng Hà},\n  booktitle = {Computational Data and Social Networks (CSoNet 2024), LNCS 15417, Springer},\n  year = {2025},\n  doi = {10.1007/978-981-96-6389-7_3},\n  url = {https://doi.org/10.1007/978-981-96-6389-7_3}\n}",
     "is_featured": false,
-    "highlighted_authors": [
-      "Ba Luat Le",
-      "Minh Hoàng Hà"
-    ],
+    "highlighted_authors": [],
     "badge": null
   },
   {
@@ -380,9 +334,7 @@
     "abstract": "We introduce the Set Team Orienteering Problem (STOP), a generalised variant of the Set Orienteering Problem (SOP), in which customers’ locations are split into multiple clusters (or groups). Each cluster is associated with a profit that can be gained only if at least one customer from the cluster is visited. There is a fleet of homogeneous vehicles at a depot, and each vehicle has a limited travel time. The goal of the STOP is to find a set of feasible vehicle routes to collect the maximum profit. We first formulate the problem as a Mixed Integer Linear Programming (MILP) to mathematically describe it. A branch-and-price (B&P) algorithm is then developed to solve the problem to optimality. To deal with large instances, we propose a Large Neighbourhood Search (LNS), which relies on problem-tailored solution representation, removal, and insertion operators. Multiple experiments on newly generated instances confirm the performance of our approaches. The B&P is able to obtain optimal certificates for 77.6% of the STOP instances. Our LNS can achieve optimal solutions for all of these instances except one. More remarkably, we test the algorithms on the SOP via benchmarks available in the literature. It is shown that our B&P can close optimality gaps in 61.2% of these instances. This is the first time such a large number of SOP instances are solved to optimality. Our LNS outperforms existing algorithms proposed to solve the SOP in terms of solution quality. Out of 612 considered instances, it improves 43 best-known solutions.",
     "bibtex": "@article{nguyen_2025_set_top_ejor,\n  title = {The set team orienteering problem},\n  author = {Tat Dat Nguyen and Rafael Martinelli and Quang Anh Pham and Minh Hoàng Hà},\n  journal = {European Journal of Operational Research},\n  year = {2025},\n  doi = {10.1016/j.ejor.2024.09.021},\n  url = {https://doi.org/10.1016/j.ejor.2024.09.021}\n}",
     "is_featured": true,
-    "highlighted_authors": [
-      "Minh Hoàng Hà"
-    ],
+    "highlighted_authors": [],
     "badge": null
   },
   {
@@ -404,11 +356,7 @@
     "abstract": "We study an energy-aware multi-trip drone routing problem with customer time windows (MDRP-TW), in which a fleet of unmanned aerial vehicles with limited battery capacities performs multiple delivery sorties from a depot to serve geographically dispersed customers within specified time frames. To realistically capture drone energy consumption, the model accounts for payload-dependent battery depletion and replenishment times between consecutive trips. We formulate the problem and develop a Hybrid Genetic Search (HGS) algorithm that integrates specialized crossover operators with problem-tailored local search routines to efficiently navigate the search space. Extensive computational experiments on newly generated and benchmark instances demonstrate the effectiveness and scalability of the proposed method in producing high-quality delivery schedules under stringent energy and time-window constraints.",
     "bibtex": "@inproceedings{pham_2026_drone_tw_comosa,\n  title = {A Hybrid Genetic Search for Energy-Aware Multi-Trip Drone Routing with Time-Windows},\n  author = {Tuan Anh Pham and Minh Hoàng Hà and Duc Minh Vu and Duc Dong Do},\n  booktitle = {Optimization, Modeling, Simulation, and Analytics (COMOSA 2025 / Springer)},\n  year = {2026},\n  url = {https://link.springer.com/book/9783032154194}\n}",
     "is_featured": false,
-    "highlighted_authors": [
-      "Tuan Anh Pham",
-      "Minh Hoàng Hà",
-      "Duc Minh Vu"
-    ],
+    "highlighted_authors": [],
     "badge": null
   },
   {
@@ -435,9 +383,7 @@
     "abstract": "Accurate forecasting of liquefied natural gas (LNG) prices is critical for energy market participants, procurement planning, and risk management. In this study, we investigate machine learning-based approaches for forecasting Asian LNG spot prices, using the Japan Korea Marker (JKM) index as a primary benchmark. We analyze historical market fundamentals, regional supply-demand dynamics, and cross-commodity price signals to train and evaluate various predictive models, including tree-based ensembles and deep learning architectures. Empirical results demonstrate the superior predictive accuracy of machine learning frameworks compared to traditional econometric baselines, providing valuable insights for energy trading and logistics planning.",
     "bibtex": "@inproceedings{pham_2025_lng_csonet,\n  title = {Machine Learning-Based Forecasting of LNG Spot Prices: A Case Study on the JKM Index},\n  author = {Duy-Phuong Pham and Thanh-Hoang Le and Tien-Dzung Vu and Duc-Minh Vu and Ba-Tuan Tran and Van-Tu Nguyen and Van-Nhan Truong and Thanh-Sang Nguyen and Tuyet-Vy Vu},\n  booktitle = {CSoNet 2025 – AI-TECH Workshop},\n  year = {2025},\n  url = {https://csonet-conf.github.io/csonet25/index.php/program/index.html}\n}",
     "is_featured": false,
-    "highlighted_authors": [
-      "Duc-Minh Vu"
-    ],
+    "highlighted_authors": [],
     "badge": null
   },
   {
@@ -458,10 +404,7 @@
     "abstract": "In this paper, we study a new variant of orienteering problem (OP) where each vertex in the OP tour is a facility within a competitive market context, where customer demand is predicted by a random utility choice model. Unlike prior research, which primarily focuses on simple objective function such as maximizing a linear sum of score of selected vertices, we introduce a complicated non-linear objective function that necessitate the selection of locations to maximize a profit value such as expected customer demand or revenue. In our study, routing constraints included in the form of the OP is handled by Constraint Programming (CP), and the non-linear objective function, resulting from the utilization of random utilities, is tackled by two types of valid cuts, namely, outer-approximation and submodular cuts. These lead to the development of an exact solution methods: Cutting Plane, where these valid cuts are iteratively added to a master problem. Extensive experiments are conducted on problem instances of varying sizes, demonstrating that our approach excels in terms of solution quality and computation time when compared to other baseline approach.",
     "bibtex": "@inproceedings{pham_2025_soict_cutting_plane,\n  title = {Constraint Programming-Based Cutting Plane Algorithm for a Combination of Orienteering and Maximum Capture Problem},\n  author = {Hoang Giang Pham and Tien Mai and Minh Hoàng Hà},\n  booktitle = {Information and Communication Technology (SOICT 2024), Springer CCIS},\n  year = {2025},\n  doi = {10.1007/978-981-96-4282-3_29},\n  url = {https://doi.org/10.1007/978-981-96-4282-3_29}\n}",
     "is_featured": false,
-    "highlighted_authors": [
-      "Tien Mai",
-      "Minh Hoàng Hà"
-    ],
+    "highlighted_authors": [],
     "badge": null
   },
   {
@@ -528,11 +471,7 @@
     "abstract": "The Electric Vehicle Routing Problem with Time Windows and Station-based or Route-based Charging Options addresses fleet optimization incorporating both conventional charging stations and continuous wireless charging infrastructure. This paper extends Schneider et al.'s foundational EVRP-TW model with arc-based dynamic wireless charging representation, partial coverage modeling, and hierarchical multi-objective optimization prioritizing fleet minimization. Computational experiments on Schneider benchmark instances demonstrate substantial operational benefits, with distance and time improvements ranging from 0.7% to 35.9% in secondary objective components. Analysis reveals that 20% wireless coverage achieves immediate benefits, while 60% coverage delivers optimal performance across all test instances for infrastructure investment decisions.",
     "bibtex": "@inproceedings{tran_2025_evrptw_comosa,\n  title = {Electric Vehicle Routing Problem with Time Windows and Station-Based or Route-Based Charging Options},\n  author = {Trung Duc Tran and Duc Minh Vu and Ngoc Doanh Nguyen and Gia Nguyen Pham and Laurent El Ghaoui and Minh Hoàng Hà},\n  booktitle = {Optimization, Modeling, Simulation, and Analytics (COMOSA 2025 / Springer)},\n  year = {2025},\n  url = {https://link.springer.com/book/9783032154194}\n}",
     "is_featured": false,
-    "highlighted_authors": [
-      "Duc Minh Vu",
-      "Gia Nguyen Pham",
-      "Minh Hoàng Hà"
-    ],
+    "highlighted_authors": [],
     "badge": null
   }
 ]

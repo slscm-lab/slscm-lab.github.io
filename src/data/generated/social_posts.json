@@ -1,5 +1,18 @@
 [
   {
+    "type": "training_education",
+    "title": "EP20 Discovery & Modeling Workshop Series",
+    "abstract": "The SLSCM Lab invites students to join the EP20 Discovery & Modeling Workshop Series — an introductory program designed to explore how modern supply chains are transformed by data, optimization, and AI, turning real-world logistics challenges into mathematical models and computational decisions.",
+    "journal": null,
+    "paper_title": null,
+    "authors": null,
+    "organizer": "SLSCM Lab & Faculty of Data Science and AI (FDA) - NEU",
+    "collaboration": null,
+    "link": "https://www.facebook.com/slscm.lab",
+    "action_label": "View Details & Register",
+    "venue": null
+  },
+  {
     "type": "publication_news",
     "title": "New ITOR Publication on Parallel Machine Scheduling with Conflicting Jobs",
     "abstract": "Research focuses on scheduling conflicting jobs on identical parallel machines to minimize makespan. Proposes a novel constraint programming model and multineighborhood simulated annealing metaheuristics with proven computational efficiency.",
