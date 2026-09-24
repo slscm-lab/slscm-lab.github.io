@@ -4,7 +4,7 @@
       "id": "vu-duc-minh",
       "name": "Dr. Duc Minh Vu",
       "role_badge": "LAB HEAD / FACULTY MEMBER",
-      "email": "",
+      "email": "minhvd@neu.edu.vn",
       "office": "Room 1613, Building A1",
       "research_interests": [],
       "avatar": "/assets/images/people/vu_duc_minh.jpg",
@@ -123,15 +123,15 @@
       "achievement": "Awarded Full Master's Scholarship at VinUniversity (VinUni, Vietnam, 2026)."
     },
     {
-      "id": "hof-tran-tat-dat",
-      "name": "Tat Dat Tran",
+      "id": "hof-nguyen-tat-dat",
+      "name": "Nguyen Tat Dat",
       "avatar": "/assets/images/people/nguyen_tat_dat.jpg",
       "destination_institution": "Liverpool John Moores University (LJMU)",
       "country": "United Kingdom",
       "year": 2025,
       "award_type": "PhD Scholarship",
       "former_background_en": "Former Student in CS, UET-VN",
-      "achievement": "Lead author in European Journal of Operational Research (EJOR, Q1); Awarded Full PhD Scholarship at Liverpool John Moores University (LJMU, UK, 2025)."
+      "achievement": "Awarded Full PhD Scholarship at Liverpool John Moores University (LJMU, UK, 2025)."
     },
     {
       "id": "hof-nguyen-hai-thu",
@@ -224,7 +224,7 @@
       "email": ""
     },
     {
-      "name": "Thu Trang Phung",
+      "name": "Phung Thi Thu Trang",
       "major": "Data Science",
       "institution": "National Economics University (NEU)",
       "email": ""
@@ -286,8 +286,8 @@
       "current_position": "Master's Scholar in Operations Research & Analytics"
     },
     {
-      "id": "alumni-tran-tat-dat",
-      "name": "Tat Dat Tran",
+      "id": "alumni-nguyen-tat-dat",
+      "name": "Nguyen Tat Dat",
       "avatar": "/assets/images/people/nguyen_tat_dat.jpg",
       "period": "2025",
       "institution": "Liverpool John Moores University (LJMU), UK",

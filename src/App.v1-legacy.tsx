@@ -8,7 +8,7 @@ import {
 import overviewData from './data/slscm_overview.json';
 import peopleData from './data/slscm_people.json';
 import projectsData from './data/slscm_projects.json';
-import publicationsData from './data/slscm_publications_2025_2026.json';
+import publicationsData from './data/slscm_publications.json';
 import postsData from './data/slscm_facebook_posts.json';
 
 type PillarId = 'operational_optimization' | 'ml_optimization' | 'green_transportation';

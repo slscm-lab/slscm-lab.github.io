@@ -60,9 +60,9 @@
     "advisors": ""
   },
   {
-    "id": "hof-tran-tat-dat",
-    "name": "Tat Dat Tran",
-    "name_en": "Tat Dat Tran",
+    "id": "hof-nguyen-tat-dat",
+    "name": "Nguyen Tat Dat",
+    "name_en": "Nguyen Tat Dat",
     "avatar": "/assets/images/people/nguyen_tat_dat.jpg",
     "achievement": "Lead author in European Journal of Operational Research (EJOR, Q1); Awarded Full PhD Scholarship at Liverpool John Moores University (LJMU, UK, 2025).",
     "achievement_en": "Lead author in European Journal of Operational Research (EJOR, Q1); Awarded Full PhD Scholarship at Liverpool John Moores University (LJMU, UK, 2025).",
