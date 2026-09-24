@@ -1,21 +1,5 @@
 import React, { useState } from 'react';
-import {
-  ArrowRight,
-  Sparkles,
-  BookOpen,
-  Users,
-  Award,
-  Newspaper,
-  ExternalLink,
-  ChevronRight,
-  TrendingUp,
-  MapPin,
-  CheckCircle2,
-  Mail,
-  Route,
-  BrainCircuit,
-  LineChart,
-} from 'lucide-react';
+import { Icon } from '../components/Icon';
 import { PageRoute, PillarId } from '../types';
 import { PaperCard } from '../components/PaperCard';
 import {
@@ -42,7 +26,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
 const pillarDetails: Record<
   PillarId,
   {
-    icon: React.ComponentType<{ className?: string }>;
+    iconName: string;
     iconBg: string;
     iconBorder: string;
     iconColor: string;
@@ -51,7 +35,7 @@ const pillarDetails: Record<
   }
 > = {
   supply_chain_optimization: {
-    icon: Route,
+    iconName: 'local_shipping',
     iconBg: 'bg-sky-50',
     iconBorder: 'border-sky-200/90',
     iconColor: 'text-sky-700',
@@ -61,7 +45,7 @@ const pillarDetails: Record<
   },
 
   ai_supply_chain_intelligence: {
-    icon: BrainCircuit,
+    iconName: 'neurology',
     iconBg: 'bg-emerald-50',
     iconBorder: 'border-emerald-200/90',
     iconColor: 'text-emerald-700',
@@ -71,7 +55,7 @@ const pillarDetails: Record<
   },
 
   decision_analytics: {
-    icon: LineChart,
+    iconName: 'analytics',
     iconBg: 'bg-amber-50',
     iconBorder: 'border-amber-200/90',
     iconColor: 'text-amber-700',
@@ -109,9 +93,9 @@ const pillarDetails: Record<
               onClick={() => onNavigate('publications')}
               className="inline-flex items-center gap-2 rounded-2xl bg-slate-950 px-6 py-3.5 font-editorial text-sm font-bold text-white shadow-lift hover:bg-sky-950 transition hover:-translate-y-0.5 focus-ring"
             >
-              <BookOpen className="h-4 w-4 text-cyan-400" />
+              <Icon name="menu_book" className="h-4 w-4 text-cyan-400" />
               <span>Research Publications</span>
-              <ArrowRight className="h-4 w-4" />
+              <Icon name="arrow_forward" className="h-4 w-4" />
             </button>
 
             <button
@@ -119,7 +103,7 @@ const pillarDetails: Record<
               onClick={() => onNavigate('people')}
               className="inline-flex items-center gap-2 rounded-2xl border border-slate-300/90 bg-white/90 px-6 py-3.5 font-editorial text-sm font-bold text-slate-800 shadow-xs hover:bg-slate-50 transition hover:-translate-y-0.5 focus-ring"
             >
-              <Users className="h-4 w-4 text-sky-700" />
+              <Icon name="groups" className="h-4 w-4 text-sky-700" />
               <span>Faculty &amp; Researchers</span>
             </button>
 
@@ -128,7 +112,7 @@ const pillarDetails: Record<
               onClick={() => onNavigate('events')}
               className="inline-flex items-center gap-2 rounded-2xl border border-slate-300/90 bg-white/90 px-6 py-3.5 font-editorial text-sm font-bold text-slate-800 shadow-xs hover:bg-slate-50 transition hover:-translate-y-0.5 focus-ring"
             >
-              <Newspaper className="h-4 w-4 text-emerald-700" />
+              <Icon name="newspaper" className="h-4 w-4 text-emerald-700" />
               <span>News &amp; Events</span>
             </button>
           </div>
@@ -194,7 +178,6 @@ const pillarDetails: Record<
             const id = pillar.id as PillarId;
             const detail = pillarDetails[id];
             const isSelected = selectedPillar === id;
-            const PillarIcon = detail.icon;
             return (
               <div
                 key={pillar.id}
@@ -208,7 +191,7 @@ const pillarDetails: Record<
                 <div
                   className={`mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl border ${detail.iconBg} ${detail.iconBorder} ${detail.iconColor} shadow-2xs`}
                 >
-                  <PillarIcon className="h-6 w-6" />
+                  <Icon name={detail.iconName} className="h-6 w-6" />
                 </div>
                 <h3 className="font-editorial text-xl font-bold text-slate-950 leading-snug">
                   {(pillar as unknown as { title_en?: string }).title_en || pillar.title}
@@ -253,7 +236,7 @@ const pillarDetails: Record<
             className="inline-flex items-center gap-1.5 font-editorial text-sm font-bold text-sky-700 hover:text-sky-900 transition self-start sm:self-auto"
           >
             <span>Read All Briefs ({events.length})</span>
-            <ChevronRight className="h-4 w-4" />
+            <Icon name="chevron_right" className="h-4 w-4" />
           </button>
         </div>
 
@@ -322,7 +305,7 @@ const pillarDetails: Record<
             className="inline-flex items-center gap-1.5 font-editorial text-sm font-bold text-sky-700 hover:text-sky-900 transition self-start sm:self-auto"
           >
             <span>Open Research Publications ({publications.length})</span>
-            <ChevronRight className="h-4 w-4" />
+            <Icon name="chevron_right" className="h-4 w-4" />
           </button>
         </div>
 
@@ -339,7 +322,7 @@ const pillarDetails: Record<
           <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
             <div className="max-w-2xl">
               <span className="inline-flex items-center gap-1.5 rounded-full border border-amber-300 bg-amber-100/80 px-3 py-1 font-mono text-[11px] font-bold uppercase text-amber-900">
-                <Sparkles className="h-3.5 w-3.5 text-amber-700" />
+                <Icon name="auto_awesome" className="h-3.5 w-3.5 text-amber-700" />
                 <span>Mentorship Excellence &amp; Hall of Fame</span>
               </span>
               <h2 className="mt-4 font-editorial text-3xl sm:text-4xl font-bold text-slate-950 leading-tight">
@@ -355,9 +338,9 @@ const pillarDetails: Record<
               onClick={() => onNavigate('alumni')}
               className="inline-flex items-center gap-2 rounded-2xl bg-slate-900 px-6 py-3.5 font-editorial text-sm font-bold text-white shadow-lift hover:bg-amber-950 transition hover:-translate-y-0.5 focus-ring shrink-0"
             >
-              <Award className="h-4 w-4 text-amber-400" />
+              <Icon name="workspace_premium" className="h-4 w-4 text-amber-400" />
               <span>Explore Hall of Fame</span>
-              <ArrowRight className="h-4 w-4" />
+              <Icon name="arrow_forward" className="h-4 w-4" />
             </button>
           </div>
         </div>
@@ -381,14 +364,14 @@ const pillarDetails: Record<
 
               <div className="mt-8 flex flex-wrap gap-4 font-mono text-xs text-slate-600">
                 <span className="flex items-center gap-2 rounded-xl bg-white/80 border border-slate-200/80 px-3.5 py-2 shadow-xs">
-                  <MapPin className="h-4 w-4 text-sky-600" />
+                  <Icon name="location_on" className="h-4 w-4 text-sky-600" />
                   <span>Room P1613, Building A1, NEU</span>
                 </span>
                 <a
                   href="mailto:minhvd@neu.edu.vn"
                   className="flex items-center gap-2 rounded-xl bg-white/80 border border-slate-200/80 px-3.5 py-2 shadow-xs text-slate-700 hover:text-sky-700 hover:border-sky-300 transition"
                 >
-                  <Mail className="h-4 w-4 text-sky-600" />
+                  <Icon name="mail" className="h-4 w-4 text-sky-600" />
                   <span>minhvd@neu.edu.vn</span>
                 </a>
               </div>
@@ -400,15 +383,15 @@ const pillarDetails: Record<
               </h3>
               <ul className="space-y-3.5 font-editorial text-xs text-slate-600 leading-relaxed">
                 <li className="flex items-start gap-2.5">
-                  <CheckCircle2 className="h-4 w-4 text-emerald-600 shrink-0 mt-0.5" />
+                  <Icon name="check_circle" className="h-4 w-4 text-emerald-600 shrink-0 mt-0.5" />
                   <span><strong className="text-slate-900 font-semibold">Undergraduate Scholars:</strong> Mentorship in Python solvers, OR-Tools, and paper co-authorship.</span>
                 </li>
                 <li className="flex items-start gap-2.5">
-                  <CheckCircle2 className="h-4 w-4 text-sky-600 shrink-0 mt-0.5" />
+                  <Icon name="check_circle" className="h-4 w-4 text-sky-600 shrink-0 mt-0.5" />
                   <span><strong className="text-slate-900 font-semibold">Graduate &amp; PhD Tracks:</strong> Joint international supervision, Q1 journal pipelines, and global scholarship prep.</span>
                 </li>
                 <li className="flex items-start gap-2.5">
-                  <CheckCircle2 className="h-4 w-4 text-amber-600 shrink-0 mt-0.5" />
+                  <Icon name="check_circle" className="h-4 w-4 text-amber-600 shrink-0 mt-0.5" />
                   <span><strong className="text-slate-900 font-semibold">Industry Collaboration:</strong> Fleet dispatching, inventory optimization, and urban infrastructure analytics.</span>
                 </li>
               </ul>
