@@ -467,44 +467,7 @@ export const PeoplePage: React.FC = () => {
                         </div>
                       ))}
                     </div>
-
-                    {/* Key Collaborators */}
-                    {partner.key_collaborators &&
-                      partner.key_collaborators.filter((c) => c && c.trim().length > 0).length > 0 && (
-                      <div className="mt-4 pt-3.5 border-t border-slate-100 font-editorial text-xs text-slate-600">
-                        <p className="font-mono text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-1.5 flex items-center gap-1">
-                          <Icon name="groups" className="h-3 w-3 text-sky-600" />
-                          <span>Collaborators</span>
-                        </p>
-
-                        <ul className="space-y-1">
-                          {partner.key_collaborators
-                            .filter((c) => c && c.trim().length > 0)
-                            .map((collab, cIdx) => (
-                              <li
-                                key={`${collab}-${cIdx}`}
-                                className="text-slate-700 leading-snug text-xs flex items-start gap-1.5"
-                              >
-                                <span className="text-sky-500 font-bold">•</span>
-                                <span>{collab}</span>
-                              </li>
-                            ))}
-                        </ul>
-                      </div>
-                    )}
                   </div>
-
-                  {/* Research Focus */}
-                  {partner.research_focus && partner.research_focus.trim().length > 0 && (
-                    <div className="mt-4 pt-3 border-t border-slate-100">
-                      <p className="font-mono text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-1">
-                        Research Focus
-                      </p>
-                      <p className="font-editorial text-xs italic text-slate-600 leading-relaxed">
-                        {partner.research_focus}
-                      </p>
-                    </div>
-                  )}
                 </div>
               ))}
             </div>

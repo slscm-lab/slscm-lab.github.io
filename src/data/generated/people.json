@@ -440,12 +440,10 @@
           "website": "https://smu.edu.sg"
         }
       ],
-      "collaborators": "GS. Mai Tiến (School of Computing and Information Systems)",
-      "key_collaborators": [
-        "GS. Mai Tiến (School of Computing and Information Systems)"
-      ],
-      "scope": "Discrete Choice Models, Competitive Facility Location, Conic Optimization",
-      "research_focus": "Discrete Choice Models, Competitive Facility Location, Conic Optimization"
+      "collaborators": "",
+      "key_collaborators": [],
+      "scope": "",
+      "research_focus": ""
     },
     {
       "country": "Italy",
@@ -458,12 +456,10 @@
           "website": "https://uniud.it"
         }
       ],
-      "collaborators": "GS. Andrea Schaerf (Department of Polytechnic of Engineering and Architecture)",
-      "key_collaborators": [
-        "GS. Andrea Schaerf (Department of Polytechnic of Engineering and Architecture)"
-      ],
-      "scope": "Parallel Machine Scheduling, Constraint Programming, Metaheuristics",
-      "research_focus": "Parallel Machine Scheduling, Constraint Programming, Metaheuristics"
+      "collaborators": "",
+      "key_collaborators": [],
+      "scope": "",
+      "research_focus": ""
     },
     {
       "country": "Austria",
@@ -476,12 +472,10 @@
           "website": "https://uni-graz.at"
         }
       ],
-      "collaborators": "TS. Roberto Maria Rosati",
-      "key_collaborators": [
-        "TS. Roberto Maria Rosati"
-      ],
-      "scope": "Combinatorial Optimization, Metaheuristic Neighborhood Search",
-      "research_focus": "Combinatorial Optimization, Metaheuristic Neighborhood Search"
+      "collaborators": "",
+      "key_collaborators": [],
+      "scope": "",
+      "research_focus": ""
     },
     {
       "country": "United Kingdom",
@@ -534,12 +528,10 @@
           "website": "https://www.umflint.edu"
         }
       ],
-      "collaborators": "Faculty & Collaborators across Actuarial Science; Optimization & Industrial Engineering",
-      "key_collaborators": [
-        "Faculty & Collaborators across Actuarial Science; Optimization & Industrial Engineering"
-      ],
-      "scope": "Quantitative Risk, Behavioral Economics, Smart Energy Systems",
-      "research_focus": "Quantitative Risk, Behavioral Economics, Smart Energy Systems"
+      "collaborators": "",
+      "key_collaborators": [],
+      "scope": "",
+      "research_focus": ""
     },
     {
       "country": "Canada & France",
@@ -558,13 +550,10 @@
           "website": "https://www.cirrelt.ca"
         }
       ],
-      "collaborators": "GS. André Langevin, GS. Thibaut Vidal",
-      "key_collaborators": [
-        "GS. André Langevin",
-        "GS. Thibaut Vidal"
-      ],
-      "scope": "Capacitated Arc Routing (CARP), Inventory Routing (IRP), Hybrid Genetic Search",
-      "research_focus": "Capacitated Arc Routing (CARP), Inventory Routing (IRP), Hybrid Genetic Search"
+      "collaborators": "",
+      "key_collaborators": [],
+      "scope": "",
+      "research_focus": ""
     },
     {
       "country": "Vietnam",
@@ -595,14 +584,10 @@
           "website": "https://vinuni.edu.vn"
         }
       ],
-      "collaborators": "PGS. TS. Hà Minh Hoàng (VNU-HUS), TS. Tạ Thúy Anh (Phenikaa University), TS. Đức Đồng Đỗ (HUST)",
-      "key_collaborators": [
-        "PGS. TS. Hà Minh Hoàng (VNU-HUS)",
-        "TS. Tạ Thúy Anh (Phenikaa University)",
-        "TS. Đức Đồng Đỗ (HUST)"
-      ],
-      "scope": "National Science Foundation Collaborations, Graph Algorithms, High-Performance Computing",
-      "research_focus": "National Science Foundation Collaborations, Graph Algorithms, High-Performance Computing"
+      "collaborators": "",
+      "key_collaborators": [],
+      "scope": "",
+      "research_focus": ""
     }
   ]
 }
