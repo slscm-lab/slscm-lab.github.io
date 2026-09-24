@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Icon } from '../components/Icon';
-import { getPeople } from '../repositories';
+import { usePeople } from '../context/DataContext';
 import { AcademicPartner, PartnerInstitution } from '../types';
 
 type FacultyMember = {
@@ -96,7 +96,7 @@ const SHOW_ACADEMIC_PARTNERS = false;
 type PeopleTab = 'all' | 'faculty' | 'students' | 'partners' | 'tech';
 
 export const PeoplePage: React.FC = () => {
-  const people = getPeople() as unknown as {
+  const people = usePeople() as unknown as {
     leadership_and_faculty: FacultyMember[];
     web_tech_lead: WebTechLead[];
     graduate_and_undergraduate_student_researchers: StudentResearcher[];

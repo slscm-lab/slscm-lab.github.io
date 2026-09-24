@@ -1,10 +1,10 @@
 import React from 'react';
 import { Icon } from '../components/Icon';
 import { SocialPost } from '../types';
-import { getSocialPosts } from '../repositories';
+import { useSocialPosts } from '../context/DataContext';
 
 export const LabLifePage: React.FC = () => {
-  const posts = getSocialPosts();
+  const posts = useSocialPosts();
 
   return (
     <div className="section-shell py-10 sm:py-14 animate-in fade-in duration-300">

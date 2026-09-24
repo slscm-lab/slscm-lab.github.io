@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { Icon } from '../components/Icon';
 import { EventBrief } from '../types';
-import { getEvents } from '../repositories';
+import { useEvents } from '../context/DataContext';
 
 export const EventsPage: React.FC = () => {
-  const events = getEvents();
+  const events = useEvents();
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [expandedItems, setExpandedItems] = useState<Set<string>>(

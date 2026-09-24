@@ -305,4 +305,5 @@ export type PageRoute =
   | 'people'
   | 'alumni'
   | 'events'
-  | 'lab-life';
+  | 'lab-life'
+  | 'admin';

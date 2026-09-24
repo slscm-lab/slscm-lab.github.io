@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { Icon } from '../components/Icon';
 import { PaperCard } from '../components/PaperCard';
-import { getPublications } from '../repositories';
+import { usePublications } from '../context/DataContext';
 import researchKeywords from '../data/research_keywords.json';
 
 export const PublicationsPage: React.FC = () => {
-  const publications = getPublications();
+  const publications = usePublications();
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedYear, setSelectedYear] = useState<string>('all');
   const [selectedType, setSelectedType] = useState<string>('all');
