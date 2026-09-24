@@ -27,6 +27,7 @@ export type ResearchPillar = {
 
 export type SiteMetrics = {
   total_publications: number;
+  journal_articles: number;
   q1_journals: number;
   active_projects: number;
   phd_msc_scholarships: number;
@@ -160,7 +161,9 @@ export type Publication = {
   link?: string | null;
   research_pillar: LegacyPublicationPillarId | string;
   primary_pillar_id?: ResearchPillarId | string | null;
+  keywords?: string[];
   abstract?: string | null;
+  abstract_source?: string | null;
   bibtex?: string | null;
   is_featured?: boolean;
   highlighted_authors?: string[];
@@ -297,6 +300,7 @@ export type ConferenceTalk = {
 
 export type PageRoute =
   | 'home'
+  | 'research'
   | 'publications'
   | 'people'
   | 'alumni'

@@ -15,7 +15,13 @@
     "link": "https://comosa.vn/accepted-papers/",
     "research_pillar": "green_transportation",
     "primary_pillar_id": "supply_chain_optimization",
+    "keywords": [
+      "drone-logistics",
+      "tourism-routing",
+      "orienteering"
+    ],
     "abstract": "We study the drone tourism routing problem subject to battery energy limitations, customer and scenic viewpoint time-windows, and continuous communication-coverage guarantees. The model optimizes flight paths for unmanned aerial vehicles to maximize tourist utility and sight coverage while ensuring strict energy feasibility and reliable telecommunication links with ground control stations.",
+    "abstract_source": null,
     "bibtex": "@inproceedings{cao_2026_drone_tourism_comosa,\n  title = {Drone Tourism Routing Under Energy, Time-Window and Communication-Coverage Constraints},\n  author = {Cao Nguyet Anh and Vu Duc Minh and Le Thi Bich Hanh and Pham Thanh Binh},\n  booktitle = {The 1st International Conference on Optimization, Modeling, Simulation, and Analytics (COMOSA 2025), Springer},\n  year = {2026},\n  url = {https://comosa.vn/accepted-papers/}\n}",
     "is_featured": false,
     "highlighted_authors": [],
@@ -38,7 +44,13 @@
     "link": "https://doi.org/10.1080/01605682.2025.2519991",
     "research_pillar": "green_transportation",
     "primary_pillar_id": "supply_chain_optimization",
+    "keywords": [
+      "school-transportation",
+      "vehicle-routing",
+      "metaheuristics"
+    ],
     "abstract": "This study presents a case study of the School Bus Routing Problem (SBRP), focusing on improving the quality of student transportation services. Although numerous studies have addressed the SBRP, this study tackles a new variant driven by a negative impact policy to limit the number of continuing students facing extended travel times. We present this variant and propose a mathematical formulation along with a hybrid metaheuristic approach for it. Furthermore, we conduct comprehensive experiments to evaluate algorithms’ performance and various configurations of the negative impact policy on both artificial and real instances. Computational results confirm the effectiveness of our hybrid algorithm.",
+    "abstract_source": null,
     "bibtex": "@article{dinh_2025_schoolbus_jors,\n  title = {The rescheduling school bus routing problem under a constraint on the number of students with negative impact},\n  author = {Quy Ta Dinh and Thu Huong Dang and Minh Hoàng Hà and Duc Minh Vu and Tien Mai},\n  journal = {Journal of the Operational Research Society},\n  year = {2026},\n  doi = {10.1080/01605682.2025.2519991},\n  url = {https://doi.org/10.1080/01605682.2025.2519991}\n}",
     "is_featured": true,
     "highlighted_authors": [],
@@ -61,7 +73,13 @@
     "link": "https://doi.org/10.1016/j.cor.2026.107495",
     "research_pillar": "operational_optimization",
     "primary_pillar_id": "supply_chain_optimization",
+    "keywords": [
+      "arc-routing",
+      "exact-optimization",
+      "metaheuristics"
+    ],
     "abstract": "The Hierarchical Directed Capacitated Arc Routing Problems (HDCARP) is a variant of the Capacitated Arc Routing Problems (CARPs), in which the arcs in a graph are partitioned into clusters. However, unlike traditional CARPs that aim to minimise total time, the HDCARP focuses on minimizing the maximum completion time of each priority class in a hierarchical fashion. Practical applications of the HDCARP include snow plowing, salt spreading, street cleaning, and waste collection. In this study, we explore two variants of the HDCARP. The key difference between these variants lies in the consideration of precedence relations between clusters within routes. We propose MILP formulations and matheuristics for both HDCARP variants. The MILP formulations enable us to find optimal solutions for small-scale instances and evaluate the quality of matheuristics. Our matheuristics are based on decomposing the problem into multiple sub-problems, resulting in faster running time for large-scale instances. We conduct extensive computational experiments to assess the performance of these approaches and present our findings.",
+    "abstract_source": null,
     "bibtex": "@article{ha_2026_hdc_cor,\n  title = {On the Hierarchical Directed Capacitated Arc Routing Problem},\n  author = {Minh Hoàng Hà and Thu Huong Dang and Ba Luat Le and Trung Thanh Nguyen and André Langevin},\n  journal = {Computers & Operations Research},\n  year = {2026},\n  doi = {10.1016/j.cor.2026.107495},\n  url = {https://doi.org/10.1016/j.cor.2026.107495}\n}",
     "is_featured": true,
     "highlighted_authors": [],
@@ -84,7 +102,14 @@
     "link": "https://doi.org/10.1016/j.trc.2026.105906",
     "research_pillar": "green_transportation",
     "primary_pillar_id": "supply_chain_optimization",
+    "keywords": [
+      "drone-logistics",
+      "vehicle-routing",
+      "exact-optimization",
+      "metaheuristics"
+    ],
     "abstract": "The Flying Sidekick Traveling Salesman Problem (FSTSP) is an emerging delivery routing problem that coordinates a truck and an unmanned aerial vehicle (drone) to serve customer requests. In this paper, we study the Revisit Flying Sidekick Traveling Salesman Problem (RV-FSTSP), a generalization of the FSTSP that provides greater operational flexibility by allowing the truck to revisit previously served customer locations and remain stationary to support multi-trip drone sorties. We develop a stage-based mixed-integer linear programming (MILP) formulation to model the problem's combinatorial structure, establishing polynomial-sized constraints for both the revisit and stationary support capabilities. To efficiently solve practical and large-scale instances, we propose a tailored metaheuristic algorithm. Extensive computational experiments on benchmark instances demonstrate the effectiveness of our proposed mathematical formulation and show that the RV-FSTSP approach significantly reduces total delivery times compared to the traditional FSTSP.",
+    "abstract_source": null,
     "bibtex": "@article{hong_2026_rvfstsp_trc,\n  title = {A stage-based formulation and meta-heuristic algorithm for the revisit Flying SideKick Traveling Salesman Problem},\n  author = {Le Thi Hong and Duc D. Vu and Tran Nam Khanh and Nguyen Dinh Cong and Duc-Minh Vu},\n  journal = {Transportation Research Part C: Emerging Technologies},\n  year = {2026},\n  doi = {10.1016/j.trc.2026.105906},\n  url = {https://doi.org/10.1016/j.trc.2026.105906}\n}",
     "is_featured": true,
     "highlighted_authors": [],
@@ -107,7 +132,13 @@
     "link": "https://doi.org/10.1287/ijoc.2025.1150",
     "research_pillar": "operational_optimization",
     "primary_pillar_id": "supply_chain_optimization",
+    "keywords": [
+      "facility-location",
+      "customer-choice",
+      "exact-optimization"
+    ],
     "abstract": "We study the competitive facility location problem, in which a firm aims to establish new facilities in a market already occupied by competitors. In this problem, customer behavior is a crucial factor in making optimal location decisions. We explore a general class of customer choice models, known as the cross-nested logit model, which is recognized for its flexibility and generality in predicting people’s choice behavior. To explore the problem, we first demonstrate that it is NP-hard even when there is only one customer class and the cross-nested structure has only two nests. To tackle the challenging facility location problem, we demonstrate that the objective function under a general cross-nested structure is not concave. Interestingly, we show that, by a change of variables, the objective function can be converted to a mixed-integer exponential cone convex program, enabling it to be solved to optimality via an outer approximation algorithm. Extensive experiments show the efficiency of our approach and provide analyses on the benefits of using the cross-nested model in the facility location context.",
+    "abstract_source": null,
     "bibtex": "@article{le_2026_cfl_ijoc,\n  title = {Competitive Facility Location Under Cross-Nested Logit Customer Choice Model: Hardness and Exact Approaches},\n  author = {Ba Luat Le and Tien Mai and Thuy Anh Ta and Minh Hoàng Hà and Duc-Minh Vu},\n  journal = {INFORMS Journal on Computing},\n  year = {2026},\n  doi = {10.1287/ijoc.2025.1150},\n  url = {https://doi.org/10.1287/ijoc.2025.1150}\n}",
     "is_featured": true,
     "highlighted_authors": [],
@@ -130,7 +161,12 @@
     "link": "https://comosa.vn/accepted-papers/",
     "research_pillar": "operational_optimization",
     "primary_pillar_id": "supply_chain_optimization",
+    "keywords": [
+      "scheduling",
+      "exact-optimization"
+    ],
     "abstract": "This paper investigates the energy-constrained parallel identical machine scheduling problem to minimize total completion time. We propose novel lower and upper bounding techniques that tightly capture energy consumption thresholds and non-linear power costs across operational periods, accelerating exact branch-and-bound and constraint programming solvers.",
+    "abstract_source": null,
     "bibtex": "@inproceedings{nguyen_2026_parallel_scheduling_comosa,\n  title = {Improved Bounds for the Energy-Constrained Parallel Machine Scheduling Problem to Minimize Total Completion Time},\n  author = {Viet Nguyen Huu and Tien Thanh Mai and Quy Ta Dinh and Minh Hoang Ha and Binh Huynh Thi Thanh},\n  booktitle = {The 1st International Conference on Optimization, Modeling, Simulation, and Analytics (COMOSA 2025), Springer},\n  year = {2026},\n  url = {https://comosa.vn/accepted-papers/}\n}",
     "is_featured": false,
     "highlighted_authors": [],
@@ -152,7 +188,11 @@
     "link": "https://doi.org/10.24963/ijcai.2026/392",
     "research_pillar": "ml_optimization",
     "primary_pillar_id": "ai_supply_chain_intelligence",
+    "keywords": [
+      "security-games"
+    ],
     "abstract": "The quantal response (QR) model is widely used in Stackelberg security games (SSGs) to capture boundedly rational adversaries. Existing work on SSGs under QR, however, almost exclusively assumes a homogeneous attacker population, ignoring heterogeneity in attacker preferences and rationality. We study SSG with mixed quantal response attackers, where the follower population consists of multiple discrete attacker types, each following a type-specific QR model. The defender allocates limited resources across targets, while an attacker drawn from this heterogeneous population observes the defender’s strategy and attacks a single target. This results in a highly non-convex equilibrium computation problem. We develop a polynomial-time approximation scheme (PTAS) for this setting when the number of attacker types is bounded, based on an exponential cone programming formulation combined with a carefully designed Branch-and-Bound procedure. Experiments demonstrate that our approach outperforms standard gradient-based methods and that explicitly modeling attacker heterogeneity yields significant gains over traditional SSG models with a single QR attacker.",
+    "abstract_source": null,
     "bibtex": "@inproceedings{pham_2026_ssg_ijcai,\n  title = {Beyond Homogeneous Adversaries: Stackelberg Security Games with Mixed Quantal Response},\n  author = {Hoang Giang Pham and Tien Mai and Thuy Anh Ta and Minh Hoàng Hà},\n  booktitle = {Proceedings of the Thirty-Fifth International Joint Conference on Artificial Intelligence (IJCAI 2026)},\n  year = {2026},\n  doi = {10.24963/ijcai.2026/392},\n  url = {https://doi.org/10.24963/ijcai.2026/392}\n}",
     "is_featured": true,
     "highlighted_authors": [],
@@ -174,7 +214,13 @@
     "link": "https://doi.org/10.1111/itor.70177",
     "research_pillar": "operational_optimization",
     "primary_pillar_id": "supply_chain_optimization",
+    "keywords": [
+      "scheduling",
+      "exact-optimization",
+      "metaheuristics"
+    ],
     "abstract": "We address the scheduling conflicting jobs on parallel identical machines problem with makespan minimization, a classical and computationally challenging variant of parallel machine scheduling. We develop and evaluate three distinct solution methodologies: a novel constraint programming (CP) formulation, and two metaheuristics: a multi-neighborhood simulated annealing that relies on an implicit solution representation and a greedy decoder, and a CP-based large neighborhood search that employs operators specifically tailored for the problem. The methods are tuned using statistically rigorous procedures and compared to highlight the strengths and weaknesses of each approach. For this purpose, we introduce and make publicly available a novel, challenging dataset, appropriately divided into training and validation instances. This dataset supports our experiments and provides a foundation for future benchmarking. Computational results show that the proposed CP formulation significantly outperforms an existing CP method, proving optimality on several instances within short computing times. Meanwhile, the MNSA metaheuristic consistently delivers high-quality solutions, especially on instances where the exact method has difficulty converging, with more consistent gaps in the presence of high conflict rates.",
+    "abstract_source": null,
     "bibtex": "@article{rosati_2026_itor,\n  title = {Exact and Metaheuristic Approaches to Minimizing Makespan in Parallel Machine Scheduling with Conflicting Jobs},\n  author = {Roberto Maria Rosati and Dinh Quy Ta and Minh Hoàng Hà and Andrea Schaerf},\n  journal = {International Transactions in Operational Research},\n  year = {2026},\n  doi = {10.1111/itor.70177},\n  url = {https://doi.org/10.1111/itor.70177}\n}",
     "is_featured": true,
     "highlighted_authors": [],
@@ -196,7 +242,13 @@
     "link": "https://comosa.vn/accepted-papers/",
     "research_pillar": "operational_optimization",
     "primary_pillar_id": "supply_chain_optimization",
+    "keywords": [
+      "drone-logistics",
+      "facility-location",
+      "scheduling"
+    ],
     "abstract": "We introduce and study the Drone-Locker Location Scheduling Problem (DLLSP), which jointly optimizes the placement of automated parcel lockers and the flight scheduling of autonomous delivery drones in urban last-mile logistics. Mixed-integer programming models and tailored metaheuristics are developed to minimize combined facility opening costs and delivery makespan.",
+    "abstract_source": null,
     "bibtex": "@inproceedings{tran_2026_drone_locker_comosa,\n  title = {On the Drone-Locker Location Scheduling Problem},\n  author = {Thi Nhung Tran and Thu Trang Hoa and Hai Dang Le and Minh Hoang Ha},\n  booktitle = {The 1st International Conference on Optimization, Modeling, Simulation, and Analytics (COMOSA 2025), Springer},\n  year = {2026},\n  url = {https://comosa.vn/accepted-papers/}\n}",
     "is_featured": false,
     "highlighted_authors": [],
@@ -219,7 +271,11 @@
     "link": "https://doi.org/10.1016/j.erss.2025.104474",
     "research_pillar": "green_transportation",
     "primary_pillar_id": "supply_chain_optimization",
+    "keywords": [
+      "energy-systems"
+    ],
     "abstract": "Demand response (DR) programs help electricity systems balance supply and demand by encouraging consumers to adjust their usage in response to price signals or incentives. As population growth, urbanization, and the electrification of transportation and industry continue to increase energy needs, flexible and effective DR programs have become increasingly important. However, consumer participation remains difficult to secure because individuals are influenced by a range of cognitive factors that shape how they perceive and respond to DR incentives. In this paper, we identify five broad categories of cognitive influences that systematically affect consumer decision-making in DR settings. For each category, we provide representative examples from DR programs and review the relevant literature. We then develop a conceptual framework linking consumer engagement, cognitive influences, and socioeconomic factors, and propose unified strategies for integrating behavioral interventions at each stage of the DR engagement process. These strategies aim not only to strengthen consumer participation but also to enhance the overall effectiveness of DR programs. By deepening our understanding of how behavioral factors shape consumer responses, this review offers actionable insights for practitioners, policymakers, and researchers seeking to design DR interventions that improve energy system performance while promoting efficiency and sustainable consumption habits.",
+    "abstract_source": null,
     "bibtex": "@article{vu_2026_demand_response_erss,\n  title = {Designing effective demand response: A review of behavioral insights, consumer engagement, and operational strategies in energy systems},\n  author = {Duc D. Vu and Akhtar Hussain and Duc-Minh Vu and Xiao Zhang and Van-Hai Bui},\n  journal = {Energy Research & Social Science},\n  year = {2026},\n  doi = {10.1016/j.erss.2025.104474},\n  url = {https://doi.org/10.1016/j.erss.2025.104474}\n}",
     "is_featured": true,
     "highlighted_authors": [],
@@ -241,7 +297,13 @@
     "link": "https://doi.org/10.1016/j.ejor.2025.11.021",
     "research_pillar": "operational_optimization",
     "primary_pillar_id": "supply_chain_optimization",
+    "keywords": [
+      "inventory-routing",
+      "vehicle-routing",
+      "metaheuristics"
+    ],
     "abstract": "The inventory routing problem (IRP) focuses on jointly optimizing inventory and distribution operations from a supplier to retailers over multiple days. Compared to other problems from the vehicle routing family, the interrelations between inventory and routing decisions render IRP optimization more challenging and call for advanced solution techniques. A few studies have focused on developing large neighborhood search approaches for this class of problems, but this remains a research area with vast possibilities due to the challenges related to the integration of inventory and routing decisions. In this study, we advance this research area by developing a new large neighborhood search operator tailored for the IRP. Specifically, the operator optimally removes and reinserts all visits to a specific retailer while minimizing routing and inventory costs. We propose an efficient tailored dynamic programming algorithm that exploits preprocessing and acceleration strategies. The operator is used to build an effective local search routine, and included in a state-of-the-art routing algorithm, i.e., Hybrid Genetic Search (HGS). Through extensive computational experiments, we demonstrate that the resulting heuristic algorithm leads to solutions of unmatched quality up to this date, especially on large-scale benchmark instances.",
+    "abstract_source": null,
     "bibtex": "@article{zhao_2025_irp_ejor,\n  title = {Large Neighborhood and Hybrid Genetic Search for Inventory Routing Problems},\n  author = {Jingyi Zhao and Claudia Archetti and Tuan Anh Pham and Thibaut Vidal},\n  journal = {European Journal of Operational Research},\n  year = {2026},\n  doi = {10.1016/j.ejor.2025.11.021},\n  url = {https://doi.org/10.1016/j.ejor.2025.11.021}\n}",
     "is_featured": true,
     "highlighted_authors": [],
@@ -264,7 +326,12 @@
     "link": "https://doi.org/10.1007/978-1-4614-6624-6_108-1",
     "research_pillar": "operational_optimization",
     "primary_pillar_id": "supply_chain_optimization",
+    "keywords": [
+      "scheduling",
+      "exact-optimization"
+    ],
     "abstract": "Machine scheduling problems involving conflict jobs can be seen as a constrained version of the classical scheduling problem, in which jobs may not be proceeded simultaneously on different machines. This conflict constraint naturally arises in several practical applications and has recently received considerable attentions in the research community. In fact, the problem is typically NP-hard (even for approximation), and most of algorithmic results achieved so far have heavily relied on special structures of the underlying graph used to model the conflict-job relation. Our focus is on three objective functions: minimizing the makespan, minimizing the weighted summation of the jobs’ completion time, and maximizing the total weights of completed jobs; the first two of which have been intensively studied in the scheduling literature, but have been not considered for problems with conflict jobs. For each objective function, we present several mixed integer linear programming models and a constraint programming model, from which we can solve the problems to optimality using dedicated solvers. Binary search-based algorithms are also proposed to solve the makespan problem. The results of numerical experiments performed on randomly generated data sets with up to 90 jobs and 6 machines are reported and analyzed to verify the performance of the considered formulations.",
+    "abstract_source": null,
     "bibtex": "@incollection{dinh_2025_parallel_scheduling_hbco,\n  title = {Exact Approaches for Scheduling Problems on Parallel Identical Machines with Conflict Jobs},\n  author = {Quy Ta Dinh and Duc Minh Vu and Trung Thanh Nguyen and Anh Duc Le and Minh Hoàng Hà},\n  booktitle = {Handbook of Combinatorial Optimization (Springer Nature)},\n  year = {2025},\n  doi = {10.1007/978-1-4614-6624-6_108-1},\n  url = {https://doi.org/10.1007/978-1-4614-6624-6_108-1}\n}",
     "is_featured": false,
     "highlighted_authors": [],
@@ -287,7 +354,14 @@
     "link": "https://doi.org/10.1007/978-3-032-00972-2_6",
     "research_pillar": "green_transportation",
     "primary_pillar_id": "supply_chain_optimization",
+    "keywords": [
+      "drone-logistics",
+      "vehicle-routing",
+      "exact-optimization",
+      "metaheuristics"
+    ],
     "abstract": "In this work, we present the first 2-index stage-based formulation for the Flying Sidekick Traveling Salesman Problem (FSTSP). Additionally, we propose a Construct-Merge-Solve and Adapt (CMSA) algorithm designed to generate high-quality feasible solutions. Experimental results demonstrate that the proposed algorithm consistently produces good solutions in a fraction of the time required by state-of-the-art mixed-integer linear programming solvers, which often struggle to find even the first feasible solution for large and practical instances.",
+    "abstract_source": null,
     "bibtex": "@inproceedings{hong_2025_fstsp_cita,\n  title = {A 2-Index Stage-Based Formulation and a Construct-Merge-Solve and Adapt Algorithm for the Flying Sidekick Traveling Salesman Problem},\n  author = {Le Thi Hong and Vu Duc Minh and Tran Nam Khanh and Nguyen Dinh Cong and Le Huu Trung},\n  booktitle = {The 14th Conference on Information Technology and its Applications (CITA 2025), LNNS, Springer},\n  year = {2025 },\n  doi = {10.1007/978-3-032-00972-2_6},\n  url = {https://doi.org/10.1007/978-3-032-00972-2_6}\n}",
     "is_featured": false,
     "highlighted_authors": [],
@@ -309,7 +383,13 @@
     "link": "https://doi.org/10.1007/978-981-96-6389-7_3",
     "research_pillar": "operational_optimization",
     "primary_pillar_id": "supply_chain_optimization",
+    "keywords": [
+      "facility-location",
+      "customer-choice",
+      "approximation-algorithms"
+    ],
     "abstract": "This work addresses the facility location problem, a key area of research in Operations Research and Artificial Intelligence. Specifically, we examine a competitive facility location problem where a firm seeks to establish new facilities in a market already served by existing competitors. To predict customer demand, we utilize a general class of customer behavior models, known as the nested-logit model, which is widely recognized as one of the most popular demand models in the literature. The facility location problem under the nested-logit model is characterized by its high nonlinearity and complexity. Existing methods either do not operate within polynomial time or fail to guarantee near-optimal solutions at any desired level of precision. In this study, by leveraging the unique structure of the nested logit choice model, we propose a Fully Polynomial-Time Approximation Scheme (FPTAS) to efficiently solve the problem. To the best of our knowledge, this is the first FPTAS developed for this type of competitive facility location problem.",
+    "abstract_source": null,
     "bibtex": "@inproceedings{le_2025_fptas_csonet,\n  title = {Facility Location Under Nonlinear Customer Demand: A Fully Polynomial-Time Approximation Scheme},\n  author = {Ba Luat Le and Thuy Anh Ta and Ngoc Anh Vu Thi and Minh Hoàng Hà},\n  booktitle = {Computational Data and Social Networks (CSoNet 2024), LNCS 15417, Springer},\n  year = {2025},\n  doi = {10.1007/978-981-96-6389-7_3},\n  url = {https://doi.org/10.1007/978-981-96-6389-7_3}\n}",
     "is_featured": false,
     "highlighted_authors": [],
@@ -331,7 +411,12 @@
     "link": "https://doi.org/10.1016/j.ejor.2024.09.021",
     "research_pillar": "operational_optimization",
     "primary_pillar_id": "supply_chain_optimization",
+    "keywords": [
+      "orienteering",
+      "vehicle-routing"
+    ],
     "abstract": "We introduce the Set Team Orienteering Problem (STOP), a generalised variant of the Set Orienteering Problem (SOP), in which customers’ locations are split into multiple clusters (or groups). Each cluster is associated with a profit that can be gained only if at least one customer from the cluster is visited. There is a fleet of homogeneous vehicles at a depot, and each vehicle has a limited travel time. The goal of the STOP is to find a set of feasible vehicle routes to collect the maximum profit. We first formulate the problem as a Mixed Integer Linear Programming (MILP) to mathematically describe it. A branch-and-price (B&P) algorithm is then developed to solve the problem to optimality. To deal with large instances, we propose a Large Neighbourhood Search (LNS), which relies on problem-tailored solution representation, removal, and insertion operators. Multiple experiments on newly generated instances confirm the performance of our approaches. The B&P is able to obtain optimal certificates for 77.6% of the STOP instances. Our LNS can achieve optimal solutions for all of these instances except one. More remarkably, we test the algorithms on the SOP via benchmarks available in the literature. It is shown that our B&P can close optimality gaps in 61.2% of these instances. This is the first time such a large number of SOP instances are solved to optimality. Our LNS outperforms existing algorithms proposed to solve the SOP in terms of solution quality. Out of 612 considered instances, it improves 43 best-known solutions.",
+    "abstract_source": null,
     "bibtex": "@article{nguyen_2025_set_top_ejor,\n  title = {The set team orienteering problem},\n  author = {Tat Dat Nguyen and Rafael Martinelli and Quang Anh Pham and Minh Hoàng Hà},\n  journal = {European Journal of Operational Research},\n  year = {2025},\n  doi = {10.1016/j.ejor.2024.09.021},\n  url = {https://doi.org/10.1016/j.ejor.2024.09.021}\n}",
     "is_featured": true,
     "highlighted_authors": [],
@@ -353,7 +438,13 @@
     "link": "https://link.springer.com/book/9783032154194",
     "research_pillar": "green_transportation",
     "primary_pillar_id": "supply_chain_optimization",
+    "keywords": [
+      "drone-logistics",
+      "vehicle-routing",
+      "metaheuristics"
+    ],
     "abstract": "We study an energy-aware multi-trip drone routing problem with customer time windows (MDRP-TW), in which a fleet of unmanned aerial vehicles with limited battery capacities performs multiple delivery sorties from a depot to serve geographically dispersed customers within specified time frames. To realistically capture drone energy consumption, the model accounts for payload-dependent battery depletion and replenishment times between consecutive trips. We formulate the problem and develop a Hybrid Genetic Search (HGS) algorithm that integrates specialized crossover operators with problem-tailored local search routines to efficiently navigate the search space. Extensive computational experiments on newly generated and benchmark instances demonstrate the effectiveness and scalability of the proposed method in producing high-quality delivery schedules under stringent energy and time-window constraints.",
+    "abstract_source": null,
     "bibtex": "@inproceedings{pham_2026_drone_tw_comosa,\n  title = {A Hybrid Genetic Search for Energy-Aware Multi-Trip Drone Routing with Time-Windows},\n  author = {Tuan Anh Pham and Minh Hoàng Hà and Duc Minh Vu and Duc Dong Do},\n  booktitle = {Optimization, Modeling, Simulation, and Analytics (COMOSA 2025 / Springer)},\n  year = {2026},\n  url = {https://link.springer.com/book/9783032154194}\n}",
     "is_featured": false,
     "highlighted_authors": [],
@@ -380,7 +471,13 @@
     "link": "https://csonet-conf.github.io/csonet25/index.php/program/index.html",
     "research_pillar": "ml_optimization",
     "primary_pillar_id": "ai_supply_chain_intelligence",
+    "keywords": [
+      "forecasting",
+      "machine-learning",
+      "energy-systems"
+    ],
     "abstract": "Accurate forecasting of liquefied natural gas (LNG) prices is critical for energy market participants, procurement planning, and risk management. In this study, we investigate machine learning-based approaches for forecasting Asian LNG spot prices, using the Japan Korea Marker (JKM) index as a primary benchmark. We analyze historical market fundamentals, regional supply-demand dynamics, and cross-commodity price signals to train and evaluate various predictive models, including tree-based ensembles and deep learning architectures. Empirical results demonstrate the superior predictive accuracy of machine learning frameworks compared to traditional econometric baselines, providing valuable insights for energy trading and logistics planning.",
+    "abstract_source": null,
     "bibtex": "@inproceedings{pham_2025_lng_csonet,\n  title = {Machine Learning-Based Forecasting of LNG Spot Prices: A Case Study on the JKM Index},\n  author = {Duy-Phuong Pham and Thanh-Hoang Le and Tien-Dzung Vu and Duc-Minh Vu and Ba-Tuan Tran and Van-Tu Nguyen and Van-Nhan Truong and Thanh-Sang Nguyen and Tuyet-Vy Vu},\n  booktitle = {CSoNet 2025 – AI-TECH Workshop},\n  year = {2025},\n  url = {https://csonet-conf.github.io/csonet25/index.php/program/index.html}\n}",
     "is_featured": false,
     "highlighted_authors": [],
@@ -401,7 +498,12 @@
     "link": "https://doi.org/10.1007/978-981-96-4282-3_29",
     "research_pillar": "operational_optimization",
     "primary_pillar_id": "supply_chain_optimization",
+    "keywords": [
+      "orienteering",
+      "constraint-programming"
+    ],
     "abstract": "In this paper, we study a new variant of orienteering problem (OP) where each vertex in the OP tour is a facility within a competitive market context, where customer demand is predicted by a random utility choice model. Unlike prior research, which primarily focuses on simple objective function such as maximizing a linear sum of score of selected vertices, we introduce a complicated non-linear objective function that necessitate the selection of locations to maximize a profit value such as expected customer demand or revenue. In our study, routing constraints included in the form of the OP is handled by Constraint Programming (CP), and the non-linear objective function, resulting from the utilization of random utilities, is tackled by two types of valid cuts, namely, outer-approximation and submodular cuts. These lead to the development of an exact solution methods: Cutting Plane, where these valid cuts are iteratively added to a master problem. Extensive experiments are conducted on problem instances of varying sizes, demonstrating that our approach excels in terms of solution quality and computation time when compared to other baseline approach.",
+    "abstract_source": null,
     "bibtex": "@inproceedings{pham_2025_soict_cutting_plane,\n  title = {Constraint Programming-Based Cutting Plane Algorithm for a Combination of Orienteering and Maximum Capture Problem},\n  author = {Hoang Giang Pham and Tien Mai and Minh Hoàng Hà},\n  booktitle = {Information and Communication Technology (SOICT 2024), Springer CCIS},\n  year = {2025},\n  doi = {10.1007/978-981-96-4282-3_29},\n  url = {https://doi.org/10.1007/978-981-96-4282-3_29}\n}",
     "is_featured": false,
     "highlighted_authors": [],
@@ -422,7 +524,12 @@
     "link": "https://doi.org/10.1016/j.neucom.2025.130898",
     "research_pillar": "ml_optimization",
     "primary_pillar_id": "ai_supply_chain_intelligence",
+    "keywords": [
+      "machine-learning",
+      "metaheuristics"
+    ],
     "abstract": "Random Vector Functional Link (RVFL) networks are valued for their rapid training and efficient architecture. However, the performance of these networks is significantly hindered by the challenge of hyperparameter tuning. To address this, the authors introduce GrafoRVFL, a framework designed to optimize RVFL networks using gradient-free metaheuristic algorithms (such as Genetic Algorithms, Particle Swarm Optimization, Whale Optimization Algorithm, etc.). By moving away from traditional gradient-based optimization, this framework provides a more robust way to tune hyperparameters and enhance the predictive performance of RVFL models across various applications. The library is implemented in NumPy and integrates seamlessly with the Scikit-Learn interface, allowing it to be easily incorporated into standard machine learning workflows.",
+    "abstract_source": null,
     "bibtex": "@article{thieu_2025_graforvfl_neucom,\n  title = {GrafoRVFL: A gradient-free optimization framework for boosting random vector functional link network},\n  author = {Nguyen Van Thieu and Nguyen Thanh Hoang and Hossam Faris},\n  journal = {Neurocomputing},\n  year = {2025},\n  doi = {10.1016/j.neucom.2025.130898},\n  url = {https://doi.org/10.1016/j.neucom.2025.130898}\n}",
     "is_featured": true,
     "highlighted_authors": [],
@@ -444,7 +551,12 @@
     "link": "https://doi.org/10.1016/j.csi.2025.103977",
     "research_pillar": "ml_optimization",
     "primary_pillar_id": "ai_supply_chain_intelligence",
+    "keywords": [
+      "machine-learning",
+      "metaheuristics"
+    ],
     "abstract": "The Multi-Layer Perceptron (MLP) is a foundational neural network architecture widely used for modeling complex, non-linear relationships. However, traditional MLP training—typically reliant on gradient descent—often struggles with challenges such as susceptibility to local optima, saddle points, and overfitting. While metaheuristic algorithms (MHAs) have emerged as robust alternatives for optimizing MLP training, there has historically been a lack of a comprehensive, standardized framework to integrate these approaches. This paper introduces MetaPerceptron, an extensible open-source Python library designed to bridge this gap. The framework provides a standardized environment for hybridizing metaheuristic algorithms with MLP models, facilitating tasks such as weight optimization, hyperparameter tuning, and feature selection. The library is compatible with Scikit-Learn and supports a wide range of metaheuristic techniques to improve the training performance and reliability of MLP models in various regression and classification applications.",
+    "abstract_source": null,
     "bibtex": "@article{thieu_2025_metaperceptron_csi,\n  title = {MetaPerceptron: A standardized framework for metaheuristic-driven multi-layer perceptron optimization},\n  author = {Nguyen Van Thieu and Seyedali Mirjalili and Harish Garg and Nguyen Thanh Hoang},\n  journal = {Computer Standards & Interfaces},\n  year = {2025},\n  doi = {10.1016/j.csi.2025.103977},\n  url = {https://doi.org/10.1016/j.csi.2025.103977}\n}",
     "is_featured": true,
     "highlighted_authors": [],
@@ -468,8 +580,892 @@
     "link": "https://link.springer.com/book/9783032154194",
     "research_pillar": "green_transportation",
     "primary_pillar_id": "supply_chain_optimization",
+    "keywords": [
+      "electric-vehicles",
+      "vehicle-routing"
+    ],
     "abstract": "The Electric Vehicle Routing Problem with Time Windows and Station-based or Route-based Charging Options addresses fleet optimization incorporating both conventional charging stations and continuous wireless charging infrastructure. This paper extends Schneider et al.'s foundational EVRP-TW model with arc-based dynamic wireless charging representation, partial coverage modeling, and hierarchical multi-objective optimization prioritizing fleet minimization. Computational experiments on Schneider benchmark instances demonstrate substantial operational benefits, with distance and time improvements ranging from 0.7% to 35.9% in secondary objective components. Analysis reveals that 20% wireless coverage achieves immediate benefits, while 60% coverage delivers optimal performance across all test instances for infrastructure investment decisions.",
+    "abstract_source": null,
     "bibtex": "@inproceedings{tran_2025_evrptw_comosa,\n  title = {Electric Vehicle Routing Problem with Time Windows and Station-Based or Route-Based Charging Options},\n  author = {Trung Duc Tran and Duc Minh Vu and Ngoc Doanh Nguyen and Gia Nguyen Pham and Laurent El Ghaoui and Minh Hoàng Hà},\n  booktitle = {Optimization, Modeling, Simulation, and Analytics (COMOSA 2025 / Springer)},\n  year = {2025},\n  url = {https://link.springer.com/book/9783032154194}\n}",
+    "is_featured": false,
+    "highlighted_authors": [],
+    "badge": null
+  },
+  {
+    "id": "journal-10-1007-s10288-022-00527-z",
+    "title": "An efficient branch-and-cut algorithm for the parallel drone scheduling traveling salesman problem",
+    "authors": [
+      "Minh Anh Nguyen",
+      "Hai Long Luong",
+      "Minh Hoàng Hà",
+      "Ha-Bang Ban"
+    ],
+    "venue": "4OR",
+    "year": 2023,
+    "type": "Journal",
+    "doi": "10.1007/s10288-022-00527-z",
+    "link": "https://doi.org/10.1007/s10288-022-00527-z",
+    "research_pillar": "green_transportation",
+    "primary_pillar_id": "supply_chain_optimization",
+    "keywords": [
+      "drone-logistics",
+      "scheduling",
+      "branch-and-cut"
+    ],
+    "abstract": "This paper proposes an efficient branch-and-cut algorithm to exactly solve the parallel drone scheduling traveling salesman problem. The problem is first formulated as a mixed integer linear program with truck-flow variables defined on undirected edges, not on directed arcs as in existing models. The formulation is then strengthened by valid inequalities and the branch-and-cut algorithm is developed. The experimental results show that our algorithm can find optimal solutions for all existing instances, but two in a reasonable running time. To make the problem more challenging for future solution methods, we introduce two new sets of 120 larger instances with the number of customers varying from 318 to 783 and test our algorithm and investigate the performance of state-of-the-art metaheuristics on these instances. We show that the proposed algorithm can steadily solve the instances with up to 400 customers to optimality. Optimal solutions of several cases with 600 and 783 customers are also found by our algorithm. This is the first time problems of such a large size are optimally solved.",
+    "abstract_source": "https://link.springer.com/article/10.1007/s10288-022-00527-z",
+    "bibtex": "@article{journal-10-1007-s10288-022-00527-z,\n  title = {An efficient branch-and-cut algorithm for the parallel drone scheduling traveling salesman problem},\n  author = {Minh Anh Nguyen and Hai Long Luong and Minh Hoàng Hà and Ha-Bang Ban},\n  journal = {4OR},\n  year = {2023},\n  volume = {21},\n  number = {4},\n  pages = {609-637},\n  doi = {10.1007/s10288-022-00527-z},\n  url = {https://doi.org/10.1007/s10288-022-00527-z}\n}",
+    "is_featured": false,
+    "highlighted_authors": [],
+    "badge": null
+  },
+  {
+    "id": "journal-10-1007-s10878-023-01066-x",
+    "title": "New mixed integer linear programming models and an iterated local search for the clustered traveling salesman problem with relaxed priority rule",
+    "authors": [
+      "Thanh Tan Doan",
+      "Nathalie Bostel",
+      "Minh Hoàng Hà",
+      "Vu Hoang Vuong Nguyen"
+    ],
+    "venue": "Journal of Combinatorial Optimization",
+    "year": 2023,
+    "type": "Journal",
+    "doi": "10.1007/s10878-023-01066-x",
+    "link": "https://doi.org/10.1007/s10878-023-01066-x",
+    "research_pillar": "operational_optimization",
+    "primary_pillar_id": "supply_chain_optimization",
+    "keywords": [
+      "vehicle-routing",
+      "metaheuristics",
+      "exact-optimization"
+    ],
+    "abstract": "The Traveling Salesman Problem (TSP) is a well known problem in operations research with various studies and applications. In this paper, we address a variant of the TSP in which the customers are divided into several priority groups and the order of servicing groups can be flexibly changed with a rule called the d-relaxed priority rule. The problem is called the Clustered Traveling Salesman Problem with Relaxed Priority Rule (CTSP-d). We propose two new Mixed Integer Linear Programming (MILP) models for the CTSP-d and a metaheuristic based on Iterated Local Search (ILS) with operators designed for or adapted to the problem. The experimental results obtained on the benchmark instances show that two new models performs better than previous ones, and ILS also proves its performance with 13 new best known solutions found and significant stability compared to existing metaheuristics.",
+    "abstract_source": "https://link.springer.com/article/10.1007/s10878-023-01066-x",
+    "bibtex": "@article{journal-10-1007-s10878-023-01066-x,\n  title = {New mixed integer linear programming models and an iterated local search for the clustered traveling salesman problem with relaxed priority rule},\n  author = {Thanh Tan Doan and Nathalie Bostel and Minh Hoàng Hà and Vu Hoang Vuong Nguyen},\n  journal = {Journal of Combinatorial Optimization},\n  year = {2023},\n  volume = {46},\n  number = {1},\n  article-number = {1},\n  doi = {10.1007/s10878-023-01066-x},\n  url = {https://doi.org/10.1007/s10878-023-01066-x}\n}",
+    "is_featured": false,
+    "highlighted_authors": [],
+    "badge": null
+  },
+  {
+    "id": "journal-10-1287-trsc-2022-1192",
+    "title": "The Parallel Drone Scheduling Traveling Salesman Problem with Collective Drones",
+    "authors": [
+      "Minh Anh Nguyen",
+      "Minh Hoàng Hà"
+    ],
+    "venue": "Transportation Science",
+    "year": 2023,
+    "type": "Journal",
+    "doi": "10.1287/trsc.2022.1192",
+    "link": "https://doi.org/10.1287/trsc.2022.1192",
+    "research_pillar": "green_transportation",
+    "primary_pillar_id": "supply_chain_optimization",
+    "keywords": [
+      "drone-logistics",
+      "scheduling",
+      "vehicle-routing"
+    ],
+    "abstract": "In this paper, we study a new variant of the parallel drone scheduling traveling salesman problem that aims to increase the utilization of drones, particularly for heavy item deliveries. The system under consideration adopts a technology that combines multiple drones to form a collective drone (c-drone) capable of transporting heavier items. The innovative concept is expected to add further flexibility in vehicle assignment decisions. An especially difficult challenge to address is the collaboration among drones because it requires temporal synchronization between their delivery tours. To better model the reality, we also consider that drone power consumption is a nonlinear function of both speed and parcel weight. We first develop a two-index mixed integer linear programming (MILP) formulation from which a simple branch and cut is developed to solve small-size instances to optimality. To efficiently handle larger problem instances, we propose a ruin-and-recreate metaheuristic with problem-tailored removal and insertion operators, in which an efficient move evaluation procedure based on the topological sort is designed to deal with the complexity of the synchronization constraints. Computational experiments demonstrate the validity of the developed MILP model and the performance of the proposed metaheuristic. Sensitivity analyses based on the classification and regression tree are performed to investigate the benefits of using c-drones and the important factors affecting the efficiency of the new transportation system.",
+    "abstract_source": "https://api.crossref.org/works/10.1287%2Ftrsc.2022.1192",
+    "bibtex": "@article{journal-10-1287-trsc-2022-1192,\n  title = {The Parallel Drone Scheduling Traveling Salesman Problem with Collective Drones},\n  author = {Minh Anh Nguyen and Minh Hoàng Hà},\n  journal = {Transportation Science},\n  year = {2023},\n  volume = {57},\n  number = {4},\n  pages = {866-888},\n  doi = {10.1287/trsc.2022.1192},\n  url = {https://doi.org/10.1287/trsc.2022.1192}\n}",
+    "is_featured": false,
+    "highlighted_authors": [],
+    "badge": null
+  },
+  {
+    "id": "journal-10-1016-j-cor-2021-105566",
+    "title": "Branch-and-check approaches for the tourist trip design problem with rich constraints",
+    "authors": [
+      "Duc Minh Vu",
+      "Yannick Kergosien",
+      "Jorge E. Mendoza",
+      "Pierre Desport"
+    ],
+    "venue": "Computers & Operations Research",
+    "year": 2022,
+    "type": "Journal",
+    "doi": "10.1016/j.cor.2021.105566",
+    "link": "https://doi.org/10.1016/j.cor.2021.105566",
+    "research_pillar": "operational_optimization",
+    "primary_pillar_id": "supply_chain_optimization",
+    "keywords": [
+      "tourism-routing",
+      "orienteering",
+      "exact-optimization"
+    ],
+    "abstract": "The tourist trip design problem is an extension of the orienteering problem applied to tourism. The problem consists in selecting a subset of locations to visit from among a larger set while maximizing the benefit for the tourist. The benefit is given by the sum of the rewards collected at each location visited. We consider a variant of the problem that deals not only with “typical” constraints such as budget, opening-time hours (i.e., time windows at the locations), and maximum trip duration but also with other practical tourism constraints such as mandatory visits, limits on the number of locations of each type, and the order at which selected locations are visited. To solve this problem, we propose a branch-and-check approach in which the master problem selects a subset of locations, verifying all except time-related constraints, and these locations define candidate solutions to the master problem. For each candidate solution, the slave problem checks whether a feasible trip can be built using the given locations. To accelerate the branch-and-check approach, we propose and test improvements, including preprocessing to tighten the master-slave problem, valid inequalities generated dynamically to strengthen the master problem, and a local branching and variable neighborhood search to find new feasible solutions. Finally, we report the experimental results and compare the performance of the proposed exact algorithm with that of a mathematical solver.",
+    "abstract_source": "https://optimization-online.org/wp-content/uploads/2020/07/7885.pdf",
+    "bibtex": "@article{journal-10-1016-j-cor-2021-105566,\n  title = {Branch-and-check approaches for the tourist trip design problem with rich constraints},\n  author = {Duc Minh Vu and Yannick Kergosien and Jorge E. Mendoza and Pierre Desport},\n  journal = {Computers & Operations Research},\n  year = {2022},\n  volume = {138},\n  pages = {105566},\n  article-number = {105566},\n  doi = {10.1016/j.cor.2021.105566},\n  url = {https://doi.org/10.1016/j.cor.2021.105566}\n}",
+    "is_featured": false,
+    "highlighted_authors": [],
+    "badge": null
+  },
+  {
+    "id": "journal-10-1016-j-ejor-2021-07-008",
+    "title": "The min-cost parallel drone scheduling vehicle routing problem",
+    "authors": [
+      "Minh Anh Nguyen",
+      "Giang Thi-Huong Dang",
+      "Minh Hoàng Hà",
+      "Minh-Trien Pham"
+    ],
+    "venue": "European Journal of Operational Research",
+    "year": 2022,
+    "type": "Journal",
+    "doi": "10.1016/j.ejor.2021.07.008",
+    "link": "https://doi.org/10.1016/j.ejor.2021.07.008",
+    "research_pillar": "green_transportation",
+    "primary_pillar_id": "supply_chain_optimization",
+    "keywords": [
+      "drone-logistics",
+      "vehicle-routing",
+      "scheduling"
+    ],
+    "abstract": "Adopting unmanned aerial vehicles (UAV), also known as drones, into the last-mile-delivery sector and having them work alongside trucks with the aim of improving service quality and reducing the transportation cost gives rise to a new class of Vehicle Routing Problems (VRPs). In this paper, we introduce a new optimization problem called the min-cost Parallel Drone Scheduling Vehicle Routing Problem (PDSVRP). This problem is a variant of the well-known Parallel Drone Scheduling Traveling Salesman Problem (PDSTSP) recently introduced in the literature in which we allow multiple trucks and consider the objective of minimizing the total transportation costs. We formulate the problem as a Mixed Integer Linear Program and then develop a Ruin and Recreate (R&R) algorithm. Exploiting PDSVRP solution characteristics in an effective manner, our heuristic manages to introduce \\sufficient\" rooms to a solution via new removal operators during the ruin phase. It is expected to enhance the possibilities for improving solutions later in the recreate phase. Multiple experiments on a new set of randomly generated instances confirm the performance of our approach. To explore the benefits of drone delivery as well as the insight into the impact of related factors on the contribution of drones’ use to operational cost, a sensitivity analysis is conducted. We also adapt the proposed algorithm to solve the PDSTSP and validate it via benchmarks available in the literature. It is shown that our algorithm outperforms state-of-the-art algorithms in terms of solution quality. Out of 90 considered instances, it finds 26 new best known solutions.",
+    "abstract_source": "https://eprints.uet.vnu.edu.vn/eprints/id/eprint/4567/",
+    "bibtex": "@article{journal-10-1016-j-ejor-2021-07-008,\n  title = {The min-cost parallel drone scheduling vehicle routing problem},\n  author = {Minh Anh Nguyen and Giang Thi-Huong Dang and Minh Hoàng Hà and Minh-Trien Pham},\n  journal = {European Journal of Operational Research},\n  year = {2022},\n  volume = {299},\n  number = {3},\n  pages = {910-930},\n  doi = {10.1016/j.ejor.2021.07.008},\n  url = {https://doi.org/10.1016/j.ejor.2021.07.008}\n}",
+    "is_featured": false,
+    "highlighted_authors": [],
+    "badge": null
+  },
+  {
+    "id": "journal-10-1016-j-ejor-2022-01-029",
+    "title": "Solving the time dependent minimum tour duration and delivery man problems with dynamic discretization discovery",
+    "authors": [
+      "Duc Minh Vu",
+      "Mike Hewitt",
+      "Duc D. Vu"
+    ],
+    "venue": "European Journal of Operational Research",
+    "year": 2022,
+    "type": "Journal",
+    "doi": "10.1016/j.ejor.2022.01.029",
+    "link": "https://doi.org/10.1016/j.ejor.2022.01.029",
+    "research_pillar": "operational_optimization",
+    "primary_pillar_id": "supply_chain_optimization",
+    "keywords": [
+      "time-dependent-routing",
+      "vehicle-routing",
+      "exact-optimization"
+    ],
+    "abstract": "In this paper, we present exact methods for solving the Time Dependent Minimum Tour Duration Problem (TD-MTDP) and the Time Dependent Delivery Man Problem (TD-DMP). Both methods are based on a Dynamic Discretization Discovery (DDD) approach for solving the Time Dependent Traveling Salesman Problem with Time Windows (TD-TSPTW). Unlike the TD-TSPTW, these problems involve objective functions that depend in part on the time at which the vehicle departs the depot. As such, optimizing these problems adds a scheduling dimension to the problem. We present multiple enhancements to the DDD method, including enabling it to dynamically determine which waiting opportunities at the depot to model. With an extensive computational study we demonstrate that the resulting methods outperform all known methods for both the TD-MTDP and TD-DMP on instances taken from the literature.",
+    "abstract_source": "https://www.sciencedirect.com/science/article/abs/pii/S0377221722000674",
+    "bibtex": "@article{journal-10-1016-j-ejor-2022-01-029,\n  title = {Solving the time dependent minimum tour duration and delivery man problems with dynamic discretization discovery},\n  author = {Duc Minh Vu and Mike Hewitt and Duc D. Vu},\n  journal = {European Journal of Operational Research},\n  year = {2022},\n  volume = {302},\n  number = {3},\n  pages = {831-846},\n  doi = {10.1016/j.ejor.2022.01.029},\n  url = {https://doi.org/10.1016/j.ejor.2022.01.029}\n}",
+    "is_featured": false,
+    "highlighted_authors": [],
+    "badge": null
+  },
+  {
+    "id": "journal-10-1038-s41598-022-24181-x",
+    "title": "Predicting the risk of osteoporosis in older Vietnamese women using machine learning approaches",
+    "authors": [
+      "Hanh My Bui",
+      "Minh Hoang Ha",
+      "Hoang Giang Pham",
+      "Thang Phuoc Dao",
+      "Thuy-Trang Thi Nguyen",
+      "Minh Loi Nguyen",
+      "Ngan Thi Vuong",
+      "Xuyen Hong Thi Hoang",
+      "Loc Tien Do",
+      "Thanh Xuan Dao",
+      "Cuong Quang Le"
+    ],
+    "venue": "Scientific Reports",
+    "year": 2022,
+    "type": "Journal",
+    "doi": "10.1038/s41598-022-24181-x",
+    "link": "https://doi.org/10.1038/s41598-022-24181-x",
+    "research_pillar": "ml_optimization",
+    "primary_pillar_id": "decision_analytics",
+    "keywords": [
+      "healthcare-analytics",
+      "machine-learning"
+    ],
+    "abstract": "Osteoporosis contributes significantly to health and economic burdens worldwide. However, the development of osteoporosis-related prediction tools has been limited for lower-middle-income countries, especially Vietnam. This study aims to develop prediction models for the Vietnamese population as well as evaluate the existing tools to forecast the risk of osteoporosis and evaluate the contribution of covariates that previous studies have determined to be risk factors for osteoporosis. The prediction models were developed to predict the risk of osteoporosis using machine learning algorithms. The performance of the included prediction models was evaluated based on two scenarios; in the first one, the original test parameters were directly modeled, and in the second the original test parameters were transformed into binary covariates. The area under the receiver operating characteristic curve, the Brier score, precision, recall and F1-score were calculated to evaluate the models’ performance in both scenarios. The contribution of the covariates was estimated using the Permutation Feature Importance estimation. Four models, namely, Logistic Regression, Support Vector Machine, Random Forest and Neural Network, were developed through two scenarios. During the validation phase, these four models performed competitively against the reference models, with the areas under the curve above 0.81. Age, height and weight contributed the most to the risk of osteoporosis, while the correlation of the other covariates with the outcome was minor. Machine learning algorithms have a proven advantage in predicting the risk of osteoporosis among Vietnamese women over 50 years old. Additional research is required to more deeply evaluate the performance of the models on other high-risk populations.",
+    "abstract_source": "https://api.crossref.org/works/10.1038%2Fs41598-022-24181-x",
+    "bibtex": "@article{journal-10-1038-s41598-022-24181-x,\n  title = {Predicting the risk of osteoporosis in older Vietnamese women using machine learning approaches},\n  author = {Hanh My Bui and Minh Hoang Ha and Hoang Giang Pham and Thang Phuoc Dao and Thuy-Trang Thi Nguyen and Minh Loi Nguyen and Ngan Thi Vuong and Xuyen Hong Thi Hoang and Loc Tien Do and Thanh Xuan Dao and Cuong Quang Le},\n  journal = {Scientific Reports},\n  year = {2022},\n  volume = {12},\n  number = {1},\n  article-number = {20160},\n  doi = {10.1038/s41598-022-24181-x},\n  url = {https://doi.org/10.1038/s41598-022-24181-x}\n}",
+    "is_featured": false,
+    "highlighted_authors": [],
+    "badge": null
+  },
+  {
+    "id": "journal-10-1111-itor-12797",
+    "title": "Solving the clustered traveling salesman problem with d-relaxed priority rule",
+    "authors": [
+      "Minh Hoàng Hà",
+      "Hoa Nguyen Phuong",
+      "Huyen Tran Ngoc Nhat",
+      "André Langevin",
+      "Martin Trépanier"
+    ],
+    "venue": "International Transactions in Operational Research",
+    "year": 2022,
+    "type": "Journal",
+    "doi": "10.1111/itor.12797",
+    "link": "https://doi.org/10.1111/itor.12797",
+    "research_pillar": "operational_optimization",
+    "primary_pillar_id": "supply_chain_optimization",
+    "keywords": [
+      "vehicle-routing",
+      "exact-optimization",
+      "metaheuristics"
+    ],
+    "abstract": "The Clustered Traveling Salesman Problem with a Prespecified Order on the Clusters, a variant of the well-known traveling salesman problem is studied in literature. In this problem, delivery locations are divided into clusters with different urgency levels and more urgent locations must be visited before less urgent ones. However, this could lead to an inefficient route in terms of traveling cost. This priority-oriented constraint can be relaxed by a rule called d-relaxed priority that provides a trade-off between transportation cost and emergency level. Our research proposes two approaches to solve the problem with d-relaxed priority rule. We improve the mathematical formulation proposed in the literature to construct an exact solution method. A meta-heuristic method based on the framework of Iterated Local Search with problem-tailored operators is also introduced to find approximate solutions. Experimental results show the effectiveness of our methods.",
+    "abstract_source": "https://arxiv.org/abs/1810.03981",
+    "bibtex": "@article{journal-10-1111-itor-12797,\n  title = {Solving the clustered traveling salesman problem with d-relaxed priority rule},\n  author = {Minh Hoàng Hà and Hoa Nguyen Phuong and Huyen Tran Ngoc Nhat and André Langevin and Martin Trépanier},\n  journal = {International Transactions in Operational Research},\n  year = {2022},\n  volume = {29},\n  number = {2},\n  pages = {837-853},\n  doi = {10.1111/itor.12797},\n  url = {https://doi.org/10.1111/itor.12797}\n}",
+    "is_featured": false,
+    "highlighted_authors": [],
+    "badge": null
+  },
+  {
+    "id": "journal-10-1111-itor-13052",
+    "title": "The two‐echelon routing problem with truck and drones",
+    "authors": [
+      "Lam Vu",
+      "Duy Manh Vu",
+      "Minh Hoàng Hà",
+      "Viet‐Phuong Nguyen"
+    ],
+    "venue": "International Transactions in Operational Research",
+    "year": 2022,
+    "type": "Journal",
+    "doi": "10.1111/itor.13052",
+    "link": "https://doi.org/10.1111/itor.13052",
+    "research_pillar": "green_transportation",
+    "primary_pillar_id": "supply_chain_optimization",
+    "keywords": [
+      "drone-logistics",
+      "vehicle-routing"
+    ],
+    "abstract": "In this paper, we study novel variants of the well‐known two‐echelon vehicle routing problem in which a truck works on the first echelon to transport parcels and a fleet of drones to intermediate depots while in the second echelon, the drones are used to deliver parcels from intermediate depots to customers. The objective is to minimize the completion time instead of the transportation cost as in classical two‐echelon vehicle routing problems. Depending on the context, a drone can be launched from the truck at an intermediate depot once (single‐trip drone) or several times (multiple‐trip drone). Mixed‐integer linear programming models are first proposed to formulate mathematically the problems and solve to optimality small‐sized instances. To handle larger instances, a metaheuristic based on the idea of greedy randomized adaptive search procedure is introduced. The main novel feature of our metaheuristic lies in the design of initial solution construction and local search operators, which can cover all the decision layers of the problems and run in using additional data structures. Experimental results obtained on instances of different contexts are reported and analyzed.",
+    "abstract_source": "https://api.crossref.org/works/10.1111%2Fitor.13052",
+    "bibtex": "@article{journal-10-1111-itor-13052,\n  title = {The two‐echelon routing problem with truck and drones},\n  author = {Lam Vu and Duy Manh Vu and Minh Hoàng Hà and Viet‐Phuong Nguyen},\n  journal = {International Transactions in Operational Research},\n  year = {2022},\n  volume = {29},\n  number = {5},\n  pages = {2968-2994},\n  doi = {10.1111/itor.13052},\n  url = {https://doi.org/10.1111/itor.13052}\n}",
+    "is_featured": false,
+    "highlighted_authors": [],
+    "badge": null
+  },
+  {
+    "id": "journal-10-1016-j-ejtl-2021-100039",
+    "title": "The vehicle routing problem with relaxed priority rules",
+    "authors": [
+      "Thanh Tan Doan",
+      "Nathalie Bostel",
+      "Minh Hoàng Hà"
+    ],
+    "venue": "EURO Journal on Transportation and Logistics",
+    "year": 2021,
+    "type": "Journal",
+    "doi": "10.1016/j.ejtl.2021.100039",
+    "link": "https://doi.org/10.1016/j.ejtl.2021.100039",
+    "research_pillar": "operational_optimization",
+    "primary_pillar_id": "supply_chain_optimization",
+    "keywords": [
+      "vehicle-routing"
+    ],
+    "abstract": "The Vehicle Routing Problem (VRP) is one of the most studied topics in Operations Research. Among the numerous variants of the VRP, this research addresses the VRP with relaxed priority rules (VRP-RPR) in which customers are assigned to several priority groups and customers with the highest priorities typically need to be served before lower priority ones. Additional rules are used to control the trade-off between priority and cost efficiency. We propose a Mixed Integer Linear Programming (MILP) model to formulate the problem and to solve small-sized instances. A metaheuristic based on the Adaptive Large Neighborhood Search (ALNS) algorithm with problem-tailored components is then designed to handle the problem at larger scales. The experimental results demonstrate the performance of our proposed algorithm. Remarkably, it outperforms a metaheuristic recently proposed to solve the Clustered Traveling Saleman Problem with d-relaxed priority rule (CTSP-d), a special case of VRP-RPR, in both solution quality and computational time.",
+    "abstract_source": "https://api.openalex.org/works/doi:10.1016%2Fj.ejtl.2021.100039",
+    "bibtex": "@article{journal-10-1016-j-ejtl-2021-100039,\n  title = {The vehicle routing problem with relaxed priority rules},\n  author = {Thanh Tan Doan and Nathalie Bostel and Minh Hoàng Hà},\n  journal = {EURO Journal on Transportation and Logistics},\n  year = {2021},\n  volume = {10},\n  pages = {100039},\n  article-number = {100039},\n  doi = {10.1016/j.ejtl.2021.100039},\n  url = {https://doi.org/10.1016/j.ejtl.2021.100039}\n}",
+    "is_featured": false,
+    "highlighted_authors": [],
+    "badge": null
+  },
+  {
+    "id": "journal-10-1016-j-trc-2021-103077",
+    "title": "Toward a more flexible VRP with pickup and delivery allowing consolidations",
+    "authors": [
+      "Yannis Ancele",
+      "Minh Hoàng Hà",
+      "Charly Lersteau",
+      "Dante Ben Matellini",
+      "Trung Thanh Nguyen"
+    ],
+    "venue": "Transportation Research Part C: Emerging Technologies",
+    "year": 2021,
+    "type": "Journal",
+    "doi": "10.1016/j.trc.2021.103077",
+    "link": "https://doi.org/10.1016/j.trc.2021.103077",
+    "research_pillar": "operational_optimization",
+    "primary_pillar_id": "supply_chain_optimization",
+    "keywords": [
+      "vehicle-routing",
+      "pickup-and-delivery"
+    ],
+    "abstract": "One important requirement of modern supply chain management is the frequent exchange of containers via multiple cross-docks which requires spatial and time synchronisations between different types of vehicle. Moreover, as collaborations in logistics between several companies become popular, more flexible and extended models must be solved to consider the different needs of the companies. This is of high importance in a new logistics concept, the Physical Internet, which is expected to considerably improve the way logistics are handled in the current supply chain management. To optimise the aforementioned requirements, a rich vehicle routing problem with pickup and delivery including numerous attributes is modelled and solved. A mathematical formulation is proposed and implemented in CPLEX to solve the problem. Given the complexity of the problem, solving large instances with exact methods is very time-consuming. Therefore, a multi-threaded meta-heuristic based on Simulated Annealing is developed. A set of new operators coupled with a restart strategy and memory are developed to help improve the performance. Computational results on a generated data-set showed that the proposed meta-heuristic is superior to the CPLEX solver in terms of solvability and computational time. The proposed meta-heuristic was also compared with the best-known results by current state-of-the-art methods on a classical benchmark on pickup and delivery problems with time windows (with up to 200 customers). The experimental results showed that the proposed method was able to match the best-known results in many of these large scale instances.",
+    "abstract_source": "https://researchonline.ljmu.ac.uk/id/eprint/14549/",
+    "bibtex": "@article{journal-10-1016-j-trc-2021-103077,\n  title = {Toward a more flexible VRP with pickup and delivery allowing consolidations},\n  author = {Yannis Ancele and Minh Hoàng Hà and Charly Lersteau and Dante Ben Matellini and Trung Thanh Nguyen},\n  journal = {Transportation Research Part C: Emerging Technologies},\n  year = {2021},\n  volume = {128},\n  pages = {103077},\n  article-number = {103077},\n  doi = {10.1016/j.trc.2021.103077},\n  url = {https://doi.org/10.1016/j.trc.2021.103077}\n}",
+    "is_featured": false,
+    "highlighted_authors": [],
+    "badge": null
+  },
+  {
+    "id": "journal-10-1287-trsc-2020-1035",
+    "title": "Arc Routing with Time-Dependent Travel Times and Paths",
+    "authors": [
+      "Thibaut Vidal",
+      "Rafael Martinelli",
+      "Tuan Anh Pham",
+      "Minh Hoàng Hà"
+    ],
+    "venue": "Transportation Science",
+    "year": 2021,
+    "type": "Journal",
+    "doi": "10.1287/trsc.2020.1035",
+    "link": "https://doi.org/10.1287/trsc.2020.1035",
+    "research_pillar": "operational_optimization",
+    "primary_pillar_id": "supply_chain_optimization",
+    "keywords": [
+      "arc-routing",
+      "time-dependent-routing"
+    ],
+    "abstract": "Vehicle routing algorithms usually reformulate the road network into a complete graph in which each arc represents the shortest path between two locations. Studies on time-dependent routing followed this model and therefore defined the speed functions on the complete graph. We argue that this model is often inadequate, in particular for arc routing problems involving services on edges of a road network. To fill this gap, we formally define the time-dependent capacitated arc routing problem (TDCARP), with travel and service speed functions given directly at the network level. Under these assumptions, the quickest path between locations can change over time, leading to a complex problem that challenges the capabilities of current solution methods. We introduce effective algorithms for preprocessing quickest paths in a closed form, efficient data structures for travel time queries during routing optimization, and heuristic and exact solution approaches for the TDCARP. Our heuristic uses the hybrid genetic search principle with tailored solution-decoding algorithms and lower bounds for filtering moves. Our branch-and-price algorithm exploits dedicated pricing routines, heuristic dominance rules, and completion bounds to find optimal solutions for problems counting up to 75 services. From these algorithms, we measure the benefits of time-dependent routing optimization for different levels of travel-speed data accuracy.",
+    "abstract_source": "https://api.crossref.org/works/10.1287%2Ftrsc.2020.1035",
+    "bibtex": "@article{journal-10-1287-trsc-2020-1035,\n  title = {Arc Routing with Time-Dependent Travel Times and Paths},\n  author = {Thibaut Vidal and Rafael Martinelli and Tuan Anh Pham and Minh Hoàng Hà},\n  journal = {Transportation Science},\n  year = {2021},\n  volume = {55},\n  number = {3},\n  pages = {706-724},\n  doi = {10.1287/trsc.2020.1035},\n  url = {https://doi.org/10.1287/trsc.2020.1035}\n}",
+    "is_featured": false,
+    "highlighted_authors": [],
+    "badge": null
+  },
+  {
+    "id": "journal-10-15625-1813-9663-37-4-16180",
+    "title": "THE TRAVELING SALESMAN PROBLEM WITH MULTI-VISIT DRONE",
+    "authors": [
+      "Quang Minh Ha",
+      "Duy Manh Vu",
+      "Xuan Thanh Le",
+      "Minh Ha Hoang"
+    ],
+    "venue": "Journal of Computer Science and Cybernetics",
+    "year": 2021,
+    "type": "Journal",
+    "doi": "10.15625/1813-9663/37/4/16180",
+    "link": "https://doi.org/10.15625/1813-9663/37/4/16180",
+    "research_pillar": "green_transportation",
+    "primary_pillar_id": "supply_chain_optimization",
+    "keywords": [
+      "drone-logistics",
+      "vehicle-routing"
+    ],
+    "abstract": "This paper deals with the Traveling Salesman Problem with Multi-Visit Drone (TSP-MVD) in which a truck works in collaboration with a drone that can serve up to q > 1 customers consecutively during each sortie. We propose a Mixed Integer Linear Programming (MILP) formulation and a metaheuristic based on Iterated Local Search to solve the problem. Benchmark instances collected from the literature of the special case with q = 1 are used to test the performance of our algorithms. The obtained results show that our MILP model can solve a number of instances to optimality. This is the first time optimal solutions for these instances are reported. Our ILS performs better other algorithms in terms of both solution quality and running time on several class of instances. The numerical results obtained by testing the methods on new randomly generated instances show again the effectiveness of the methods as well as the positive impact of using the multi-visit drone.",
+    "abstract_source": "https://api.crossref.org/works/10.15625%2F1813-9663%2F37%2F4%2F16180",
+    "bibtex": "@article{journal-10-15625-1813-9663-37-4-16180,\n  title = {THE TRAVELING SALESMAN PROBLEM WITH MULTI-VISIT DRONE},\n  author = {Quang Minh Ha and Duy Manh Vu and Xuan Thanh Le and Minh Ha Hoang},\n  journal = {Journal of Computer Science and Cybernetics},\n  year = {2021},\n  volume = {37},\n  number = {4},\n  pages = {465-493},\n  doi = {10.15625/1813-9663/37/4/16180},\n  url = {https://doi.org/10.15625/1813-9663/37/4/16180}\n}",
+    "is_featured": false,
+    "highlighted_authors": [],
+    "badge": null
+  },
+  {
+    "id": "journal-10-1007-s10732-019-09431-y",
+    "title": "A hybrid genetic algorithm for the traveling salesman problem with drone",
+    "authors": [
+      "Quang Minh Ha",
+      "Yves Deville",
+      "Quang Dung Pham",
+      "Minh Hoàng Hà"
+    ],
+    "venue": "Journal of Heuristics",
+    "year": 2020,
+    "type": "Journal",
+    "doi": "10.1007/s10732-019-09431-y",
+    "link": "https://doi.org/10.1007/s10732-019-09431-y",
+    "research_pillar": "green_transportation",
+    "primary_pillar_id": "supply_chain_optimization",
+    "keywords": [
+      "drone-logistics",
+      "vehicle-routing",
+      "metaheuristics"
+    ],
+    "abstract": "This paper addresses the traveling salesman problem with drone (TSP-D), in which a truck and drone are used to deliver parcels to customers. The objective of this problem is to either minimize the total operational cost (min-cost TSP-D) or minimize the completion time for the truck and drone (min-time TSP-D). This problem has gained a lot of attention in the last few years reflecting the recent trends in a new delivery method among logistics companies. To solve the TSP-D, we propose a hybrid genetic search with dynamic population management and adaptive diversity control based on a split algorithm, problem-tailored crossover and local search operators, a new restore method to advance the convergence and an adaptive penalization mechanism to dynamically balance the search between feasible/infeasible solutions. The computational results show that the proposed algorithm outperforms two existing methods in terms of solution quality and improves many best known solutions found in the literature. Moreover, various analyses on the impacts of crossover choice and heuristic components have been conducted to investigate their sensitivity to the performance of our method.",
+    "abstract_source": "https://link.springer.com/article/10.1007/s10732-019-09431-y",
+    "bibtex": "@article{journal-10-1007-s10732-019-09431-y,\n  title = {A hybrid genetic algorithm for the traveling salesman problem with drone},\n  author = {Quang Minh Ha and Yves Deville and Quang Dung Pham and Minh Hoàng Hà},\n  journal = {Journal of Heuristics},\n  year = {2020},\n  volume = {26},\n  number = {2},\n  pages = {219-247},\n  doi = {10.1007/s10732-019-09431-y},\n  url = {https://doi.org/10.1007/s10732-019-09431-y}\n}",
+    "is_featured": false,
+    "highlighted_authors": [],
+    "badge": null
+  },
+  {
+    "id": "journal-10-1016-j-cor-2020-105085",
+    "title": "A new constraint programming model and a linear programming-based adaptive large neighborhood search for the vehicle routing problem with synchronization constraints",
+    "authors": [
+      "Minh Hoàng Hà",
+      "Tat Dat Nguyen",
+      "Thinh Nguyen Duy",
+      "Hoang Giang Pham",
+      "Thuy Do",
+      "Louis-Martin Rousseau"
+    ],
+    "venue": "Computers & Operations Research",
+    "year": 2020,
+    "type": "Journal",
+    "doi": "10.1016/j.cor.2020.105085",
+    "link": "https://doi.org/10.1016/j.cor.2020.105085",
+    "research_pillar": "operational_optimization",
+    "primary_pillar_id": "supply_chain_optimization",
+    "keywords": [
+      "vehicle-routing",
+      "scheduling",
+      "constraint-programming",
+      "metaheuristics"
+    ],
+    "abstract": "We consider a vehicle routing problem which seeks to minimize cost subject to time window and synchronization constraints. In this problem, the fleet of vehicles is categorized into regular and special vehicles. Some customers require both vehicles’ services, whose service start times at the customer are synchronized. Despite its important real-world application, this problem has rarely been studied in the literature. To solve the problem, we propose a Constraint Programming (CP) model and an Adaptive Large Neighborhood Search (ALNS) in which the design of insertion operators is based on solving linear programming (LP) models to check the insertion feasibility. A number of acceleration techniques is also proposed to significantly reduce the computational time. The computational experiments show that our new CP model finds better solutions than an existing CP-based ALNS, when used on small instances with 25 customers and with a much shorter running time. Our LP-based ALNS dominates the CP-based ALNS, in terms of solution quality, when it provides solutions with better objective values, on average, for all instance classes. This demonstrates the advantage of using linear programming instead of constraint programming when dealing with a variant of vehicle routing problems with relatively tight constraints, which is often considered to be more favorable for CP-based methods. We also adapt our algorithm to solve a well-studied variant of the problem, and the obtained results show that the algorithm provides good solutions as state-of-the-art approaches and improves four best known solutions.",
+    "abstract_source": "https://eprints.uet.vnu.edu.vn/eprints/id/eprint/4061/",
+    "bibtex": "@article{journal-10-1016-j-cor-2020-105085,\n  title = {A new constraint programming model and a linear programming-based adaptive large neighborhood search for the vehicle routing problem with synchronization constraints},\n  author = {Minh Hoàng Hà and Tat Dat Nguyen and Thinh Nguyen Duy and Hoang Giang Pham and Thuy Do and Louis-Martin Rousseau},\n  journal = {Computers & Operations Research},\n  year = {2020},\n  volume = {124},\n  pages = {105085},\n  article-number = {105085},\n  doi = {10.1016/j.cor.2020.105085},\n  url = {https://doi.org/10.1016/j.cor.2020.105085}\n}",
+    "is_featured": false,
+    "highlighted_authors": [],
+    "badge": null
+  },
+  {
+    "id": "journal-10-1186-s40649-020-00078-5",
+    "title": "Solving the k-dominating set problem on very large-scale networks",
+    "authors": [
+      "Minh Hai Nguyen",
+      "Minh Hoàng Hà",
+      "Diep N. Nguyen",
+      "The Trung Tran"
+    ],
+    "venue": "Computational Social Networks",
+    "year": 2020,
+    "type": "Journal",
+    "doi": "10.1186/s40649-020-00078-5",
+    "link": "https://doi.org/10.1186/s40649-020-00078-5",
+    "research_pillar": "operational_optimization",
+    "primary_pillar_id": "decision_analytics",
+    "keywords": [
+      "graph-optimization"
+    ],
+    "abstract": "The well-known minimum dominating set problem (MDSP) aims to construct the minimum-size subset of vertices in a graph such that every other vertex has at least one neighbor in the subset. In this article, we study a general version of the problem that extends the neighborhood relationship: two vertices are called neighbors of each other if there exists a path through no more than k edges between them. The problem called “minimum k -dominating set problem” (M k DSP) becomes the classical dominating set problem if k is 1 and has important applications in monitoring large-scale social networks. We propose an efficient heuristic algorithm that can handle real-world instances with up to 17 million vertices and 33 million edges. This is the first time such large graphs are solved for the minimum k -dominating set problem.",
+    "abstract_source": "https://api.crossref.org/works/10.1186%2Fs40649-020-00078-5",
+    "bibtex": "@article{journal-10-1186-s40649-020-00078-5,\n  title = {Solving the k-dominating set problem on very large-scale networks},\n  author = {Minh Hai Nguyen and Minh Hoàng Hà and Diep N. Nguyen and The Trung Tran},\n  journal = {Computational Social Networks},\n  year = {2020},\n  volume = {7},\n  number = {1},\n  article-number = {4},\n  doi = {10.1186/s40649-020-00078-5},\n  url = {https://doi.org/10.1186/s40649-020-00078-5}\n}",
+    "is_featured": false,
+    "highlighted_authors": [],
+    "badge": null
+  },
+  {
+    "id": "journal-10-1287-trsc-2019-0911",
+    "title": "Dynamic Discretization Discovery for Solving the Time-Dependent Traveling Salesman Problem with Time Windows",
+    "authors": [
+      "Duc Minh Vu",
+      "Mike Hewitt",
+      "Natashia Boland",
+      "Martin Savelsbergh"
+    ],
+    "venue": "Transportation Science",
+    "year": 2020,
+    "type": "Journal",
+    "doi": "10.1287/trsc.2019.0911",
+    "link": "https://doi.org/10.1287/trsc.2019.0911",
+    "research_pillar": "operational_optimization",
+    "primary_pillar_id": "supply_chain_optimization",
+    "keywords": [
+      "time-dependent-routing",
+      "vehicle-routing",
+      "exact-optimization"
+    ],
+    "abstract": "We present a new solution approach for the time-dependent traveling salesman problem with time windows. This problem considers a salesman who departs from his home, has to visit a number of cities within a predetermined period of time, and then, returns home. The problem allows for travel times that can depend on the time of departure. We consider two objectives for the problem: (1) a makespan objective that seeks to return the salesman to his home as early as possible and (2) a duration objective that seeks to minimize the amount of time that he is away from his home. The solution approach is based on an integer programming formulation of the problem on a time-expanded network, because doing so enables time dependencies to be embedded in the definition of the network. However, because such a time-expanded network (and thus, the integer programming formulation) can rapidly become prohibitively large, the solution approach uses a dynamic discretization discovery framework, which has been effective in other contexts. Our computational results indicate that the solution approach outperforms the best-known methods on benchmark instances and is robust with respect to instance parameters.",
+    "abstract_source": "https://api.crossref.org/works/10.1287%2Ftrsc.2019.0911",
+    "bibtex": "@article{journal-10-1287-trsc-2019-0911,\n  title = {Dynamic Discretization Discovery for Solving the Time-Dependent Traveling Salesman Problem with Time Windows},\n  author = {Duc Minh Vu and Mike Hewitt and Natashia Boland and Martin Savelsbergh},\n  journal = {Transportation Science},\n  year = {2020},\n  volume = {54},\n  number = {3},\n  pages = {703-720},\n  doi = {10.1287/trsc.2019.0911},\n  url = {https://doi.org/10.1287/trsc.2019.0911}\n}",
+    "is_featured": false,
+    "highlighted_authors": [],
+    "badge": null
+  },
+  {
+    "id": "journal-10-1007-s10898-019-00741-w",
+    "title": "On three soft rectangle packing problems with guillotine constraints",
+    "authors": [
+      "Quoc Trung Bui",
+      "Thibaut Vidal",
+      "Minh Hoàng Hà"
+    ],
+    "venue": "Journal of Global Optimization",
+    "year": 2019,
+    "type": "Journal",
+    "doi": "10.1007/s10898-019-00741-w",
+    "link": "https://doi.org/10.1007/s10898-019-00741-w",
+    "research_pillar": "operational_optimization",
+    "primary_pillar_id": "decision_analytics",
+    "keywords": [
+      "packing"
+    ],
+    "abstract": "We investigate how to partition a rectangular region of length $$L_1$$ and height $$L_2$$ into n rectangles of given areas $$(a_1, \\dots , a_n)$$ using two-stage guillotine cuts, so as to minimize either (i) the sum of the perimeters, (ii) the largest perimeter, or (iii) the maximum aspect ratio of the rectangles. These problems play an important role in the ongoing Vietnamese land-allocation reform, as well as in the optimization of matrix multiplication algorithms. We show that the first problem can be solved to optimality in $${{\\mathcal {O}}}(n \\log n)$$ , while the two others are NP-hard. We propose mixed integer linear programming formulations and a binary search-based approach for solving the NP-hard problems. Experimental analyses are conducted to compare the solution approaches in terms of computational efficiency and solution quality, for different objectives.",
+    "abstract_source": "https://link.springer.com/article/10.1007/s10898-019-00741-w",
+    "bibtex": "@article{journal-10-1007-s10898-019-00741-w,\n  title = {On three soft rectangle packing problems with guillotine constraints},\n  author = {Quoc Trung Bui and Thibaut Vidal and Minh Hoàng Hà},\n  journal = {Journal of Global Optimization},\n  year = {2019},\n  volume = {74},\n  number = {1},\n  pages = {45-62},\n  doi = {10.1007/s10898-019-00741-w},\n  url = {https://doi.org/10.1007/s10898-019-00741-w}\n}",
+    "is_featured": false,
+    "highlighted_authors": [],
+    "badge": null
+  },
+  {
+    "id": "journal-10-25073-2588-1086-vnucsce-235",
+    "title": "Improved Particle Swarm Optimization of Three-Dimensional Path Planning for Fixed Wing Unmanned Aerial Vehicle",
+    "authors": [
+      "Giang Thi - Huong Dang",
+      "Quang - Huy Vuong",
+      "Minh Hoang Ha",
+      "Minh - Trien Pham"
+    ],
+    "venue": "VNU Journal of Science: Computer Science and Communication Engineering",
+    "year": 2019,
+    "type": "Journal",
+    "doi": "10.25073/2588-1086/vnucsce.235",
+    "link": "https://doi.org/10.25073/2588-1086/vnucsce.235",
+    "research_pillar": "operational_optimization",
+    "primary_pillar_id": "decision_analytics",
+    "keywords": [
+      "uav-path-planning",
+      "metaheuristics"
+    ],
+    "abstract": "Path planning for Unmanned Aerial Vehicle (UAV) targets at generating an optimal global path to the target, avoiding collisions and optimizing the given cost function under constraints. In this paper, the path planning problem for UAV in pre-known 3D environment is presented. Particle Swarm Optimization (PSO) was proved the efficiency for various problems. PSO has high convergence speed yet with its major drawback of premature convergence when solving large-scale optimization problems. In this paper, the improved PSO with adaptive mutation to overcome its drawback in order to applied PSO the UAV path planning in real 3D environment which composed of mountains and constraints. The effectiveness of the proposed PSO algorithm is compared to Genetic Algorithm, standard PSO and other improved PSO using 3D map of Daklak, Dakrong and Langco Beach. The results have shown the potential for applying proposed algorithm in optimizing the 3D UAV path planning.",
+    "abstract_source": "https://api.crossref.org/works/10.25073%2F2588-1086%2Fvnucsce.235",
+    "bibtex": "@article{journal-10-25073-2588-1086-vnucsce-235,\n  title = {Improved Particle Swarm Optimization of Three-Dimensional Path Planning for Fixed Wing Unmanned Aerial Vehicle},\n  author = {Giang Thi - Huong Dang and Quang - Huy Vuong and Minh Hoang Ha and Minh - Trien Pham},\n  journal = {VNU Journal of Science: Computer Science and Communication Engineering},\n  year = {2019},\n  volume = {35},\n  number = {2},\n  doi = {10.25073/2588-1086/vnucsce.235},\n  url = {https://doi.org/10.25073/2588-1086/vnucsce.235}\n}",
+    "is_featured": false,
+    "highlighted_authors": [],
+    "badge": null
+  },
+  {
+    "id": "journal-10-1007-s13676-017-0103-x",
+    "title": "Scheduled service network design with resource acquisition and management",
+    "authors": [
+      "Teodor Gabriel Crainic",
+      "Mike Hewitt",
+      "Michel Toulouse",
+      "Duc Minh Vu"
+    ],
+    "venue": "EURO Journal on Transportation and Logistics",
+    "year": 2018,
+    "type": "Journal",
+    "doi": "10.1007/s13676-017-0103-x",
+    "link": "https://doi.org/10.1007/s13676-017-0103-x",
+    "research_pillar": "operational_optimization",
+    "primary_pillar_id": "supply_chain_optimization",
+    "keywords": [
+      "service-network-design",
+      "supply-chain-networks"
+    ],
+    "abstract": "We present a new planning model for freight consolidation carriers, one that links strategic, resource acquisition, and allocation decisions with tactical, service network design-related decisions. Specifically, such as service network design models that recognize resource constraints, the model selects services and routes both commodities and the resources needed to support the services that transport them. In addition, the model recognizes that resources can be grouped into types that differ from one another with respect to capabilities, e.g., speeds, capacities, scheduling rules, etc. Ultimately, along with recognizing resource constraints, the model also makes strategic decisions such as how many resources of each type should be acquired, to what terminal new resources should be assigned, and which existing terminal-based resources should be reassigned. As such, the model can be used from a strategic planning, resource acquisition, mixing, and allocation perspective as it provides an estimate of the impact of such decisions on transportation costs. We extend a matheuristic for a service network design problem with a fixed set (both in number and allocation) of resources of a single type to one that can also make these acquisition and allocation decisions for multiple types of resource. Then, with an extensive computational study, we demonstrate the efficacy of the matheuristic and benchmark its performance against both a leading commercial solver and a column generation-based heuristic. Finally, we perform an extensive computational study to understand how the resource-related and service network design-related components of the model interact, including how freight volumes and cost structures impact how many resources should be acquired.",
+    "abstract_source": "https://api.openalex.org/works/doi:10.1007%2Fs13676-017-0103-x",
+    "bibtex": "@article{journal-10-1007-s13676-017-0103-x,\n  title = {Scheduled service network design with resource acquisition and management},\n  author = {Teodor Gabriel Crainic and Mike Hewitt and Michel Toulouse and Duc Minh Vu},\n  journal = {EURO Journal on Transportation and Logistics},\n  year = {2018},\n  volume = {7},\n  number = {3},\n  pages = {277-309},\n  doi = {10.1007/s13676-017-0103-x},\n  url = {https://doi.org/10.1007/s13676-017-0103-x}\n}",
+    "is_featured": false,
+    "highlighted_authors": [],
+    "badge": null
+  },
+  {
+    "id": "journal-10-1016-j-dib-2018-03-106",
+    "title": "Description of the datasets for the experiments in the paper “solving the multi-vehicle multi-covering tour problem”",
+    "authors": [
+      "Tuan Anh Pham",
+      "Minh Hoàng Hà",
+      "Xuan Hoai Nguyen"
+    ],
+    "venue": "Data in Brief",
+    "year": 2018,
+    "type": "Journal",
+    "doi": "10.1016/j.dib.2018.03.106",
+    "link": "https://doi.org/10.1016/j.dib.2018.03.106",
+    "research_pillar": "operational_optimization",
+    "primary_pillar_id": "supply_chain_optimization",
+    "keywords": [
+      "vehicle-routing",
+      "data-resources"
+    ],
+    "abstract": "This data article contains data related to the research article entitled, “Solving the multi-vehicle multi-covering tour problem” (Pham et al., 2017) [4]. All data of this article was generated from instances kroA100, kroB100, kroC100, kroD100, kroA200, and kroB200 from TSPLIB. It can be downloaded from public repository. This data can be used as benchmarks for the covering tour problem (CTP) variants, such as m-CTP-p, m-CTP, mm-CTP-p, mm-CTP, mm-CTP-o, mm-CTP-wo. We tested our algorithm on these data and results are shown in Pham et al. (2017) [4].",
+    "abstract_source": "https://api.openalex.org/works/doi:10.1016%2Fj.dib.2018.03.106",
+    "bibtex": "@article{journal-10-1016-j-dib-2018-03-106,\n  title = {Description of the datasets for the experiments in the paper “solving the multi-vehicle multi-covering tour problem”},\n  author = {Tuan Anh Pham and Minh Hoàng Hà and Xuan Hoai Nguyen},\n  journal = {Data in Brief},\n  year = {2018},\n  volume = {18},\n  pages = {1146-1148},\n  doi = {10.1016/j.dib.2018.03.106},\n  url = {https://doi.org/10.1016/j.dib.2018.03.106}\n}",
+    "is_featured": false,
+    "highlighted_authors": [],
+    "badge": null
+  },
+  {
+    "id": "journal-10-1016-j-ejor-2017-08-027",
+    "title": "The vehicle routing problem with service level constraints",
+    "authors": [
+      "Teobaldo Bulhões",
+      "Minh Hoàng Hà",
+      "Rafael Martinelli",
+      "Thibaut Vidal"
+    ],
+    "venue": "European Journal of Operational Research",
+    "year": 2018,
+    "type": "Journal",
+    "doi": "10.1016/j.ejor.2017.08.027",
+    "link": "https://doi.org/10.1016/j.ejor.2017.08.027",
+    "research_pillar": "operational_optimization",
+    "primary_pillar_id": "supply_chain_optimization",
+    "keywords": [
+      "vehicle-routing"
+    ],
+    "abstract": "We consider a vehicle routing problem which seeks to minimize cost subject to service level constraints on several groups of deliveries. This problem captures some essential challenges faced by a logistics provider which operates transportation services for a limited number of partners and should respect contractual obligations on service levels. The problem also generalizes several important classes of vehicle routing problems with profits. To solve it, we propose a compact mathematical formulation, a branch-and-price algorithm, and a hybrid genetic algorithm with population management, which relies on problem-tailored solution representation, crossover and local search operators, as well as an adaptive penalization mechanism establishing a good balance between service levels and costs. Our computational experiments show that the proposed heuristic returns very high-quality solutions for this difficult problem, matches all optimal solutions found for small and medium-scale benchmark instances, and improves upon existing algorithms for two important special cases: the vehicle routing problem with private fleet and common carrier, and the capacitated profitable tour problem. The branch-and-price algorithm also produces new optimal solutions for all three problems.",
+    "abstract_source": "https://www.semanticscholar.org/paper/d09f0b96a0890913c862cb042fb493b86222ac29",
+    "bibtex": "@article{journal-10-1016-j-ejor-2017-08-027,\n  title = {The vehicle routing problem with service level constraints},\n  author = {Teobaldo Bulhões and Minh Hoàng Hà and Rafael Martinelli and Thibaut Vidal},\n  journal = {European Journal of Operational Research},\n  year = {2018},\n  volume = {265},\n  number = {2},\n  pages = {544-558},\n  doi = {10.1016/j.ejor.2017.08.027},\n  url = {https://doi.org/10.1016/j.ejor.2017.08.027}\n}",
+    "is_featured": false,
+    "highlighted_authors": [],
+    "badge": null
+  },
+  {
+    "id": "journal-10-1016-j-trc-2017-11-015",
+    "title": "On the min-cost Traveling Salesman Problem with Drone",
+    "authors": [
+      "Quang Minh Ha",
+      "Yves Deville",
+      "Quang Dung Pham",
+      "Minh Hoàng Hà"
+    ],
+    "venue": "Transportation Research Part C: Emerging Technologies",
+    "year": 2018,
+    "type": "Journal",
+    "doi": "10.1016/j.trc.2017.11.015",
+    "link": "https://doi.org/10.1016/j.trc.2017.11.015",
+    "research_pillar": "green_transportation",
+    "primary_pillar_id": "supply_chain_optimization",
+    "keywords": [
+      "drone-logistics",
+      "vehicle-routing",
+      "exact-optimization"
+    ],
+    "abstract": "Over the past few years, unmanned aerial vehicles (UAV), also known as drones, have been adopted as part of a new logistic method in the commercial sector called \"last-mile delivery\". In this novel approach, they are deployed alongside trucks to deliver goods to customers to improve the quality of service and reduce the transportation cost. This approach gives rise to a new variant of the traveling salesman problem (TSP), called TSP with drone (TSP-D). A variant of this problem that aims to minimize the time at which truck and drone finish the service (or, in other words, to maximize the quality of service) was studied in the work of Murray and Chu (2015). In contrast, this paper considers a new variant of TSP-D in which the objective is to minimize operational costs including total transportation cost and one created by waste time a vehicle has to wait for the other. The problem is first formulated mathematically. Then, two algorithms are proposed for the solution. The first algorithm (TSP-LS) was adapted from the approach proposed by Murray and Chu (2015), in which an optimal TSP solution is converted to a feasible TSP-D solution by local searches. The second algorithm, a Greedy Randomized Adaptive Search Procedure (GRASP), is based on a new split procedure that optimally splits any TSP tour into a TSP-D solution. After a TSP-D solution has been generated, it is then improved through local search operators. Numerical results obtained on various instances of both objective functions with different sizes and characteristics are presented. The results show that GRASP outperforms TSP-LS in terms of solution quality under an acceptable running time.",
+    "abstract_source": "https://research.dial.uclouvain.be/entities/publication/59a52e10-b259-480c-b51b-997a337875f9",
+    "bibtex": "@article{journal-10-1016-j-trc-2017-11-015,\n  title = {On the min-cost Traveling Salesman Problem with Drone},\n  author = {Quang Minh Ha and Yves Deville and Quang Dung Pham and Minh Hoàng Hà},\n  journal = {Transportation Research Part C: Emerging Technologies},\n  year = {2018},\n  volume = {86},\n  pages = {597-621},\n  doi = {10.1016/j.trc.2017.11.015},\n  url = {https://doi.org/10.1016/j.trc.2017.11.015}\n}",
+    "is_featured": false,
+    "highlighted_authors": [],
+    "badge": null
+  },
+  {
+    "id": "journal-10-1016-j-cor-2017-07-009",
+    "title": "Solving the multi-vehicle multi-covering tour problem",
+    "authors": [
+      "Tuan Anh Pham",
+      "Minh Hoàng Hà",
+      "Xuan Hoai Nguyen"
+    ],
+    "venue": "Computers & Operations Research",
+    "year": 2017,
+    "type": "Journal",
+    "doi": "10.1016/j.cor.2017.07.009",
+    "link": "https://doi.org/10.1016/j.cor.2017.07.009",
+    "research_pillar": "operational_optimization",
+    "primary_pillar_id": "supply_chain_optimization",
+    "keywords": [
+      "vehicle-routing",
+      "exact-optimization",
+      "metaheuristics"
+    ],
+    "abstract": "The well-known multi-vehicle covering tour problem (m-CTP) involves finding a minimum-length set of vehicle routes passing through a subset of vertices, subject to constraints on the length of each route and the number of vertices that it contains, such that each vertex not included in any route is covered. Here, a vertex is considered as covered if it lies within a given distance of at least a vertex of a route. This article introduces a generalized variant of the m-CTP that we called the multi-vehicle multi-covering Tour Problem (mm-CTP). In the mm-CTP, a vertex must be covered at least not only once but several times. Three variants of the problem are considered. The binary mm-CTP where a vertex is visited at most once, the mm-CTP without overnight where revisiting a vertex is allowed only after passing through another vertex and the mm-CTP with overnight where revisiting a vertex is permitted without any restrictions. We first propose graph transformations to convert the last two variants into the binary one and focus mostly on solving this variant. A special case of the problem is then formulated as an integer linear program and a branch-and-cut algorithm is developed. We also develop a Genetic Algorithm (GA) that provides high-quality solutions for the problem. Extensive computational results on the new problem mm-CTP as well as its other special cases show the performance of our methods. In particular, our GA outperforms the current best metaheuristics proposed for a wide class of CTP problems.",
+    "abstract_source": "https://www.sciencedirect.com/science/article/abs/pii/S0305054817301958",
+    "bibtex": "@article{journal-10-1016-j-cor-2017-07-009,\n  title = {Solving the multi-vehicle multi-covering tour problem},\n  author = {Tuan Anh Pham and Minh Hoàng Hà and Xuan Hoai Nguyen},\n  journal = {Computers & Operations Research},\n  year = {2017},\n  volume = {88},\n  pages = {258-278},\n  doi = {10.1016/j.cor.2017.07.009},\n  url = {https://doi.org/10.1016/j.cor.2017.07.009}\n}",
+    "is_featured": false,
+    "highlighted_authors": [],
+    "badge": null
+  },
+  {
+    "id": "journal-10-1080-00207543-2016-1233363",
+    "title": "Designing service sectors for daily maintenance operations in a road network",
+    "authors": [
+      "Lu Chen",
+      "Boxiao Chen",
+      "Quoc Trung Bui",
+      "Minh Hoàng Hà"
+    ],
+    "venue": "International Journal of Production Research",
+    "year": 2017,
+    "type": "Journal",
+    "doi": "10.1080/00207543.2016.1233363",
+    "link": "https://doi.org/10.1080/00207543.2016.1233363",
+    "research_pillar": "green_transportation",
+    "primary_pillar_id": "supply_chain_optimization",
+    "keywords": [
+      "road-maintenance",
+      "service-network-design"
+    ],
+    "abstract": "The problem of designing service sectors in a road network for the organisation of route maintenance activities is addressed in this paper. The decisions involve determining the locations of a set of depots and assigning road segments to the selected depots to form service sectors. Routing operations must be taken into consideration while partitioning service sectors in order to precisely evaluate deadhead and required number of vehicles. The problem is thus formulated as a location-arc routing problem and solved by a branch-and-cut algorithm. A three-stage heuristic algorithm with sector design component is developed to solve the medium- and large-sized problems. The computational experiments demonstrate the effectiveness of the heuristic algorithm, and the superiority of the heuristic algorithm to the exact method in terms of some specific partition evaluation criteria.",
+    "abstract_source": "https://api.openalex.org/works/doi:10.1080%2F00207543.2016.1233363",
+    "bibtex": "@article{journal-10-1080-00207543-2016-1233363,\n  title = {Designing service sectors for daily maintenance operations in a road network},\n  author = {Lu Chen and Boxiao Chen and Quoc Trung Bui and Minh Hoàng Hà},\n  journal = {International Journal of Production Research},\n  year = {2017},\n  volume = {55},\n  number = {8},\n  pages = {2251-2265},\n  doi = {10.1080/00207543.2016.1233363},\n  url = {https://doi.org/10.1080/00207543.2016.1233363}\n}",
+    "is_featured": false,
+    "highlighted_authors": [],
+    "badge": null
+  },
+  {
+    "id": "journal-10-1016-j-tre-2015-11-006",
+    "title": "A robust optimization approach for the road network daily maintenance routing problem with uncertain service time",
+    "authors": [
+      "Lu Chen",
+      "Michel Gendreau",
+      "Minh Hoàng Hà",
+      "André Langevin"
+    ],
+    "venue": "Transportation Research Part E: Logistics and Transportation Review",
+    "year": 2016,
+    "type": "Journal",
+    "doi": "10.1016/j.tre.2015.11.006",
+    "link": "https://doi.org/10.1016/j.tre.2015.11.006",
+    "research_pillar": "green_transportation",
+    "primary_pillar_id": "supply_chain_optimization",
+    "keywords": [
+      "road-maintenance",
+      "vehicle-routing",
+      "stochastic-robust-optimization"
+    ],
+    "abstract": "This paper studies the robust optimization approach for the routing problem encountered in daily maintenance operations of a road network. The uncertainty of service time is considered. The robust optimization approach yields routes that minimize total cost while being less sensitive to substantial deviations of service times. A robust optimization model is developed and solved by the branch-and-cut method. In computational experiments, the behavior of the robust solutions and their performance are analyzed using Monte Carlo simulation. The robust optimization model is also compared with a classic chance-constrained programming model. The experimental analysis provides managerial insights for decision makers to determine an appropriate routing strategy.",
+    "abstract_source": "https://www.sciencedirect.com/science/article/pii/S1366554515002094",
+    "bibtex": "@article{journal-10-1016-j-tre-2015-11-006,\n  title = {A robust optimization approach for the road network daily maintenance routing problem with uncertain service time},\n  author = {Lu Chen and Michel Gendreau and Minh Hoàng Hà and André Langevin},\n  journal = {Transportation Research Part E: Logistics and Transportation Review},\n  year = {2016},\n  volume = {85},\n  pages = {40-51},\n  doi = {10.1016/j.tre.2015.11.006},\n  url = {https://doi.org/10.1016/j.tre.2015.11.006}\n}",
+    "is_featured": false,
+    "highlighted_authors": [],
+    "badge": null
+  },
+  {
+    "id": "journal-10-1287-trsc-2014-0525",
+    "title": "Service Network Design with Resource Constraints",
+    "authors": [
+      "Teodor Gabriel Crainic",
+      "Mike Hewitt",
+      "Michel Toulouse",
+      "Duc Minh Vu"
+    ],
+    "venue": "Transportation Science",
+    "year": 2016,
+    "type": "Journal",
+    "doi": "10.1287/trsc.2014.0525",
+    "link": "https://doi.org/10.1287/trsc.2014.0525",
+    "research_pillar": "operational_optimization",
+    "primary_pillar_id": "supply_chain_optimization",
+    "keywords": [
+      "service-network-design",
+      "supply-chain-networks"
+    ],
+    "abstract": "We first present a new service network design model for freight consolidation carriers, one that selects services and routes both commodities and resources needed to support the services that transport them, while explicitly recognizing that there are limits on how many resources are available at each terminal. We next present a solution approach that combines column generation, meta-heuristic, and exact optimization techniques to produce high-quality solutions. We demonstrate the efficacy of the approach with an extensive computational study and benchmark its performance against both a leading commercial solver and a column generation-based heuristic.",
+    "abstract_source": "https://api.crossref.org/works/10.1287%2Ftrsc.2014.0525",
+    "bibtex": "@article{journal-10-1287-trsc-2014-0525,\n  title = {Service Network Design with Resource Constraints},\n  author = {Teodor Gabriel Crainic and Mike Hewitt and Michel Toulouse and Duc Minh Vu},\n  journal = {Transportation Science},\n  year = {2016},\n  volume = {50},\n  number = {4},\n  pages = {1380-1393},\n  doi = {10.1287/trsc.2014.0525},\n  url = {https://doi.org/10.1287/trsc.2014.0525}\n}",
+    "is_featured": false,
+    "highlighted_authors": [],
+    "badge": null
+  },
+  {
+    "id": "journal-10-1002-net-21525",
+    "title": "Solving the close‐enough arc routing problem",
+    "authors": [
+      "Minh Hoàng Hà",
+      "Nathalie Bostel",
+      "André Langevin",
+      "Louis‐Martin Rousseau"
+    ],
+    "venue": "Networks",
+    "year": 2014,
+    "type": "Journal",
+    "doi": "10.1002/net.21525",
+    "link": "https://doi.org/10.1002/net.21525",
+    "research_pillar": "operational_optimization",
+    "primary_pillar_id": "supply_chain_optimization",
+    "keywords": [
+      "arc-routing"
+    ],
+    "abstract": "The close‐enough arc routing problem has an interesting real‐life application to routing for meter reading. In this article, we propose a new mathematical formulation for this problem. We analyze our formulation and compare it with two formulations in the literature. We also develop branch‐and‐cut algorithms to solve the problem to optimality. We present computational results for instances based on three types of graphs: directed, undirected, and mixed.",
+    "abstract_source": "https://api.crossref.org/works/10.1002%2Fnet.21525",
+    "bibtex": "@article{journal-10-1002-net-21525,\n  title = {Solving the close‐enough arc routing problem},\n  author = {Minh Hoàng Hà and Nathalie Bostel and André Langevin and Louis‐Martin Rousseau},\n  journal = {Networks},\n  year = {2014},\n  volume = {63},\n  number = {1},\n  pages = {107-118},\n  doi = {10.1002/net.21525},\n  url = {https://doi.org/10.1002/net.21525}\n}",
+    "is_featured": false,
+    "highlighted_authors": [],
+    "badge": null
+  },
+  {
+    "id": "journal-10-1016-j-cor-2013-08-017",
+    "title": "An exact algorithm and a metaheuristic for the generalized vehicle routing problem with flexible fleet size",
+    "authors": [
+      "Minh Hoàng Hà",
+      "Nathalie Bostel",
+      "André Langevin",
+      "Louis-Martin Rousseau"
+    ],
+    "venue": "Computers & Operations Research",
+    "year": 2014,
+    "type": "Journal",
+    "doi": "10.1016/j.cor.2013.08.017",
+    "link": "https://doi.org/10.1016/j.cor.2013.08.017",
+    "research_pillar": "operational_optimization",
+    "primary_pillar_id": "supply_chain_optimization",
+    "keywords": [
+      "vehicle-routing",
+      "exact-optimization",
+      "metaheuristics"
+    ],
+    "abstract": "The generalized vehicle routing problem (GVRP) involves finding a minimum-length set of vehicle routes passing through a set of clusters, where each cluster contains a number of vertices, such that the tour includes exactly one vertex from each cluster and satisfies capacity constraints. We consider a version of the GVRP where the number of vehicles is a decision variable. This paper introduces a new mathematical formulation based on a two-commodity flow model. We solve the problem using a branch-and-cut algorithm and a metaheuristic that is a hybrid of the greedy randomized adaptive search procedure (GRASP) and the evolutionary local search (ELS) proposed in [18]. We perform computational experiments on instances from the literature to demonstrate the performance of our algorithms.",
+    "abstract_source": "https://www.sciencedirect.com/science/article/pii/S0305054813002232",
+    "bibtex": "@article{journal-10-1016-j-cor-2013-08-017,\n  title = {An exact algorithm and a metaheuristic for the generalized vehicle routing problem with flexible fleet size},\n  author = {Minh Hoàng Hà and Nathalie Bostel and André Langevin and Louis-Martin Rousseau},\n  journal = {Computers & Operations Research},\n  year = {2014},\n  volume = {43},\n  pages = {9-19},\n  doi = {10.1016/j.cor.2013.08.017},\n  url = {https://doi.org/10.1016/j.cor.2013.08.017}\n}",
+    "is_featured": false,
+    "highlighted_authors": [],
+    "badge": null
+  },
+  {
+    "id": "journal-10-1016-j-tre-2014-02-002",
+    "title": "Optimizing road network daily maintenance operations with stochastic service and travel times",
+    "authors": [
+      "Lu Chen",
+      "Minh Hoàng Hà",
+      "André Langevin",
+      "Michel Gendreau"
+    ],
+    "venue": "Transportation Research Part E: Logistics and Transportation Review",
+    "year": 2014,
+    "type": "Journal",
+    "doi": "10.1016/j.tre.2014.02.002",
+    "link": "https://doi.org/10.1016/j.tre.2014.02.002",
+    "research_pillar": "green_transportation",
+    "primary_pillar_id": "supply_chain_optimization",
+    "keywords": [
+      "road-maintenance",
+      "vehicle-routing",
+      "stochastic-robust-optimization"
+    ],
+    "abstract": "This paper studies optimization methods for a routing problem encountered in daily maintenance operations of a road network. Stochastic service and travel times on road segments are considered. The problem is formulated as a variation of the capacitated arc routing problem (CARP). A chance-constrained programming model is firstly developed and solved by a branch-and-cut algorithm. A stochastic programming model with recourse is also proposed to take into account the recourse costs in case of route failure. The problem is solved by an adaptive large neighborhood search algorithm. The computational experiments demonstrate the effectiveness of the algorithm.",
+    "abstract_source": "https://www.sciencedirect.com/science/article/pii/S136655451400026X",
+    "bibtex": "@article{journal-10-1016-j-tre-2014-02-002,\n  title = {Optimizing road network daily maintenance operations with stochastic service and travel times},\n  author = {Lu Chen and Minh Hoàng Hà and André Langevin and Michel Gendreau},\n  journal = {Transportation Research Part E: Logistics and Transportation Review},\n  year = {2014},\n  volume = {64},\n  pages = {88-102},\n  doi = {10.1016/j.tre.2014.02.002},\n  url = {https://doi.org/10.1016/j.tre.2014.02.002}\n}",
+    "is_featured": false,
+    "highlighted_authors": [],
+    "badge": null
+  },
+  {
+    "id": "journal-10-1007-s10732-013-9225-y",
+    "title": "A three-phase matheuristic for capacitated multi-commodity fixed-cost network design with design-balance constraints",
+    "authors": [
+      "Duc Minh Vu",
+      "Teodor Gabriel Crainic",
+      "Michel Toulouse"
+    ],
+    "venue": "Journal of Heuristics",
+    "year": 2013,
+    "type": "Journal",
+    "doi": "10.1007/s10732-013-9225-y",
+    "link": "https://doi.org/10.1007/s10732-013-9225-y",
+    "research_pillar": "operational_optimization",
+    "primary_pillar_id": "supply_chain_optimization",
+    "keywords": [
+      "supply-chain-networks",
+      "metaheuristics"
+    ],
+    "abstract": "This paper proposes a three-phase matheuristic solution strategy for the capacitated multi-commodity fixed-cost network design problem with design-balance constraints. The proposed matheuristic combines exact and neighbourhood-based methods. Tabu search and restricted path relinking meta-heuristics cooperate to generate as many feasible solutions as possible. The two meta-heuristics incorporate new neighbourhoods, and computationally efficient exploration procedures. The feasible solutions generated by the two procedures are then used to identify an appropriate part of the solution space where an exact solver intensifies the search. Computational experiments on benchmark instances show that the proposed algorithm finds good solutions to large-scale problems in a reasonable amount of time.",
+    "abstract_source": "https://link.springer.com/article/10.1007/s10732-013-9225-y",
+    "bibtex": "@article{journal-10-1007-s10732-013-9225-y,\n  title = {A three-phase matheuristic for capacitated multi-commodity fixed-cost network design with design-balance constraints},\n  author = {Duc Minh Vu and Teodor Gabriel Crainic and Michel Toulouse},\n  journal = {Journal of Heuristics},\n  year = {2013},\n  volume = {19},\n  number = {5},\n  pages = {757-795},\n  doi = {10.1007/s10732-013-9225-y},\n  url = {https://doi.org/10.1007/s10732-013-9225-y}\n}",
+    "is_featured": false,
+    "highlighted_authors": [],
+    "badge": null
+  },
+  {
+    "id": "journal-10-1016-j-ejor-2012-11-012",
+    "title": "An exact algorithm and a metaheuristic for the multi-vehicle covering tour problem with a constraint on the number of vertices",
+    "authors": [
+      "Minh Hoàng Hà",
+      "Nathalie Bostel",
+      "André Langevin",
+      "Louis-Martin Rousseau"
+    ],
+    "venue": "European Journal of Operational Research",
+    "year": 2013,
+    "type": "Journal",
+    "doi": "10.1016/j.ejor.2012.11.012",
+    "link": "https://doi.org/10.1016/j.ejor.2012.11.012",
+    "research_pillar": "operational_optimization",
+    "primary_pillar_id": "supply_chain_optimization",
+    "keywords": [
+      "vehicle-routing",
+      "exact-optimization",
+      "metaheuristics"
+    ],
+    "abstract": "The multi-vehicle covering tour problem (m-CTP) involves finding a minimum-length set of vehicle routes passing through a subset of vertices, subject to constraints on the length of each route and the number of vertices that it contains, such that each vertex not included in any route lies within a given distance of a route. This paper tackles a particular case of m-CTP where only the restriction on the number of vertices is considered, i.e., the constraint on the length is relaxed. The problem is solved by a branch-and-cut algorithm and a metaheuristic. To develop the branch-and-cut algorithm, we use a new integer programming formulation based on a two-commodity flow model. The metaheuristic is based on the evolutionary local search (ELS) method proposed in [23]. Computational results are reported for a set of test problems derived from the TSPLIB.",
+    "abstract_source": "https://hanalog.ca/wp-content/uploads/2016/09/HBLR_mCTP.pdf",
+    "bibtex": "@article{journal-10-1016-j-ejor-2012-11-012,\n  title = {An exact algorithm and a metaheuristic for the multi-vehicle covering tour problem with a constraint on the number of vertices},\n  author = {Minh Hoàng Hà and Nathalie Bostel and André Langevin and Louis-Martin Rousseau},\n  journal = {European Journal of Operational Research},\n  year = {2013},\n  volume = {226},\n  number = {2},\n  pages = {211-220},\n  doi = {10.1016/j.ejor.2012.11.012},\n  url = {https://doi.org/10.1016/j.ejor.2012.11.012}\n}",
     "is_featured": false,
     "highlighted_authors": [],
     "badge": null

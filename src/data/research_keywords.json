@@ -1,0 +1,157 @@
+[
+  {
+    "id": "vehicle-routing",
+    "label": "Vehicle routing",
+    "kind": "topic"
+  },
+  {
+    "id": "drone-logistics",
+    "label": "Drone logistics",
+    "kind": "topic"
+  },
+  {
+    "id": "uav-path-planning",
+    "label": "UAV path planning",
+    "kind": "topic"
+  },
+  {
+    "id": "electric-vehicles",
+    "label": "Electric vehicles",
+    "kind": "topic"
+  },
+  {
+    "id": "arc-routing",
+    "label": "Arc routing",
+    "kind": "topic"
+  },
+  {
+    "id": "time-dependent-routing",
+    "label": "Time-dependent routing",
+    "kind": "topic"
+  },
+  {
+    "id": "school-transportation",
+    "label": "School transportation",
+    "kind": "topic"
+  },
+  {
+    "id": "facility-location",
+    "label": "Facility location",
+    "kind": "topic"
+  },
+  {
+    "id": "scheduling",
+    "label": "Scheduling",
+    "kind": "topic"
+  },
+  {
+    "id": "inventory-routing",
+    "label": "Inventory routing",
+    "kind": "topic"
+  },
+  {
+    "id": "orienteering",
+    "label": "Orienteering",
+    "kind": "topic"
+  },
+  {
+    "id": "tourism-routing",
+    "label": "Tourism routing",
+    "kind": "topic"
+  },
+  {
+    "id": "service-network-design",
+    "label": "Service network design",
+    "kind": "topic"
+  },
+  {
+    "id": "road-maintenance",
+    "label": "Road maintenance",
+    "kind": "topic"
+  },
+  {
+    "id": "pickup-and-delivery",
+    "label": "Pickup and delivery",
+    "kind": "topic"
+  },
+  {
+    "id": "energy-systems",
+    "label": "Energy systems",
+    "kind": "topic"
+  },
+  {
+    "id": "machine-learning",
+    "label": "Machine learning",
+    "kind": "topic"
+  },
+  {
+    "id": "forecasting",
+    "label": "Forecasting",
+    "kind": "topic"
+  },
+  {
+    "id": "security-games",
+    "label": "Security games",
+    "kind": "topic"
+  },
+  {
+    "id": "packing",
+    "label": "Packing",
+    "kind": "topic"
+  },
+  {
+    "id": "graph-optimization",
+    "label": "Graph optimization",
+    "kind": "topic"
+  },
+  {
+    "id": "healthcare-analytics",
+    "label": "Healthcare analytics",
+    "kind": "topic"
+  },
+  {
+    "id": "customer-choice",
+    "label": "Customer choice",
+    "kind": "topic"
+  },
+  {
+    "id": "data-resources",
+    "label": "Research data",
+    "kind": "topic"
+  },
+  {
+    "id": "supply-chain-networks",
+    "label": "Supply chain networks",
+    "kind": "topic"
+  },
+  {
+    "id": "exact-optimization",
+    "label": "Exact optimization",
+    "kind": "method"
+  },
+  {
+    "id": "metaheuristics",
+    "label": "Metaheuristics",
+    "kind": "method"
+  },
+  {
+    "id": "constraint-programming",
+    "label": "Constraint programming",
+    "kind": "method"
+  },
+  {
+    "id": "stochastic-robust-optimization",
+    "label": "Stochastic and robust optimization",
+    "kind": "method"
+  },
+  {
+    "id": "approximation-algorithms",
+    "label": "Approximation algorithms",
+    "kind": "method"
+  },
+  {
+    "id": "branch-and-cut",
+    "label": "Branch and cut",
+    "kind": "method"
+  }
+]

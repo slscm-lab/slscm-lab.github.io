@@ -27,3 +27,8 @@ export function getPublicationsByYear(year: number | string): Publication[] {
   const targetYear = typeof year === 'string' ? parseInt(year, 10) : year;
   return publications.filter((p) => p.year === targetYear);
 }
+
+export function getPublicationsByKeyword(keywordId: string): Publication[] {
+  if (!keywordId || keywordId === 'all') return publications;
+  return publications.filter((publication) => publication.keywords?.includes(keywordId));
+}
