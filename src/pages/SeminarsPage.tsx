@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import { Icon } from '../components/Icon';
-import { Seminar } from '../types';
-import { getSeminars } from '../repositories';
+import { useSeminars } from '../context/DataContext';
 
 export const SeminarsPage: React.FC = () => {
-  const seminars = getSeminars();
+  const seminars = useSeminars();
   const [activeTab, setActiveTab] = useState<'all' | 'upcoming' | 'archived'>('all');
   const [selectedTrack, setSelectedTrack] = useState<string>('all');
   const [searchQuery, setSearchQuery] = useState<string>('');

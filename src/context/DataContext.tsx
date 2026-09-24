@@ -9,16 +9,6 @@ import {
   SocialPost,
 } from '../types';
 
-// Static fallback data (zero layout shift, instant load)
-import staticPublications from '../data/generated/publications.json';
-import staticEvents from '../data/generated/events.json';
-import staticPeople from '../data/generated/people.json';
-import staticProjects from '../data/generated/projects.json';
-import staticSeminars from '../data/generated/seminars.json';
-import staticPillars from '../data/generated/research_pillars.json';
-import staticOverview from '../data/generated/overview.json';
-import staticSocial from '../data/generated/social_posts.json';
-
 import { supabase } from '../lib/supabase';
 import {
   RawPeopleData,
@@ -34,6 +24,7 @@ import {
 
 interface DataContextType {
   publications: Publication[];
+  topicPublications: Publication[];
   events: EventBrief[];
   people: RawPeopleData;
   projects: Project[];
@@ -42,51 +33,73 @@ interface DataContextType {
   overview: LabOverview;
   socialPosts: SocialPost[];
   isLive: boolean;
+  isLoading: boolean;
+  error: string | null;
   refreshAll: () => Promise<void>;
 }
 
-const initialPeopleData = staticPeople as unknown as RawPeopleData;
+const emptyPeopleData: RawPeopleData = {
+  leadership_and_faculty: [],
+  web_tech_lead: [],
+  hall_of_fame: [],
+  graduate_and_undergraduate_student_researchers: [],
+  alumni: [],
+  global_academic_partners: [],
+};
+
+const emptyOverview: LabOverview = {
+  name: '',
+  abbreviation: '',
+  affiliation: '',
+  faculty_department: '',
+  address: '',
+  head_of_lab: { name: '', email: '', title: '', office: '' },
+  metrics: {
+    total_publications: 0,
+    journal_articles: 0,
+    q1_journals: 0,
+    active_projects: 0,
+    phd_msc_scholarships: 0,
+    valedictorians: 0,
+    student_researchers: 0,
+    international_partner_countries: 0,
+  },
+  research_pillars: [],
+};
 
 const DataContext = createContext<DataContextType>({
-  publications: staticPublications as unknown as Publication[],
-  events: staticEvents as unknown as EventBrief[],
-  people: initialPeopleData,
-  projects: staticProjects as unknown as Project[],
-  seminars: staticSeminars as unknown as Seminar[],
-  pillars: staticPillars as unknown as ResearchPillar[],
-  overview: staticOverview as unknown as LabOverview,
-  socialPosts: staticSocial as unknown as SocialPost[],
+  publications: [],
+  topicPublications: [],
+  events: [],
+  people: emptyPeopleData,
+  projects: [],
+  seminars: [],
+  pillars: [],
+  overview: emptyOverview,
+  socialPosts: [],
   isLive: false,
+  isLoading: true,
+  error: null,
   refreshAll: async () => {},
 });
 
 export const DataProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-  const [publications, setPublications] = useState<Publication[]>(
-    staticPublications as unknown as Publication[]
-  );
-  const [events, setEvents] = useState<EventBrief[]>(
-    staticEvents as unknown as EventBrief[]
-  );
-  const [people, setPeople] = useState<RawPeopleData>(initialPeopleData);
-  const [projects, setProjects] = useState<Project[]>(
-    staticProjects as unknown as Project[]
-  );
-  const [seminars, setSeminars] = useState<Seminar[]>(
-    staticSeminars as unknown as Seminar[]
-  );
-  const [pillars, setPillars] = useState<ResearchPillar[]>(
-    staticPillars as unknown as ResearchPillar[]
-  );
-  const [overview, setOverview] = useState<LabOverview>(
-    staticOverview as unknown as LabOverview
-  );
-  const [socialPosts, setSocialPosts] = useState<SocialPost[]>(
-    staticSocial as unknown as SocialPost[]
-  );
+  const [publications, setPublications] = useState<Publication[]>([]);
+  const [topicPublications, setTopicPublications] = useState<Publication[]>([]);
+  const [events, setEvents] = useState<EventBrief[]>([]);
+  const [people, setPeople] = useState<RawPeopleData>(emptyPeopleData);
+  const [projects, setProjects] = useState<Project[]>([]);
+  const [seminars, setSeminars] = useState<Seminar[]>([]);
+  const [pillars, setPillars] = useState<ResearchPillar[]>([]);
+  const [overview, setOverview] = useState<LabOverview>(emptyOverview);
+  const [socialPosts, setSocialPosts] = useState<SocialPost[]>([]);
   const [isLive, setIsLive] = useState<boolean>(false);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
+  const [error, setError] = useState<string | null>(null);
 
   const refreshAll = useCallback(async () => {
     try {
+      setError(null);
       const [
         livePubs,
         liveEvents,
@@ -107,25 +120,27 @@ export const DataProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
         fetchSocialPostsFromSupabase(),
       ]);
 
-      if (livePubs && livePubs.length > 0) setPublications(livePubs);
-      if (liveEvents && liveEvents.length > 0) setEvents(liveEvents);
-      if (livePeople) setPeople(livePeople);
-      if (liveProjects && liveProjects.length > 0) setProjects(liveProjects);
-      if (liveSeminars && liveSeminars.length > 0) setSeminars(liveSeminars);
-      if (livePillars && livePillars.length > 0) setPillars(livePillars);
-      if (liveOverview) {
-        setOverview((prev) => ({
-          ...prev,
-          ...liveOverview,
-          metrics: prev.metrics,
-          research_pillars: livePillars && livePillars.length > 0 ? livePillars : prev.research_pillars,
-        }));
+      if (!livePubs || !liveEvents || !livePeople || !liveProjects || !liveSeminars || !livePillars || !liveOverview || !liveSocial) {
+        throw new Error('One or more Supabase queries failed.');
       }
-      if (liveSocial && liveSocial.length > 0) setSocialPosts(liveSocial);
+
+      setPublications(livePubs.filter((paper) => paper.status !== 'topic_only'));
+      setTopicPublications(livePubs);
+      setEvents(liveEvents);
+      setPeople(livePeople);
+      setProjects(liveProjects);
+      setSeminars(liveSeminars);
+      setPillars(livePillars);
+      setOverview({ ...liveOverview, research_pillars: livePillars });
+      setSocialPosts(liveSocial);
 
       setIsLive(true);
     } catch (err) {
       console.warn('DataContext: background sync from Supabase encountered error:', err);
+      setIsLive(false);
+      setError('Unable to load content from Supabase. Please try again.');
+    } finally {
+      setIsLoading(false);
     }
   }, []);
 
@@ -154,6 +169,7 @@ export const DataProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
     <DataContext.Provider
       value={{
         publications,
+        topicPublications,
         events,
         people,
         projects,
@@ -162,6 +178,8 @@ export const DataProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
         overview,
         socialPosts,
         isLive,
+        isLoading,
+        error,
         refreshAll,
       }}
     >
@@ -172,6 +190,7 @@ export const DataProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
 
 export const useDataContext = () => useContext(DataContext);
 export const usePublications = () => useContext(DataContext).publications;
+export const useTopicPublications = () => useContext(DataContext).topicPublications;
 export const useEvents = () => useContext(DataContext).events;
 export const usePeople = () => useContext(DataContext).people;
 export const useProjects = () => useContext(DataContext).projects;

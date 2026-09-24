@@ -2,10 +2,9 @@ import React, { useState } from 'react';
 import { Icon } from '../components/Icon';
 import { PaperCard } from '../components/PaperCard';
 import { ResearchAreaIcon } from '../components/ResearchAreaIcon';
-import { usePublications, useResearchPillars } from '../context/DataContext';
-import { PageRoute, Publication, ResearchPillarId } from '../types';
+import { useResearchPillars, useTopicPublications } from '../context/DataContext';
+import { PageRoute, ResearchPillarId } from '../types';
 import researchKeywords from '../data/research_keywords.json';
-import topicOnlyResearch from '../data/topic_only_research.json';
 
 interface ResearchTopicsPageProps {
   onNavigate: (route: PageRoute) => void;
@@ -67,9 +66,7 @@ const topicIntroductions: Record<string, string> = {
 };
 
 export const ResearchTopicsPage: React.FC<ResearchTopicsPageProps> = ({ onNavigate }) => {
-  const catalogPublications = usePublications();
-  const topicOnlyPapers = topicOnlyResearch as Publication[];
-  const publications = [...catalogPublications, ...topicOnlyPapers];
+  const publications = useTopicPublications();
   const pillars = useResearchPillars();
   const [selectedArea, setSelectedArea] = useState<ResearchPillarId>('supply_chain_optimization');
   const [selectedTopic, setSelectedTopic] = useState('vehicle-routing');
