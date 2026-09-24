@@ -164,7 +164,8 @@
       "institution": "VNU University of Science (VNU-HUS)",
       "email": "",
       "featured_publications": [
-        "TRC (2026)","CITA (2025)"
+        "TRC (2026)",
+        "CITA (2025)"
       ]
     },
     {
@@ -184,7 +185,7 @@
       "name": "Gia Nguyen Pham",
       "major": "Mathematics & Computer Science",
       "institution": "VNU University of Science (VNU-HUS)",
-            "featured_publications": [
+      "featured_publications": [
         "COMOSA (2025)"
       ],
       "email": ""
@@ -324,27 +325,168 @@
   "global_academic_partners": [
     {
       "country": "Singapore",
-      "institution": "Singapore Management University"
+      "institution": "Singapore Management University (SMU)",
+      "institutions": [
+        {
+          "name": "Singapore Management University (SMU)",
+          "short_name": "SMU",
+          "logo": "/assets/images/universities/smu.svg",
+          "website": "https://smu.edu.sg"
+        }
+      ],
+      "key_collaborators": [
+        "GS. Mai Tiến (School of Computing and Information Systems)"
+      ],
+      "research_focus": "Discrete Choice Models, Competitive Facility Location, Conic Optimization"
     },
     {
       "country": "Italy",
-      "institution": "University of Udine"
+      "institution": "University of Udine",
+      "institutions": [
+        {
+          "name": "University of Udine",
+          "short_name": "UniUd",
+          "logo": "/assets/images/universities/udine.png",
+          "website": "https://uniud.it"
+        }
+      ],
+      "key_collaborators": [
+        "GS. Andrea Schaerf (Department of Polytechnic of Engineering and Architecture)"
+      ],
+      "research_focus": "Parallel Machine Scheduling, Constraint Programming, Metaheuristics"
     },
     {
       "country": "Austria",
-      "institution": "Austrian Research Community / Partner Institutes"
+      "institution": "Austrian Research Community / Partner Institutes",
+      "institutions": [
+        {
+          "name": "University of Graz & Austrian Partners",
+          "short_name": "UniGraz",
+          "logo": "/assets/images/universities/graz.svg",
+          "website": "https://uni-graz.at"
+        }
+      ],
+      "key_collaborators": [
+        "TS. Roberto Maria Rosati"
+      ],
+      "research_focus": "Combinatorial Optimization, Metaheuristic Neighborhood Search"
     },
     {
       "country": "United Kingdom",
-      "institution": "Cardiff University, Lancaster University, Liverpool John Moores University"
+      "institution": "Cardiff University, Lancaster University, Liverpool John Moores University (LJMU)",
+      "institutions": [
+        {
+          "name": "Cardiff University",
+          "short_name": "Cardiff",
+          "logo": "/assets/images/universities/cardiff.svg",
+          "website": "https://www.cardiff.ac.uk"
+        },
+        {
+          "name": "Lancaster University",
+          "short_name": "Lancaster",
+          "logo": "/assets/images/universities/lancaster.svg",
+          "website": "https://www.lancaster.ac.uk"
+        },
+        {
+          "name": "Liverpool John Moores University (LJMU)",
+          "short_name": "LJMU",
+          "logo": "/assets/images/universities/ljmu.svg",
+          "website": "https://www.ljmu.ac.uk"
+        }
+      ],
+      "key_collaborators": [
+        "Faculty & Research Fellows in Operations Management and Analytics"
+      ],
+      "research_focus": "Supply Chain Analytics, Stochastic Modeling, Logistics Networks"
     },
     {
       "country": "United States",
-      "institution": "Loyola University Chicago, University of Michigan - Flint"
+      "institution": "University of Connecticut (UConn), Loyola University Chicago, University of Michigan - Flint",
+      "institutions": [
+        {
+          "name": "University of Connecticut (UConn)",
+          "short_name": "UConn",
+          "logo": "/assets/images/universities/uconn.svg",
+          "website": "https://uconn.edu"
+        },
+        {
+          "name": "Loyola University Chicago",
+          "short_name": "LUC",
+          "logo": "/assets/images/universities/loyola_chicago.svg",
+          "website": "https://www.luc.edu"
+        },
+        {
+          "name": "University of Michigan - Flint",
+          "short_name": "UM-Flint",
+          "logo": "/assets/images/universities/um_flint.svg",
+          "website": "https://www.umflint.edu"
+        }
+      ],
+      "key_collaborators": [
+        "Collaborators in Actuarial Science",
+        "Optimization",
+        "and Industrial Engineering"
+      ],
+      "research_focus": "Quantitative Risk, Behavioral Economics, Smart Energy Systems"
     },
     {
       "country": "Canada & France",
-      "institution": "Université de Montréal / CIRRELT"
+      "institution": "Université de Montréal / CIRRELT",
+      "institutions": [
+        {
+          "name": "Université de Montréal",
+          "short_name": "UdeM",
+          "logo": "/assets/images/universities/udem.svg",
+          "website": "https://www.umontreal.ca"
+        },
+        {
+          "name": "CIRRELT (Centre interuniversitaire)",
+          "short_name": "CIRRELT",
+          "logo": "/assets/images/universities/cirrelt.png",
+          "website": "https://www.cirrelt.ca"
+        }
+      ],
+      "key_collaborators": [
+        "GS. André Langevin",
+        "GS. Thibaut Vidal"
+      ],
+      "research_focus": "Capacitated Arc Routing (CARP), Inventory Routing (IRP), Hybrid Genetic Search"
+    },
+    {
+      "country": "Vietnam",
+      "institution": "VNU-HUS, HUST, Phenikaa University, VinUniversity",
+      "institutions": [
+        {
+          "name": "VNU University of Science (VNU-HUS)",
+          "short_name": "VNU-HUS",
+          "logo": "/assets/images/universities/vnu_hus.svg",
+          "website": "https://hus.vnu.edu.vn"
+        },
+        {
+          "name": "Hanoi University of Science and Technology (HUST)",
+          "short_name": "HUST",
+          "logo": "/assets/images/universities/hust.svg",
+          "website": "https://hust.edu.vn"
+        },
+        {
+          "name": "Phenikaa University",
+          "short_name": "Phenikaa",
+          "logo": "/assets/images/universities/phenikaa.png",
+          "website": "https://phenikaa-uni.edu.vn"
+        },
+        {
+          "name": "VinUniversity",
+          "short_name": "VinUni",
+          "logo": "/assets/images/universities/vinuni.png",
+          "website": "https://vinuni.edu.vn"
+        }
+      ],
+      "key_collaborators": [
+        "PGS. TS. Hà Minh Hoàng (VNU-HUS)",
+        "TS. Tạ Thúy Anh (Phenikaa University)",
+        "TS. Đức Đồng Đỗ (HUST)"
+      ],
+      "research_focus": "National Science Foundation Collaborations, Graph Algorithms, High-Performance Computing"
     }
   ]
 }

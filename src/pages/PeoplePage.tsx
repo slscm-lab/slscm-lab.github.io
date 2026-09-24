@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Icon } from '../components/Icon';
 import { getPeople } from '../repositories';
+import { AcademicPartner, PartnerInstitution } from '../types';
 
 type FacultyMember = {
   id: string;
@@ -40,12 +41,54 @@ type StudentResearcher = {
   research_interests?: string[];
 };
 
-type AcademicPartner = {
-  country: string;
-  institution: string;
-  key_collaborators?: string[];
-  research_focus?: string;
-};
+const UNIVERSITY_FALLBACKS: [string, string, string, string][] = [
+  ['smu', 'Singapore Management University (SMU)', '/assets/images/universities/smu.svg', 'https://smu.edu.sg'],
+  ['udine', 'University of Udine', '/assets/images/universities/udine.png', 'https://uniud.it'],
+  ['graz', 'University of Graz & Austrian Partners', '/assets/images/universities/graz.svg', 'https://uni-graz.at'],
+  ['austria', 'University of Graz & Austrian Partners', '/assets/images/universities/graz.svg', 'https://uni-graz.at'],
+  ['cardiff', 'Cardiff University', '/assets/images/universities/cardiff.svg', 'https://www.cardiff.ac.uk'],
+  ['lancaster', 'Lancaster University', '/assets/images/universities/lancaster.svg', 'https://www.lancaster.ac.uk'],
+  ['ljmu', 'Liverpool John Moores University (LJMU)', '/assets/images/universities/ljmu.svg', 'https://www.ljmu.ac.uk'],
+  ['liverpool', 'Liverpool John Moores University (LJMU)', '/assets/images/universities/ljmu.svg', 'https://www.ljmu.ac.uk'],
+  ['uconn', 'University of Connecticut (UConn)', '/assets/images/universities/uconn.svg', 'https://uconn.edu'],
+  ['connecticut', 'University of Connecticut (UConn)', '/assets/images/universities/uconn.svg', 'https://uconn.edu'],
+  ['loyola', 'Loyola University Chicago', '/assets/images/universities/loyola_chicago.svg', 'https://www.luc.edu'],
+  ['michigan', 'University of Michigan - Flint', '/assets/images/universities/um_flint.svg', 'https://www.umflint.edu'],
+  ['montréal', 'Université de Montréal', '/assets/images/universities/udem.svg', 'https://www.umontreal.ca'],
+  ['montreal', 'Université de Montréal', '/assets/images/universities/udem.svg', 'https://www.umontreal.ca'],
+  ['cirrelt', 'CIRRELT (Centre interuniversitaire)', '/assets/images/universities/cirrelt.png', 'https://www.cirrelt.ca'],
+  ['hust', 'Hanoi University of Science and Technology (HUST)', '/assets/images/universities/hust.svg', 'https://hust.edu.vn'],
+  ['hus', 'VNU University of Science (VNU-HUS)', '/assets/images/universities/vnu_hus.svg', 'https://hus.vnu.edu.vn'],
+  ['vnu', 'VNU University of Science (VNU-HUS)', '/assets/images/universities/vnu_hus.svg', 'https://hus.vnu.edu.vn'],
+  ['phenikaa', 'Phenikaa University', '/assets/images/universities/phenikaa.png', 'https://phenikaa-uni.edu.vn'],
+  ['vinuni', 'VinUniversity', '/assets/images/universities/vinuni.png', 'https://vinuni.edu.vn'],
+];
+
+function resolveInstitutions(partner: AcademicPartner): PartnerInstitution[] {
+  if (partner.institutions && partner.institutions.length > 0) {
+    return partner.institutions;
+  }
+  const rawTokens = (partner.institution || '').split(/[,/]/).map((s) => s.trim()).filter(Boolean);
+  const result: PartnerInstitution[] = [];
+  const seenLogos = new Set<string>();
+
+  for (const token of rawTokens) {
+    if (token.toLowerCase().includes('partner institutes')) continue;
+    let matched = false;
+    for (const [kw, name, logo, website] of UNIVERSITY_FALLBACKS) {
+      if (token.toLowerCase().includes(kw) && !seenLogos.has(logo)) {
+        seenLogos.add(logo);
+        result.push({ name, logo, website });
+        matched = true;
+        break;
+      }
+    }
+    if (!matched && token) {
+      result.push({ name: token, logo: '/assets/images/branding/neu_logo.webp' });
+    }
+  }
+  return result;
+}
 
 type PeopleTab = 'all' | 'faculty' | 'students' | 'partners' | 'tech';
 
@@ -338,74 +381,133 @@ export const PeoplePage: React.FC = () => {
       )}
 
       {/* Global Academic Partners */}
-      {(activeTab === 'all' || activeTab === 'partners') && (
-        <section className="mt-14">
-          <div className="mb-6 flex items-center justify-between border-b border-slate-200 pb-3">
-            <h2 className="font-editorial text-2xl font-bold text-slate-950">
-              Global Academic Collaborators
-            </h2>
+      {(activeTab === 'all' || activeTab === 'partners') && (() => {
+        const partnerCards = people.global_academic_partners.map((partner) => ({
+          ...partner,
+          resolvedInstitutions: resolveInstitutions(partner),
+        }));
 
-            <span className="font-mono text-xs text-slate-500">
-              {people.global_academic_partners.length} Institutions
-            </span>
-          </div>
+        const totalInstitutions = partnerCards.reduce(
+          (acc, p) => acc + p.resolvedInstitutions.length,
+          0
+        );
 
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {people.global_academic_partners.map((partner, pIdx) => (
-              <div
-                key={`${partner.country}-${partner.institution}-${pIdx}`}
-                className="rounded-2xl border border-slate-200/80 bg-white/90 p-5 shadow-xs"
-              >
-                <div className="mb-2 flex items-center justify-between">
-                  <span className="inline-flex items-center gap-1.5 rounded-lg bg-sky-100 px-2.5 py-0.5 font-mono text-[10px] font-bold text-sky-900">
-                    <Icon name="location_on" className="h-3 w-3 text-sky-700" />
-                    <span>{partner.country}</span>
-                  </span>
+        return (
+          <section className="mt-14">
+            <div className="mb-6 flex flex-col sm:flex-row sm:items-center sm:justify-between border-b border-slate-200 pb-3 gap-2">
+              <div>
+                <h2 className="font-editorial text-2xl font-bold text-slate-950">
+                  Global Academic Collaborators
+                </h2>
+                <p className="mt-0.5 font-editorial text-xs text-slate-500">
+                  Joint research grants, doctoral mobility, and international co-authorship alliances
+                </p>
+              </div>
 
-                  <Icon name="public" className="h-4 w-4 text-sky-600" />
-                </div>
+              <span className="font-mono text-xs font-semibold text-sky-800 bg-sky-50 border border-sky-200/80 px-3 py-1 rounded-full w-fit">
+                {totalInstitutions} Partner Institutions · {people.global_academic_partners.length} Regions
+              </span>
+            </div>
 
-                <div className="space-y-0.5">
-                  {partner.institution.split(', ').map((institution, idx) => (
-                    <h4
-                      key={`${institution}-${idx}`}
-                      className="font-editorial text-base font-bold leading-snug text-slate-900"
-                    >
-                      {institution}
-                    </h4>
-                  ))}
-                </div>
+            <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              {partnerCards.map((partner, pIdx) => (
+                <div
+                  key={`${partner.country}-${pIdx}`}
+                  className="soft-card flex flex-col justify-between bg-white/95 p-5 sm:p-6 transition-all duration-200 hover:shadow-soft"
+                >
+                  <div>
+                    {/* Country Header */}
+                    <div className="mb-4 flex items-center justify-between">
+                      <span className="inline-flex items-center gap-1.5 rounded-lg border border-sky-200/80 bg-sky-100/70 px-2.5 py-0.5 font-mono text-[10px] font-bold uppercase tracking-wider text-sky-900">
+                        <Icon name="location_on" className="h-3 w-3 text-sky-700" />
+                        <span>{partner.country}</span>
+                      </span>
 
-                {partner.key_collaborators &&
-                  partner.key_collaborators.length > 0 && (
-                    <div className="mt-2 font-editorial text-xs text-slate-600">
-                      <p className="font-semibold text-slate-800">
-                        Collaborators:
+                      <span className="font-mono text-[10px] text-slate-400">
+                        {partner.resolvedInstitutions.length}{' '}
+                        {partner.resolvedInstitutions.length === 1 ? 'Institution' : 'Institutions'}
+                      </span>
+                    </div>
+
+                    {/* Universities List with Official Logos */}
+                    <div className="space-y-3">
+                      {partner.resolvedInstitutions.map((inst, idx) => (
+                        <div
+                          key={`${inst.name}-${idx}`}
+                          className="flex items-center gap-3.5 rounded-xl border border-slate-200/70 bg-slate-50/60 p-2.5 transition hover:bg-slate-50 hover:border-slate-300"
+                        >
+                          <div className="h-11 w-11 shrink-0 rounded-lg border border-slate-200/80 bg-white p-1.5 shadow-2xs flex items-center justify-center overflow-hidden">
+                            <img
+                              src={inst.logo}
+                              alt={`${inst.name} logo`}
+                              className="h-full w-full object-contain"
+                              loading="lazy"
+                              onError={(e) => {
+                                (e.target as HTMLElement).style.display = 'none';
+                              }}
+                            />
+                          </div>
+
+                          <div className="min-w-0 flex-1">
+                            <h4 className="font-editorial text-xs sm:text-sm font-bold leading-snug text-slate-900">
+                              {inst.name}
+                            </h4>
+                            {inst.website && (
+                              <a
+                                href={inst.website}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="mt-0.5 inline-flex items-center gap-1 font-mono text-[10px] text-sky-700 hover:text-sky-900 transition-colors"
+                              >
+                                <span>{inst.website.replace('https://', '').replace('www.', '').split('/')[0]}</span>
+                                <Icon name="open_in_new" className="h-2.5 w-2.5 text-slate-400" />
+                              </a>
+                            )}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+
+                    {/* Key Collaborators */}
+                    {partner.key_collaborators && partner.key_collaborators.length > 0 && (
+                      <div className="mt-4 pt-3.5 border-t border-slate-100 font-editorial text-xs text-slate-600">
+                        <p className="font-mono text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-1.5 flex items-center gap-1">
+                          <Icon name="groups" className="h-3 w-3 text-sky-600" />
+                          <span>Collaborators</span>
+                        </p>
+
+                        <ul className="space-y-1">
+                          {partner.key_collaborators.map((collab, cIdx) => (
+                            <li
+                              key={`${collab}-${cIdx}`}
+                              className="text-slate-700 leading-snug text-xs flex items-start gap-1.5"
+                            >
+                              <span className="text-sky-500 font-bold">•</span>
+                              <span>{collab}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                  </div>
+
+                  {/* Research Focus */}
+                  {partner.research_focus && (
+                    <div className="mt-4 pt-3 border-t border-slate-100">
+                      <p className="font-mono text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-1">
+                        Research Focus
                       </p>
-
-                      <ul className="mt-0.5 list-inside list-disc space-y-0.5">
-                        {partner.key_collaborators.map((collab, cIdx) => (
-                          <li
-                            key={`${collab}-${cIdx}`}
-                            className="truncate text-slate-600"
-                          >
-                            {collab}
-                          </li>
-                        ))}
-                      </ul>
+                      <p className="font-editorial text-xs italic text-slate-600 leading-relaxed">
+                        {partner.research_focus}
+                      </p>
                     </div>
                   )}
-
-                {partner.research_focus && (
-                  <p className="mt-3 font-editorial text-xs italic text-slate-500">
-                    Focus: {partner.research_focus}
-                  </p>
-                )}
-              </div>
-            ))}
-          </div>
-        </section>
-      )}
+                </div>
+              ))}
+            </div>
+          </section>
+        );
+      })()}
 
       {/* Web / Tech Lead */}
       {(activeTab === 'all' || activeTab === 'tech') && (

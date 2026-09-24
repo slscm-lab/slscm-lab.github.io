@@ -238,9 +238,17 @@ export type AlumniMember = {
   email?: string;
 };
 
+export type PartnerInstitution = {
+  name: string;
+  short_name?: string;
+  logo: string;
+  website?: string;
+};
+
 export type AcademicPartner = {
   country: string;
   institution: string;
+  institutions?: PartnerInstitution[];
   collaborators?: string;
   key_collaborators?: string[];
   scope?: string;
