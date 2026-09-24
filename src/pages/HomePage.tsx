@@ -75,15 +75,14 @@ const pillarDetails: Record<
 
           {/* Hero Headline */}
           <h1 className="mt-6 font-editorial text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-slate-950 leading-[1.15]">
-            Where Mathematical Optimization Powers{' '}
+            Where Mathematical Optimization and Algorithms Powers{' '}
             <span className="metallic-gradient-text">Intelligent Supply Chains</span>
           </h1>
 
           {/* Subtitle */}
-          <p className="mt-6 font-editorial text-lg sm:text-xl leading-relaxed text-slate-600 max-w-3xl mx-auto font-normal">
-            SLSCM Lab pionneers research in combinatorial optimization, prescriptive analytics, and
-            artificial intelligence—solving grand challenges in freight logistics, drone routing,
-            and sustainable energy systems.
+          <p className="mt-6 font-editorial text-lg sm:text-xl leading-relaxed text-slate-600 max-w-4xl mx-auto font-normal">
+            SLSCM Lab pioneers research in optimization, analytics, and artificial intelligence—advancing 
+            intelligent decision-making for supply chains, logistics, and complex systems.
           </p>
 
           {/* CTAs */}
