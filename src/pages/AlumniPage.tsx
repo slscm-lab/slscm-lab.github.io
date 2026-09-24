@@ -1,5 +1,5 @@
 import React from 'react';
-import { Award, GraduationCap, MapPin } from 'lucide-react';
+import { Icon } from '../components/Icon';
 import { getHallOfFame } from '../repositories';
 import { HallEntry } from '../types';
 
@@ -27,7 +27,7 @@ export const AlumniPage: React.FC = () => {
     <div className="section-shell py-10 sm:py-14 animate-in fade-in duration-300">
       <div className="max-w-4xl">
         <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-amber-300/80 bg-amber-50 px-3.5 py-1 font-mono text-[11px] font-bold uppercase tracking-wider text-amber-900">
-          <Award className="h-3.5 w-3.5 text-amber-600" />
+          <Icon name="workspace_premium" className="h-3.5 w-3.5 text-amber-600" />
           <span>Hall of Fame &amp; Global Placements</span>
         </div>
 
@@ -94,7 +94,7 @@ export const AlumniPage: React.FC = () => {
                         </h3>
 
                         <p className="flex items-center gap-1 font-editorial text-xs font-semibold text-amber-900">
-                          <GraduationCap className="h-3 w-3 shrink-0" />
+                          <Icon name="school" className="h-3 w-3 shrink-0" />
                           <span>{entry.destination_institution}</span>
                         </p>
                       </div>
@@ -113,7 +113,7 @@ export const AlumniPage: React.FC = () => {
 
                   <div className="mt-4 flex items-center justify-between border-t border-slate-100 pt-3 font-mono text-xs text-slate-500">
                     <span className="flex items-center gap-1">
-                      <MapPin className="h-3 w-3 text-amber-600" />
+                      <Icon name="location_on" className="h-3 w-3 text-amber-600" />
                       {entry.country}
                     </span>
 

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Users, Mail, MapPin, Globe, GraduationCap } from 'lucide-react';
+import { Icon } from '../components/Icon';
 import { getPeople } from '../repositories';
 
 type FacultyMember = {
@@ -90,7 +90,7 @@ export const PeoplePage: React.FC = () => {
       {/* Header Banner */}
       <div className="max-w-4xl">
         <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-sky-300/80 bg-sky-50 px-3.5 py-1 font-mono text-[11px] font-bold uppercase tracking-wider text-sky-800">
-          <Users className="h-3.5 w-3.5 text-sky-600" />
+          <Icon name="groups" className="h-3.5 w-3.5 text-sky-600" />
           <span>People &amp; Mentorship Network</span>
         </div>
 
@@ -249,7 +249,7 @@ export const PeoplePage: React.FC = () => {
 
                   {mentor.office && (
                     <div className="mt-4 flex items-center gap-1.5 border-t border-slate-100 pt-3 font-mono text-[11px] text-slate-400">
-                      <MapPin className="h-3.5 w-3.5 shrink-0 text-sky-600" />
+                      <Icon name="location_on" className="h-3.5 w-3.5 shrink-0 text-sky-600" />
                       <span className="truncate">{mentor.office}</span>
                     </div>
                   )}
@@ -291,7 +291,7 @@ export const PeoplePage: React.FC = () => {
                         />
                       ) : (
                         <div className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-gradient-to-br from-sky-50 to-indigo-50/80 border border-sky-100/90 text-sky-700 shadow-2xs">
-                          <GraduationCap className="h-5 w-5" />
+                          <Icon name="school" className="h-5 w-5" />
                         </div>
                       )}
 
@@ -358,11 +358,11 @@ export const PeoplePage: React.FC = () => {
               >
                 <div className="mb-2 flex items-center justify-between">
                   <span className="inline-flex items-center gap-1.5 rounded-lg bg-sky-100 px-2.5 py-0.5 font-mono text-[10px] font-bold text-sky-900">
-                    <MapPin className="h-3 w-3 text-sky-700" />
+                    <Icon name="location_on" className="h-3 w-3 text-sky-700" />
                     <span>{partner.country}</span>
                   </span>
 
-                  <Globe className="h-4 w-4 text-sky-600" />
+                  <Icon name="public" className="h-4 w-4 text-sky-600" />
                 </div>
 
                 <div className="space-y-0.5">
@@ -494,7 +494,7 @@ export const PeoplePage: React.FC = () => {
 
                   {member.email && (
                     <div className="mt-4 flex items-center gap-1.5 border-t border-slate-100 pt-3 font-mono text-xs text-sky-700">
-                      <Mail className="h-3.5 w-3.5" />
+                      <Icon name="mail" className="h-3.5 w-3.5" />
                       <a
                         href={`mailto:${member.email}`}
                         className="hover:underline"

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Camera, ExternalLink, Calendar, MessageSquare, ThumbsUp } from 'lucide-react';
+import { Icon } from '../components/Icon';
 import { SocialPost } from '../types';
 import { getSocialPosts } from '../repositories';
 
@@ -11,7 +11,7 @@ export const LabLifePage: React.FC = () => {
       {/* Header Banner */}
       <div className="max-w-4xl">
         <div className="inline-flex items-center gap-2 rounded-full border border-sky-300/80 bg-sky-50 px-3.5 py-1 font-mono text-[11px] font-bold uppercase tracking-wider text-sky-800 mb-4">
-          <Camera className="h-3.5 w-3.5 text-sky-600" />
+          <Icon name="photo_camera" className="h-3.5 w-3.5 text-sky-600" />
           <span>Lab Culture &amp; Fanpage Activity</span>
         </div>
         <h1 className="font-editorial text-4xl sm:text-5xl font-bold tracking-tight text-slate-950">
@@ -40,7 +40,7 @@ export const LabLifePage: React.FC = () => {
           className="inline-flex items-center gap-2 rounded-xl bg-slate-900 px-4 py-2.5 font-editorial text-xs font-bold text-white shadow-sm hover:bg-sky-950 transition"
         >
           <span>Visit @slscm.lab</span>
-          <ExternalLink className="h-3.5 w-3.5" />
+          <Icon name="open_in_new" className="h-3.5 w-3.5" />
         </a>
       </div>
 
@@ -98,7 +98,7 @@ export const LabLifePage: React.FC = () => {
                   className="inline-flex items-center gap-1 font-mono text-xs font-semibold text-sky-700 hover:text-sky-900 ml-auto"
                 >
                   <span>{post.action_label || 'View Post'}</span>
-                  <ExternalLink className="h-3 w-3" />
+                  <Icon name="open_in_new" className="h-3 w-3" />
                 </a>
               )}
             </div>

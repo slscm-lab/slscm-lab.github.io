@@ -1,18 +1,5 @@
 import React, { useState } from 'react';
-import {
-  Presentation,
-  Calendar,
-  MapPin,
-  ExternalLink,
-  Search,
-  FileText,
-  Tag,
-  Mic,
-  Globe,
-  Award,
-  ChevronRight,
-  Check,
-} from 'lucide-react';
+import { Icon } from '../components/Icon';
 import { ConferenceTalk } from '../types';
 import { getConferenceTalks } from '../repositories';
 
@@ -83,7 +70,7 @@ export const ConferencesTalksPage: React.FC = () => {
       {/* Header Banner */}
       <div className="max-w-4xl">
         <div className="inline-flex items-center gap-2 rounded-full border border-sky-300/80 bg-sky-50 px-3.5 py-1 font-mono text-[11px] font-bold uppercase tracking-wider text-sky-800 mb-4">
-          <Presentation className="h-3.5 w-3.5 text-sky-600" />
+          <Icon name="co_present" className="h-3.5 w-3.5 text-sky-600" />
           <span>Academic Conferences &amp; Proceedings</span>
         </div>
         <h1 className="font-editorial text-4xl sm:text-5xl font-bold tracking-tight text-slate-950">
@@ -145,7 +132,7 @@ export const ConferencesTalksPage: React.FC = () => {
 
         {/* Search Bar */}
         <div className="relative">
-          <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-4 w-4 text-slate-400" />
+          <Icon name="search" className="absolute left-4 top-1/2 -translate-y-1/2 h-4 w-4 text-slate-400" />
           <input
             type="text"
             value={searchQuery}
@@ -177,7 +164,7 @@ export const ConferencesTalksPage: React.FC = () => {
                     {item.type_badge}
                   </span>
                   <span className="rounded-lg bg-slate-100 border border-slate-200/70 px-2 py-0.5 font-mono text-[10px] font-medium text-slate-700 flex items-center gap-1">
-                    <Globe className="h-3 w-3 text-slate-500" />
+                    <Icon name="public" className="h-3 w-3 text-slate-500" />
                     <span>{item.event_name}</span>
                   </span>
                   {item.series && (
@@ -189,7 +176,7 @@ export const ConferencesTalksPage: React.FC = () => {
 
                 <div className="flex items-center gap-3 font-mono text-xs text-slate-500">
                   <span className="flex items-center gap-1">
-                    <Calendar className="h-3.5 w-3.5 text-sky-600" />
+                    <Icon name="calendar_today" className="h-3.5 w-3.5 text-sky-600" />
                     {item.date}
                   </span>
                   <span className="rounded-md bg-slate-100 px-2 py-0.5 text-[10px] font-semibold text-slate-600">
@@ -206,7 +193,7 @@ export const ConferencesTalksPage: React.FC = () => {
               {/* Authors & Presenters */}
               <div className="mt-3.5 flex flex-wrap items-center gap-y-1.5 gap-x-3 text-xs font-editorial">
                 <span className="font-mono text-[11px] font-bold uppercase tracking-wider text-sky-800 flex items-center gap-1">
-                  <Mic className="h-3 w-3" />
+                  <Icon name="mic" className="h-3 w-3" />
                   Authors &amp; Presenters:
                 </span>
                 {item.speakers.map((s, idx) => (
@@ -231,7 +218,7 @@ export const ConferencesTalksPage: React.FC = () => {
 
               {/* Location */}
               <p className="mt-2 flex items-center gap-1.5 font-mono text-xs text-slate-500">
-                <MapPin className="h-3.5 w-3.5 text-slate-400 shrink-0" />
+                <Icon name="location_on" className="h-3.5 w-3.5 text-slate-400 shrink-0" />
                 <span>{item.location}</span>
               </p>
 
@@ -244,7 +231,7 @@ export const ConferencesTalksPage: React.FC = () => {
               {item.key_topics && item.key_topics.length > 0 && (
                 <div className="mt-4 flex flex-wrap items-center gap-1.5">
                   <span className="font-mono text-[10px] uppercase font-bold text-slate-400 mr-1 flex items-center gap-1">
-                    <Tag className="h-3 w-3" /> Topics:
+                    <Icon name="label" className="h-3 w-3" /> Topics:
                   </span>
                   {item.key_topics.map((topic, tIdx) => (
                     <span
@@ -267,15 +254,15 @@ export const ConferencesTalksPage: React.FC = () => {
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-1.5 rounded-xl border border-slate-200/90 bg-white px-3.5 py-1.5 font-editorial text-xs font-semibold text-slate-800 shadow-2xs hover:bg-slate-50 hover:text-sky-700 transition"
                     >
-                      <FileText className="h-3.5 w-3.5 text-sky-600" />
+                      <Icon name="description" className="h-3.5 w-3.5 text-sky-600" />
                       <span>{item.paper_doi ? `DOI: ${item.paper_doi}` : 'Published Proceedings'}</span>
-                      <ExternalLink className="h-3 w-3 text-slate-400" />
+                      <Icon name="open_in_new" className="h-3 w-3 text-slate-400" />
                     </a>
                   )}
 
                   {item.slides_available && (
                     <span className="inline-flex items-center gap-1.5 rounded-xl bg-emerald-50 border border-emerald-200/80 px-3 py-1 font-mono text-[11px] font-semibold text-emerald-800">
-                      <Check className="h-3 w-3 text-emerald-700" />
+                      <Icon name="check" className="h-3 w-3 text-emerald-700" />
                       <span>Slides Available</span>
                     </span>
                   )}
@@ -286,7 +273,7 @@ export const ConferencesTalksPage: React.FC = () => {
                   className="inline-flex items-center gap-1 font-editorial text-xs font-bold text-sky-700 hover:text-sky-900 transition"
                 >
                   <span>Inquire with Authors</span>
-                  <ChevronRight className="h-3.5 w-3.5" />
+                  <Icon name="chevron_right" className="h-3.5 w-3.5" />
                 </a>
               </div>
             </div>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Newspaper, Calendar, Tag, ExternalLink, Search, Sparkles, Award } from 'lucide-react';
+import { Icon } from '../components/Icon';
 import { EventBrief } from '../types';
 import { getEvents } from '../repositories';
 
@@ -40,7 +40,7 @@ export const EventsPage: React.FC = () => {
       {/* Header Banner */}
       <div className="max-w-4xl">
         <div className="inline-flex items-center gap-2 rounded-full border border-sky-300/80 bg-sky-50 px-3.5 py-1 font-mono text-[11px] font-bold uppercase tracking-wider text-sky-800 mb-4">
-          <Newspaper className="h-3.5 w-3.5 text-sky-600" />
+          <Icon name="newspaper" className="h-3.5 w-3.5 text-sky-600" />
           <span>Events &amp; Research Briefs</span>
         </div>
         <h1 className="font-editorial text-4xl sm:text-5xl font-bold tracking-tight text-slate-950">
@@ -74,7 +74,7 @@ export const EventsPage: React.FC = () => {
 
         {/* Search Input */}
         <div className="relative min-w-[240px]">
-          <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-slate-400" />
+          <Icon name="search" className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-slate-400" />
           <input
             type="text"
             value={searchQuery}
@@ -116,7 +116,7 @@ export const EventsPage: React.FC = () => {
                   </div>
 
                   <div className="flex items-center gap-1 font-mono text-xs text-slate-500">
-                    <Calendar className="h-3 w-3" />
+                    <Icon name="calendar_today" className="h-3 w-3" />
                     <span>{item.date}</span>
                   </div>
                 </div>
@@ -160,7 +160,7 @@ export const EventsPage: React.FC = () => {
                     className="inline-flex items-center gap-1 rounded-lg border border-sky-200 bg-sky-50 px-2.5 py-1 font-mono text-[11px] font-semibold text-sky-700 hover:bg-sky-100 transition"
                   >
                     <span>{item.link_label || 'Learn More'}</span>
-                    <ExternalLink className="h-3 w-3" />
+                    <Icon name="open_in_new" className="h-3 w-3" />
                   </a>
                 )}
               </div>
