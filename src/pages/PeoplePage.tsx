@@ -90,6 +90,9 @@ function resolveInstitutions(partner: AcademicPartner): PartnerInstitution[] {
   return result;
 }
 
+// Temporarily disabled per user request
+const SHOW_ACADEMIC_PARTNERS = false;
+
 type PeopleTab = 'all' | 'faculty' | 'students' | 'partners' | 'tech';
 
 export const PeoplePage: React.FC = () => {
@@ -187,17 +190,19 @@ export const PeoplePage: React.FC = () => {
           {people.graduate_and_undergraduate_student_researchers.length})
         </button>
 
-        <button
-          type="button"
-          onClick={() => setActiveTab('partners')}
-          className={`rounded-xl px-3.5 py-1.5 font-editorial text-xs font-semibold transition ${
-            activeTab === 'partners'
-              ? 'bg-slate-900 text-white shadow-sm'
-              : 'text-slate-600 hover:text-slate-900'
-          }`}
-        >
-          Global Academic Partners ({people.global_academic_partners.length})
-        </button>
+        {SHOW_ACADEMIC_PARTNERS && (
+          <button
+            type="button"
+            onClick={() => setActiveTab('partners')}
+            className={`rounded-xl px-3.5 py-1.5 font-editorial text-xs font-semibold transition ${
+              activeTab === 'partners'
+                ? 'bg-slate-900 text-white shadow-sm'
+                : 'text-slate-600 hover:text-slate-900'
+            }`}
+          >
+            Global Academic Partners ({people.global_academic_partners.length})
+          </button>
+        )}
 
         <button
           type="button"
@@ -381,7 +386,7 @@ export const PeoplePage: React.FC = () => {
       )}
 
       {/* Global Academic Partners */}
-      {(activeTab === 'all' || activeTab === 'partners') && (() => {
+      {SHOW_ACADEMIC_PARTNERS && (activeTab === 'all' || activeTab === 'partners') && (() => {
         const partnerCards = people.global_academic_partners.map((partner) => ({
           ...partner,
           resolvedInstitutions: resolveInstitutions(partner),
