@@ -28,21 +28,29 @@ const pillarDetails: Record<
   PillarId,
   {
     desc: string;
+    formula: string;
+    formulaLabel: string;
   }
 > = {
   supply_chain_optimization: {
     desc:
       'Advancing operations research and mathematical optimization for complex logistics and supply chain systems, including vehicle routing, scheduling, facility location, network design, inventory management, transportation planning, and integrated supply chain decision-making.',
+    formula: 'min  Σᵢⱼ cᵢⱼ xᵢⱼ   |   x ∈ 𝓕',
+    formulaLabel: 'Routing & network design',
   },
 
   ai_supply_chain_intelligence: {
     desc:
       'Developing artificial intelligence and data-driven methods for intelligent supply chain decision-making, including machine learning, forecasting, predictive-prescriptive analytics, learning-enhanced optimization, and AI-supported planning and operations.',
+    formula: 'min_θ  𝓛(y, f(X; θ)) + λ‖θ‖²',
+    formulaLabel: 'Learning & prediction',
   },
 
   decision_analytics: {
     desc:
       'Developing optimization and decision-analytics approaches for complex systems beyond logistics and supply chains, with applications in energy, healthcare, finance and business, public services, urban systems, hospitality, and digital operations.',
+    formula: 'x* = arg min_{x∈𝓧}  𝔼ξ[C(x, ξ)]',
+    formulaLabel: 'Decisions under uncertainty',
   },
 };
 
@@ -170,7 +178,7 @@ const pillarDetails: Record<
               <div
                 key={pillar.id}
                 onClick={() => setSelectedPillar(id)}
-                className={`soft-card p-6 sm:p-7 cursor-pointer transition-all duration-300 relative overflow-hidden ${
+                className={`soft-card relative flex h-full cursor-pointer flex-col overflow-hidden p-6 transition-all duration-300 sm:p-7 ${
                   isSelected
                     ? 'ring-2 ring-sky-500 shadow-lift bg-white'
                     : 'bg-white/85 hover:bg-white'
@@ -182,9 +190,25 @@ const pillarDetails: Record<
                     {(pillar as unknown as { title_en?: string }).title_en || pillar.title}
                   </h3>
                 </div>
-                <p className="mt-4 font-editorial text-xs sm:text-sm text-slate-600 leading-relaxed">
+                <p className="mt-4 flex-1 font-editorial text-xs leading-relaxed text-slate-600 sm:text-sm">
                   {detail.desc}
                 </p>
+
+                <div className="mt-5 rounded-2xl border border-slate-200/90 bg-white/95 p-3.5 shadow-sm backdrop-blur">
+                  <div className="flex items-center justify-between gap-2 border-b border-slate-100 pb-1.5 font-mono text-[9px] font-semibold uppercase tracking-wider text-slate-500">
+                    <span>Mathematical formulation</span>
+                    <span className="text-sky-700">Core model</span>
+                  </div>
+                  <div
+                    className="mt-2 overflow-x-auto whitespace-nowrap py-1 font-mono text-[11px] font-semibold text-slate-900 sm:text-xs"
+                    aria-label={`${detail.formulaLabel}: ${detail.formula}`}
+                  >
+                    {detail.formula}
+                  </div>
+                  <p className="mt-1 font-mono text-[9px] uppercase tracking-wide text-slate-400">
+                    {detail.formulaLabel}
+                  </p>
+                </div>
 
                 <div className="mt-4 pt-4 border-t border-slate-100 flex flex-wrap gap-1.5">
                   {pillar.topics.slice(0, 3).map((topic, tIdx) => (
