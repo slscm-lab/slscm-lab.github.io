@@ -5,6 +5,7 @@ import { Footer } from './components/Footer';
 import { HomePage } from './pages/HomePage';
 import { EventsPage } from './pages/EventsPage';
 import { PublicationsPage } from './pages/PublicationsPage';
+import { ResearchTopicsPage } from './pages/ResearchTopicsPage';
 import { PeoplePage } from './pages/PeoplePage';
 import { AlumniPage } from './pages/AlumniPage';
 import { LabLifePage } from './pages/LabLifePage';
@@ -19,6 +20,7 @@ export function App() {
       const hash = window.location.hash.replace(/^#\/?/, '');
       if (
         hash === 'events' ||
+        hash === 'research' ||
         hash === 'publications' ||
         hash === 'people' ||
         hash === 'alumni' ||
@@ -52,7 +54,9 @@ export function App() {
       case 'events':
         return 'Events & Research Briefs';
       case 'publications':
-        return 'Research Publications (2025–2026)';
+        return 'Research Publications';
+      case 'research':
+        return 'Research Topics';
       case 'people':
         return 'Faculty, Researchers & Mentors';
       case 'alumni':
@@ -102,6 +106,7 @@ export function App() {
         <main>
           {currentRoute === 'home' && <HomePage onNavigate={handleNavigate} />}
           {currentRoute === 'publications' && <PublicationsPage />}
+          {currentRoute === 'research' && <ResearchTopicsPage onNavigate={handleNavigate} />}
           {currentRoute === 'events' && <EventsPage />}
           {currentRoute === 'people' && <PeoplePage />}
           {currentRoute === 'alumni' && <AlumniPage />}

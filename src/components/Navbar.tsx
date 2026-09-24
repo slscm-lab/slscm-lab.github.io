@@ -23,6 +23,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentRoute, onRouteChange }) =
   const navItems: { label: string; route: PageRoute; badge?: string }[] = [
     { label: 'Home', route: 'home' },
     { label: 'Publications', route: 'publications' },
+    { label: 'Topics', route: 'research' },
     { label: 'People', route: 'people' },
     { label: 'Alumni', route: 'alumni' },
     { label: 'Events & Briefs', route: 'events', badge: 'News' },
