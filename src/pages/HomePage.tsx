@@ -4,25 +4,23 @@ import { ResearchAreaIcon } from '../components/ResearchAreaIcon';
 import { PageRoute, PillarId } from '../types';
 import { PaperCard } from '../components/PaperCard';
 import {
-  getLabOverview,
-  getEvents,
-  getRecentEvents,
-  getPublications,
-  getFeaturedPublications,
-} from '../repositories';
+  useLabOverview,
+  useEvents,
+  usePublications,
+} from '../context/DataContext';
 
 interface HomePageProps {
   onNavigate: (route: PageRoute) => void;
 }
 
 export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
-  const overview = getLabOverview();
-  const events = getEvents();
-  const publications = getPublications();
+  const overview = useLabOverview();
+  const events = useEvents();
+  const publications = usePublications();
   const recentPublications = publications.filter((paper) => paper.year >= 2025);
   const recentJournalCount = recentPublications.filter((paper) => paper.type.toLowerCase().includes('journal')).length;
-  const featuredEvents = getRecentEvents(4);
-  const featuredPapers = getFeaturedPublications(4);
+  const featuredEvents = events.slice(0, 4);
+  const featuredPapers = publications.filter((p) => p.is_featured).slice(0, 4);
 
   const [selectedPillar, setSelectedPillar] = useState<PillarId>('supply_chain_optimization');
 

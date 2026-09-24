@@ -127,6 +127,18 @@ export const Footer: React.FC<FooterProps> = ({ onRouteChange }) => {
             {/* <span>Lead: Dr. Duc Minh Vu</span>
             <span>•</span> */}
             <span>Web / Tech Lead: Le Huu Trung</span>
+            <span>•</span>
+            <button
+              type="button"
+              onClick={() => {
+                onRouteChange('admin');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }}
+              className="flex items-center gap-1 text-slate-400 hover:text-sky-700 transition-colors"
+            >
+              <Icon name="lock" className="h-3 w-3" />
+              <span>Admin Console</span>
+            </button>
           </div>
         </div>
       </div>
