@@ -1,33 +1,30 @@
 import React, { useState } from 'react';
 import { Icon } from '../components/Icon';
-import { Publication, PillarId } from '../types';
 import { PaperCard } from '../components/PaperCard';
 import { getPublications } from '../repositories';
+import researchKeywords from '../data/research_keywords.json';
 
 export const PublicationsPage: React.FC = () => {
   const publications = getPublications();
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedYear, setSelectedYear] = useState<string>('all');
-  const [selectedPillar, setSelectedPillar] = useState<string>('all');
   const [selectedType, setSelectedType] = useState<string>('all');
 
-  const years = ['all', '2026', '2025'];
-  const pillars = [
-    { id: 'all', label: 'All Domains' },
-    { id: 'operational_optimization', label: 'Operations & Algorithms' },
-    { id: 'ml_optimization', label: 'AI & Data Science' },
-    { id: 'green_transportation', label: 'Green Logistics & Drones' },
-  ];
+  const years = Array.from(new Set(publications.filter((paper) => paper.year >= 2025).map((paper) => paper.year)))
+    .sort((a, b) => b - a)
+    .map(String);
+  const hasEarlierPapers = publications.some((paper) => paper.year < 2025);
+  const keywordLabels = new Map(researchKeywords.map((keyword) => [keyword.id, keyword.label]));
   const types = [
     { id: 'all', label: 'All Formats' },
-    { id: 'journal', label: 'Journals (Q1/Q2)' },
+    { id: 'journal', label: 'Journal Articles' },
     { id: 'conference', label: 'Conferences' },
     { id: 'book', label: 'Book Chapters' },
   ];
 
   const filteredPublications = publications.filter((paper) => {
-    const matchesYear = selectedYear === 'all' || paper.year.toString() === selectedYear;
-    const matchesPillar = selectedPillar === 'all' || paper.research_pillar === selectedPillar;
+    const matchesYear = selectedYear === 'all' ||
+      (selectedYear === 'before-2025' ? paper.year < 2025 : paper.year.toString() === selectedYear);
     const matchesType =
       selectedType === 'all' ||
       (selectedType === 'journal' && (paper.type.toLowerCase().includes('journal') || paper.type.toLowerCase().includes('article'))) ||
@@ -42,9 +39,14 @@ export const PublicationsPage: React.FC = () => {
       paper.venue.toLowerCase().includes(query) ||
       (paper.abstract && paper.abstract.toLowerCase().includes(query)) ||
       (paper.doi && paper.doi.toLowerCase().includes(query));
+    const matchesKeyword = paper.keywords?.some((keyword) => keywordLabels.get(keyword)?.toLowerCase().includes(query));
 
-    return matchesYear && matchesPillar && matchesType && matchesSearch;
+    return matchesYear && matchesType && (matchesSearch || matchesKeyword);
   });
+  const publicationGroups = [
+    ...years.map((year) => ({ label: year, papers: filteredPublications.filter((paper) => paper.year.toString() === year) })),
+    ...(hasEarlierPapers ? [{ label: 'Before 2025', papers: filteredPublications.filter((paper) => paper.year < 2025) }] : []),
+  ].filter((group) => group.papers.length > 0);
 
   return (
     <div className="section-shell py-10 sm:py-14 animate-in fade-in duration-300">
@@ -59,7 +61,7 @@ export const PublicationsPage: React.FC = () => {
         </h1>
         <p className="mt-4 font-editorial text-lg text-slate-600 leading-relaxed max-w-3xl">
           Comprehensive, searchable catalog of peer-reviewed journal papers, conference proceedings, and book
-          chapters published by the faculty, researchers, and students of SLSCM Lab .
+          chapters published by the faculty, researchers, and students of SLSCM Lab.
         </p>
       </div>
 
@@ -76,45 +78,21 @@ export const PublicationsPage: React.FC = () => {
             className="w-full rounded-xl border border-slate-200 bg-white py-2 pl-10 pr-4 font-editorial text-sm text-slate-800 placeholder:text-slate-400 focus-ring"
           />
         </div>
-
         {/* Filter Controls */}
         <div className="flex flex-wrap items-center justify-between gap-4 pt-2 border-t border-slate-100">
-          {/* Year Buttons */}
-          <div className="flex items-center gap-1.5">
-            <span className="font-mono text-[11px] font-bold uppercase text-slate-400 mr-1">Year:</span>
-            {years.map((yr) => (
-              <button
-                key={yr}
-                type="button"
-                onClick={() => setSelectedYear(yr)}
-                className={`rounded-lg px-2.5 py-1 font-editorial text-xs font-semibold transition ${
-                  selectedYear === yr
-                    ? 'bg-slate-900 text-white'
-                    : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
-                }`}
-              >
-                {yr === 'all' ? 'All' : yr}
-              </button>
-            ))}
-          </div>
-
-          {/* Pillar Buttons */}
+          {/* Year Filter */}
           <div className="flex flex-wrap items-center gap-1.5">
-            <span className="font-mono text-[11px] font-bold uppercase text-slate-400 mr-1">Pillar:</span>
-            {pillars.map((p) => (
-              <button
-                key={p.id}
-                type="button"
-                onClick={() => setSelectedPillar(p.id)}
-                className={`rounded-lg px-2.5 py-1 font-editorial text-xs font-semibold transition ${
-                  selectedPillar === p.id
-                    ? 'bg-sky-900 text-white'
-                    : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
-                }`}
-              >
-                {p.label}
-              </button>
-            ))}
+            <label htmlFor="publication-year" className="font-mono text-[11px] font-bold uppercase text-slate-500 mr-1">Year:</label>
+            <select
+              id="publication-year"
+              value={selectedYear}
+              onChange={(event) => setSelectedYear(event.target.value)}
+              className="rounded-lg border border-slate-200 bg-white px-3 py-1.5 font-editorial text-xs font-semibold text-slate-700 focus-ring"
+            >
+              <option value="all">All years</option>
+              {years.map((year) => <option key={year} value={year}>{year}</option>)}
+              {hasEarlierPapers && <option value="before-2025">Before 2025</option>}
+            </select>
           </div>
 
           {/* Type Buttons */}
@@ -141,12 +119,11 @@ export const PublicationsPage: React.FC = () => {
       {/* Results Header */}
       <div className="mt-6 flex items-center justify-between font-mono text-xs text-slate-500">
         <span>Displaying {filteredPublications.length} of {publications.length} publications</span>
-        {(selectedYear !== 'all' || selectedPillar !== 'all' || selectedType !== 'all' || searchQuery !== '') && (
+        {(selectedYear !== 'all' || selectedType !== 'all' || searchQuery !== '') && (
           <button
             type="button"
             onClick={() => {
               setSelectedYear('all');
-              setSelectedPillar('all');
               setSelectedType('all');
               setSearchQuery('');
             }}
@@ -158,16 +135,24 @@ export const PublicationsPage: React.FC = () => {
       </div>
 
       {/* Publications Grid */}
-      <div className="mt-4 grid gap-5 md:grid-cols-2">
+      <div className="mt-4 space-y-8">
         {filteredPublications.length === 0 ? (
-          <div className="col-span-2 rounded-2xl border border-slate-200 bg-white/80 p-12 text-center">
+          <div className="rounded-2xl border border-slate-200 bg-white/80 p-12 text-center">
             <p className="font-editorial text-base text-slate-500">
               No publications match your selected filter criteria.
             </p>
           </div>
         ) : (
-          filteredPublications.map((paper) => (
-            <PaperCard key={paper.id} paper={paper} />
+          publicationGroups.map((group) => (
+            <section key={group.label} aria-label={`${group.label} publications`}>
+              <div className="mb-4 flex items-center justify-between border-b border-slate-200 pb-2">
+                <h2 className="font-editorial text-xl font-bold text-slate-950">{group.label}</h2>
+                <span className="font-mono text-xs text-slate-500">{group.papers.length} {group.papers.length === 1 ? 'paper' : 'papers'}</span>
+              </div>
+              <div className="grid gap-5 md:grid-cols-2">
+                {group.papers.map((paper) => <PaperCard key={paper.id} paper={paper} />)}
+              </div>
+            </section>
           ))
         )}
       </div>

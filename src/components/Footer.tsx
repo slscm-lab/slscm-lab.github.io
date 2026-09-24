@@ -10,6 +10,7 @@ export const Footer: React.FC<FooterProps> = ({ onRouteChange }) => {
   const quickLinks: { label: string; route: PageRoute }[] = [
     { label: 'Home Overview', route: 'home' },
     { label: 'Research Publications', route: 'publications' },
+    { label: 'Research Topics', route: 'research' },
     { label: 'People & Mentors', route: 'people' },
     { label: 'Alumni & Hall of Fame', route: 'alumni' },
     { label: 'Events & News Briefs', route: 'events' },

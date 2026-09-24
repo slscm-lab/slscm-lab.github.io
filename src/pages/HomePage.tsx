@@ -18,6 +18,8 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
   const overview = getLabOverview();
   const events = getEvents();
   const publications = getPublications();
+  const recentPublications = publications.filter((paper) => paper.year >= 2025);
+  const recentJournalCount = recentPublications.filter((paper) => paper.type.toLowerCase().includes('journal')).length;
   const featuredEvents = getRecentEvents(4);
   const featuredPapers = getFeaturedPublications(4);
 
@@ -121,28 +123,28 @@ const pillarDetails: Record<
         <div className="mt-14 grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-4">
           <div className="rounded-2xl border border-slate-200/80 bg-white/80 p-5 backdrop-blur-md shadow-xs text-center">
             <p className="font-mono text-3xl sm:text-4xl font-extrabold text-slate-950 tracking-tight">
-              {overview.metrics.total_publications}
+              {recentPublications.length}
             </p>
             <p className="mt-1 font-editorial text-xs sm:text-sm font-semibold text-slate-600">
-              Publications 
+              Publications (2025–present)
             </p>
           </div>
 
           <div className="rounded-2xl border border-slate-200/80 bg-white/80 p-5 backdrop-blur-md shadow-xs text-center">
             <p className="font-mono text-3xl sm:text-4xl font-extrabold text-sky-700 tracking-tight">
-              {overview.metrics.q1_journals}
+              {recentJournalCount}
             </p>
             <p className="mt-1 font-editorial text-xs sm:text-sm font-semibold text-slate-600">
-              Top Tier &amp; Q1 Journals
+              Journal Articles (2025–present)
             </p>
           </div>
 
           <div className="rounded-2xl border border-slate-200/80 bg-white/80 p-5 backdrop-blur-md shadow-xs text-center">
             <p className="font-mono text-3xl sm:text-4xl font-extrabold text-emerald-700 tracking-tight">
-              {overview.metrics.student_researchers}
+              10+
             </p>
             <p className="mt-1 font-editorial text-xs sm:text-sm font-semibold text-slate-600">
-              Student Researchers &amp; Scholars
+              Graduate and Undergraduate Student Researchers
             </p>
           </div>
 
@@ -170,6 +172,14 @@ const pillarDetails: Record<
           <p className="mt-3 font-editorial text-base text-slate-600">
             Our scientific agenda integrates rigorous mathematical modeling with high-performance algorithms.
           </p>
+          <button
+            type="button"
+            onClick={() => onNavigate('research')}
+            className="mt-5 inline-flex items-center gap-1.5 font-editorial text-sm font-bold text-sky-700 hover:text-sky-900 focus-ring rounded-lg"
+          >
+            Explore topics and related papers
+            <Icon name="arrow_forward" className="h-4 w-4" />
+          </button>
         </div>
 
         <div className="grid gap-6 md:grid-cols-3">

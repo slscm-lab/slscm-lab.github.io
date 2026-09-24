@@ -1,0 +1,38 @@
+[
+  {
+    "id": "topic-only-dinh-2025-inventory-routing-matheuristics",
+    "title": "Matheuristic Algorithms for the Inventory Routing Problem With Unsplit and Split Deliveries",
+    "authors": ["Nho Minh Dinh", "Claudia Archetti", "Luca Bertazzi"],
+    "venue": "Networks, 86(1), 57–70",
+    "year": 2025,
+    "type": "Journal",
+    "badge": "Topic research",
+    "doi": "10.1002/net.22276",
+    "link": "https://doi.org/10.1002/net.22276",
+    "research_pillar": "operational_optimization",
+    "primary_pillar_id": "supply_chain_optimization",
+    "keywords": ["inventory-routing", "vehicle-routing", "supply-chain-networks", "metaheuristics"],
+    "abstract": "We introduce new matheuristic algorithms for the Inventory Routing Problem with unsplit and split deliveries for both Order-Up-to Level and Maximum Level replenishment policies. The first matheuristic is based on the Capacitated Concentrator Location problem. The second is a route-based approach using routes found in other schemes as input, including the ones found in the first matheuristic. We carry out extensive experiments on benchmark instances to understand their effectiveness. The results show that they are effective and require a relatively short computational time.",
+    "abstract_source": "https://onlinelibrary.wiley.com/doi/full/10.1002/net.22276",
+    "source_profile": "https://scholar.google.com.vn/citations?user=MIBQNC0AAAAJ&hl=en&oi=ao",
+    "is_featured": false
+  },
+  {
+    "id": "topic-only-dinh-2023-inventory-routing-split-deliveries",
+    "title": "The inventory routing problem with split deliveries",
+    "authors": ["Nho Minh Dinh", "Claudia Archetti", "Luca Bertazzi"],
+    "venue": "Networks, 82(4), 400–413",
+    "year": 2023,
+    "type": "Journal",
+    "badge": "Topic research",
+    "doi": "10.1002/net.22175",
+    "link": "https://doi.org/10.1002/net.22175",
+    "research_pillar": "operational_optimization",
+    "primary_pillar_id": "supply_chain_optimization",
+    "keywords": ["inventory-routing", "vehicle-routing", "supply-chain-networks", "branch-and-cut", "exact-optimization"],
+    "abstract": "We study the benefit of introducing split deliveries in the inventory routing problem (IRP), both when the order-up-to level (OU) and the maximum level replenishment policies are applied. We first propose a mathematical formulation and solve it by implementing a branch-and-cut algorithm. Then, we carry out a worst-case analysis to show the cost increase we have in the worst case by using unsplit deliveries instead of split deliveries, both for the OU and the maximum-level replenishment policies. Extensive computational results on benchmark instances allow us to evaluate the benefit of introducing split deliveries. Finally, a sensitivity analysis on customer demands, initial inventory levels, maximum inventory levels and distance to the depot allows us to understand the instance features that make split deliveries effective in IRPs.",
+    "abstract_source": "https://onlinelibrary.wiley.com/doi/full/10.1002/net.22175",
+    "source_profile": "https://scholar.google.com.vn/citations?user=MIBQNC0AAAAJ&hl=en&oi=ao",
+    "is_featured": false
+  }
+]
