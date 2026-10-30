@@ -1,5 +1,21 @@
 [
   {
+    "type": "publication_news",
+    "title": "Paper Accepted in Transportation Research Part C (TRC)",
+    "abstract": "SLSCM Lab warmly congratulates researchers Minh Anh Nguyen (Singapore Management University - SMU) and Thu Trang Hoa (SMU) on their accepted paper in Transportation Research Part C: Emerging Technologies (SCIE Q1) on the Parallel Drone Scheduling Traveling Salesman Problem with Lockers.",
+    "journal": "Transportation Research Part C: Emerging Technologies",
+    "paper_title": "The parallel drone scheduling traveling salesman problem with lockers",
+    "authors": [
+      "Minh Anh Nguyen (SMU)",
+      "Thu Trang Hoa (SMU)"
+    ],
+    "organizer": null,
+    "collaboration": null,
+    "link": "https://www.facebook.com/share/p/1EagNq9HKE/",
+    "action_label": "View Facebook Post",
+    "venue": null
+  },
+  {
     "type": "training_education",
     "title": "EP20 Discovery & Modeling Workshop Series",
     "abstract": "The SLSCM Lab invites students to join the EP20 Discovery & Modeling Workshop Series — an introductory program designed to explore how modern supply chains are transformed by data, optimization, and AI, turning real-world logistics challenges into mathematical models and computational decisions.",
@@ -10,6 +26,25 @@
     "collaboration": null,
     "link": "https://www.facebook.com/slscm.lab",
     "action_label": "View Details & Register",
+    "venue": null
+  },
+  {
+    "type": "publication_news",
+    "title": "New OPSEARCH Publication on Minimum Spanning Tree with Inner-Node Costs",
+    "abstract": "Research by MSc. Nguyen Thanh Hoang (SLSCM Lab / FDA - NEU) and collaborators establishes new theoretical results on edge stability and optimal leaf connections, proposing Kruskal- and Prim-inspired branch-and-bound exact methods for the Minimum Spanning Tree with Inner-node Costs (MSTIC) problem.",
+    "journal": "OPSEARCH (Springer)",
+    "paper_title": "Edge-based and node-based branch-and-bound methods for minimum spanning tree with inner-node costs",
+    "authors": [
+      "Trung Bui Quoc",
+      "Minh Phan",
+      "Nguyen Thanh Hoang (NEU)",
+      "Dung Pham Quang",
+      "Son Nguyen Van"
+    ],
+    "organizer": null,
+    "collaboration": null,
+    "link": "https://doi.org/10.1007/s12597-026-01275-y",
+    "action_label": "Read OPSEARCH Paper",
     "venue": null
   },
   {

@@ -68,7 +68,7 @@ const people = peopleData as unknown as {
 };
 const projects = projectsData as unknown as Project[];
 const publications = publicationsData as Publication[];
-const posts = postsData as Post[];
+const posts = postsData as unknown as Post[];
 
 function getMemberInitials(name: string): string {
   const parts = name.trim().split(/\s+/);

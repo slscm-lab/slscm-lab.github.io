@@ -1,5 +1,32 @@
 [
   {
+    "id": "bui-2026-mstic-opsearch",
+    "title": "Edge-based and node-based branch-and-bound methods for minimum spanning tree with inner-node costs",
+    "authors": [
+      "Trung Bui Quoc",
+      "Minh Phan",
+      "Hoang Nguyen Thanh",
+      "Dung Pham Quang",
+      "Son Nguyen Van"
+    ],
+    "venue": "OPSEARCH",
+    "year": 2026,
+    "type": "Journal",
+    "doi": "10.1007/s12597-026-01275-y",
+    "link": "https://doi.org/10.1007/s12597-026-01275-y",
+    "research_pillar": "operational_optimization",
+    "abstract": "The Minimum Spanning Tree with Inner-node Costs (MSTIC) is an important variant of the classic spanning tree problem that incorporates both edge weights and costs for non-leaf nodes into the objective function. This problem is particularly relevant to real-world applications, such as network design and wireless sensor networks, where routers or hubs incur significantly higher installation costs compared to cables. The problem has been proven NP-hard and has primarily been addressed through approximation algorithms. In this paper, we propose two exact algorithms: an edge-based approach inspired by Kruskal’s algorithm and a node-based approach inspired by Prim’s algorithm. Two new theoretical results on edge stability and optimal leaf connection are established to improve pruning efficiency. Computational experiments on 210 synthetic benchmark instances with up to 100 nodes indicate that our algorithms can find optimal solutions in a short time for instances up to 40 nodes. The Prim-based algorithm achieves better performance than the Kruskal-based algorithm in terms of both solution quality and pruning efficiency. These algorithms are well-suited for decision-support systems that require exact optimal solutions in small- to medium-scale infrastructure planning.",
+    "bibtex": "@article{Bui2026MST,\n  title = {Edge-based and node-based branch-and-bound methods for minimum spanning tree with inner-node costs},\n  author = {Trung Bui Quoc and Minh Phan and Hoang Nguyen Thanh and Dung Pham Quang and Son Nguyen Van},\n  journal = {OPSEARCH},\n  year = {2026},\n  doi = {10.1007/s12597-026-01275-y},\n  url = {https://doi.org/10.1007/s12597-026-01275-y}\n}",
+    "is_featured": false,
+    "keywords": [
+      "minimum-spanning-tree",
+      "branch-and-bound",
+      "inner-node-costs",
+      "exact-algorithms",
+      "network-design"
+    ]
+  },
+  {
     "id": "cao-2026-drone-tourism-comosa",
     "title": "Drone Tourism Routing Under Energy, Time-Window and Communication-Coverage Constraints",
     "authors": [
