@@ -8,7 +8,7 @@ export const EventsPage: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [expandedItems, setExpandedItems] = useState<Set<string>>(
-    new Set(['brief-ep20-workshop-series-2026'])
+    new Set(['brief-trc-pdstsp-lockers-2026', 'brief-opsearch-mstic-2026', 'brief-ep20-workshop-series-2026'])
   );
   const [langMap, setLangMap] = useState<Record<string, 'en' | 'vi'>>({});
 

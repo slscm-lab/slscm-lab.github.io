@@ -1,5 +1,31 @@
 [
   {
+    "id": "brief-trc-pdstsp-lockers-2026",
+    "title": "New Paper on Parallel Drone Scheduling TSP with Lockers Accepted in Transportation Research Part C",
+    "title_vi": "Chúc Mừng Bài Báo của Nguyễn Minh Anh và Hoa Thị Thu Trang được Chấp Nhận Đăng tại Tạp Chí Q1 Transportation Research Part C",
+    "date": "2026-10-30",
+    "category": "Scientific Breakthrough",
+    "category_vi": "Công bố Khoa học",
+    "badge": "TRC (SCIE Q1)",
+    "summary": "SLSCM Lab warmly congratulates alumni researchers Minh Anh Nguyen (Singapore Management University - SMU) and Thu Trang Hoa (SMU) on the acceptance of their original research paper 'The parallel drone scheduling traveling salesman problem with lockers' in Transportation Research Part C: Emerging Technologies (SCIE Q1).",
+    "summary_en": "SLSCM Lab warmly congratulates alumni researchers Minh Anh Nguyen (Singapore Management University - SMU) and Thu Trang Hoa (SMU) on the acceptance of their original research paper 'The parallel drone scheduling traveling salesman problem with lockers' in Transportation Research Part C: Emerging Technologies (SCIE Q1).",
+    "summary_vi": "SLSCM Lab trân trọng chúc mừng các nhà nghiên cứu và cựu thành viên Nguyễn Minh Anh (SMU) và Hoa Thị Thu Trang (SMU) với công trình 'The parallel drone scheduling traveling salesman problem with lockers' chính thức được chấp nhận đăng tại tạp chí hàng đầu Transportation Research Part C: Emerging Technologies (SCIE Q1).",
+    "content_en": "We are delighted to celebrate another landmark scholarly achievement from SLSCM Lab alumni and collaborators. The research paper entitled 'The parallel drone scheduling traveling salesman problem with lockers' (Manuscript No. TRC-25-02161R1), authored by Minh Anh Nguyen (Singapore Management University - SMU) and Thu Trang Hoa (SMU), has been officially accepted for publication in Transportation Research Part C: Emerging Technologies (Elsevier, SCIE, Q1, Top Journal in Transportation & Logistics Optimization).\n\nThe research addresses the Parallel Drone Scheduling Traveling Salesman Problem with Lockers (PDSTSP-L), advancing hybrid last-mile delivery paradigms by integrating automated parcel lockers into synchronized truck-drone routing operations. By allowing automated delivery lockers to serve as intermediate transfer hubs, package drop-off nodes, and drone battery swapping stations, the proposed mathematical models and algorithmic frameworks overcome the endurance and payload limitations of standard drone routing, significantly reducing delivery makespan and logistical operating costs in dense urban areas.\n\nThis milestone demonstrates the international impact, high academic rigor, and global research continuum fostered by SLSCM Lab, connecting talented Vietnamese scholars at top global institutions such as Singapore Management University (SMU).",
+    "content_vi": "SLSCM Lab (Lab Quản trị Logistics và Chuỗi cung ứng thông minh, Trường Công nghệ - Đại học Kinh tế Quốc dân) trân trọng chúc mừng các nhà nghiên cứu và cựu thành viên lab Nguyễn Minh Anh (Singapore Management University - SMU) và Hoa Thị Thu Trang (SMU) với công trình nghiên cứu mang mã số TRC-25-02161R1: 'The parallel drone scheduling traveling salesman problem with lockers' đã chính thức được chấp nhận đăng tại tạp chí khoa học quốc tế uy tín bậc nhất Transportation Research Part C: Emerging Technologies (Elsevier, SCIE Q1, Tạp chí đầu ngành về Tối ưu hóa Giao thông và Logistics).\n\nBài toán Định tuyến Drone song song kết hợp Tủ giao hàng thông minh (Parallel Drone Scheduling Traveling Salesman Problem with Lockers - PDSTSP-L) là bước đột phá mới trong tối ưu hóa giao hàng chặng cuối (last-mile delivery). Bằng việc tích hợp mạng lưới tủ gửi nhận thông minh (smart parcel lockers) làm các điểm dừng trung chuyển và trạm sạc pin linh hoạt song song với lộ trình xe tải và drone, nhóm nghiên cứu đã xây dựng các mô hình tối ưu toán học và giải thuật tiên tiến giúp giải quyết triệt để rào cản về dung lượng pin và bán kính hoạt động của drone, từ đó tối ưu hóa đáng kể tổng thời gian hoàn thành (makespan) và chi phí vận hành logistics đô thị.\n\nThành công này tiếp tục khẳng định chất lượng học thuật đỉnh cao và mạng lưới hợp tác nghiên cứu quốc tế bền chặt của SLSCM Lab cùng các nhà khoa học trẻ tại các viện trường danh tiếng toàn cầu như Singapore Management University (SMU).",
+    "link": "https://www.facebook.com/share/p/1EagNq9HKE/",
+    "link_label": "View Facebook Announcement",
+    "featured": true,
+    "tags": [
+      "Drone Routing",
+      "Last-Mile Logistics",
+      "PDSTSP",
+      "SCIE Q1",
+      "SMU",
+      "Smart Lockers",
+      "Transportation Research Part C"
+    ]
+  },
+  {
     "id": "brief-ep20-workshop-series-2026",
     "title": "EP20 Discovery & Modeling Workshop Series: From Challenges to Models, Data & Decisions",
     "title_vi": "Chuỗi Workshop Khám phá & Mô hình hóa EP20: Từ Thách thức Chuỗi Cung ứng đến Mô hình, Dữ liệu và Quyết định Thông minh",
@@ -22,6 +48,31 @@
       "Operations Research",
       "Supply Chain",
       "Workshops & Training"
+    ]
+  },
+  {
+    "id": "brief-opsearch-mstic-2026",
+    "title": "SLSCM Faculty Publishes in Springer OPSEARCH on Exact Methods for Minimum Spanning Tree with Inner-Node Costs",
+    "title_vi": "Giảng viên SLSCM Công bố Bài báo trên Tạp chí Quốc tế OPSEARCH (Springer) về Thuật toán Nhánh-Cận cho Bài toán Cây Khung Nhỏ nhất với Chi phí Nút Trong",
+    "date": "2026-09-05",
+    "category": "Scientific Breakthrough",
+    "category_vi": "Công bố Khoa học",
+    "badge": "Springer OPSEARCH",
+    "summary": "MSc. Nguyen Thanh Hoang (SLSCM Lab / FDA - NEU) and collaborators have officially published an original research article in OPSEARCH (Springer), introducing novel edge-based and node-based branch-and-bound exact algorithms for the Minimum Spanning Tree with Inner-node Costs (MSTIC).",
+    "summary_en": "MSc. Nguyen Thanh Hoang (SLSCM Lab / FDA - NEU) and collaborators have officially published an original research article in OPSEARCH (Springer), introducing novel edge-based and node-based branch-and-bound exact algorithms for the Minimum Spanning Tree with Inner-node Costs (MSTIC).",
+    "summary_vi": "ThS. Nguyễn Thành Hoàng (SLSCM Lab / Khoa KHDL&TTNT - NEU) cùng các cộng sự chính thức công bố công trình nghiên cứu trên tạp chí OPSEARCH (Springer), đề xuất hai thuật toán chính xác nhánh-cận dựa trên cạnh và dựa trên nút cho bài toán Cây khung nhỏ nhất có tính chi phí nút trong (MSTIC).",
+    "content_en": "We are pleased to announce that MSc. Nguyen Thanh Hoang, faculty member at the Faculty of Data Science and Artificial Intelligence (College of Technology, NEU) and researcher at SLSCM Lab, alongside collaborators Trung Bui Quoc, Minh Phan, Dung Pham Quang, and Son Nguyen Van, has published an original research article titled \"Edge-based and node-based branch-and-bound methods for minimum spanning tree with inner-node costs\" in OPSEARCH (Springer).\n\nThe Minimum Spanning Tree with Inner-node Costs (MSTIC) is an NP-hard combinatorial optimization problem crucial to infrastructure planning and wireless sensor network design, where router and hub installations incur substantial fixed costs compared to transmission links. The paper establishes two new theoretical results on edge stability and optimal leaf connection to enhance pruning efficiency, developing Kruskal- and Prim-inspired branch-and-bound exact frameworks. Rigorous benchmark evaluations on 210 synthetic instances demonstrate that the proposed Prim-based algorithm achieves outstanding solution quality and exact optimality for small- to medium-scale infrastructure planning.",
+    "content_vi": "SLSCM Lab trân trọng thông báo công trình nghiên cứu của ThS. Nguyễn Thành Hoàng (Giảng viên Khoa Khoa học Dữ liệu và Trí tuệ Nhân tạo, Trường Công nghệ, NEU) cùng các đồng tác giả Trung Bui Quoc, Minh Phan, Dung Pham Quang và Son Nguyen Van đã chính thức xuất bản trên tạp chí quốc tế OPSEARCH (Springer) với tựa đề \"Edge-based and node-based branch-and-bound methods for minimum spanning tree with inner-node costs\".\n\nBài toán Cây khung nhỏ nhất có tính chi phí nút trong (MSTIC) là bài toán tối ưu tổ hợp NP-khó có tính ứng dụng thực tiễn cao trong thiết kế mạng viễn thông và mạng cảm biến không dây, nơi chi phí lắp đặt bộ định tuyến hay trạm trung chuyển (router/hub) lớn hơn đáng kể so với chi phí kéo dây cáp. Nghiên cứu chứng minh hai kết quả lý thuyết mới về tính ổn định của cạnh và liên kết lá tối ưu nhằm gia tăng hiệu quả cắt tỉa không gian tìm kiếm, từ đó xây dựng hai thuật toán nhánh-cận chính xác lấy cảm hứng từ thuật toán Kruskal và Prim. Thử nghiệm trên 210 bộ dữ liệu chuẩn khẳng định thuật toán đề xuất đạt nghiệm tối ưu nhanh chóng và vượt trội về độ tin cậy trong các bài toán quy hoạch hạ tầng mạng quy mô vừa và nhỏ.",
+    "link": "https://doi.org/10.1007/s12597-026-01275-y",
+    "link_label": "View OPSEARCH Publication",
+    "featured": true,
+    "tags": [
+      "Branch-and-Bound",
+      "Combinatorial Optimization",
+      "Exact Algorithms",
+      "Minimum Spanning Tree",
+      "OPSEARCH",
+      "Springer"
     ]
   },
   {
