@@ -101,6 +101,67 @@ export const EventsPage: React.FC = () => {
     }));
   };
 
+  const getExpandButtonLabel = (item: EventBrief, isVi: boolean): string => {
+    const cat = (item.category || '').toLowerCase();
+    const title = (item.title || '').toLowerCase();
+    const tags = (item.tags || []).map((t) => t.toLowerCase());
+
+    const isWorkshop =
+      cat.includes('workshop') ||
+      cat.includes('training') ||
+      cat.includes('knowledge') ||
+      title.includes('workshop') ||
+      title.includes('training') ||
+      tags.some((t) => t.includes('workshop') || t.includes('training'));
+
+    if (isWorkshop) {
+      return isVi
+        ? 'Xem chi tiết nội dung hội thảo & chủ đề'
+        : 'View Full Workshop Overview & Topics';
+    }
+
+    const isPublication =
+      cat.includes('breakthrough') ||
+      cat.includes('publication') ||
+      title.includes('publish') ||
+      title.includes('accepted') ||
+      title.includes('paper') ||
+      tags.some((t) => t.includes('journal') || t.includes('paper'));
+
+    if (isPublication) {
+      return isVi
+        ? 'Xem chi tiết bài báo & ý nghĩa khoa học'
+        : 'Read Full Research Brief & Highlights';
+    }
+
+    const isPlacement =
+      cat.includes('placement') ||
+      cat.includes('honor') ||
+      cat.includes('scholarship') ||
+      title.includes('scholarship') ||
+      title.includes('placement');
+
+    if (isPlacement) {
+      return isVi
+        ? 'Xem chi tiết học bổng & hồ sơ thành viên'
+        : 'View Placement Details & Scholar Profiles';
+    }
+
+    const isProject =
+      cat.includes('collaboration') ||
+      cat.includes('project') ||
+      title.includes('initiative') ||
+      title.includes('project');
+
+    if (isProject) {
+      return isVi
+        ? 'Xem chi tiết quy mô & mục tiêu dự án'
+        : 'View Project Scope & Objectives';
+    }
+
+    return isVi ? 'Xem toàn văn nội dung' : 'Read Full Brief';
+  };
+
   const renderFormattedContent = (content: string) => {
     const paragraphs = content.split('\n\n');
     return (
@@ -308,7 +369,7 @@ export const EventsPage: React.FC = () => {
                             onClick={() => toggleExpand(item.id)}
                             className="mt-3 inline-flex items-center gap-1 font-editorial text-xs font-semibold text-slate-500 hover:text-slate-800 transition"
                           >
-                            <span>Collapse announcement</span>
+                            <span>{isVi ? 'Thu gọn nội dung' : 'Collapse announcement'}</span>
                             <Icon name="expand_less" className="h-3.5 w-3.5" />
                           </button>
                         </div>
@@ -319,7 +380,7 @@ export const EventsPage: React.FC = () => {
                           className="inline-flex items-center gap-1.5 rounded-lg border border-sky-200 bg-sky-50/60 px-3 py-1.5 font-editorial text-xs font-semibold text-sky-800 hover:bg-sky-100 transition"
                         >
                           <Icon name="article" className="h-3.5 w-3.5 text-sky-600" />
-                          <span>View Full Workshop Overview &amp; Topics</span>
+                          <span>{getExpandButtonLabel(item, isVi)}</span>
                           <Icon name="expand_more" className="h-3.5 w-3.5 text-sky-600" />
                         </button>
                       )}
