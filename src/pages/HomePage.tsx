@@ -270,7 +270,7 @@ const pillarDetails: Record<
                   {item.title}
                 </h3>
                 <p className="mt-2 font-editorial text-xs sm:text-sm text-slate-600 leading-relaxed line-clamp-2">
-                  {item.summary}
+                  {item.summary.replace(/\\r\\n/g, '\n').replace(/\\n/g, '\n')}
                 </p>
               </div>
 

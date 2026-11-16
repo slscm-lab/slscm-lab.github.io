@@ -163,22 +163,25 @@ export const EventsPage: React.FC = () => {
   };
 
   const renderFormattedContent = (content: string) => {
-    const paragraphs = content.split('\n\n');
+    const normalized = content.replace(/\\r\\n/g, '\n').replace(/\\n/g, '\n');
+    const paragraphs = normalized.split(/\n\s*\n/);
     return (
       <div className="space-y-3 font-editorial text-xs sm:text-[13px] leading-relaxed text-slate-700">
         {paragraphs.map((para, pIdx) => {
-          if (para.startsWith('### ')) {
+          const trimmed = para.trim();
+          if (!trimmed) return null;
+          if (trimmed.startsWith('### ')) {
             return (
               <h4
                 key={pIdx}
                 className="font-bold text-sm text-slate-950 pt-2 border-t border-slate-200/60 first:pt-0 first:border-0"
               >
-                {para.replace('### ', '')}
+                {trimmed.replace('### ', '')}
               </h4>
             );
           }
-          if (para.includes('\n• ') || para.startsWith('• ')) {
-            const lines = para.split('\n');
+          if (trimmed.includes('\n• ') || trimmed.startsWith('• ')) {
+            const lines = trimmed.split('\n');
             const header = lines[0].startsWith('• ') ? null : lines[0];
             const bulletLines = lines.filter((l) => l.startsWith('• '));
             return (
@@ -195,7 +198,7 @@ export const EventsPage: React.FC = () => {
               </div>
             );
           }
-          return <p key={pIdx}>{para}</p>;
+          return <p key={pIdx} className="whitespace-pre-line">{trimmed}</p>;
         })}
       </div>
     );
@@ -354,8 +357,8 @@ export const EventsPage: React.FC = () => {
                   </h3>
 
                   {/* Summary */}
-                  <p className="mt-3 font-editorial text-xs sm:text-sm text-slate-700 leading-relaxed">
-                    {displaySummary}
+                  <p className="mt-3 font-editorial text-xs sm:text-sm text-slate-700 leading-relaxed whitespace-pre-line">
+                    {displaySummary.replace(/\\r\\n/g, '\n').replace(/\\n/g, '\n')}
                   </p>
 
                   {/* Extended Content if available */}
