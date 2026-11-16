@@ -27,7 +27,6 @@ export const Navbar: React.FC<NavbarProps> = ({ currentRoute, onRouteChange }) =
     { label: 'People', route: 'people' },
     { label: 'Alumni', route: 'alumni' },
     { label: 'Events & Briefs', route: 'events', badge: 'News' },
-    { label: 'Lab Life', route: 'lab-life' },
   ];
 
   const handleNavigate = (route: PageRoute) => {

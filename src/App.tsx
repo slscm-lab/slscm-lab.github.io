@@ -8,7 +8,6 @@ import { PublicationsPage } from './pages/PublicationsPage';
 import { ResearchTopicsPage } from './pages/ResearchTopicsPage';
 import { PeoplePage } from './pages/PeoplePage';
 import { AlumniPage } from './pages/AlumniPage';
-import { LabLifePage } from './pages/LabLifePage';
 import { AdminPage } from './pages/AdminPage';
 import { Icon } from './components/Icon';
 import { DataProvider, useDataContext } from './context/DataContext';
@@ -27,7 +26,6 @@ export function AppContent() {
         hash === 'publications' ||
         hash === 'people' ||
         hash === 'alumni' ||
-        hash === 'lab-life' ||
         hash === 'admin'
       ) {
         setCurrentRoute(hash as PageRoute);
@@ -146,7 +144,6 @@ export function AppContent() {
           {currentRoute === 'events' && <EventsPage />}
           {currentRoute === 'people' && <PeoplePage />}
           {currentRoute === 'alumni' && <AlumniPage />}
-          {currentRoute === 'lab-life' && <LabLifePage />}
           {currentRoute === 'admin' && <AdminPage />}
         </main>
       </div>

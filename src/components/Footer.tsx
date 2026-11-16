@@ -14,7 +14,6 @@ export const Footer: React.FC<FooterProps> = ({ onRouteChange }) => {
     { label: 'People & Mentors', route: 'people' },
     { label: 'Alumni & Hall of Fame', route: 'alumni' },
     { label: 'Events & News Briefs', route: 'events' },
-    { label: 'Lab Life & Fanpage', route: 'lab-life' },
   ];
 
   return (

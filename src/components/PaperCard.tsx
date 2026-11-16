@@ -92,7 +92,8 @@ export const PaperCard: React.FC<PaperCardProps> = ({ paper, showBadge = true })
       'Dang Trung Cuong', 'Trung Cuong Dang', 'Đặng Trung Cường',
       'Thu Ha Ha', 'Ha Thu Ha', 'Hà Thu Hà',
       'Mai Thanh Loc', 'Thanh Loc Mai', 'Mai Thành Lộc',
-      'Hoa Thi Thu Trang', 'Thu Trang Hoa Thi', 'Hoa Thị Thu Trang',
+      'Hoa Thi Thu Trang', 'Thu Trang Hoa Thi', 'Hoa Thị Thu Trang', 'Thu Trang Hoa', 'Hoa Thu Trang',
+      'Minh Anh Nguyen', 'Nguyen Minh Anh', 'Nguyễn Minh Anh',
       'La Quang Chien', 'Quang Chien La', 'Lã Quang Chiến',
     ];
 

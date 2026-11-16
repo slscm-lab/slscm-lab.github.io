@@ -1,5 +1,42 @@
 [
   {
+    "id": "hoa-2026-pdstsp-lockers-trc",
+    "title": "The parallel drone scheduling traveling salesman problem with lockers",
+    "authors": [
+      "Thu Trang Hoa",
+      "Minh Anh Nguyen",
+      "Minh Hoàng Hà",
+      "Duc Minh Vu"
+    ],
+    "venue": "Transportation Research Part C: Emerging Technologies",
+    "year": 2026,
+    "type": "Journal",
+    "doi": "10.1016/j.trc.2026.106103",
+    "link": "https://doi.org/10.1016/j.trc.2026.106103",
+    "research_pillar": "green_transportation",
+    "primary_pillar_id": "supply_chain_optimization",
+    "abstract": "In this paper, we study the Parallel Drone Scheduling Traveling Salesman Problem with Lockers (PDSTSP-L), a novel last-mile delivery framework integrating parcel lockers into coordinated truck-and-drone operations. Rather than restricting drone sorties to direct customer deliveries, the model incorporates smart automated parcel lockers as alternative delivery locations and drone battery-swapping stations, overcoming payload and battery endurance limitations while addressing recipient unavailability. We formulate the problem as a Mixed-Integer Linear Programming (MILP) model to minimize total operational costs, encompassing truck travel costs, drone operating costs, and customer compensation discounts for locker pick-up. To solve practical, large-scale instances with up to 200 customers, we develop an efficient Iterated Local Search (ILS) metaheuristic tailored with problem-specific destruction and local search operators. Computational experiments on benchmark instances confirm that the MILP model finds optimal solutions for small instances, while the proposed ILS metaheuristic achieves superior solution quality and computational efficiency on large networks. Sensitivity analyses demonstrate that integrating smart lockers substantially enhances delivery performance and reduces overall logistical costs.",
+    "abstract_source": "https://doi.org/10.1016/j.trc.2026.106103",
+    "bibtex": "@article{hoa_2026_pdstsp_lockers_trc,\n  title = {The parallel drone scheduling traveling salesman problem with lockers},\n  author = {Thu Trang Hoa and Minh Anh Nguyen and Minh Hoàng Hà and Duc Minh Vu},\n  journal = {Transportation Research Part C: Emerging Technologies},\n  volume = {194},\n  pages = {106103},\n  year = {2026},\n  doi = {10.1016/j.trc.2026.106103},\n  url = {https://doi.org/10.1016/j.trc.2026.106103}\n}",
+    "is_featured": true,
+    "badge": "TRC (SCIE Q1)",
+    "highlighted_authors": [
+      "Thu Trang Hoa",
+      "Minh Anh Nguyen",
+      "Minh Hoàng Hà",
+      "Duc Minh Vu"
+    ],
+    "keywords": [
+      "drone-logistics",
+      "parcel-lockers",
+      "vehicle-routing",
+      "pdstsp",
+      "mixed-integer-programming",
+      "iterated-local-search",
+      "last-mile-delivery"
+    ]
+  },
+  {
     "id": "bui-2026-mstic-opsearch",
     "title": "Edge-based and node-based branch-and-bound methods for minimum spanning tree with inner-node costs",
     "authors": [
