@@ -215,6 +215,39 @@
     "badge": null
   },
   {
+    "id": "le-2026-submilp-truck-drone-rivf",
+    "title": "A Component-Induced Dynamic SubMILP for Multi-Drop Revisit Truck-Drone Routing",
+    "authors": [
+      "Hong Le Thi",
+      "Nam-Khanh Tran",
+      "Dinh Cong Nguyen",
+      "Duc Minh Vu"
+    ],
+    "venue": "The 2026 IEEE RIVF International Conference on Computing and Communication Technologies (RIVF 2026), IEEE Xplore",
+    "year": 2026,
+    "type": "Conference",
+    "doi": null,
+    "link": "https://rivf2026.org/",
+    "research_pillar": "green_transportation",
+    "primary_pillar_id": "supply_chain_optimization",
+    "keywords": [
+      "drone-routing",
+      "truck-drone",
+      "submilp",
+      "mathematical-programming",
+      "logistics-optimization"
+    ],
+    "abstract": "We study the multi-drop revisit truck-drone routing problem where unmanned aerial vehicles and ground vehicles collaborate to serve customer locations under dynamic scheduling constraints. We propose a component-induced dynamic SubMILP formulation and algorithmic framework that efficiently explores promising subproblems, achieving significant performance enhancements over benchmark exact and heuristic solvers.",
+    "abstract_source": "author",
+    "bibtex": "@inproceedings{le_2026_submilp_truck_drone_rivf,\n  title = {A Component-Induced Dynamic SubMILP for Multi-Drop Revisit Truck-Drone Routing},\n  author = {Le Thi Hong and Tran Nam-Khanh and Nguyen Dinh Cong and Vu Duc Minh},\n  booktitle = {Proceedings of the 2026 IEEE RIVF International Conference on Computing and Communication Technologies (RIVF 2026)},\n  year = {2026},\n  publisher = {IEEE}\n}",
+    "is_featured": false,
+    "highlighted_authors": [
+      "Nam-Khanh Tran",
+      "Duc Minh Vu"
+    ],
+    "badge": "IEEE RIVF 2026"
+  },
+  {
     "id": "nguyen-2026-parallel-scheduling-comosa",
     "title": "Improved Bounds for the Energy-Constrained Parallel Machine Scheduling Problem to Minimize Total Completion Time",
     "authors": [
@@ -241,6 +274,42 @@
     "is_featured": false,
     "highlighted_authors": [],
     "badge": null
+  },
+  {
+    "id": "pham-2026-oil-forecasting-soict",
+    "title": "Does More Information Help? Separating Information Value from Estimation-History Effects in Monthly Brent Crude Oil Forecasting",
+    "authors": [
+      "Duy-Phuong Pham",
+      "Vinh-Khanh Nguyen",
+      "Thi-Thanh-Nhan Hoang",
+      "Anh-Minh Hoang",
+      "Tien-Quyet Doan",
+      "Thanh-Sang Nguyen",
+      "Duc-Manh Hoang",
+      "Duc Minh Vu"
+    ],
+    "venue": "The 15th International Symposium on Information and Communication Technology (SOICT 2026)",
+    "year": 2026,
+    "type": "Conference",
+    "doi": null,
+    "link": "https://www.facebook.com/share/p/1Fr3HmET2p/",
+    "research_pillar": "operational_optimization",
+    "primary_pillar_id": "decision_analytics",
+    "keywords": [
+      "forecasting",
+      "crude-oil",
+      "information-value",
+      "energy-analytics",
+      "time-series"
+    ],
+    "abstract": "This paper investigates whether incorporating additional market and operational information improves monthly Brent crude oil price forecasting. Developed through a research collaboration between SLSCM Lab, Vietnam Petroleum Institute (VPI) experts, and NEU students, the study proposes a methodology to rigorously disentangle genuine information value from estimation-history effects in predictive time series models, offering actionable decision-support insights for energy and supply chain operations.",
+    "abstract_source": "author",
+    "bibtex": "@inproceedings{pham_2026_oil_forecasting_soict,\n  title = {Does More Information Help? Separating Information Value from Estimation-History Effects in Monthly Brent Crude Oil Forecasting},\n  author = {Pham Duy-Phuong and Nguyen Vinh-Khanh and Hoang Thi-Thanh-Nhan and Hoang Anh-Minh and Doan Tien-Quyet and Nguyen Thanh-Sang and Hoang Duc-Manh and Vu Duc-Minh},\n  booktitle = {Proceedings of the 15th International Symposium on Information and Communication Technology (SOICT 2026)},\n  year = {2026}\n}",
+    "is_featured": false,
+    "highlighted_authors": [
+      "Duc Minh Vu"
+    ],
+    "badge": "SOICT 2026 & VPI"
   },
   {
     "id": "pham-2026-ssg-ijcai",
